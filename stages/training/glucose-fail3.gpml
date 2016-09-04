@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Pathway xmlns="http://pathvisio.org/GPML/2013a" Name="New Pathway" Version="20160904">
+  <Graphics BoardWidth="550.0362976406534" BoardHeight="171.57894736842104" />
+  <DataNode TextLabel="Glucose" GraphId="d0256" Type="GeneProduct">
+    <Graphics CenterX="119.80762250453704" CenterY="107.23230490018169" Width="80.0" Height="20.0" ZOrder="32768" FontSize="10" Valign="Middle" />
+    <Xref Database="HMDB" ID="HMDB00122" />
+  </DataNode>
+  <DataNode TextLabel="Glucose 6-phosphate" GraphId="a6b23" Type="Metabolite">
+    <Graphics CenterX="270.73230490018204" CenterY="107.23230490018169" Width="119.0" Height="20.0" ZOrder="32768" FontSize="10" Valign="Middle" Color="0000ff" />
+    <Xref Database="HMDB" ID="HMDB01401" />
+  </DataNode>
+  <Interaction>
+    <Graphics ZOrder="12288" LineThickness="1.0">
+      <Point X="159.80762250453705" Y="107.23230490018169" GraphRef="d0256" RelX="1.0" RelY="0.0" />
+      <Point X="211.23230490018204" Y="107.23230490018169" GraphRef="a6b23" RelX="-1.0" RelY="0.0" ArrowHead="mim-conversion" />
+    </Graphics>
+    <Xref Database="" ID="" />
+  </Interaction>
+  <InfoBox CenterX="0.0" CenterY="0.0" />
+  <Biopax />
+</Pathway>
+
