@@ -10,5 +10,5 @@ Go to [https://wikipathways.github.io/skilltree/](https://wikipathways.github.io
 
 How to Develop
 ====
-Make pull requests to this repo in order to fix or provide new skill tree content. The clickable skill tree image itself can be editted via the draw.io app for Google Docs: [WP Skill Tree Diagram](https://drive.google.com/a/gladstone.ucsf.edu/file/d/0BxIWXP93jPy9STctZmlNTnA3ckU/view?usp=sharing). If you don't have edit permissions, send suggested changes to alex.pico@gladstone.ucsf.edu. 
+Make pull requests to this repo in order to fix or provide new skill tree content. The clickable skill tree image itself can be editted via the draw.io app for Google Docs: [WP Skill Tree Diagram](https://drive.google.com/a/gladstone.ucsf.edu/file/d/0BxIWXP93jPy9STctZmlNTnA3ckU/view?usp=sharing). Paste updated embed code into index.html (File>Embed>HTML... uncheck "Lightbox" then copy/paste). If you don't have edit permissions, send suggested changes to alex.pico@gladstone.ucsf.edu. 
 
