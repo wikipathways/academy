@@ -1,0 +1,40 @@
+{
+  "name": "skilltree",
+  "version": "1.0.0",
+  "description": "Skill tree for WikiPathways on SGL",
+  "main": "index.js",
+  "scripts": {
+    "build": "browserify index.js -t [ babelify --presets [ es2015 react ] ] -t brfs -t deglobalify -t uglifyify --debug -o javascripts/main.js",
+    "start": "budo test/budo-init.js --serve javascripts/main.js --live --open -- -t [ babelify --presets [ es2015 react ] ] -t brfs -t deglobalify",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wikipathways/skilltree.git"
+  },
+  "author": "WikiPathways team",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/wikipathways/skilltree/issues"
+  },
+  "homepage": "https://github.com/wikipathways/skilltree#readme",
+  "dependencies": {
+    "file-dragger": "^1.0.1",
+    "lodash": "^4.15.0",
+    "npm-run-all": "^3.1.0",
+    "xml-query": "^1.3.2",
+    "xml-reader": "^2.1.0"
+  },
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-preset-es2015": "^6.14.0",
+    "babel-preset-react": "^6.11.1",
+    "babelify": "^7.3.0",
+    "brfs": "^1.4.3",
+    "browserify": "^13.1.0",
+    "budo": "^9.0.0",
+    "deglobalify": "^0.2.0",
+    "global": "^4.3.0",
+    "uglifyify": "^3.0.2"
+  }
+}
