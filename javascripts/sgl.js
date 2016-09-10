@@ -1,14 +1,4 @@
 $(window).load(function() {
-  var currentUserNameLC = !!window.wgUserName ?  String(window.wgUserName).toLowerCase() : window.wgUserName;
-  var sglEnabledLCUserNames = [
-    'Ariutta',
-    'AlexanderPico',
-    'Khanspers',
-    'bgood',
-  ].map(function(userName) {
-    return userName.toLowerCase();
-  });
-  if (!!window.SGL && sglEnabledLCUserNames.indexOf(currentUserNameLC) > -1) {
     var token;
     var myParam = location.search.split('token=')[1];
     if (myParam != undefined) {
@@ -17,7 +7,7 @@ $(window).load(function() {
       console.error("ScienceGameLab Error: you are not logged in with a valid token");
     }
     
-    function submitSGLActivity(type){
+    window.submitSGLActivity = function(type){
       var activity_body = {
           _t: 'activity.create',
           accounttoken: token,
@@ -32,17 +22,6 @@ $(window).load(function() {
         console.log('SGL response');
         console.log(response);
       });
+
     }
-    
-    var editorOpenState = false;
-    $('#pvjs-container').bind('DOMSubtreeModified', function(e) {
-      var annotationElement = $('.annotation.ui-draggable');
-      var updatedEditorOpenState = annotationElement.hasClass('editor-open');
-      if (editorOpenState && !updatedEditorOpenState) {
-        console.log('Sending update to SGL');
-        submitSGLActivity('easy');
-      }
-      editorOpenState = updatedEditorOpenState;
-    });
-  }
 });
