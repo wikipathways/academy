@@ -39,6 +39,9 @@ export default function init(selector) {
       var passes = validate(expected, actual);
       status.textContent = passes ? 'Congratulations! Your input is correct.' :
         'Oops, that does\'t look quite right. Please try again.';
+      if (passes){
+	submitSGLActivity('easy');
+      }
     };
     reader.readAsText(file);
   });
