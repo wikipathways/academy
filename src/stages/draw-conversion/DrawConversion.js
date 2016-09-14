@@ -1,5 +1,6 @@
 // DrawConversion.js
 import React from 'react';
+import Checker from '../../Checker';
 
 class DrawConversion extends React.Component {
   render() {
@@ -21,6 +22,7 @@ class DrawConversion extends React.Component {
 
               <br />
               <br />
+              <Checker></Checker>
               <p>  
                 <button className="file-upload">Upload GPML</button>
               </p>
