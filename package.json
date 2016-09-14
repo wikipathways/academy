@@ -9,11 +9,6 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "scripts1": {
-    "build": "browserify index.js -t [ babelify --presets [ es2015 react ] ] -t brfs -t deglobalify -t uglifyify --debug -o javascripts/main.js",
-    "start": "budo test/budo-init.js --serve javascripts/main.js --live --open -- -t [ babelify --presets [ es2015 react ] ] -t brfs -t deglobalify",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/wikipathways/skilltree.git"
