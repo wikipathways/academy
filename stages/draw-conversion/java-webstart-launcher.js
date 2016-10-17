@@ -10,9 +10,9 @@ $(function() {
   var dir = location.href.substring(0, location.href.lastIndexOf('/')+1);
   var url = dir + '/WP4v88153.jnlp';
 
-  deployJava.launchWebStartApplication(url);
+  deployJava.createWebStartLaunchButton(url, '1.6.0');
 
   $('#edit').click(function() {
-    deployJava.createWebStartLaunchButton(url, '1.6.0');
+    deployJava.launchWebStartApplication(url);
   });
 });
