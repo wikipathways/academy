@@ -46,12 +46,16 @@
           <p>Run the sandbox pathway using PathVisio via JNLP by clicking one of the buttons below:
           </p>
 
-          <form method="get" action="http://rcbranch.wikipathways.org/wpi/extensions/PathwayViewer/pathway-jnlp-generator.php?identifier=WP543&version=70481">
-            <button id="edit" type="submit">Download editor for WP4 version 88153</button>
-          </form>
+          <button id="edit" type="submit">Download Editor</button>
 
       </div>
     </div>
         <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script type="text/javascript">
+          $("#edit").click(function() {
+            // server must set Content-Disposition: attachment
+            window.location = 'http://rcbranch.wikipathways.org/wpi/extensions/PathwayViewer/pathway-jnlp-generator.php?identifier=WP4&version=88153';
+          });
+        </script>
   </body>
 </html>
