@@ -32,35 +32,39 @@
           <h1>
             <a id="intro" class="anchor" href="#intro" aria-hidden="true">
               <span aria-hidden="true" class="octicon octicon-link">
-                Download editor and open it to start editing pathway WP4 version 88153.
+                SGL/WikiPathways
               </span>
             </a>
           </h1>
 
           <h2>Background</h2>
 
-          <p>Lorem ipsus dolor.
+          <p>
+            Editing pathway diagrams is a key step in your training to become a pathway curator.
           </p>
 
           <h2>Challenge #1</h2>
-          <p>Run the sandbox pathway using PathVisio via JNLP by clicking one of the buttons below:
+          <p>
+            To complete this challenge, click one of the "Download Challenge" buttons below. You will receive your challenge as a file named "challenge1". Open it to see your control panel. Inside your control panel, move one of the boxes. Congratulations! You've edited a pathway.
           </p>
 
           <!-- No JS required for this one. Just uses form and button. -->
-          <form method="get" action="http://rcbranch.wikipathways.org/wpi/extensions/PathwayViewer/pathway-jnlp.php?identifier=WP4&version=88153">
-            <button id="edit" type="submit">Download Editor 1</button>
+          <form method="get" action="http://rcbranch.wikipathways.org/wpi/extensions/PathwayViewer/pathway-jnlp.php?identifier=WP4&version=88153&filename=challenge1">
+            <button id="edit1" type="submit">Download Challenge</button>
+            <label>(No JS required)</label>
           </form>
 
-          <!-- The JS below is required for this one. -->
-          <button id="edit" type="submit">Download Editor 2</button>
+          <!-- The JS code at the bottom is required for this one. -->
+          <button id="edit2" type="submit">Download Challenge</button>
+          <label>(JS is required)</label>
 
       </div>
     </div>
         <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script type="text/javascript">
-          $("#edit").click(function() {
+          $("#edit2").click(function() {
             // server must set Content-Disposition: attachment
-            window.location = 'http://rcbranch.wikipathways.org/wpi/extensions/PathwayViewer/pathway-jnlp.php?identifier=WP4&version=88153';
+            window.location = 'http://rcbranch.wikipathways.org/wpi/extensions/PathwayViewer/pathway-jnlp.php?identifier=WP4&version=88153&filename=challenge1';
           });
         </script>
   </body>
