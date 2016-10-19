@@ -49,8 +49,11 @@
           </p>
 
           <!-- No JS required for this one. Just uses form and button. -->
-          <form method="get" action="http://rcbranch.wikipathways.org/wpi/extensions/PathwayViewer/pathway-jnlp.php?identifier=WP4&version=88153&filename=challenge1">
+          <form method="get" action="http://rcbranch.wikipathways.org/wpi/extensions/PathwayViewer/pathway-jnlp.php">
             <button id="edit1" type="submit">Download Challenge</button>
+            <input type="hidden" name="identifier" value="WP4" />             
+            <input type="hidden" name="version" value="88153" />             
+            <input type="hidden" name="filename" value="challenge1" />             
             <label>(No JS required)</label>
           </form>
 
