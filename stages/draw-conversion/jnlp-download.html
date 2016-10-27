@@ -9,6 +9,11 @@
     <link rel="stylesheet" type="text/css" href="../../stylesheets/github-light.css" media="screen">
     <link rel="stylesheet" type="text/css" href="../../stylesheets/print.css" media="print">
 
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -45,30 +50,67 @@
 
           <h2>Your Mission</h2>
           <p>
-            To complete this challenge, click one of the "Download Challenge" buttons below. You will receive your challenge as a file named "challenge1". Open it to see your control panel. Inside your control panel, move one of the boxes. Congratulations! You've edited a pathway.
+            To complete this challenge, click the "Get Challenge" button below. You will receive your challenge as a file named "challenge1". Open it to see your control panel. Inside your control panel, move one of the boxes. Congratulations! You've edited a pathway.
           </p>
 
-          <!-- No JS required for this one. Just uses form and button. -->
-          <form method="get" action="http://rcbranch.wikipathways.org/wpi/extensions/PathwayViewer/pathway-jnlp.php">
-            <button id="edit1" type="submit">Download Challenge</button>
-            <input type="hidden" name="identifier" value="WP4" />             
-            <input type="hidden" name="version" value="88153" />             
-            <input type="hidden" name="filename" value="challenge1" />             
-            <label>(No JS required)</label>
-          </form>
+          <button id="download-from-page" type="button" class="btn btn-primary">Get Challenge</button>
 
-          <!-- The JS code at the bottom is required for this one. -->
-          <button id="edit2" type="submit">Download Challenge</button>
-          <label>(JS is required)</label>
+          <!-- Button trigger modal -->
+          <button id="launch-modal" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+            Get Challenge
+          </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="myModalLabel">How To Run Challenge</h4>
+                </div>
+                <div class="modal-body">
+                  <img src="./jnlp-instructions.png">
+                </div>
+                <div class="modal-footer">
+                  <label><input type="checkbox" id="dont-show-instructions" value="first_checkbox"> Don't show instructions again</label><br>
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                  <button id="download-from-modal" type="button" class="btn btn-primary" data-dismiss="modal">Download</button>
+                </div>
+              </div>
+            </div>
+          </div>
 
       </div>
     </div>
         <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
         <script type="text/javascript">
-          $("#edit2").click(function() {
-            // server must set Content-Disposition: attachment
-            window.location = 'http://rcbranch.wikipathways.org/wpi/extensions/PathwayViewer/pathway-jnlp.php?identifier=WP4&version=88153&filename=challenge1';
-          });
+          function getShowInstructions() {
+            var showInstructions = localStorage.getItem('showChallenge1Instructions') === 'false' ? false : true;
+            if (showInstructions) {
+              $('#download-from-page').hide();
+              $('#launch-modal').show();
+            } else {
+              $('#launch-modal').hide();
+              $('#download-from-page').show();
+            }
+            return showInstructions;
+          }
+          function setDownloadButton() {
+            var downloadButton = getShowInstructions() ? $('#download-from-modal') : $('#download-from-page');
+            downloadButton.click(function() {
+              if ($('#dont-show-instructions').is(':checked')) {
+                localStorage.setItem('showChallenge1Instructions', 'false');
+              }
+              // server must set Content-Disposition: attachment
+              window.location = 'http://rcbranch.wikipathways.org/wpi/extensions/PathwayViewer/pathway-jnlp.php?identifier=WP4&version=88153&filename=challenge1';
+              getShowInstructions();
+              setDownloadButton();
+            });
+          }
+          setDownloadButton();
         </script>
   </body>
 </html>
