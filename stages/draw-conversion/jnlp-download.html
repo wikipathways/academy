@@ -66,13 +66,13 @@
               <div class="modal-content">
                 <div class="modal-header">
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                  <h4 class="modal-title" id="myModalLabel">How To Run Challenge</h4>
+                  <h4 class="modal-title" id="myModalLabel"></h4>
                 </div>
                 <div class="modal-body">
                   <img src="./jnlp-instructions.png">
                 </div>
                 <div class="modal-footer">
-                  <label><input type="checkbox" id="dont-show-instructions" value="first_checkbox"> Don't show instructions again</label><br>
+                  <label><input type="checkbox" id="dont-show-instructions" value="first_checkbox"> Don't show instructions again</label>
                   <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
                   <button id="download-from-modal" type="button" class="btn btn-primary" data-dismiss="modal">Download</button>
                 </div>
@@ -88,7 +88,7 @@
 
         <script type="text/javascript">
           function getShowInstructions() {
-            var showInstructions = localStorage.getItem('showChallenge1Instructions') === 'false' ? false : true;
+            var showInstructions = localStorage.getItem('showChallengeInstructions') === 'false' ? false : true;
             if (showInstructions) {
               $('#download-from-page').hide();
               $('#launch-modal').show();
@@ -102,7 +102,7 @@
             var downloadButton = getShowInstructions() ? $('#download-from-modal') : $('#download-from-page');
             downloadButton.click(function() {
               if ($('#dont-show-instructions').is(':checked')) {
-                localStorage.setItem('showChallenge1Instructions', 'false');
+                localStorage.setItem('showChallengeInstructions', 'false');
               }
               // server must set Content-Disposition: attachment
               window.location = 'http://rcbranch.wikipathways.org/wpi/extensions/PathwayViewer/pathway-jnlp.php?identifier=WP4&version=88153&filename=challenge1';
