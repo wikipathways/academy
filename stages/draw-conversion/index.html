@@ -35,14 +35,43 @@
 
 <p>The conversion of one metabolite into another comprises the fundamental biological process of <a href="https://en.wikipedia.org/wiki/Metabolism">metabolism</a>. Often catalyzed by enzymes and chained together in a series, each conversion reaction involves a change in the chemical structure of a metabolite or small molecule. Conversion reactions are thus drawn as two metabolites and a mim-conversion interaction, pointing from the subtrate to the product.
 </p>
+          
+<h2>Your Mission</h2>
+<p>Model the conversion reaction depicted in this research article figure.</p>
+<ul>
+<li>To complete this challenge, click the "Launch Editor" button below. You will receive your challenge as a file named "challenge1.jnlp". 
+  Open it to see your control panel.</li>
+  <li>Inside your control panel, move one of the boxes. Congratulations! You've edited a pathway.</li>
+  <li>When you have completed the model, save it under <b>File > Save</b>.</li>
+  <li>Upload your completed challenge below.</li>
+</ul>
+          <button id="download-from-page" type="button" class="btn btn-primary">Launch Editor</button>
 
-<h2>Challenge #1</h2>
-<p>Model the conversion reaction depicted in this research article figure.
-</p>
-<img src="draw-conversion_cropped.png">
-<br />
-<a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC5009323/">Hill et al., Modeling biochemical pathways in the gene ontology. Database (Oxford). Sep 2016.</a>
-<br />
+          <!-- Button trigger modal -->
+          <button id="launch-modal" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+            Launch Editor
+          </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="myModalLabel"></h4>
+                </div>
+                <div class="modal-body">
+                  <img src="./jnlp-instructions.png">
+                </div>
+                <div class="modal-footer">
+                  <label><input type="checkbox" id="dont-show-instructions" value="first_checkbox"> Don't show instructions again </label>
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                  <button id="download-from-modal" type="button" class="btn btn-primary" data-dismiss="modal">Download</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
 <p>  
 <button class="file-upload"><input type="file" class="file-input">Upload GPML</button>
 </p>
