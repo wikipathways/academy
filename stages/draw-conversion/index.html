@@ -71,7 +71,39 @@
               </div>
             </div>
           </div>
-          
+      </div>
+    </div>
+
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+      function getShowInstructions() {
+        var showInstructions = localStorage.getItem('showChallengeInstructions') === 'false' ? false : true;
+        if (showInstructions) {
+          $('#download-from-page').hide();
+          $('#launch-modal').show();
+        } else {
+          $('#launch-modal').hide();
+          $('#download-from-page').show();
+        }
+        return showInstructions;
+      }
+      function setDownloadButton() {
+        var downloadButton = getShowInstructions() ? $('#download-from-modal') : $('#download-from-page');
+        downloadButton.click(function() {
+          if ($('#dont-show-instructions').is(':checked')) {
+            localStorage.setItem('showChallengeInstructions', 'false');
+          }
+          // server must set Content-Disposition: attachment
+          window.location = 'http://rcbranch.wikipathways.org/wpi/extensions/PathwayViewer/pathway-jnlp.php?identifier=WP4&version=88153&filename=challenge1';
+          getShowInstructions();
+          setDownloadButton();
+        });
+      }
+      setDownloadButton();
+    </script>      
 <p>  
 <button class="file-upload"><input type="file" class="file-input">Upload GPML</button>
 </p>
