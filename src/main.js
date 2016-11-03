@@ -28,8 +28,10 @@ export default function init(selector) {
 
   const status = document.createElement('p');
   status.setAttribute('id', 'status');
+  //status.style.['pointer-events'] = 'none';
+  status.style.pointerEvents = 'none';
   status.textContent = 'Drag and drop GPML file into target above.';
-  node.appendChild(status);
+  holder.appendChild(status);
 
   var emitter = FileDragger(holder);
   emitter.on('file', function (file) {
@@ -40,7 +42,7 @@ export default function init(selector) {
       status.textContent = passes ? 'Congratulations! Your input is correct.' :
         'Oops, that does\'t look quite right. Please try again.';
       if (passes){
-	submitSGLActivity('easy');
+        window.submitSGLActivity('easy');
       }
     };
     reader.readAsText(file);
