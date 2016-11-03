@@ -28,9 +28,12 @@ export default function init(selector) {
 
   const status = document.createElement('p');
   status.setAttribute('id', 'status');
-  //status.style.['pointer-events'] = 'none';
   status.style.pointerEvents = 'none';
-  status.textContent = 'Drag and drop GPML file into target above.';
+  status.style.position = 'relative';
+  status.style.top = '50%';
+  status.style.transform = 'translateY(-50%)';
+  status.style.textAlign = 'center';
+  status.textContent = 'Drag and drop GPML file here.';
   holder.appendChild(status);
 
   var emitter = FileDragger(holder);
