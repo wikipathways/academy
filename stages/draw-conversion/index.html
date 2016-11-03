@@ -9,12 +9,17 @@
     <link rel="stylesheet" type="text/css" href="../../stylesheets/github-light.css" media="screen">
     <link rel="stylesheet" type="text/css" href="../../stylesheets/print.css" media="print">
 
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
     <title>Skill Tree For WikiPathways</title>
-  </head>
+</head>
 
   <body>
 
@@ -29,32 +34,101 @@
     <div id="content-wrapper">
       <div class="inner clearfix">
         <section id="main-content">
-<h1><a id="intro" class="anchor" href="#intro" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Draw a Conversion</h1>
+          <h1>
+            <a id="intro" class="anchor" href="#intro" aria-hidden="true">
+            <span aria-hidden="true" class="octicon octicon-link">
+            Draw a Conversion
+            </span>
+            </a>
+            </h1>
 
 <h2>Background</h2>
 
 <p>The conversion of one metabolite into another comprises the fundamental biological process of <a href="https://en.wikipedia.org/wiki/Metabolism">metabolism</a>. Often catalyzed by enzymes and chained together in a series, each conversion reaction involves a change in the chemical structure of a metabolite or small molecule. Conversion reactions are thus drawn as two metabolites and a mim-conversion interaction, pointing from the subtrate to the product.
 </p>
-
-<h2>Challenge #1</h2>
-<p>Model the conversion reaction depicted in this research article figure.
-</p>
-<img src="draw-conversion_cropped.png">
+          
+<h2>Your Mission</h2>
+<p>Model the conversion reaction depicted in this research article figure.</p>
+        <img src="draw-conversion_cropped.png">
 <br />
-<a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC5009323/">Hill et al., Modeling biochemical pathways in the gene ontology. Database (Oxford). Sep 2016.</a>
+<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4333106/">Ferraldeschi et al., Targeting the androgen receptor pathway in castration-resistant prostate cancer: progresses and prospects. Oncogene. 2015 Apr.</a>
 <br />
-<p>  
-<button class="file-upload"><input type="file" class="file-input">Upload GPML</button>
-</p>
-<p><a href="glucose-solution.png">Click for image of solution</a>.
-</p>
+<p>          
+<ul>
+<li>To complete this challenge, click the "Launch Editor" button below. You will receive your challenge as a file named "WikiPathwaysAcademy-Conversion.jnlp". 
+  Open it to see your control panel.</li>
+  <li>Inside your control panel, move one of the boxes. Congratulations! You've edited a pathway.</li>
+  <li>When you have completed the model, save it under <b>File > Save</b>.</li>
+  <li>Upload your completed challenge below.</li>
+</ul>
+</p> 
+          <button id="download-from-page" type="button" class="btn btn-primary">Launch Editor</button>
 
-      </div>
-    </div>
-        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+          <!-- Button trigger modal -->
+          <button id="launch-modal" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+            Launch Editor
+          </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="myModalLabel"></h4>
+                </div>
+                <div class="modal-body">
+                  <img src="./jnlp-instructions.png">
+                </div>
+                <div class="modal-footer">
+                  <label><input type="checkbox" id="dont-show-instructions" value="first_checkbox"> Don't show instructions again </label>
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                  <button id="download-from-modal" type="button" class="btn btn-primary" data-dismiss="modal">Download</button>
+                </div>
+              </div>
+            </div>
+          </div>  
+
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+      function getShowInstructions() {
+        var showInstructions = localStorage.getItem('showChallengeInstructions') === 'false' ? false : true;
+        if (showInstructions) {
+          $('#download-from-page').hide();
+          $('#launch-modal').show();
+        } else {
+          $('#launch-modal').hide();
+          $('#download-from-page').show();
+        }
+        return showInstructions;
+      }
+      function setDownloadButton() {
+        var downloadButton = getShowInstructions() ? $('#download-from-modal') : $('#download-from-page');
+        downloadButton.click(function() {
+          if ($('#dont-show-instructions').is(':checked')) {
+            localStorage.setItem('showChallengeInstructions', 'false');
+          }
+          // server must set Content-Disposition: attachment
+          window.location = 'http://rcbranch.wikipathways.org/wpi/extensions/PathwayViewer/pathway-jnlp.php?identifier=WP3900&filename=WikiPathwaysAcademy-Conversion';
+          getShowInstructions();
+          setDownloadButton();
+        });
+      }
+      setDownloadButton();
+    </script>
+    </div> 
+  </div>       
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>       
         <script type="text/javascript" src="//www.sciencegamelab.com/developer/unittest/js/sciapi.js"></script>
         <script type="text/javascript" src="../../javascripts/sgl-init.js"></script>
         <script type="text/javascript" src="../../javascripts/sgl.js"></script>
         <script type="text/javascript" src="../../javascripts/main.js"></script>
+
+    <br>  
+    <br> 
+    <p><a href="glucose-solution.png">Click for image of solution</a></p>
   </body>
 </html>
