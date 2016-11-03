@@ -1,3 +1,6 @@
 import init from '../src/main.js';
 
-init();
+window.wpAcademy = {
+  init: init,
+};
+

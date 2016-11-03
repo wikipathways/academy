@@ -36,32 +36,32 @@
         <section id="main-content">
           <h1>
             <a id="intro" class="anchor" href="#intro" aria-hidden="true">
-            <span aria-hidden="true" class="octicon octicon-link">
-            Draw a Conversion
-            </span>
+              <span aria-hidden="true" class="octicon octicon-link">
+                Draw a Conversion
+              </span>
             </a>
-            </h1>
+          </h1>
 
-<h2>Background</h2>
+          <h2>Background</h2>
 
-<p>The conversion of one metabolite into another comprises the fundamental biological process of <a href="https://en.wikipedia.org/wiki/Metabolism">metabolism</a>. Often catalyzed by enzymes and chained together in a series, each conversion reaction involves a change in the chemical structure of a metabolite or small molecule. Conversion reactions are thus drawn as two metabolites and a mim-conversion interaction, pointing from the subtrate to the product.
-</p>
-          
-<h2>Your Mission</h2>
-<p>Model the conversion reaction depicted in this research article figure.</p>
-        <img src="draw-conversion_cropped.png">
-<br />
-<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4333106/">Ferraldeschi et al., Targeting the androgen receptor pathway in castration-resistant prostate cancer: progresses and prospects. Oncogene. 2015 Apr.</a>
-<br />
-<p>          
-<ul>
-<li>To complete this challenge, click the "Launch Editor" button below. You will receive your challenge as a file named "WikiPathwaysAcademy-Conversion.jnlp". 
-  Open it to see your control panel.</li>
-  <li>Inside your control panel, move one of the boxes. Congratulations! You've edited a pathway.</li>
-  <li>When you have completed the model, save it under <b>File > Save</b>.</li>
-  <li>Upload your completed challenge below.</li>
-</ul>
-</p> 
+          <p>The conversion of one metabolite into another comprises the fundamental biological process of <a href="https://en.wikipedia.org/wiki/Metabolism">metabolism</a>. Often catalyzed by enzymes and chained together in a series, each conversion reaction involves a change in the chemical structure of a metabolite or small molecule. Conversion reactions are thus drawn as two metabolites and a mim-conversion interaction, pointing from the subtrate to the product.
+          </p>
+
+          <h2>Your Mission</h2>
+          <p>Model the conversion reaction depicted in this research article figure.</p>
+          <img src="draw-conversion_cropped.png">
+          <br />
+          <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4333106/">Ferraldeschi et al., Targeting the androgen receptor pathway in castration-resistant prostate cancer: progresses and prospects. Oncogene. 2015 Apr.</a>
+          <br />
+          <p>          
+            <ul>
+              <li>To complete this challenge, click the "Launch Editor" button below. You will receive your challenge as a file named "WikiPathwaysAcademy-Conversion.jnlp". 
+                Open it to see your control panel.</li>
+              <li>Inside your control panel, move one of the boxes. Congratulations! You've edited a pathway.</li>
+              <li>When you have completed the model, save it under <b>File > Save</b>.</li>
+              <li>Upload your completed challenge below.</li>
+            </ul>
+          </p> 
           <button id="download-from-page" type="button" class="btn btn-primary">Launch Editor</button>
 
           <!-- Button trigger modal -->
@@ -89,9 +89,21 @@
             </div>
           </div>  
 
+          <div id="upload-target"></div>  
+
+          <br>  
+          <br> 
+          <p><a href="glucose-solution.png">Click for image of solution</a></p>
+      </div> 
+    </div>       
+
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//www.sciencegamelab.com/developer/unittest/js/sciapi.js"></script>
+    <script type="text/javascript" src="../../javascripts/sgl-init.js"></script>
+    <script type="text/javascript" src="../../javascripts/sgl.js"></script>
+    <script type="text/javascript" src="../../javascripts/main.js"></script>
 
     <script type="text/javascript">
       function getShowInstructions() {
@@ -118,17 +130,33 @@
         });
       }
       setDownloadButton();
-    </script>
-    </div> 
-  </div>       
-        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>       
-        <script type="text/javascript" src="//www.sciencegamelab.com/developer/unittest/js/sciapi.js"></script>
-        <script type="text/javascript" src="../../javascripts/sgl-init.js"></script>
-        <script type="text/javascript" src="../../javascripts/sgl.js"></script>
-        <script type="text/javascript" src="../../javascripts/main.js"></script>
 
-    <br>  
-    <br> 
-    <p><a href="glucose-solution.png">Click for image of solution</a></p>
+      window.wpAcademy.init('#upload-target', function(actualStr) {
+          var actualDoc = window.xmlReader.parseSync(actualStr);
+
+          // DataNode count
+          return window.xmlQuery(actualDoc).find('DataNode').map(function(node) { return node.name }).length === 2 &&
+            window.xmlQuery(actualDoc).find('DataNode').map(function(DataNodeEl) {
+              return DataNodeEl.attributes.hasOwnProperty('TextLabel') && DataNodeEl.attributes.hasOwnProperty('GraphId');
+            })
+            .reduce(function(acc, pass) {
+              return acc && pass;
+            }) &&
+            window.xmlQuery(actualDoc).find('Interaction').length === 1 &&
+            window.xmlQuery(actualDoc).find('Interaction').map(function(InteractionEl) {
+              var points = window.xmlQuery(InteractionEl).find('Point');
+              return points.length === 2 &&
+                points.map(function(point) {
+                  return point.attributes.hasOwnProperty('GraphRef');
+                })
+                .reduce(function(acc, pass) {
+                  return acc && pass;
+                });
+            })
+            .reduce(function(acc, pass) {
+              return acc && pass;
+            });
+      });
+    </script>
   </body>
 </html>

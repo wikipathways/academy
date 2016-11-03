@@ -1,23 +1,16 @@
-const document = require('global/document');
-const fs = require('fs');
+//const document = require('global/document');
+
+const _ = require('lodash');
 const path = require('path');
-import validate from './validate';
 const FileDragger = require('file-dragger')
+const xmlReader = require('xml-reader');
+const xmlQuery = require('xml-query');
 
-const expected = fs.readFileSync(
-    path.join(__dirname, '..', 'stages', 'draw-conversion', 'glucose-solution.gpml'),
-    {encoding: 'utf8'}
-);
+window.xmlReader = xmlReader;
+window.xmlQuery = xmlQuery;
 
-export default function init(selector) {
-  let node;
-  if (!!selector) {
-    node = document.querySelector(selector);
-  } else {
-    node = document.createElement('div');
-    node.setAttribute('id', 'draw-conversion');
-    document.body.appendChild(node);
-  }
+export default function init(selector, validate) {
+  let node = document.querySelector(selector);
 
   // based on http://html5demos.com/file-api
   const holder = document.createElement('div');
@@ -40,8 +33,8 @@ export default function init(selector) {
   emitter.on('file', function (file) {
     var reader = new FileReader();
     reader.onload = function(evt) {
-      var actual = evt.srcElement.result;
-      var passes = validate(expected, actual);
+      var actualStr = evt.srcElement.result;
+      var passes = validate(actualStr);
       status.textContent = passes ? 'Congratulations! Your input is correct.' :
         'Oops, that does\'t look quite right. Please try again.';
       if (passes){
