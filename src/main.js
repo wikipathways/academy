@@ -29,12 +29,26 @@ export default function init(selector, validate) {
   status.textContent = 'Drag and drop GPML file here.';
   holder.appendChild(status);
 
+  holder.addEventListener('mouseenter', function(evt) {
+    holder.style.border = '10px solid lightgreen';
+    holder.style.backgroundColor = 'white';
+    status.style.visibility = 'hidden';
+  });
+
+  holder.addEventListener('mouseout', function(evt) {
+    holder.style.border = '10px dashed #ccc';
+    holder.style.backgroundColor = '';
+    status.style.visibility = 'visible';
+  });
+
   var emitter = FileDragger(holder);
   emitter.on('file', function (file) {
     var reader = new FileReader();
     reader.onload = function(evt) {
-      var actualStr = evt.srcElement.result;
+      const srcElement = evt.hasOwnProperty('srcElement') ? evt.srcElement : evt.target;
+      var actualStr = srcElement.result;
       var passes = validate(actualStr);
+      status.style.visibility = 'visible';
       status.textContent = passes ? 'Congratulations! Your input is correct.' :
         'Oops, that does\'t look quite right. Please try again.';
       if (passes){
