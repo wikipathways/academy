@@ -29,29 +29,152 @@
     <div id="content-wrapper">
       <div class="inner clearfix">
         <section id="main-content">
-<h1><a id="intro" class="anchor" href="#intro" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Draw a Conversion</h1>
+<h1><a id="intro" class="anchor" href="#intro" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Draw Catalysis</h1>
 
 <h2>Background</h2>
 
-<p>The conversion of one metabolite into another comprises the fundamental biological process of <a href="https://en.wikipedia.org/wiki/Metabolism">metabolism</a>. Often catalyzed by enzymes and chained together in a series, each conversion reaction involves a change in the chemical structure of a metabolite or small molecule. Conversion reactions are thus drawn as two metabolites and a mim-conversion interaction, pointing from the subtrate to the product.
+<p>Catalysis is the conversion of one entity (metabolite or protein) into another aided by a catalyst, or enzyme. 
+  A catalysis reaction involves a change in the chemical structure of a metabolite, small molecule or protein. 
+  Catalysis reactions are drawn as two data nodes (metabolites, small molecules or proteins), a third data node (enzyme) and a mim-catalysis 
+  interaction, pointing from the enzyme to an anchor on a line between the subtrate and the product.
 </p>
 
 <h2>Challenge #1</h2>
-<p>Model the conversion reaction depicted in this research article figure.
+<p>Model the catalysis reaction depicted in this research article figure.
 </p>
 <img src="Cholesterol_thumb.png">
 <br />
 <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4333106/">Ferraldeschi et al., Targeting the androgen receptor pathway in castration-resistant prostate cancer: progresses and prospects. Oncogene. 2015 Apr.</a>
 
 <br />
+          <ul>
+            <li>To complete this challenge, click the "Launch Editor" button below. You will receive your challenge as a file named "WikiPathwaysAcademy-Catalysis.jnlp". 
+              Open it to see your control panel.</li>
+            <li>Perform the challenge tasks:</li>
+            <details>
+              <ul>
+                <li>Select Metabolite (“Met”) from the Data Node palette in the Objects tab</li>
+                <li>Click on canvas to place the metabolite node</li>
+                <li>Double-click on node to open its properties</li>
+                <li>Search for “cholesterol”; Choose any of the entries that just say “cholesterol”; Click OK</li>
+                <li>Repeat these steps to make “pregnenolone” metabolite node</li>
+                <li>(Optional) Resize nodes or update node labels</li>
+                <li>Select Gene (“Gene”) from the Data Node palette in the Objects tab</li>
+                <li>Click on canvas to place the gene node</li>
+                <li>Double-click on node to open its properties</li>
+                <li>Search for “CYP11A1”; Choose any of the entries that just say “CYP11A1”; Click OK</li>
+                <li>Select the plain arrow from the Objects tab</li>
+                <li>Drag and drop anywhere on canvas to create the interaction</li>
+                <li>Drag each end of the interaction over a target area on each node; Note source vs target</li>
+                <li>Right-click on the arrow and select “Add anchor”</li>
+                <li>Select the Catalysis arrow from the MIM interactions palette in the Objects tab</li>
+                <li>Drag and drop anywhere on canvas to create the interaction</li>
+                <li>Drag the plain end (start) of the interaction over a target area on the enzyme node</li>
+                <li>Drag the catalysis end (end) of the interaction over the anchor on the conversion line</li>
+                <li>(Optional) Align nodes using toolbar actions</li>
+                <li>Done!</li>
+              </ul>
+            </details>
+            <li>When you have completed the challenge, save your work as a GPML file under <b>File > Save As</b>.</li>
+            <li>Drag-n-drop the GPML file below to submit.</li>
+          </ul>
+        <button id="download-from-page" type="button" class="btn btn-primary">Launch Editor</button>
+          
+         <!-- Button trigger modal -->
+          <button id="launch-modal" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+            Launch Editor
+          </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="myModalLabel"></h4>
+                </div>
+                <div class="modal-body">
+                  <img src="../../images/jnlp-instructions.png">
+                </div>
+                <div class="modal-footer">
+                  <label><input type="checkbox" id="dont-show-instructions" value="first_checkbox"> Don't show instructions again </label>
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                  <button id="download-from-modal" type="button" class="btn btn-primary" data-dismiss="modal">Download</button>
+                </div>
+              </div>
+            </div>
+          </div>  
+
+          <div id="upload-target"></div>  
+
+
 <br />
-<p>  
-<button class="file-upload"><input type="file" class="file-input">Upload GPML</button>
-</p>
 <p><a href="glucose-solution.png">Click for image of solution</a>.
 </p>
 
       </div>
     </div>
+      
+      <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//www.sciencegamelab.com/developer/unittest/js/sciapi.js"></script>
+    <script type="text/javascript" src="../../javascripts/sgl-init.js"></script>
+    <script type="text/javascript" src="../../javascripts/sgl.js"></script>
+    <script type="text/javascript" src="../../javascripts/main.js"></script>
+
+    <script type="text/javascript">
+      function getShowInstructions() {
+        var showInstructions = localStorage.getItem('showChallengeInstructions') === 'false' ? false : true;
+        if (showInstructions) {
+          $('#download-from-page').hide();
+          $('#launch-modal').show();
+        } else {
+          $('#launch-modal').hide();
+          $('#download-from-page').show();
+        }
+        return showInstructions;
+      }
+      function setDownloadButton() {
+        var downloadButton = getShowInstructions() ? $('#download-from-modal') : $('#download-from-page');
+        downloadButton.click(function() {
+          if ($('#dont-show-instructions').is(':checked')) {
+            localStorage.setItem('showChallengeInstructions', 'false');
+          }
+          // server must set Content-Disposition: attachment
+          window.location = 'http://rcbranch.wikipathways.org/wpi/extensions/PathwayViewer/pathway-jnlp.php?identifier=WP3900&filename=WikiPathwaysAcademy-Catalysis';
+          getShowInstructions();
+          setDownloadButton();
+        });
+      }
+      setDownloadButton();
+
+      window.wpAcademy.init('#upload-target', function(actualStr) {
+          var actualDoc = window.xmlReader.parseSync(actualStr);
+
+          // DataNode count
+          return window.xmlQuery(actualDoc).find('DataNode').map(function(node) { return node.name }).length === 2 &&
+            window.xmlQuery(actualDoc).find('DataNode').map(function(DataNodeEl) {
+              return DataNodeEl.attributes.hasOwnProperty('TextLabel') && DataNodeEl.attributes.hasOwnProperty('GraphId');
+            })
+            .reduce(function(acc, pass) {
+              return acc && pass;
+            }) &&
+            window.xmlQuery(actualDoc).find('Interaction').length === 1 &&
+            window.xmlQuery(actualDoc).find('Interaction').map(function(InteractionEl) {
+              var points = window.xmlQuery(InteractionEl).find('Point');
+              return points.length === 2 &&
+                points.map(function(point) {
+                  return point.attributes.hasOwnProperty('GraphRef');
+                })
+                .reduce(function(acc, pass) {
+                  return acc && pass;
+                });
+            })
+            .reduce(function(acc, pass) {
+              return acc && pass;
+            });
+      });
+    </script>
   </body>
 </html>
