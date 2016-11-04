@@ -7,12 +7,12 @@ $(window).load(function() {
       console.error("ScienceGameLab Error: you are not logged in with a valid token");
     }
     
-    window.submitSGLActivity = function(type){
+    window.submitSGLActivity = function(action){
       var activity_body = {
           _t: 'activity.create',
           accounttoken: token,
           details: { gameId: '5751ed90e4b050b536ba7a03' },
-          activity: type,
+          name: action,
           time: (new Date()).toTimeString()
       };
       window.SGL.create_activity(activity_body, function(err, response) {
