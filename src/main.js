@@ -52,7 +52,7 @@ export default function init(selector, validate) {
       status.textContent = passes ? 'Congratulations! Your input is correct.' :
         'Oops, that does\'t look quite right. Please try again.';
       if (passes){
-        window.submitSGLActivity('easy');
+        window.submitSGLActivity('demo-101');
       }
     };
     reader.readAsText(file);
