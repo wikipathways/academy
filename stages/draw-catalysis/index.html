@@ -8,19 +8,18 @@
     <link rel="stylesheet" type="text/css" href="../../stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="../../stylesheets/github-light.css" media="screen">
     <link rel="stylesheet" type="text/css" href="../../stylesheets/print.css" media="print">
-    
+
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- Optional theme -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
 
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
     <title>Skill Tree For WikiPathways</title>
-  </head>
+</head>
 
   <body>
 
@@ -28,7 +27,7 @@
       <div class="inner">
         <h1>Skill Tree</h1>
         <h2>Organized training examples for new WikiPathways authors</h2>
-        <a href="https://wikipathways.github.io/skilltree/" class="button"><small>Return to</small>Overview</a>
+        <a href="../../" class="button"><small>Return to</small>Overview</a>
       </div>
     </header>
 
@@ -38,37 +37,34 @@
           <h1>
             <a id="intro" class="anchor" href="#intro" aria-hidden="true">
               <span aria-hidden="true" class="octicon octicon-link">
-              Draw Catalysis
+                Draw Catalysis
               </span>
             </a>
           </h1>
 
-<h2>Background</h2>
+          <h2>Background</h2>
 
-<p>Catalysis is the conversion of one entity (metabolite or protein) into another aided by a catalyst, or enzyme. 
+          <p>Catalysis is the conversion of one entity (metabolite or protein) into another aided by a catalyst, or enzyme. 
   A catalysis reaction involves a change in the chemical structure of a metabolite, small molecule or protein. 
   Catalysis reactions are drawn as two data nodes (metabolites, small molecules or proteins), a third data node (enzyme) and a mim-catalysis 
-  interaction, pointing from the enzyme to an anchor on a line between the subtrate and the product.
-</p>
+  interaction, pointing from the enzyme to an anchor on a line between the subtrate and the product.</p>
 
-<h2>Your Mission</h2>
-<p>Model the catalysis reaction depicted in this research article figure.
-</p>
-<img src="Cholesterol_thumb.png">
-<br>
-<br>
-<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4333106/">Ferraldeschi et al., Targeting the androgen receptor pathway in castration-resistant prostate cancer: progresses and prospects. Oncogene. 2015 Apr.</a>
-
-<br>
-<br>
+          <h2>Your Mission</h2>
+          <p>Model the conversion reaction depicted in this research article figure.</p>
+          <img src="Cholesterol_thumb.png">
+          <br>
+          <br>
+          <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4333106/">Ferraldeschi et al., Targeting the androgen receptor pathway in castration-resistant prostate cancer: progresses and prospects. Oncogene. 2015 Apr.</a>
+          <br>
+          <br>
+          
           <ul>
-            <li>To complete this challenge, click the "Launch Editor" button below. You will receive your challenge as a file named "WikiPathwaysAcademy-Catalysis.jnlp". 
+            <li>To complete this challenge, click the "Launch Editor" button below. You will receive your challenge as a file named "WikiPathwaysAcademy-Conversion.jnlp". 
               Open it to see your control panel.</li>
             <li>Perform the challenge tasks:</li>
             <details>
-               <summary>Show/Hide</summary>
-              <ul>
-                <li>Select Metabolite (“Met”) from the Data Node palette in the Objects tab</li>
+            <summary>Show/Hide</summary>
+              <li>Select Metabolite (“Met”) from the Data Node palette in the Objects tab</li>
                 <li>Click on canvas to place the metabolite node</li>
                 <li>Double-click on node to open its properties</li>
                 <li>Search for “cholesterol”; Choose any of the entries that just say “cholesterol”; Click OK</li>
@@ -93,11 +89,9 @@
             <li>When you have completed the challenge, save your work as a GPML file under <b>File > Save As</b>.</li>
             <li>Drag-n-drop the GPML file below to submit.</li>
           </ul>
-        <button id="download-from-page" type="button" class="btn btn-primary">Launch Editor</button>
-          
-         <!-- Button trigger modal -->
           <button id="download-from-page" type="button" class="btn btn-primary">Launch Editor</button>
 
+          <!-- Button trigger modal -->
           <button id="launch-modal" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
             Launch Editor
           </button>
@@ -124,14 +118,13 @@
 
           <div id="upload-target"></div>  
 
+          <br>  
+          <br> 
+          <p><a href="Catalysis-solution.png">Click for image of solution</a></p>
+      </div> 
+    </div>       
 
-<br>  
-<br>
-<p><a href="Catalysis-solution.png">Click for image of solution</a>.</p>
-      </div>
-    </div>
-      
-          <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://www.sciencegamelab.org/js/sciapi.js"></script>
@@ -164,8 +157,10 @@
         });
       }
       setDownloadButton();
+
       window.wpAcademy.init('#upload-target', function(actualStr) {
           var actualDoc = window.xmlReader.parseSync(actualStr);
+
           // DataNode count
           return window.xmlQuery(actualDoc).find('DataNode').map(function(node) { return node.name }).length === 2 &&
             window.xmlQuery(actualDoc).find('DataNode').map(function(DataNodeEl) {
