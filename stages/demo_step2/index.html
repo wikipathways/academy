@@ -104,7 +104,7 @@
             </div>
           </div>  
 
-          <div id="upload-target"></div>  
+          <div id="upload-target-container"></div>  
 
           <br>  
           <br> 
@@ -145,8 +145,9 @@
         });
       }
       setDownloadButton();
-      window.wpAcademy.init('#upload-target', function(actualStr) {
-          var actualDoc = window.xmlReader.parseSync(actualStr);
+      window.wpAcademy.init({
+        uploadTargetContainerSelector: '#upload-target-container',
+        validate: function(actualStr) {          var actualDoc = window.xmlReader.parseSync(actualStr);
           // DataNode count
           return window.xmlQuery(actualDoc).find('DataNode').map(function(node) { return node.name }).length === 2 &&
             window.xmlQuery(actualDoc).find('DataNode').map(function(DataNodeEl) {
@@ -169,6 +170,9 @@
             .reduce(function(acc, pass) {
               return acc && pass;
             });
+           },
+         action: 'demo-101',
+         points: 5
       });
     </script>
   </body>
