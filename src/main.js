@@ -29,13 +29,13 @@ export default function init({uploadTargetContainerSelector, validate, action, s
   status.textContent = 'Drag and drop GPML file here.';
   uploadTarget.appendChild(status);
 
-  uploadTarget.addEventListener('mouseenter', function(evt) {
+  uploadTarget.addEventListener('dragover', function(evt) {
     uploadTarget.style.border = '10px solid lightgreen';
     uploadTarget.style.backgroundColor = 'white';
     status.style.visibility = 'hidden';
   });
 
-  uploadTarget.addEventListener('mouseout', function(evt) {
+  uploadTarget.addEventListener('dragleave', function(evt) {
     uploadTarget.style.border = '10px dashed #ccc';
     uploadTarget.style.backgroundColor = '';
     status.style.visibility = 'visible';
