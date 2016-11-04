@@ -1,1 +1,1 @@
-SGL.init("http://www.sciencegamelab.com:1492");
+SGL.init("https://www.sciencegamelab.com:1492");
