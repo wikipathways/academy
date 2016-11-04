@@ -18,7 +18,7 @@ window.$(window).load(function() {
           _t:'msg',
           body:{
             _t:'leaderboard.post',
-            accounttoken: game.tokenId,
+            accounttoken: game.token,
             gametoken: game.gameId,
             gamescore: '' + score
           },
