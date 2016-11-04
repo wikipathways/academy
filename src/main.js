@@ -9,15 +9,15 @@ const xmlQuery = require('xml-query');
 window.xmlReader = xmlReader;
 window.xmlQuery = xmlQuery;
 
-export default function init(selector, validate) {
-  let node = document.querySelector(selector);
+export default function init({uploadTargetContainerSelector, validate, action, score}) {
+  let uploadTargetContainer = document.querySelector(uploadTargetContainerSelector);
 
   // based on http://html5demos.com/file-api
-  const holder = document.createElement('div');
-  holder.setAttribute('id', 'holder');
-  holder.setAttribute('style',
+  const uploadTarget = document.createElement('div');
+  uploadTarget.setAttribute('id', 'upload-target');
+  uploadTarget.setAttribute('style',
       'border: 10px dashed #ccc; width: 300px; height: 300px; margin: 20px auto;')
-  node.appendChild(holder);
+  uploadTargetContainer.appendChild(uploadTarget);
 
   const status = document.createElement('p');
   status.setAttribute('id', 'status');
@@ -27,21 +27,21 @@ export default function init(selector, validate) {
   status.style.transform = 'translateY(-50%)';
   status.style.textAlign = 'center';
   status.textContent = 'Drag and drop GPML file here.';
-  holder.appendChild(status);
+  uploadTarget.appendChild(status);
 
-  holder.addEventListener('mouseenter', function(evt) {
-    holder.style.border = '10px solid lightgreen';
-    holder.style.backgroundColor = 'white';
+  uploadTarget.addEventListener('mouseover', function(evt) {
+    uploadTarget.style.border = '10px solid lightgreen';
+    uploadTarget.style.backgroundColor = 'white';
     status.style.visibility = 'hidden';
   });
 
-  holder.addEventListener('mouseout', function(evt) {
-    holder.style.border = '10px dashed #ccc';
-    holder.style.backgroundColor = '';
+  uploadTarget.addEventListener('mouseout', function(evt) {
+    uploadTarget.style.border = '10px dashed #ccc';
+    uploadTarget.style.backgroundColor = '';
     status.style.visibility = 'visible';
   });
 
-  var emitter = FileDragger(holder);
+  var emitter = FileDragger(uploadTarget);
   emitter.on('file', function (file) {
     var reader = new FileReader();
     reader.onload = function(evt) {
@@ -52,7 +52,26 @@ export default function init(selector, validate) {
       status.textContent = passes ? 'Congratulations! Your input is correct.' :
         'Oops, that does\'t look quite right. Please try again.';
       if (passes){
-        window.submitSGLActivity('demo-101');
+        window.wpSGL.submitSGLActivity(action, function(err, response) {
+          // TODO does this method use the node callback style?
+          console.log('SGL submit');
+          if (err) {
+            console.log('err');
+            console.log(err);
+          }
+          console.log('response');
+          console.log(response);
+          window.wpSGL.postLeaderboard(score, function(err, response) {
+            // TODO does this method use the node callback style?
+            console.log('SGL post leaderboard');
+            if (err) {
+              console.log('err');
+              console.log(err);
+            }
+            console.log('response');
+            console.log(response);
+          });
+        });
       }
     };
     reader.readAsText(file);

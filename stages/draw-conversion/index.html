@@ -106,7 +106,7 @@
             </div>
           </div>  
 
-          <div id="upload-target"></div>  
+          <div id="upload-target-container"></div>  
 
           <br>  
           <br> 
@@ -148,7 +148,9 @@
       }
       setDownloadButton();
 
-      window.wpAcademy.init('#upload-target', function(actualStr) {
+      window.wpAcademy.init({
+        uploadTargetContainerSelector: '#upload-target-container',
+        validate: function(actualStr) {
           var actualDoc = window.xmlReader.parseSync(actualStr);
 
           // DataNode count
@@ -173,6 +175,9 @@
             .reduce(function(acc, pass) {
               return acc && pass;
             });
+        },
+        action: 'demo-101',
+        points: 5
       });
     </script>
   </body>
