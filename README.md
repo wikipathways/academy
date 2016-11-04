@@ -1,11 +1,11 @@
 WikiPathways Academy
 =========
 
-This repo holds the content for WikiPathways Academy located at http://academy.wikipathways.org.  The content includes an organized set of training tasks for new WikiPathways authors that lead to actual pathway editing tasks aimed at improving and expanding the collection of biological processess modeled at WikiPathways.
+This repo holds the content for WikiPathways Academy located at https://wikipathways.github.io/academy/.  The content includes an organized set of training tasks for new WikiPathways authors that lead to actual pathway editing tasks aimed at improving and expanding the collection of biological processess modeled at WikiPathways.
 
 How to Use
 ====
-Go to http://academy.wikipathways.org and follow the step-by-step instructions.
+Go to https://wikipathways.github.io/academy/ and follow the step-by-step instructions.
 
 
 How to Develop
