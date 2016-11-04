@@ -35,7 +35,7 @@ export default function init({uploadTargetContainerSelector, validate, action, s
     status.style.visibility = 'hidden';
   });
 
-  uploadTarget.addEventListener('mouseout', function(evt) {
+  uploadTarget.addEventListener('dragleave', function(evt) {
     uploadTarget.style.border = '10px dashed #ccc';
     uploadTarget.style.backgroundColor = '';
     status.style.visibility = 'visible';
