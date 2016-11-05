@@ -92,6 +92,7 @@
     <script type="text/javascript" src="../../javascripts/main.js"></script>
     <script type="text/javascript" src="../../javascripts/choice.js"></script>
     <script type="text/javascript">
+    window.$(window).load(function() {
     if ( window.location !== window.parent.location ) {
 	window.wpSGL.submitSGLActivity('biology-101', function(err, response) {
 		console.log('SGL submit');
@@ -113,6 +114,7 @@
 		});
 	});
     }
+    });
     </script>
   </body>
 </html>
