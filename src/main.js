@@ -49,7 +49,7 @@ export default function init({uploadTargetContainerSelector, validate, action, s
       var actualStr = srcElement.result;
       var passes = validate(actualStr);
       status.style.visibility = 'visible';
-      status.style.font = 'bold 15px';
+      status.style.fontSize = '20px';
       status.style.color = 'red';
       status.textContent = passes ? 'Congratulations!\nYour input is correct.' :
         'Oops!\nThat does\'t look quite right\nPlease try again.';
