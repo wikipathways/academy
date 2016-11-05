@@ -30,9 +30,9 @@ function showExplanation(ex){
 
 function sendSGLActivity(action){
 	console.log(action);	
-//    if ( window.location !== window.parent.location ) {
-	window.wpSGL.submitSGLActivity('biology-101', function(err, response) {
-		console.log('SGL submit');
+    if ( window.location !== window.parent.location ) {
+	window.wpSGL.submitSGLActivity(action, function(err, response) {
+		console.log('SGL submit activity');
 	 	if (err) {
 			console.log('err');
 			console.log(err);
@@ -40,8 +40,8 @@ function sendSGLActivity(action){
 		console.log('response');
 		console.log(response);
 	
-		window.wpSGL.postLeaderboard(5, function(err, response) {
-			console.log('SGL post leaderboard');
+		window.wpSGL.postLeaderboard('1', function(err, response) {
+			console.log('SGL post to leaderboard');
 			if (err) {
 				console.log('err');
 				console.log(err);
@@ -51,7 +51,7 @@ function sendSGLActivity(action){
 		});
 	});
     }
-//	}
+	}
 
 });
 
