@@ -25,9 +25,8 @@
 
     <header>
       <div class="inner">
-        <h1>Skill Tree</h1>
+        <h1>WikiPathways Academy</h1>
         <h2>Organized training examples for new WikiPathways authors</h2>
-        <a href="../../" class="button"><small>Return to</small>Overview</a>
       </div>
     </header>
 
@@ -37,7 +36,7 @@
           <h1>
             <a id="intro" class="anchor" href="#intro" aria-hidden="true">
               <span aria-hidden="true" class="octicon octicon-link">
-                SGL Demo Step 2
+                Demo: My First Pathway - Step 2
               </span>
             </a>
           </h1>
@@ -55,6 +54,7 @@
           <ul>
             <li>To complete this challenge, click the "Launch Editor" button below. You will receive your challenge as a file named "WikiPathwaysAcademy-SGL-Demo2.jnlp". 
               Open it to see your control panel.</li>
+            <li>
             <details>
              <summary>Perform the challenge tasks...</summary>
               <ul>
@@ -72,7 +72,7 @@
                 <li>Done!</li>
               </ul>
             </details>
-          
+            </li>
             <li>When you have completed the challenge, save your work as a GPML file under <b>File > Save As</b>.</li>
             <li>Drag-n-drop the GPML file below to submit.</li>
           </ul>
@@ -108,7 +108,7 @@
           <br>  
           <br> 
           <p><a href="SGL-Demo_2_answer.png">Click for image of solution</a></p>
-      </div> 
+          </div> 
     </div>       
 
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -146,7 +146,8 @@
       setDownloadButton();
       window.wpAcademy.init({
         uploadTargetContainerSelector: '#upload-target-container',
-        validate: function(actualStr) {          var actualDoc = window.xmlReader.parseSync(actualStr);
+        validate: function(actualStr) {          
+          var actualDoc = window.xmlReader.parseSync(actualStr);
           // DataNode count
           return window.xmlQuery(actualDoc).find('DataNode').map(function(node) { return node.name }).length === 2 &&
             window.xmlQuery(actualDoc).find('DataNode').map(function(DataNodeEl) {
@@ -170,7 +171,7 @@
               return acc && pass;
             });
            },
-         action: 'demo-101',
+         action: 'demo-102',
          points: 5
       });
     </script>
