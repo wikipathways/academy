@@ -49,9 +49,12 @@ export default function init({uploadTargetContainerSelector, validate, action, s
       var actualStr = srcElement.result;
       var passes = validate(actualStr);
       status.style.visibility = 'visible';
-      status.textContent = passes ? 'Congratulations! Your input is correct.' :
-        'Oops, that does\'t look quite right. Please try again.';
+      status.style.font = 'bold 150%';
+      status.style.color = 'red';
+      status.textContent = passes ? 'Congratulations!\nYour input is correct.' :
+        'Oops!\nThat does\'t look quite right\nPlease try again.';
       if (passes){
+	status.style.color='green';
         window.wpSGL.submitSGLActivity(action, function(err, response) {
           // TODO does this method use the node callback style?
           console.log('SGL submit');
