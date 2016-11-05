@@ -19,7 +19,12 @@ function(){
 	});
 
 function showExplanation(a){
-	$('#'+a).slideToggle('slow');
+	$('#'+a).slideToggle('slow', function() {
+			    $('html, body').animate({
+				    'scrollTop': $('#'+a).offset().top
+				    + $('#'+a).height()
+			    }, 'fast')
+	});
 	}
 
 });
