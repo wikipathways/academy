@@ -1,23 +1,23 @@
 {
-  "name": "skilltree",
+  "name": "academy",
   "version": "1.0.0",
-  "description": "Skill tree for WikiPathways on SGL",
-  "main": "index.js",
+  "description": "WikiPathways Academy",
+  "main": "init-upload-target.js",
   "scripts": {
-    "build": "browserify index.js -t [ babelify --presets [ es2015 react ] ] -t brfs -t deglobalify -t uglifyify --debug -o javascripts/main.js",
-    "start": "budo test/budo-init.js --serve javascripts/main.js --live --open -- -t [ babelify --presets [ es2015 react ] ] -t brfs -t deglobalify",
+    "build": "browserify init-upload-target.js -t [ babelify --presets [ es2015 react ] ] -t brfs -t deglobalify -t uglifyify --debug -o javascripts/upload-target.js",
+    "start": "budo test/budo-init.js --serve javascripts/upload-target.js --live --open -- -t [ babelify --presets [ es2015 react ] ] -t brfs -t deglobalify",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wikipathways/skilltree.git"
+    "url": "git+https://github.com/wikipathways/academy.git"
   },
   "author": "WikiPathways team",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/wikipathways/skilltree/issues"
+    "url": "https://github.com/wikipathways/academy/issues"
   },
-  "homepage": "https://github.com/wikipathways/skilltree#readme",
+  "homepage": "https://github.com/wikipathways/academy#readme",
   "dependencies": {
     "file-dragger": "^1.0.1",
     "lodash": "^4.15.0",
