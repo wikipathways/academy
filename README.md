@@ -20,4 +20,25 @@ The first time you clone the repo (and subsequent dev sessions):
 If you make changes to src/*.js, you will need to compile before committing javascripts/*.js files:
 * `npm run build`
 
+Project Structure
+----
+####Directories:
+* stages: challenge pages html and local-only content
+* stylesheets: css files 
+* images: image files 
+* javascripts: js files 
+* src: source js files to be compiled by npm using package.json
+* test: test files
+
+####Relationships:
+There are a handful of challenge types collected in the stages dir. Each type depends on a unique js solution. The diagram below depicts how each stage type relates to js files, which in turn, sometimes relate to src files that require compiling.
+
+Stage type | JS/CSS | Source to compile
+---|---|---
+multiple choice | choice.js, choice.css | 
+upload target | upload-target.js, upload-target-init.js | src/upload-target.js
+web service | _coming soon..._ | 
+All types | sgl.js, sgl-init.js, stylesheet.css |  
+
+
 
