@@ -4,7 +4,7 @@
   "description": "WikiPathways Academy",
   "main": "init-upload-target.js",
   "scripts": {
-    "build": "browserify init-upload-target.js -t [ babelify --presets [ es2015 react ] ] -t brfs -t deglobalify -t uglifyify --debug -o javascripts/upload-target.js",
+    "build": "browserify javascripts/init-upload-target.js -t [ babelify --presets [ es2015 react ] ] -t brfs -t deglobalify -t uglifyify --debug -o javascripts/upload-target.js",
     "start": "budo test/budo-init.js --serve javascripts/upload-target.js --live --open -- -t [ babelify --presets [ es2015 react ] ] -t brfs -t deglobalify",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
