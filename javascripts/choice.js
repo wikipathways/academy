@@ -30,7 +30,28 @@ function showExplanation(ex){
 
 function sendSGLActivity(action){
 	console.log(action);	
-	}
+//    if ( window.location !== window.parent.location ) {
+	window.wpSGL.submitSGLActivity('biology-101', function(err, response) {
+		console.log('SGL submit');
+	 	if (err) {
+			console.log('err');
+			console.log(err);
+		}
+		console.log('response');
+		console.log(response);
+	
+		window.wpSGL.postLeaderboard(5, function(err, response) {
+			console.log('SGL post leaderboard');
+			if (err) {
+				console.log('err');
+				console.log(err);
+			}
+			console.log('response');
+			console.log(response);
+		});
+	});
+    }
+//	}
 
 });
 
