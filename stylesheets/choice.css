@@ -1,0 +1,7 @@
+.choices a{color:#000!important;background:none!important}
+.choices a:hover{text-decoration:none}
+.choices p a.selected{color:#aaa!important}
+.correct {color:#00CC33!important}
+.wrong {color:#BB0066!important}
+.choices p span{font-size:14px;font-weight:bold;color:#000}
+.explanations {border:1px solid #d6d6d6;background-color:#eee;padding:5px;display:none;margin-bottom:10px}
