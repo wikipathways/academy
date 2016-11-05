@@ -60,7 +60,7 @@
 		DNA<i class="fa fa-long-arrow-right" aria-hidden="true"></i>
 		Protein
 		</p>
-		<p><a class="true" href="javascript:void(0);"><span class="fa fa-circle-thin fa-2x"></span></a> 
+		<p><a class="true" id="biology-101" href="javascript:void(0);"><span class="fa fa-circle-thin fa-2x"></span></a> 
 		DNA<i class="fa fa-long-arrow-right" aria-hidden="true"></i>
 		RNA<i class="fa fa-long-arrow-right" aria-hidden="true"></i>
 		Protein
@@ -91,30 +91,5 @@
     <script type="text/javascript" src="../../javascripts/sgl.js"></script>
     <script type="text/javascript" src="../../javascripts/main.js"></script>
     <script type="text/javascript" src="../../javascripts/choice.js"></script>
-    <script type="text/javascript">
-    window.$(window).load(function() {
-    if ( window.location !== window.parent.location ) {
-	window.wpSGL.submitSGLActivity('biology-101', function(err, response) {
-		console.log('SGL submit');
-	 	if (err) {
-			console.log('err');
-			console.log(err);
-		}
-		console.log('response');
-		console.log(response);
-	
-		window.wpSGL.postLeaderboard(5, function(err, response) {
-			console.log('SGL post leaderboard');
-			if (err) {
-				console.log('err');
-				console.log(err);
-			}
-			console.log('response');
-			console.log(response);
-		});
-	});
-    }
-    });
-    </script>
   </body>
 </html>

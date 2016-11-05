@@ -8,6 +8,7 @@ function(){
 			$(this).find('span').addClass('correct')
                         $(this).find('span').addClass('fa-check-circle');
 			showExplanation('ex1');
+			sendSGLActivity($(this).prop('id');
 		} else {
 			$(this).find('span').addClass('wrong');
 			$(this).find('span').addClass('fa-times-circle');
@@ -18,13 +19,17 @@ function(){
 	  }
 	});
 
-function showExplanation(a){
-	$('#'+a).slideToggle('slow', function() {
+function showExplanation(ex){
+	$('#'+ex).slideToggle('slow', function() {
 			    $('html, body').animate({
-				    'scrollTop': $('#'+a).offset().top
-				    + $('#'+a).height()
+				    'scrollTop': $('#'+ex).offset().top
+				    + $('#'+ex).height()
 			    }, 'fast')
 	});
+	}
+
+function sendSGLActivity(action){
+	console.log(action);	
 	}
 
 });
