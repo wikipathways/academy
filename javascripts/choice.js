@@ -40,7 +40,7 @@ function sendSGLActivity(action){
 		console.log('response');
 		console.log(response);
 	
-		window.wpSGL.postLeaderboard('1', function(err, response) {
+		window.wpSGL.postLeaderboard(1, function(err, response) {
 			console.log('SGL post to leaderboard');
 			if (err) {
 				console.log('err');
