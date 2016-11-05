@@ -1,5 +1,6 @@
 window.$(window).load(function() {
     if ( window.location !== window.parent.location ) {
+        document.getElementById('banner').style.display = "none";
         var token;
         var myParam = location.search.split('token=')[1];
         if (typeof myParam !== 'undefined' && myParam !== null) {
