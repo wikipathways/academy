@@ -37,7 +37,7 @@ Stage type | JS/CSS | Source to compile
 ---|---|---
 multiple choice | choice.js, choice.css | 
 upload target | upload-target.js, upload-target-init.js | src/upload-target.js
-web service | _coming soon..._ | 
+web service | webservice.js, webservice.css | 
 All types | sgl.js, sgl-init.js, stylesheet.css |  
 
 
