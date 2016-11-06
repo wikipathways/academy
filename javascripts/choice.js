@@ -22,12 +22,8 @@ function(){
 function showExplanation(ex){
 	$('#'+ex).slideToggle('slow', function() {
 		$('html, body').animate({
-			'scrollTop': $('#'+ex).offset().top - ($(window).height() - $('#'+ex).offset().top)
+			'scrollTop': $('#'+ex).offset().top - ($(window).height() - $('#'+ex).offset().top + $('#'+ex).height)
 			}, 'fast')
-			 //   $('html, body').animate({
-			//	    'scrollTop': $('#'+ex).offset().top
-			//	    + $('#'+ex).height()
-			//    }, 'fast')
 	});
 	}
 
