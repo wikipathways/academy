@@ -22,7 +22,7 @@ function(){
 function showExplanation(ex){
 	$('#'+ex).slideToggle('slow', function() {
 		$('html, body').animate({
-			'scrollTop': $('#'+ex).offset().top - (($(window).height() / 2) - $('#'+ex).height / 2)
+			'scrollTop': $(window).height() / 2 - $('#'+ex).height / 2
 			}, 'fast')
 			 //   $('html, body').animate({
 			//	    'scrollTop': $('#'+ex).offset().top
