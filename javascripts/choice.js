@@ -21,7 +21,9 @@ function(){
 
 function showExplanation(ex){
 	$('#'+ex).slideToggle('slow', function() {
-		$.smoothScroll('fast',  $('#'+ex).offset().top - (($(window).height() / 2) - $('#'+ex).height / 2));
+		$('html, body').animate({
+			'scrollTop': $('#'+ex).offset().top - (($(window).height() / 2) - $('#'+ex).height / 2))
+			}, 'fast')
 			 //   $('html, body').animate({
 			//	    'scrollTop': $('#'+ex).offset().top
 			//	    + $('#'+ex).height()
