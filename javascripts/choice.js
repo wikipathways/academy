@@ -22,7 +22,7 @@ function(){
 function showExplanation(ex){
 	$('#'+ex).slideToggle('slow', function() {
 		$('html, body').animate({
-			'scrollTop': $('#'+ex).offset().top - ($(window).height() - $('#'+ex).offset().top + $('#'+ex).height)
+			'scrollTop': $('#'+ex).offset().top - ($(window).height() - $('#'+ex).offset().top + $('#'+ex).height()/2)
 			}, 'fast')
 	});
 	}
