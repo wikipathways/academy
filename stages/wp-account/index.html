@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="../../stylesheets/choice.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="../../stylesheets/webservice.css" media="screen" />
 
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -38,47 +38,56 @@
           <h1>
             <a id="intro" class="anchor" href="#intro" aria-hidden="true">
               <span aria-hidden="true" class="octicon octicon-link">
-              Cholesterol: First Catalysis 
+              WikiPathways: Create Account
               </span>
             </a>
           </h1>
 
           <h2>Background</h2>
 	  <p>
-	  We have all heard of <a href="https://en.wikipedia.org/wiki/Cholesterol" target="_blank"><b>cholesterol</b></a>. 
-	  Having too much of it is bad for the heart. But not having enough 
-	  can also be risky, especially during development. Cholesterol is so important that every cell in every animal
-	  is equiped with the pathway below so they can synthesize it from byproducts of other pathways.
+	  Now things <i>really</i> get interesting... Are you ready to contribute to a scientific database?
+	  <a href="www.wikipathways.org" target="_blank">WikiPathways</a> is wiki dedicated to biological pathways.
+	  The curated and approved pathway models at WikiPathways are <a href="http://wikipathways.tumblr.com/"
+	  target="_blank">used in research, data visualization and education</a>.
+	  There are thousands of pathways already modeled and released, but there are many more thousands yet to be
+	  captured. This is where YOU come in!
 	</p>
           <h2>Challenge</h2>
 	  <p>
-	  Review the pathway below and then answer the following multiple choice question.
+	  The first step is to visit WikiPathways and create your author account. You will use this in all subsequent 
+	  challenges so that your work can be acknowledged by the community.
 	  </p> 
+	  <br />
+	  <ul>
+		  <li>To complete this challenge, go to <a href="www.wikipathways.org" target="_blank">
+			  www.wikipathways.org</a></li>
+		  <li>If interested, you can review the <a href="http://wikipathways.org/index.php/WikiPathways:License_Terms"
+			  target="_blank">license and terms of use</a> (in brief, it's all free, open source and open access)</li>
+		  <li>Click on <a href="http://wikipathways.org/index.php?title=Special:UserLogin&type=signup" 
+			  target="_blank">login/create account</a></li>
+		  <li>Solve the puzzle to prove you are not a robot</li>
+		  <li>Complete the form and press 'Create account'</li>
+		  <li>Respond to the email verification</li>
+		  <li>Verify your new account below to continue!</li>
+	  </ul>
           <br />  
-	  <div class="choices">
-		  <p><span>Which enzyme catalyzes the production of HMG-CoA?</span></p>
-		<p><a class="false" href="javascript:void(0);"><span class="fa fa-circle-thin fa-2x"></span></a> 
-		 HMGCR 
-		</p>
-		<p><a class="false" href="javascript:void(0);"><span class="fa fa-circle-thin fa-2x"></span></a> 
-		 Acetyl-CoA
-		</p>
-		<p><a class="true" id="cholesterol-123" href="javascript:void(0);"><span class="fa fa-circle-thin fa-2x"></span></a> 
-		 HMGCS1
-		</p>
-	  </div>
-	  <br /> 
-	  <div class="results" id="ex1" style="display:none;">
-		  <h2>Explanation</h2>
-		  <p>
-		  That’s correct! And that's just the first of many catalyzed steps in the synthesis of cholesterol from Acetyl-CoA.
-		  </p>
-	  </div> 
-	  <div class="results" id="ex2" style="display:none;">
-		  <h2>Explanation</h2>
-		  <p>Are you sure? Review the pathway and choose another answer.</p>
-	  </div>
-	  <img src="../../images/cholesterol-full.png" alt="Cholesterol Biosynthesis Pathway" style="width:600px;">
+	  <div >
+		  <form id="wp-account">
+			  Let's verify your WikiPathways username and password:
+			  <br />
+			  <input type="text" name="username" value=""><br />
+			  <input type="password" name="password" value=""><br />
+		  </form>
+		  <button>Verify</button>
+	</div>
+	<div class="results" id="success" style="display:none;">
+		<h2>Result</h2>
+		<p>You're in!</p>
+	</div>
+	 <div class="results" id="error" style="display:none;">
+		 <h2>Result</h2>
+		 <p>Hmm... that did not work. Try again.</p>
+	 </div>
 	</section>
 	    </div>
 	  </div>
@@ -89,6 +98,6 @@
     <script type="text/javascript" src="https://www.sciencegamelab.org/js/sciapi.js"></script>
     <script type="text/javascript" src="../../javascripts/sgl-init.js"></script>
     <script type="text/javascript" src="../../javascripts/sgl.js"></script>
-    <script type="text/javascript" src="../../javascripts/choice.js"></script>
+    <script type="text/javascript" src="../../javascripts/webservice.js"></script>
   </body>
 </html>

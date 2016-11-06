@@ -2,7 +2,7 @@ $(document).ready(
 function(){
 	$('.choices a').click(function(){
 	   if($(this).prop('href')){
-		$('.explanations').hide();
+		$('.results').hide();
 		$(this).find('span').removeClass('fa-circle-thin');
 		if($(this).hasClass('true')){
 			$(this).find('span').addClass('correct')
