@@ -540,8 +540,8 @@ aside#sidebar p.repo-owner a {
 }
 
 a.button {
-  width: 134px;
-  height: 58px;
+  width: 200px;
+  height: 80px;
   padding-top: 22px;
   padding-left: 80px;
   font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
@@ -561,8 +561,8 @@ header a.button {
 }
 aside a.button {
   display: block;
-  width: 138px;
-  padding-left: 64px;
+  width: 200px;
+  padding-left: 80px;
   margin-bottom: 20px;
   font-size: 21px;
   background: transparent url(../images/download-button.png) 0 0 no-repeat;

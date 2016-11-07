@@ -1,4 +1,4 @@
-import init from '../src/main.js';
+import init from '../src/upload-target.js';
 
 window.wpAcademy = {
   init: init,
