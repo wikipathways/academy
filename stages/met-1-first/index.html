@@ -44,15 +44,23 @@
 
           <h2>Background</h2>
 
-          <p>To-Do</p>
+          <p>Cholesterol is a waxy steroid metabolite found in the cell membranes and transported in the blood plasma of all animals. 
+          It is an essential structural component of mammalian cell membranes, where it is required to establish proper membrane 
+          permeability and fluidity. In addition, cholesterol is an important component for the manufacture of bile acids, steroid 
+          hormones, and several fat-soluble vitamins. Cholesterol is the principal sterol synthesized by animals, but small 
+          quantities are synthesized in other eukaryotes, such as plants and fungi. It is almost completely absent among prokaryotes, 
+          which include bacteria. Source: <a href="https://en.wikipedia.org/wiki/Cholesterol">Wikipedia</a></p>
 
           <h2>Your Mission</h2>
-          <p>To-Do</p>
-          
+          <p>Complete the first step of the Cholesterol biosynthesis pathway, the conversion of Acetyl-CoA to HMG-CoA, catalyzed by 
+          HMGCS1. The complete reaction is depicted in this figure:</p>
+          <img src="met-1-step-1-solution.png">
+          <br>
+          <br>
           
           <ul>
-            <li>To complete this challenge, click the "Launch Editor" button below. You will receive your challenge as a file named "WikiPathwaysAcademy-Met1-step1.jnlp". 
-              Open it to see your control panel.</li>
+            <li>To complete this challenge, click the "Launch Editor" button below. You will receive your challenge as a file named "WikiPathwaysAcademy-met1-first.jnlp". 
+              Open it to see your control panel. The two metabolites, Acetyl-CoA and HMG-CoA, and the conversion between them have already been added. Add the enzyme and the catalysis interaction. </li>
             <li>
             <details>
              <summary>Perform the challenge tasks...</summary>
@@ -60,7 +68,7 @@
                 <li>Select Gene from the Data Node palette in the Objects tab</li>
                 <li>Click on canvas to place the gene node</li>
                 <li>Double-click on node to open its properties</li>
-                <li>Search for “ACO2”; Choose any of the entries that just say “ACO2”; Click OK</li>
+                <li>Search for “HMGCS1”; Choose any of the entries that just say “HMGCS1”; Click OK</li>
                 <li>(Optional) Resize nodes or update node labels</li>
                 <li>Right-click on the conversion arrow and select “Add anchor”</li>
                 <li>Select the Catalysis arrow from the MIM interactions palette in the Objects tab</li>
@@ -138,7 +146,7 @@
             localStorage.setItem('showChallengeInstructions', 'false');
           }
           // server must set Content-Disposition: attachment
-          window.location = 'http://rcbranch.wikipathways.org/wpi/extensions/PathwayViewer/pathway-jnlp.php?identifier=WP3905&filename=WikiPathwaysAcademy-Met1-step1';
+          window.location = 'http://rcbranch.wikipathways.org/wpi/extensions/PathwayViewer/pathway-jnlp.php?identifier=WP3905&filename=WikiPathwaysAcademy-met1-first';
           getShowInstructions();
           setDownloadButton();
         });
