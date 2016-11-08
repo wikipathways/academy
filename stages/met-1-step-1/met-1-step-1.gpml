@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Pathway xmlns="http://pathvisio.org/GPML/2013a" Name="Met1-step1" Version="20161107" Organism="Homo sapiens">
-  <Graphics BoardWidth="578.0" BoardHeight="364.5" />
-  <DataNode TextLabel="HMGCS1" GraphId="d2064" Type="GeneProduct">
-    <Graphics CenterX="338.0" CenterY="146.0" Width="90.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" />
+  <Graphics BoardWidth="657.0" BoardHeight="264.5" />
+  <DataNode TextLabel="HMGCS1" GraphId="d5d30" Type="GeneProduct">
+    <Graphics CenterX="140.0" CenterY="167.0" Width="90.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" />
     <Xref Database="Ensembl" ID="ENSG00000112972" />
   </DataNode>
   <DataNode TextLabel="HMG-CoA" GraphId="ecbfc" Type="Metabolite">
@@ -10,21 +10,21 @@
     <Xref Database="ChEBI" ID="CHEBI:392" />
   </DataNode>
   <DataNode TextLabel="Acetyl-CoA" GraphId="fa448" Type="Metabolite">
-    <Graphics CenterX="241.0" CenterY="86.0" Width="90.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" Color="0000ff" />
+    <Graphics CenterX="241.0" CenterY="116.0" Width="90.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" Color="0000ff" />
     <Xref Database="HMDB" ID="HMDB01206" />
   </DataNode>
   <Interaction>
     <Graphics ZOrder="12288" LineThickness="1.0">
-      <Point X="241.0" Y="98.5" GraphRef="fa448" RelX="0.0" RelY="1.0" />
-      <Point X="241.0" Y="209.5" GraphRef="ecbfc" RelX="0.0" RelY="-1.0" ArrowHead="mim-conversion" />
-      <Anchor Position="0.42792792792792794" Shape="None" GraphId="d54b7" />
+      <Point X="185.0" Y="167.0" GraphRef="d5d30" RelX="1.0" RelY="0.0" />
+      <Point X="241.0" Y="167.0" GraphRef="fc9c9" RelX="0.0" RelY="0.0" ArrowHead="mim-catalysis" />
     </Graphics>
     <Xref Database="" ID="" />
   </Interaction>
-  <Interaction>
+  <Interaction GraphId="idf61a0df6">
     <Graphics ZOrder="12288" LineThickness="1.0">
-      <Point X="293.0" Y="146.0" GraphRef="d2064" RelX="-1.0" RelY="0.0" />
-      <Point X="241.0" Y="146.0" GraphRef="d54b7" RelX="0.0" RelY="0.0" ArrowHead="mim-catalysis" />
+      <Point X="241.0" Y="128.5" GraphRef="fa448" RelX="0.0" RelY="1.0" />
+      <Point X="241.0" Y="209.5" GraphRef="ecbfc" RelX="0.0" RelY="-1.0" ArrowHead="mim-conversion" />
+      <Anchor Position="0.47530864197530864" Shape="None" GraphId="fc9c9" />
     </Graphics>
     <Xref Database="" ID="" />
   </Interaction>
