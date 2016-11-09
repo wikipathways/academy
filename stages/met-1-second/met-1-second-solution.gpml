@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Pathway xmlns="http://pathvisio.org/GPML/2013a" Name="met-1-second" Last-Modified="2/22/2013" Organism="Homo sapiens">
+  <BiopaxRef>ec9</BiopaxRef>
+  <BiopaxRef>d9b</BiopaxRef>
+  <BiopaxRef>e32</BiopaxRef>
+  <BiopaxRef>c8f</BiopaxRef>
+  <BiopaxRef>ea9</BiopaxRef>
+  <BiopaxRef>cdc</BiopaxRef>
+  <BiopaxRef>e73</BiopaxRef>
+  <Graphics BoardWidth="731.0" BoardHeight="679.0097543709028" />
+  <DataNode TextLabel="Mevalonic acid" GraphId="a6a21" Type="Metabolite">
+    <Graphics CenterX="370.0" CenterY="246.1064425770311" Width="80.0" Height="20.0" ZOrder="32768" FontSize="10" Valign="Middle" Color="0000ff" />
+    <Xref Database="CAS" ID="150-97-0" />
+  </DataNode>
+  <DataNode TextLabel="HMGCS1" GraphId="b21" Type="GeneProduct">
+    <Attribute Key="org.pathvisio.model.BackpageHead" Value="HMGCS1 | 3-hydroxy-3-methylglutaryl-Coenzyme A ..." />
+    <Graphics CenterX="284.3936257960389" CenterY="135.82560623193865" Width="66.66666666666667" Height="20.0" ZOrder="32768" FontSize="10" Valign="Middle" />
+    <Xref Database="Entrez Gene" ID="3157" />
+  </DataNode>
+  <DataNode TextLabel="HMGCR" GraphId="d8b" Type="GeneProduct">
+    <Attribute Key="org.pathvisio.model.BackpageHead" Value="HMGCR | 3-hydroxy-3-methylglutaryl-Coenzyme A r..." />
+    <Graphics CenterX="284.3936257960389" CenterY="209.81282152750296" Width="66.66666666666667" Height="20.0" ZOrder="32768" FontSize="10" Valign="Middle" />
+    <Xref Database="Entrez Gene" ID="3156" />
+  </DataNode>
+  <DataNode TextLabel="HMG-CoA" GraphId="e89f4" Type="Metabolite">
+    <Graphics CenterX="370.0" CenterY="174.75644257703044" Width="84.03333333333333" Height="19.0" ZOrder="32768" FontSize="10" Valign="Middle" Color="0000ff" />
+    <Xref Database="HMDB" ID="HMDB01375" />
+  </DataNode>
+  <DataNode TextLabel="Acetyl-CoA" GraphId="fb3" Type="Metabolite">
+    <Graphics CenterX="370.0" CenterY="99.0" Width="74.33333333333333" Height="16.0" ZOrder="32768" FontSize="10" Valign="Middle" Color="0000ff" />
+    <Xref Database="CAS" ID="72-89-9" />
+  </DataNode>
+  <Interaction GraphId="a94b2">
+    <Graphics ZOrder="12288" LineThickness="1.0">
+      <Point X="370.0" Y="107.0" GraphRef="fb3" RelX="0.0" RelY="1.0" />
+      <Point X="370.0" Y="165.25644257703044" GraphRef="e89f4" RelX="0.0" RelY="-1.0" ArrowHead="mim-conversion" />
+      <Anchor Position="0.49535226917334824" Shape="None" GraphId="cb45c" />
+    </Graphics>
+    <Xref Database="" ID="" />
+  </Interaction>
+  <Interaction GraphId="b48ab">
+    <Graphics ZOrder="12288" LineThickness="1.0">
+      <Point X="370.0" Y="184.25644257703044" GraphRef="e89f4" RelX="0.0" RelY="1.0" />
+      <Point X="370.0" Y="236.1064425770311" GraphRef="a6a21" RelX="0.0" RelY="-1.0" ArrowHead="mim-conversion" />
+      <Anchor Position="0.4947824602368572" Shape="None" GraphId="e92b5" />
+    </Graphics>
+    <Xref Database="" ID="" />
+  </Interaction>
+  <Interaction GraphId="idaba74c6a">
+    <Graphics ZOrder="12288" LineThickness="1.0">
+      <Point X="317.72695912937223" Y="135.82560623193865" GraphRef="b21" RelX="1.0" RelY="0.0" />
+      <Point X="370.0" Y="135.8574610244989" GraphRef="cb45c" RelX="0.0" RelY="0.0" ArrowHead="mim-catalysis" />
+    </Graphics>
+    <Xref Database="" ID="" />
+  </Interaction>
+  <Interaction GraphId="idc15ee323">
+    <Graphics ZOrder="12288" LineThickness="1.0">
+      <Point X="317.72695912937223" Y="209.81282152750296" GraphRef="d8b" RelX="1.0" RelY="0.0" />
+      <Point X="370.0" Y="209.9109131403118" GraphRef="e92b5" RelX="0.0" RelY="0.0" ArrowHead="mim-catalysis" />
+    </Graphics>
+    <Xref Database="" ID="" />
+  </Interaction>
+  <InfoBox CenterX="8.333333333333334" CenterY="5.0" />
+  <Biopax />
+</Pathway>
+
