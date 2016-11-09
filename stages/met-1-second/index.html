@@ -60,7 +60,7 @@
           
           <ul>
             <li>To complete this challenge, click the "Launch Editor" button below. You will receive your challenge as a file named "WikiPathwaysAcademy-met1-second.jnlp". 
-              Open it to see your control panel. The two metabolites, Acetyl-CoA and HMG-CoA, and the conversion between them have already been added. Add the enzyme and the catalysis interaction. </li>
+              Open it to see your control panel. </li>
             <li>
             <details>
              <summary>Perform the challenge tasks...</summary>
@@ -165,14 +165,14 @@
         validate: function(actualStr) {          
           var actualDoc = window.xmlReader.parseSync(actualStr);
           // DataNode count
-          return window.xmlQuery(actualDoc).find('DataNode').map(function(node) { return node.name }).length === 2 &&
+          return window.xmlQuery(actualDoc).find('DataNode').map(function(node) { return node.name }).length === 5 &&
             window.xmlQuery(actualDoc).find('DataNode').map(function(DataNodeEl) {
               return DataNodeEl.attributes.hasOwnProperty('TextLabel') && DataNodeEl.attributes.hasOwnProperty('GraphId');
             })
             .reduce(function(acc, pass) {
               return acc && pass;
             }) &&
-            window.xmlQuery(actualDoc).find('Interaction').length === 1 &&
+            window.xmlQuery(actualDoc).find('Interaction').length === 4 &&
             window.xmlQuery(actualDoc).find('Interaction').map(function(InteractionEl) {
               var points = window.xmlQuery(InteractionEl).find('Point');
               return points.length === 2 &&
