@@ -37,7 +37,7 @@
           <h1>
             <a id="intro" class="anchor" href="#intro" aria-hidden="true">
               <span aria-hidden="true" class="octicon octicon-link">
-                My First Metabolic Pathway - step 2
+                My First Metabolic Pathway - step 3
               </span>
             </a>
           </h1>
@@ -52,14 +52,14 @@
           which include bacteria. Source: <a href="https://en.wikipedia.org/wiki/Cholesterol">Wikipedia</a></p>
 
           <h2>Your Mission</h2>
-          <p>Complete the second step of the Cholesterol biosynthesis pathway, the conversion of HMG-CoA to Mevalonic acid, catalyzed by 
-          HMGCR. The complete reaction is depicted in this figure:</p>
-          <img src="met-1-second-solution.png">
+          <p>Complete the multi-step conversion of lanosterin to lathosterol by a group of enzymes. The The complete reaction is 
+          depicted in this figure:</p>
+          <img src="met-1-indirect-solution.png">
           <br>
           <br>
           
           <ul>
-            <li>To complete this challenge, click the "Launch Editor" button below. You will receive your challenge as a file named "WikiPathwaysAcademy-met1-second.jnlp". 
+            <li>To complete this challenge, click the "Launch Editor" button below. You will receive your challenge as a file named "WikiPathwaysAcademy-met1-indirect.jnlp". 
               Open it to see your control panel. The two metabolites, Acetyl-CoA and HMG-CoA, and the conversion between them have already been added. Add the enzyme and the catalysis interaction. </li>
             <li>
             <details>
@@ -68,20 +68,25 @@
                 <li>Select Metabolite (“Met”) from the Data Node palette in the Objects tab</li>
                 <li>Click on canvas to place the metabolite node</li>
                 <li>Double-click on node to open its properties</li>
-                <li>Search for “mevalonic acid”; Choose any of the entries that just say “glucose”; Click OK</li>
+                <li>Search for “lathosterol”; Choose any of the entries that just say “lathosterol”; Click OK</li>
                 <li>(Optional) Resize nodes or update node labels</li>
                 <li>Select the Conversion arrow from the MIM interactions palette in the Objects tab</li>
                 <li>Drag and drop anywhere on canvas to create the interaction</li>
-                <li>Drag the plain end (start) of the interaction over a target area on the starting metabolite node (HMG-CoA)</li>
-                <li>Drag the arrow end (end) of the interaction over a target area on the ending metabolite node (mevalonic acid)</li>
+                <li>Select the conversion arrow, and in the Properties tab in the right side panel, change the line style to “dashed”
+                under “Line Style”</li>
+                <li>Drag the plain end (start) of the interaction over a target area on the starting metabolite node (lanosterin)</li>
+                <li>Drag the arrow end (end) of the interaction over a target area on the ending metabolite node (lathosterol)</li>
                 <li>Right-click on the conversion arrow and select “Add anchor”</li>
                 <li>Select Gene from the Data Node palette in the Objects tab</li>
                 <li>Click on canvas to place the gene node</li>
                 <li>Double-click on node to open its properties</li>
-                <li>Search for “HMGCR”; Choose any of the entries that just say “HMGCR”; Click OK</li>
+                <li>Search for “CYP51A1”; Choose any of the entries that just say “CYP51A1”; Click OK</li>
+                <li>Repeat the last 4 steps for two more enzymes: SC4MOL and NSDHL</li>
+                <li>(Optional) Resize nodes or update node labels</li>
+                <li>Select all three enzyme nodes by click-and-drag. With all three nodes selected, right-click and select “Group”</li>
                 <li>Select the Catalysis arrow from the MIM interactions palette in the Objects tab</li>
                 <li>Drag and drop anywhere on canvas to create the interaction</li>
-                <li>Drag the plain end (start) of the interaction over a target area on the enzyme node</li>
+                <li>Drag the plain end (start) of the interaction over a target area on the enzyme group</li>
                 <li>Drag the catalysis end (end) of the interaction over the anchor on the conversion line</li>
                 <li>(Optional) Align nodes using toolbar actions</li>
                 <li>Done!</li>
@@ -122,7 +127,7 @@
 
           <br>  
           <br> 
-	  <p><a href="met-1-second-solution.gpml">Click for solution file (For Testing Only)</a>
+	  <p><a href="met-1-indirect-solution.gpml">Click for solution file (For Testing Only)</a>
 	  </p>
           </div> 
     </div>       
@@ -154,7 +159,7 @@
             localStorage.setItem('showChallengeInstructions', 'false');
           }
           // server must set Content-Disposition: attachment
-          window.location = 'http://rcbranch.wikipathways.org/wpi/extensions/PathwayViewer/pathway-jnlp.php?identifier=WPWP3908&filename=WikiPathwaysAcademy-met1-first';
+          window.location = 'http://rcbranch.wikipathways.org/wpi/extensions/PathwayViewer/pathway-jnlp.php?identifier=WP3909&filename=WikiPathwaysAcademy-met1-indirect';
           getShowInstructions();
           setDownloadButton();
         });
