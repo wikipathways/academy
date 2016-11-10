@@ -47,10 +47,11 @@
           <p>To-Do</p>
 
           <h2>Your Mission</h2>
-          <p>Draw a gene product.</p>
+          <p>Draw the gene product depicted in this figure:</p>
+          <img src="draw-geneproduct-solution.png">
           
           <ul>
-            <li>To complete this challenge, click the "Launch Editor" button below. You will receive your challenge as a file named "WikiPathwaysAcademy-draw-geneproduct.jnlp". 
+            <li>To complete this challenge, click the "Launch Editor" button below. You will receive your challenge as a file named "WikiPathwaysAcademy-Challenge.jnlp". 
               Open it to see your control panel.</li>
             <li>
             <details>
@@ -99,7 +100,7 @@
 
           <br>  
           <br> 
-	  <p><a href="draw-geneproduct-solution.gpml">Click for solution file (For Testing Only)</a>
+	  <p><a href="draw-geneproduct-solution.gpml">Click to download solution file (For Testing Only)</a>
 	  </p>
           </div> 
     </div>       
@@ -131,7 +132,7 @@
             localStorage.setItem('showChallengeInstructions', 'false');
           }
           // server must set Content-Disposition: attachment
-          window.location = 'http://rcbranch.wikipathways.org/wpi/extensions/PathwayViewer/pathway-jnlp.php?identifier=WP3900&filename=WikiPathwaysAcademy-draw-geneproduct';
+          window.location = 'http://rcbranch.wikipathways.org/wpi/extensions/PathwayViewer/pathway-jnlp.php?identifier=WP3900&filename=WikiPathwaysAcademy-Challenge';
           getShowInstructions();
           setDownloadButton();
         });
@@ -164,7 +165,7 @@
               return acc && pass;
             });
            },
-         action: 'demo-102',
+         action: 'draw-geneproduct',
          points: 5
       });
     </script>
