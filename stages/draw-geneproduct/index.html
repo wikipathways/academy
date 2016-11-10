@@ -44,7 +44,8 @@
 
           <h2>Background</h2>
 
-          <p>To-Do</p>
+          <p>The gene product data node is the most commonly used data node in WikiPathways. It
+          can be used to depict a protein, RNA or other product of a gene, or the corresponding gene itself.</p>
 
           <h2>Your Mission</h2>
           <p>Draw the gene product depicted in this figure:</p>
@@ -146,20 +147,6 @@
           return window.xmlQuery(actualDoc).find('DataNode').map(function(node) { return node.name }).length === 2 &&
             window.xmlQuery(actualDoc).find('DataNode').map(function(DataNodeEl) {
               return DataNodeEl.attributes.hasOwnProperty('TextLabel') && DataNodeEl.attributes.hasOwnProperty('GraphId');
-            })
-            .reduce(function(acc, pass) {
-              return acc && pass;
-            }) &&
-            window.xmlQuery(actualDoc).find('Interaction').length === 1 &&
-            window.xmlQuery(actualDoc).find('Interaction').map(function(InteractionEl) {
-              var points = window.xmlQuery(InteractionEl).find('Point');
-              return points.length === 2 &&
-                points.map(function(point) {
-                  return point.attributes.hasOwnProperty('GraphRef');
-                })
-                .reduce(function(acc, pass) {
-                  return acc && pass;
-                });
             })
             .reduce(function(acc, pass) {
               return acc && pass;
