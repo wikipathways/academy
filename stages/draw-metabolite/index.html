@@ -131,7 +131,7 @@
             localStorage.setItem('showChallengeInstructions', 'false');
           }
           // server must set Content-Disposition: attachment
-          window.location = 'http://rcbranch.wikipathways.org/wpi/extensions/PathwayViewer/pathway-jnlp.php?identifier=WP3900&filename=WikiPathwaysAcademy-draw-metabolite';
+          window.location = 'http://rcbranch.wikipathways.org/wpi/extensions/PathwayViewer/pathway-jnlp.php?identifier=WP3900&filename=WikiPathwaysAcademy-Challenge';
           getShowInstructions();
           setDownloadButton();
         });
@@ -142,29 +142,15 @@
         validate: function(actualStr) {          
           var actualDoc = window.xmlReader.parseSync(actualStr);
           // DataNode count
-          return window.xmlQuery(actualDoc).find('DataNode').map(function(node) { return node.name }).length === 2 &&
+          return window.xmlQuery(actualDoc).find('DataNode').map(function(node) { return node.name }).length === 1 &&
             window.xmlQuery(actualDoc).find('DataNode').map(function(DataNodeEl) {
               return DataNodeEl.attributes.hasOwnProperty('TextLabel') && DataNodeEl.attributes.hasOwnProperty('GraphId');
             })
             .reduce(function(acc, pass) {
               return acc && pass;
-            }) &&
-            window.xmlQuery(actualDoc).find('Interaction').length === 1 &&
-            window.xmlQuery(actualDoc).find('Interaction').map(function(InteractionEl) {
-              var points = window.xmlQuery(InteractionEl).find('Point');
-              return points.length === 2 &&
-                points.map(function(point) {
-                  return point.attributes.hasOwnProperty('GraphRef');
-                })
-                .reduce(function(acc, pass) {
-                  return acc && pass;
-                });
-            })
-            .reduce(function(acc, pass) {
-              return acc && pass;
             });
            },
-         action: 'demo-102',
+         action: 'draw-metabolite',
          points: 5
       });
     </script>

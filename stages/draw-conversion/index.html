@@ -48,13 +48,13 @@
           </p>
 
           <h2>Your Mission</h2>
-          <p>Model the conversion reaction depicted in this figure:</p>
+          <p>Draw the conversion reaction depicted in this figure:</p>
           <img src="glucose-solution.png">
 	  <br>
           <br>
           
           <ul>
-            <li>To complete this challenge, click the "Launch Editor" button below. You will receive your challenge as a file named "WikiPathwaysAcademy-Draw-Conversion.jnlp". 
+            <li>To complete this challenge, click the "Launch Editor" button below. You will receive your challenge as a file named "WikiPathwaysAcademy-Challenge.jnlp". 
               Open it to see your control panel.</li>
             <li>
             <details>
@@ -140,7 +140,7 @@
             localStorage.setItem('showChallengeInstructions', 'false');
           }
           // server must set Content-Disposition: attachment
-          window.location = 'http://rcbranch.wikipathways.org/wpi/extensions/PathwayViewer/pathway-jnlp.php?identifier=WP3900&filename=WikiPathwaysAcademy-Draw-Conversion';
+          window.location = 'http://rcbranch.wikipathways.org/wpi/extensions/PathwayViewer/pathway-jnlp.php?identifier=WP3900&filename=WikiPathwaysAcademy-Challenge';
           getShowInstructions();
           setDownloadButton();
         });
@@ -175,7 +175,7 @@
               return acc && pass;
             });
         },
-        action: 'demo-101',
+        action: 'draw-conversion',
         points: 5
       });
     </script>
