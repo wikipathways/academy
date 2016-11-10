@@ -144,7 +144,7 @@
         validate: function(actualStr) {          
           var actualDoc = window.xmlReader.parseSync(actualStr);
           // DataNode count
-          return window.xmlQuery(actualDoc).find('DataNode').map(function(node) { return node.name }).length === 2 &&
+          return window.xmlQuery(actualDoc).find('DataNode').map(function(node) { return node.name }).length === 1 &&
             window.xmlQuery(actualDoc).find('DataNode').map(function(DataNodeEl) {
               return DataNodeEl.attributes.hasOwnProperty('TextLabel') && DataNodeEl.attributes.hasOwnProperty('GraphId');
             })
