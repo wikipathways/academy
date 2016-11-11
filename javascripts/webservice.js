@@ -12,7 +12,7 @@ $(document).ready(function(){
 		success: function (response) {
 			console.log(response);
 			showResult('success');
-			sendSGLActivity('wikipathways-101');
+			sendSGLActivity('wp-account/');
 		//	var t = $(response).children().text();
 		//	console.log(t);
 		},
@@ -39,7 +39,7 @@ $(document).ready(function(){
 			console.log(tag);
 			console.log(user);
 			showResult('success');
-			sendSGLActivity('wikipathways-103');
+			sendSGLActivity('wp-add-ontology');
 		},
 		error: function (error) {
 			console.log(error);
