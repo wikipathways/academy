@@ -182,18 +182,13 @@
                 .reduce(function(acc, pass) {
                   return acc && pass;
                 });
-                })
-                &&
+                }) &&
              window.xmlQuery(actualDoc).find('Interaction').map(function(InteractionEl) {
               var anchors = window.xmlQuery(InteractionEl).find('Anchor');
-              return anchors.length === 2 &&
-                anchors.map(function(anchor) {
-                  return acnhor.attributes.hasOwnProperty('Anchor');
-                })
+              return anchors.name }).length === 2
                 .reduce(function(acc, pass) {
                   return acc && pass;
                 });
-            })
             .reduce(function(acc, pass) {
               return acc && pass;
             });
