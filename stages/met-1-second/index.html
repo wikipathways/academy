@@ -171,20 +171,6 @@
             })
             .reduce(function(acc, pass) {
               return acc && pass;
-            }) &&
-            window.xmlQuery(actualDoc).find('Interaction').length === 4 &&
-            window.xmlQuery(actualDoc).find('Interaction').map(function(InteractionEl) {
-              var points = window.xmlQuery(InteractionEl).find('Point');
-              return points.length === 2 &&
-                points.map(function(point) {
-                  return point.attributes.hasOwnProperty('GraphRef');
-                })
-                .reduce(function(acc, pass) {
-                  return acc && pass;
-                }); 
-                })
-            .reduce(function(acc, pass) {
-              return acc && pass;
             });
            },
          action: 'met-1-second',
