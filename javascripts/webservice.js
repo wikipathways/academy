@@ -7,7 +7,7 @@ $(document).ready(function(){
 	$('.results').hide();
 	$.ajax({
 		type: 'GET',
-		url: 'http://webservice.wikipathways.org/login?name='+username+'&pass='+password+'&format=xml',
+		url: 'https://webservice.wikipathways.org/login?name='+username+'&pass='+password+'&format=xml',
 		dataType: 'xml',
 		success: function (response) {
 			console.log(response);
@@ -32,7 +32,7 @@ $(document).ready(function(){
 	console.log(timestamp);
 	$.ajax({
 		type: 'GET',
-		url: 'http://webservice.wikipathways.org/getPathwayHistory?pwId=WP4&timestamp='+timestamp+'&format=xml',
+		url: 'https://webservice.wikipathways.org/getPathwayHistory?pwId=WP4&timestamp='+timestamp+'&format=xml',
 		dataType: 'xml',
 		success: function (response) {
 			console.log(response);
