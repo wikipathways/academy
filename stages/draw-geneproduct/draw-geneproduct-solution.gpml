@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Pathway xmlns="http://pathvisio.org/GPML/2013a" Name="New Pathway" Version="20161107">
-  <Graphics BoardWidth="578.0" BoardHeight="364.5" />
+<Pathway xmlns="http://pathvisio.org/GPML/2013a" Name="draw-geneproduct-solution" Version="20161107" Organism="Homo sapiens">
+  <Graphics BoardWidth="294.0" BoardHeight="157.5" />
   <DataNode TextLabel="ACO2" GraphId="c5c50" Type="GeneProduct">
     <Graphics CenterX="219.0" CenterY="115.0" Width="90.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" />
     <Xref Database="Ensembl" ID="ENSG00000100412" />
