@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Pathway xmlns="http://pathvisio.org/GPML/2013a" Name="New Pathway" Version="20161107">
-  <Graphics BoardWidth="578.0" BoardHeight="364.5" />
+<Pathway xmlns="http://pathvisio.org/GPML/2013a" Name="draw-metabolite-solution" Version="20161107" Organism="Homo sapiens">
+  <Graphics BoardWidth="311.0" BoardHeight="170.5" />
   <DataNode TextLabel="glucose" GraphId="d413f" Type="Metabolite">
     <Graphics CenterX="236.0" CenterY="128.0" Width="90.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" Color="0000ff" />
     <Xref Database="ChEBI" ID="CHEBI:14313" />
