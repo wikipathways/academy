@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Pathway xmlns="http://pathvisio.org/GPML/2013a" Name="New Pathway" Version="20161107">
-  <Graphics BoardWidth="578.0" BoardHeight="364.5" />
+<Pathway xmlns="http://pathvisio.org/GPML/2013a" Name="draw-catalysis-solution" Version="20161107" Organism="Homo sapiens">
+  <Graphics BoardWidth="412.0" BoardHeight="289.5" />
   <DataNode TextLabel="Cholesterol" GraphId="c4fcb" Type="Metabolite">
     <Graphics CenterX="237.0" CenterY="100.0" Width="90.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" Color="0000ff" />
     <Xref Database="ChEBI" ID="CHEBI:3659" />
@@ -13,7 +13,7 @@
     <Graphics CenterX="237.0" CenterY="247.0" Width="90.0" Height="25.0" ZOrder="32769" FontSize="12" Valign="Middle" Color="0000ff" />
     <Xref Database="ChEBI" ID="CHEBI:16581" />
   </DataNode>
-  <Interaction>
+  <Interaction GraphId="id417d8c5b">
     <Graphics ZOrder="12288" LineThickness="1.0">
       <Point X="237.0" Y="112.5" GraphRef="c4fcb" RelX="0.0" RelY="1.0" />
       <Point X="237.0" Y="234.5" GraphRef="c477e" RelX="0.0" RelY="-1.0" ArrowHead="mim-conversion" />
@@ -21,7 +21,7 @@
     </Graphics>
     <Xref Database="" ID="" />
   </Interaction>
-  <Interaction>
+  <Interaction GraphId="idffdf1c71">
     <Graphics ZOrder="12288" LineThickness="1.0">
       <Point X="292.0" Y="172.0" GraphRef="c5c50" RelX="-1.0" RelY="0.0" />
       <Point X="237.0" Y="172.01239502855225" GraphRef="effbf" RelX="0.0" RelY="0.0" ArrowHead="mim-catalysis" />
