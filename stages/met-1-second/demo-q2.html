@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="../../stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="../../stylesheets/github-light.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="../../stylesheets/print.css" media="print">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>WikiPathways Academy</title>
+</head>
+
+  <body>
+
+    <header id="banner">
+      <div class="inner">
+        <h1>WikiPathways Academy</h1>
+        <h2>Organized challenges for new WikiPathways authors</h2>
+	<a href="../../" class="button"><small>Return to</small>Overview</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1>
+            <a id="intro" class="anchor" href="#intro" aria-hidden="true">
+              <span aria-hidden="true" class="octicon octicon-link">
+                My First Metabolic Pathway - second step
+              </span>
+            </a>
+          </h1>
+
+          <h2>Background</h2>
+
+          <p>Cholesterol is a waxy steroid metabolite found in the cell membranes and transported in the blood plasma of all animals. 
+          It is an essential structural component of mammalian cell membranes, where it is required to establish proper membrane 
+          permeability and fluidity. In addition, cholesterol is an important component for the manufacture of bile acids, steroid 
+          hormones, and several fat-soluble vitamins. Cholesterol is the principal sterol synthesized by animals, but small 
+          quantities are synthesized in other eukaryotes, such as plants and fungi. It is almost completely absent among prokaryotes, 
+          which include bacteria. Source: <a href="https://en.wikipedia.org/wiki/Cholesterol">Wikipedia</a></p>
+
+          <h2>Your Mission</h2>
+          <p>Complete the second step of the Cholesterol biosynthesis pathway, the conversion of HMG-CoA to Mevalonic acid, catalyzed by 
+          HMGCR. The complete reaction corresponds to the highlighted area in this figure:</p>
+          <img src="met-1-second-solution.png">
+          <br>
+          <br>
+          
+          <ul>
+            <li>To complete this challenge, click the "Launch Editor" button below. You will receive your challenge as a file named "WikiPathwaysAcademy-Challenge.jnlp". 
+              Open it to see your control panel. </li>
+            <li>
+            <details>
+             <summary>Perform the challenge tasks...</summary>
+              <ul>
+                <li>Select Metabolite (“Met”) from the Data Node palette in the Objects tab</li>
+                <li>Click on canvas to place the metabolite node</li>
+                <li>Double-click on node to open its properties</li>
+                <li>Search for “mevalonic acid”; Choose any of the entries that just say “glucose”; Click OK</li>
+                <li>(Optional) Resize nodes or update node labels</li>
+                <li>Select the Conversion arrow from the MIM interactions palette in the Objects tab</li>
+                <li>Drag and drop anywhere on canvas to create the interaction</li>
+                <li>Drag the plain end (start) of the interaction over a target area on the starting metabolite node (HMG-CoA)</li>
+                <li>Drag the arrow end (end) of the interaction over a target area on the ending metabolite node (mevalonic acid)</li>
+                <li>Right-click on the conversion arrow and select “Add anchor”</li>
+                <li>Select Gene from the Data Node palette in the Objects tab</li>
+                <li>Click on canvas to place the gene node</li>
+                <li>Double-click on node to open its properties</li>
+                <li>Search for “HMGCR”; Choose any of the entries that just say “HMGCR”; Click OK</li>
+                <li>Select the Catalysis arrow from the MIM interactions palette in the Objects tab</li>
+                <li>Drag and drop anywhere on canvas to create the interaction</li>
+                <li>Drag the plain end (start) of the interaction over a target area on the enzyme node</li>
+                <li>Drag the catalysis end (end) of the interaction over the anchor on the conversion line</li>
+                <li>(Optional) Align nodes using toolbar actions</li>
+                <li>Done!</li>
+              </ul>
+            </details>
+            </li>
+            <li>When you have completed the challenge, save your work as a GPML file under <b>File > Save As</b>.</li>
+            <li>Drag-n-drop the GPML file below to submit.</li>
+          </ul>
+          <button id="download-from-page" type="button" class="btn btn-primary">Launch Editor</button>
+
+          <!-- Button trigger modal -->
+          <button id="launch-modal" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+            Launch Editor
+          </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="myModalLabel"></h4>
+                </div>
+                <div class="modal-body">
+                  <img src="../../images/jnlp-instructions.png">
+                </div>
+                <div class="modal-footer">
+                  <label><input type="checkbox" id="dont-show-instructions" value="first_checkbox"> Don't show instructions again </label>
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                  <button id="download-from-modal" type="button" class="btn btn-primary" data-dismiss="modal">Download</button>
+                </div>
+              </div>
+            </div>
+          </div>  
+
+          <div id="upload-target-container"></div>  
+
+          <br>  
+          <br> 
+	  <p><a href="met-1-second-solution.gpml">Click to download solution file (For Testing Only)</a>
+	  </p>
+		<br /> <br /> <br />
+	      </section>
+          </div> 
+    </div>       
+
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://www.sciencegamelab.org/js/sciapi.js"></script>
+    <script type="text/javascript" src="../../javascripts/sgl-init.js"></script>
+    <script type="text/javascript" src="../../javascripts/sgl.js"></script>
+    <script type="text/javascript" src="../../javascripts/upload-target.js"></script>
+
+    <script type="text/javascript">
+      function getShowInstructions() {
+        var showInstructions = localStorage.getItem('showChallengeInstructions') === 'false' ? false : true;
+        if (showInstructions) {
+          $('#download-from-page').hide();
+          $('#launch-modal').show();
+        } else {
+          $('#launch-modal').hide();
+          $('#download-from-page').show();
+        }
+        return showInstructions;
+      }
+      function setDownloadButton() {
+        var downloadButton = getShowInstructions() ? $('#download-from-modal') : $('#download-from-page');
+        downloadButton.click(function() {
+          if ($('#dont-show-instructions').is(':checked')) {
+            localStorage.setItem('showChallengeInstructions', 'false');
+          }
+          // server must set Content-Disposition: attachment
+          window.location = 'https://rcbranch.wikipathways.org/wpi/extensions/PathwayViewer/pathway-jnlp.php?identifier=WP3908&filename=WikiPathwaysAcademy-Challenge';
+          getShowInstructions();
+          setDownloadButton();
+        });
+      }
+      setDownloadButton();
+      window.wpAcademy.init({
+        uploadTargetContainerSelector: '#upload-target-container',
+        validate: function(actualStr) {          
+          var actualDoc = window.xmlReader.parseSync(actualStr);
+          // DataNode count
+          return window.xmlQuery(actualDoc).find('DataNode').map(function(node) { return node.name }).length === 5 &&
+            window.xmlQuery(actualDoc).find('DataNode').map(function(DataNodeEl) {
+              return DataNodeEl.attributes.hasOwnProperty('TextLabel') && DataNodeEl.attributes.hasOwnProperty('GraphId');
+            })
+            .reduce(function(acc, pass) {
+              return acc && pass;
+            });
+           },
+         action: 'met-1-second-demo-q2',
+         points: 5
+      });
+    </script>
+  </body>
+</html>
