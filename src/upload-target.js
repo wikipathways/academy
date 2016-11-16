@@ -10,13 +10,22 @@ window.xmlReader = xmlReader;
 window.xmlQuery = xmlQuery;
 
 export default function init({uploadTargetContainerSelector, validate, action, score}) {
+  window.addEventListener('dragover', function(e) {
+    e = e || event;
+    e.preventDefault();
+  }, false);
+  window.addEventListener('drop', function(e) {
+    e = e || event;
+    e.preventDefault();
+  }, false);
+
   let uploadTargetContainer = document.querySelector(uploadTargetContainerSelector);
 
   // based on http://html5demos.com/file-api
   const uploadTarget = document.createElement('div');
   uploadTarget.setAttribute('id', 'upload-target');
   uploadTarget.setAttribute('style',
-      'border: 10px dashed #ccc; width: 300px; height: 300px; margin: 20px auto;')
+      'border: 10px dashed #ccc; height: 300px; margin: 20px auto; padding: 10px;')
   uploadTargetContainer.appendChild(uploadTarget);
 
   const status = document.createElement('p');
@@ -26,13 +35,20 @@ export default function init({uploadTargetContainerSelector, validate, action, s
   status.style.top = '50%';
   status.style.transform = 'translateY(-50%)';
   status.style.textAlign = 'center';
-  status.textContent = 'Drag and drop GPML file here.';
+  status.style.fontSize = '2em';
+  status.textContent = 'Drag and drop GPML file here';
   uploadTarget.appendChild(status);
 
   uploadTarget.addEventListener('dragover', function(evt) {
     uploadTarget.style.border = '10px solid lightgreen';
     uploadTarget.style.backgroundColor = 'white';
     status.style.visibility = 'hidden';
+  });
+
+  uploadTarget.addEventListener('drop', function(evt) {
+    uploadTarget.style.border = '10px dashed #ccc';
+    uploadTarget.style.backgroundColor = '';
+    status.style.visibility = 'visible';
   });
 
   uploadTarget.addEventListener('dragleave', function(evt) {
@@ -52,7 +68,7 @@ export default function init({uploadTargetContainerSelector, validate, action, s
       status.style.fontSize = '20px';
       status.style.color = 'red';
       status.textContent = passes ? 'Congratulations!\nYour input is correct.' :
-        'Oops!\nThat does\'t look quite right\nPlease try again.';
+        'Oops!\nThat doesn\'t look quite right.\nPlease try again.';
       if (passes){
 	status.style.color='green';
 	if ( window.location !== window.parent.location ) {
