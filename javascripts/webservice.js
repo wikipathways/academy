@@ -18,10 +18,7 @@ $(document).ready(function(){
 		},
 		error: function (error) {
 			console.log(error);
-			//showResult('error');
-			// temp hack for demo
-			showResult('success');
-			sendSGLActivity('wp-account');
+			showResult('error');
 		}
 	});
   });
@@ -46,10 +43,7 @@ $(document).ready(function(){
 		},
 		error: function (error) {
 			console.log(error);
-			//showResult('error');
-			// temp hack for demo
-			showResult('success');
-			sendSGLActivity('wp-add-ontology');
+			showResult('error');
 		}
 	});
   });
