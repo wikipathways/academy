@@ -39,46 +39,43 @@
           <h1>
             <a id="intro" class="anchor" href="#intro" aria-hidden="true">
               <span aria-hidden="true" class="octicon octicon-link">
-              WikiPathways: Add Ontology Term
+              WikiPathways: Add a Description
               </span>
             </a>
           </h1>
 
           <h2>Background</h2>
 	  <p>
-	  WikiPathways uses ontologies to help categorize pathways to make them easier to find and sort. An ontology 
-	  is simply a collection of terms arranged hierarchically, like a branching tree or folders with subfolders.
-	  We get our ontologies from another curated database dedicated to collecting and distributing biology-related 
-	  ontologies, called BioPortal. <a href="http://bioportal.bioontology.org/ontologies/PW/?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPW_0000454&jump_to_nav=true"
-		  target="_blank">For example, the have a Pathway Ontology</a>. Whenever you create or edit a pathway
-       you should take some time to annotate it with descriptive ontology terms.	  
+	  WikiPathways includes custom information displays for each pathway, including the title, author list, description and various tags. 
+	  The pathwa page makes it easy to edit these. Look for the pencil icon along the right margin to see what is directly
+	  editable. For example, every pathway should have a <b>Description</b> that provides context and a basic explanation of the key
+	  parts of the pathway. Like a figure legend, it can also define any special glyphs or color usage. 
 	</p>
           <h2>Challenge</h2>
 	  <p>
-	  Add an ontology term to your tutorial pathway at WikiPathways. You will have to be logged in at WikiPathways in order to
-	  access the <b>Ontology Tags</b> controls.
+	  Add a description to your tutorial pathway at WikiPathways. You will need to be logged in at WikiPathways in order to
+	  access the editing controls.
 	  </p> 
 	  <br />
 	  <ul>
 		  <li>To complete this challenge, go to your tutorial pathway at WikiPathways</li>
 		  <li>Log in, if you haven't already (see link in upper-left corner), and return to the page</li>
-		  <li>Scroll down to the <b>Ontology Tags</b> section</li>
-		  <li>Search or browse for an ontology term you'd like to add, for example "classic metabolic pathway"</li>
-		  <li>(Optional) Click "i" for more information about this ontology term</li>
-		  <li>Click the green checkmark to add the term to the pathways</li> 
+		  <li>Scroll down to the <b>Description</b> section</li>
+		  <li>Take some time to write a description of the pathway that would help someone understand what is going on</li>
+		  <li>Click the green checkmark to save the text</li> 
 		  <li>Done! Now let's verify your work below</li>
 	  </ul>
           <br />  
 	  <div >
-                  <form id="wp-add-ontology">
+                  <form id="wp-description">
                           Provide your username and the WPID
-                          of the pathway you tagged, e.g, WP3917:
+                          of the pathway you described, e.g, WP3917:
                           <br />
                           <input type="text" name="username" value=""><br />
                           <input type="text" name="wpid" value=""><br />
                   </form>
 
-		  <button id="wp-add-ontology-button">Verify</button>
+		  <button id="wp-description-button">Verify</button>
 	</div>
 	<div class="results" id="success" style="display:none;">
 		<h2>Result</h2>

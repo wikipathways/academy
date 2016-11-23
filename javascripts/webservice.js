@@ -55,8 +55,40 @@ $(document).ready(function(){
         });
   });
 
+  $('#wp-description-button').click( function() {
+        var form = document.getElementById('wp-description');
+        var username= form.getElementsByTagName('input').username.value;
+        var wpid= form.getElementsByTagName('input').wpid.value;
+        console.log('posting to web service');
+        $('.results').hide();
+        var timestamp = getAnHourAgo();
+        console.log(timestamp);
+        $.ajax({
+                type: 'GET',
+                url: 'https://webservice.wikipathways.org/getPathwayHistory?pwId='+wpid+'&timestamp='+timestamp+'&format=xml',
+                dataType: 'xml',
+                success: function (response) {
+                        console.log(response);
+                        //var t = $(response).children().text();
+                         var comment = $(response).find('ns2\\:comment').text();
+                         var user = $(response).find('ns2\\:user').text();
+                        console.log(comment);
+                        console.log(user);
+                        if(comment.includes('Modified description') && user.includes(username)){
+                                showResult('success');
+                                sendSGLActivity('wp-description');
+                        } else {
+                                showResult('error');
+                        }
+                },
+                error: function (error) {
+                        console.log(error);
+                        showResult('error');
+                }
+        });
+  });
 
-  $('#wp-add-ontology-button').click( function() {
+  $(>. '#wp-add-ontology-button').click( function() {
         var form = document.getElementById('wp-add-ontology');
         var username= form.getElementsByTagName('input').username.value;
         var wpid= form.getElementsByTagName('input').wpid.value;
