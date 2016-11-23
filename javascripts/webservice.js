@@ -39,7 +39,7 @@ $(document).ready(function(){
                         //var t = $(response).children().text();
                          var comment = $(response).find('ns2\\:comment').text();
                          var user = $(response).find('ns2\\:user').text();
-                        console.log(tag);
+                        console.log(comment);
                         console.log(user);
 			if(comment.includes('New pathway') && user==username){
 				showResult('success');
@@ -73,7 +73,7 @@ $(document).ready(function(){
 			//var t = $(response).children().text();
 			 var comment = $(response).find('ns2\\:comment').text(); 
 			 var user = $(response).find('ns2\\:user').text();
-			console.log(tag);
+			console.log(comment);
 			console.log(user);
                         if(comment.includes('Ontology Term') && user==username){
                                 showResult('success');
