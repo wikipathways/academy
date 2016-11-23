@@ -88,7 +88,7 @@ $(document).ready(function(){
         });
   });
 
-  $(>. '#wp-add-ontology-button').click( function() {
+  $('#wp-add-ontology-button').click( function() {
         var form = document.getElementById('wp-add-ontology');
         var username= form.getElementsByTagName('input').username.value;
         var wpid= form.getElementsByTagName('input').wpid.value;
