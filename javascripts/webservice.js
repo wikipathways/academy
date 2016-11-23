@@ -37,12 +37,16 @@ $(document).ready(function(){
                 success: function (response) {
                         console.log(response);
                         //var t = $(response).children().text();
-                         var tag = $(response).find('ns2\\:comment').text();
+                         var comment = $(response).find('ns2\\:comment').text();
                          var user = $(response).find('ns2\\:user').text();
                         console.log(tag);
                         console.log(user);
-                        showResult('success');
-                        sendSGLActivity('wp-add-ontology');
+			if(comment=='New pathway' && user==username){
+				showResult('success');
+                        	sendSGLActivity('wp-add-ontology');
+			} else {
+				showResult('error');
+			}
                 },
                 error: function (error) {
                         console.log(error);
@@ -71,8 +75,12 @@ $(document).ready(function(){
 			 var user = $(response).find('ns2\\:user').text();
 			console.log(tag);
 			console.log(user);
-			showResult('success');
-			sendSGLActivity('wp-add-ontology');
+                        if(user==username){
+                                showResult('success');
+                                sendSGLActivity('wp-add-ontology');
+                        } else {
+                                showResult('error');
+                        }
 		},
 		error: function (error) {
 			console.log(error);
