@@ -39,46 +39,54 @@
           <h1>
             <a id="intro" class="anchor" href="#intro" aria-hidden="true">
               <span aria-hidden="true" class="octicon octicon-link">
-              WikiPathways: Add Ontology Term
+              WikiPathways: Publish Pathway
               </span>
             </a>
           </h1>
 
           <h2>Background</h2>
 	  <p>
-	  WikiPathways uses ontologies to help categorize pathways to make them easier to find and sort. An ontology 
-	  is simply a collection of terms arranged hierarchically, like a branching tree or folders with subfolders.
-	  We get our ontologies from another curated database dedicated to collecting and distributing biology-related 
-	  ontologies, called BioPortal. <a href="http://bioportal.bioontology.org/ontologies/PW/?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPW_0000454&jump_to_nav=true"
-		  target="_blank">For example, the have a Pathway Ontology</a>. Whenever you create or edit a pathway
-       you should take some time to annotate it with descriptive ontology terms.	  
+	  Now things <i>really</i> get interesting... Are you ready to contribute to a scientific database?
+	  <a href="www.wikipathways.org" target="_blank">WikiPathways</a> is wiki dedicated to biological pathways.
+	  The curated and approved pathway models at WikiPathways are <a href="http://wikipathways.tumblr.com/"
+	  target="_blank">used in research, data visualization and education</a>.
+	  There are thousands of pathways already modeled and released, but there are many more thousands yet to be
+	  captured. This is where YOU come in!
 	</p>
           <h2>Challenge</h2>
 	  <p>
-	  Add an ontology term to the <b>Sandbox Pathway</b>. You will have to be logged in at WikiPathways in order to
-	  access the <b>Ontology Tags</b> controls.
+	  Publish your pathway model of Cholesterol Biosynthesis at WikiPathways. We will "tag" the pathway as tutorial pathway
+	  to keep it out of the regular quality assurance (QA) review protocol. But the steps are the same as those that you
+	  would perform to publish an original pathway model.  You will use your published tutorial pathways in subsequent challenges.
 	  </p> 
 	  <br />
 	  <ul>
-		  <li>To complete this challenge, go to your tutorial pathway at WikiPathways</li>
-		  <li>Log in, if you haven't already (see link in upper-left corner), and return to the page</li>
-		  <li>Scroll down to the <b>Ontology Tags</b> section</li>
-		  <li>Search or browse for an ontology term you'd like to add, for example "metabolic pathway"</li>
-		  <li>(Optional) Click "i" for more information about this ontology term</li>
-		  <li>Click the green checkmark to add the term to the pathways.</li> 
-		  <li>Done! Now let's verify your work below</li>
+		  <li>To complete this challenge, log in to <a href="www.wikipathways.org" target="_blank">
+			  www.wikipathways.org</a></li>
+		  <li>Click on 'Create' in the pathway menu in the left sidebar</li> 
+		  <li>Select 'Upload File' and browse to select the .gpml file from your last Metabolic Pathway challenge</li>
+		  <li>Click 'Upload pathway'</li>
+		  <li>You should see a message at the top, including a link to your new pathway!</li>
+		  <li>IMPORTANT: the first thing you should do is tag the pathway as a "Tutorial Pathway".
+		  	<ul><li> Click the '+' icon under the Curation Tags header</li>
+				<li>Use the pull down menu to select "Tutorial Pathway"</li>
+				<li>Click the checkmark icon</li>
+			</ul></li>
+			<li>Done! You are the first author of this newly published pathway! It has its own unique identifier
+			, called a WPID, e.g., WP3917, and its own wepage URL.</li>
+		<li>NOTE: As a tutorial pathway, it will be automatically deleted in a 5-10 days, but in the 
+		meantime, you can practice making edits at WikiPathways on your very own pathway.<li>
 	  </ul>
           <br />  
 	  <div >
-                  <form id="wp-add-ontology">
-                          Provide your username and the WPID
-                          of the pathway you tagged, e.g, WP3917:
-                          <br />
-                          <input type="text" name="username" value=""><br />
-                          <input type="text" name="wpid" value=""><br />
-                  </form>
-
-		  <button id="wp-add-ontology-button">Verify</button>
+		  <form id="wp-publish">
+			  Let's verify your newly published pathway at WikiPathways. Provide your username and the WPID
+			  of your pathway, e.g, WP3917:
+			  <br />
+			  <input type="text" name="username" value=""><br />
+			  <input type="text" name="wpid" value=""><br />
+		  </form>
+		  <button id="wp-publish-button">Verify</button>
 	</div>
 	<div class="results" id="success" style="display:none;">
 		<h2>Result</h2>
@@ -86,7 +94,7 @@
 	</div>
 	 <div class="results" id="error" style="display:none;">
 		 <h2>Result</h2>
-		 <p>Hmm... something went wrong. Try again.</p>
+		 <p>Hmm... that did not work. Try again.</p>
 	 </div>
 		<br /> <br /> <br />
 	</section>
