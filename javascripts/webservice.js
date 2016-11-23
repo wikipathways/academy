@@ -41,7 +41,7 @@ $(document).ready(function(){
                          var user = $(response).find('ns2\\:user').text();
                         console.log(tag);
                         console.log(user);
-			if(comment=='New pathway' && user==username){
+			if(comment.includes('New pathway') && user==username){
 				showResult('success');
                         	sendSGLActivity('wp-add-ontology');
 			} else {
@@ -71,11 +71,11 @@ $(document).ready(function(){
 		success: function (response) {
 			console.log(response);
 			//var t = $(response).children().text();
-			 var tag = $(response).find('ns2\\:comment').text(); 
+			 var comment = $(response).find('ns2\\:comment').text(); 
 			 var user = $(response).find('ns2\\:user').text();
 			console.log(tag);
 			console.log(user);
-                        if(user==username){
+                        if(comment.includes('Ontology Term') && user==username){
                                 showResult('success');
                                 sendSGLActivity('wp-add-ontology');
                         } else {
