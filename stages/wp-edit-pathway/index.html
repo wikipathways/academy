@@ -39,22 +39,22 @@
           <h1>
             <a id="intro" class="anchor" href="#intro" aria-hidden="true">
               <span aria-hidden="true" class="octicon octicon-link">
-              WikiPathways: Add a Description
+              WikiPathways: Edit a Pathway
               </span>
             </a>
           </h1>
 
           <h2>Background</h2>
 	  <p>
-	  WikiPathways includes custom information displays for each pathway, including the title, author list, description and various tags. 
-	  The pathwa page makes it easy to edit these. Look for the pencil icon along the right margin to see what is directly
-	  editable. For example, every pathway should have a <b>Description</b> that provides context and a basic explanation of the key
-	  parts of the pathway. Like a figure legend, it can also define any special glyphs or color usage. 
+	  This challenge pulls together your skills with both WikiPathways and the pathway editing tool.
+	  Mastery of these tools is essential to sharing the pathway information you collect and curate.
+	  We will use the tutorial pathway you uploaded earlier, but the same steps apply to editing <i>any </i>
+	  pathway at WikiPathways.
 	</p>
           <h2>Challenge</h2>
 	  <p>
-	  Add a description to your tutorial pathway at WikiPathways. You will need to be logged in at WikiPathways in order to
-	  access the editing controls.
+	  Make an edit to your tutorial pathway at WikiPathways. You will need to be logged in at WikiPathways in order to
+	  access the editing controls, and you will need your username and password to update WikiPathways from the editor tool.
 	  </p> 
 	  <br />
 	  <ul>
@@ -67,15 +67,49 @@
 	  </ul>
           <br />  
 	  <div >
-                  <form id="wp-description">
+                  <form id="download-pathway">
+                          Provide the WPID
+                          of the pathway you want to edit, e.g, WP3917:
+                          <br />
+			  <input type="text" name="wpidload" value="" placeholder="WPID"><br />
+                  </form>
+
+          	<button id="download-from-page" type="button" class="btn btn-primary">Launch Editor</button>
+
+          <!-- Button trigger modal -->
+          <button id="launch-modal" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+            Launch Editor
+          </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="myModalLabel"></h4>
+                </div>
+                <div class="modal-body">
+                  <img src="../../images/jnlp-instructions.png">
+                </div>
+                <div class="modal-footer">
+                  <label><input type="checkbox" id="dont-show-instructions" value="first_checkbox"> Don't show instructions again </label>
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                  <button id="download-from-modal" type="button" class="btn btn-primary" data-dismiss="modal">Download</button>
+                </div>
+              </div>
+            </div>
+          </div>  
+
+                  <form id="wp-edit-pathway">
                           Provide your username and the WPID
-                          of the pathway you described, e.g, WP3917:
+                          of the pathway you edited, e.g, WP3917:
                           <br />
                           <input type="text" name="username" value="" placeholder="Username"><br />
                           <input type="text" name="wpid" value="" placeholder="WPID"><br />
                   </form>
 
-		  <button id="wp-description-button">Verify</button>
+                  <button id="wp-edit-pathway-button">Verify</button>
 	</div>
 	<div class="results" id="success" style="display:none;">
 		<h2>Result</h2>
@@ -97,5 +131,37 @@
     <script type="text/javascript" src="../../javascripts/sgl-init.js"></script>
     <script type="text/javascript" src="../../javascripts/sgl.js"></script>
     <script type="text/javascript" src="../../javascripts/webservice.js"></script>
+  
+   <script type="text/javascript">
+      function getShowInstructions() {
+        var showInstructions = localStorage.getItem('showChallengeInstructions') === 'false' ? false : true;
+        if (showInstructions) {
+          $('#download-from-page').hide();
+          $('#launch-modal').show();
+        } else {
+          $('#launch-modal').hide();
+          $('#download-from-page').show();
+        }
+        return showInstructions;
+      }
+      function setDownloadButton() {
+        var downloadButton = getShowInstructions() ? $('#download-from-modal') : $('#download-from-page');
+        downloadButton.click(function() {
+	var wpid= $('[name=wpidload]').val(); 
+          if ($('#dont-show-instructions').is(':checked')) {
+            localStorage.setItem('showChallengeInstructions', 'false');
+          }
+          // server must set Content-Disposition: attachment
+          window.location = 'https://rcbranch.wikipathways.org/wpi/extensions/PathwayViewer/pathway-jnlp.php?identifier='+wpid+'&filename=WikiPathwaysAcademy-Challenge';
+
+	 // set verfication form field for user convenience
+	$('[name=wpid]').val(wpid);
+
+          getShowInstructions();
+          setDownloadButton();
+        });
+      }
+      setDownloadButton();
+	</script>
   </body>
 </html>
