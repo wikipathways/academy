@@ -34,7 +34,7 @@ Project Structure
 There are a handful of challenge types collected in the stages dir. Each type depends on a unique js solution. The diagram below depicts how each stage type relates to js files, which in turn, sometimes relate to src files that require compiling.
 
 Stage type | JS/CSS | Source to compile | Notes
----|---|---
+---|---|---|---
 download jnlp | download-jnlp.js | | specify wpid as ```value``` in form input ```name="wpidload"```
 multiple choice | choice.js, choice.css | | specify activity name as ```id``` in div ```class="choices"```
 upload target | upload-target.js, upload-target-init.js | src/upload-target.js | specify activity and points in script
