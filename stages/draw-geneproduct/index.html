@@ -70,7 +70,7 @@
             <li>When you have completed the challenge, save your work as a GPML file under <b>File > Save As</b>.</li>
             <li>Drag-n-drop the GPML file below to submit.</li>
           </ul>
-          <button id="download-from-page" type="button" class="btn btn-primary">Launch Editor</button>
+          <button id="download-from-page" type="button" class="btn btn-primary btn-lg" style="display:none;">Launch Editor</button>
 
           <!-- Button trigger modal -->
           <button id="launch-modal" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
@@ -137,7 +137,6 @@
           // server must set Content-Disposition: attachment
           window.location = 'https://rcbranch.wikipathways.org/wpi/extensions/PathwayViewer/pathway-jnlp.php?identifier=WP3900&filename=WikiPathwaysAcademy-Challenge';
           getShowInstructions();
-          setDownloadButton();
         });
       }
       setDownloadButton();
