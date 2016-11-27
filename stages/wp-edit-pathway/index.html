@@ -64,10 +64,10 @@
 			  <input type="text" name="wpidload" value="" placeholder="WPID"><br />
                   </form>
 
-          	<button id="download-from-page" type="button" class="btn btn-primary btn-lg" style="display:none;">Launch Editor</button>
+          	<button id="download-from-page" type="button" class="btn btn-primary btn-lg" style="display:none;" onclick="passValueForward();">Launch Editor</button>
 
           <!-- Button trigger modal -->
-          <button id="launch-modal" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+          <button id="launch-modal" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" onclick="passValueForward();">
             Launch Editor
           </button>
 
@@ -132,38 +132,15 @@
     <script type="text/javascript" src="https://www.sciencegamelab.org/js/sciapi.js"></script>
     <script type="text/javascript" src="../../javascripts/sgl-init.js"></script>
     <script type="text/javascript" src="../../javascripts/sgl.js"></script>
+    <script type="text/javascript" src="../../javascripts/download-jnlp.js"></script>
     <script type="text/javascript" src="../../javascripts/webservice.js"></script>
   
-   <script type="text/javascript">
-      function getShowInstructions() {
-        var showInstructions = localStorage.getItem('showChallengeInstructions') === 'false' ? false : true;
-        if (showInstructions) {
-          $('#download-from-page').hide();
-          $('#launch-modal').show();
-        } else {
-          $('#launch-modal').hide();
-          $('#download-from-page').show();
-        }
-        return showInstructions;
-      }
-      function setDownloadButton() {
-        var downloadButton = getShowInstructions() ? $('#download-from-modal') : $('#download-from-page');
-        downloadButton.click(function() {
+    <script type="text/javascript">
+      function passValueForward() {
+	// set verfication form field for user convenience
 	var wpid= $('[name=wpidload]').val(); 
-          if ($('#dont-show-instructions').is(':checked')) {
-            localStorage.setItem('showChallengeInstructions', 'false');
-          }
-          // server must set Content-Disposition: attachment
-          window.location = 'https://rcbranch.wikipathways.org/wpi/extensions/PathwayViewer/pathway-jnlp.php?identifier='+wpid+'&filename=WikiPathwaysAcademy-Challenge';
-
-	 // set verfication form field for user convenience
 	$('[name=wpid]').val(wpid);
-
-          getShowInstructions();
-          setDownloadButton();
-        });
-      }
-      setDownloadButton();
-	</script>
+        }
+    </script>
   </body>
 </html>

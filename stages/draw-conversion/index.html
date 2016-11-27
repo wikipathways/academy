@@ -83,6 +83,9 @@
             <li>When you have completed the challenge, save your work as a GPML file under <b>File > Save As</b>.</li>
             <li>Drag-n-drop the GPML file below to submit.</li>
           </ul>
+          <form style="padding:0px; background:none;">
+                  <input type="hidden" name="wpidload" value="WP3900">
+          </form>
           <button id="download-from-page" type="button" class="btn btn-primary btn-lg" style="display:none;">Launch Editor</button>
 
           <!-- Button trigger modal -->
@@ -128,34 +131,10 @@
     <script type="text/javascript" src="https://www.sciencegamelab.org/js/sciapi.js"></script>
     <script type="text/javascript" src="../../javascripts/sgl-init.js"></script>
     <script type="text/javascript" src="../../javascripts/sgl.js"></script>
+    <script type="text/javascript" src="../../javascripts/download-jnlp.js"></script>
     <script type="text/javascript" src="../../javascripts/upload-target.js"></script>
 
     <script type="text/javascript">
-      function getShowInstructions() {
-        var showInstructions = localStorage.getItem('showChallengeInstructions') === 'false' ? false : true;
-        if (showInstructions) {
-          $('#download-from-page').hide();
-          $('#launch-modal').show();
-        } else {
-          $('#launch-modal').hide();
-          $('#download-from-page').show();
-        }
-        return showInstructions;
-      }
-      function setDownloadButton() {
-        var downloadButton = getShowInstructions() ? $('#download-from-modal') : $('#download-from-page');
-        downloadButton.click(function() {
-          if ($('#dont-show-instructions').is(':checked')) {
-            localStorage.setItem('showChallengeInstructions', 'false');
-          }
-          // server must set Content-Disposition: attachment
-          window.location = 'https://rcbranch.wikipathways.org/wpi/extensions/PathwayViewer/pathway-jnlp.php?identifier=WP3900&filename=WikiPathwaysAcademy-Challenge';
-          getShowInstructions();
-          setDownloadButton();
-        });
-      }
-      setDownloadButton();
-
       window.wpAcademy.init({
         uploadTargetContainerSelector: '#upload-target-container',
         validate: function(actualStr) {
