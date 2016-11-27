@@ -8,7 +8,7 @@ function(){
 			$(this).find('span').addClass('correct')
                         $(this).find('span').addClass('fa-check-circle');
 			showExplanation('ex1');
-			sendSGLActivity($(this).prop('id'));
+			sendSGLActivity($('.choices').prop('id'));
 		} else {
 			$(this).find('span').addClass('wrong');
 			$(this).find('span').addClass('fa-times-circle');
