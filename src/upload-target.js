@@ -1,7 +1,5 @@
 //const document = require('global/document');
 
-const _ = require('lodash');
-const path = require('path');
 const FileDragger = require('file-dragger')
 const xmlReader = require('xml-reader');
 const xmlQuery = require('xml-query');
