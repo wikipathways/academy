@@ -1,13 +1,9 @@
-//const document = require('global/document');
-
-const FileDragger = require('file-dragger')
-const xmlReader = require('xml-reader');
-const xmlQuery = require('xml-query');
-
-window.xmlReader = xmlReader;
-window.xmlQuery = xmlQuery;
-
-export default function init({uploadTargetContainerSelector, validate, action, score}) {
+window.wpAcademy = window.wpAcademy || {};
+window.wpAcademy.validateGPML = function(args) {
+  var uploadTargetContainerSelector = args.uploadTargetContainerSelector;
+  var validate = args.validate;
+  var action = args.action;
+  var score = args.score;
   window.addEventListener('dragover', function(e) {
     e = e || event;
     e.preventDefault();
@@ -17,7 +13,7 @@ export default function init({uploadTargetContainerSelector, validate, action, s
     e.preventDefault();
   }, false);
 
-  let uploadTargetContainer = document.querySelector(uploadTargetContainerSelector);
+  var uploadTargetContainer = document.querySelector(uploadTargetContainerSelector);
 
   // based on http://html5demos.com/file-api
   const uploadTarget = document.createElement('div');
@@ -55,7 +51,10 @@ export default function init({uploadTargetContainerSelector, validate, action, s
     status.style.visibility = 'visible';
   });
 
-  var emitter = FileDragger(uploadTarget);
+  // file-dragger.js is a browserified version of
+  // https://www.npmjs.com/package/file-dragger
+  // with FileDragger added to window.
+  var emitter = window.FileDragger(uploadTarget);
   emitter.on('file', function (file) {
     var reader = new FileReader();
     reader.onload = function(evt) {
@@ -67,11 +66,11 @@ export default function init({uploadTargetContainerSelector, validate, action, s
       status.style.color = 'red';
       status.textContent = passes ? 'Congratulations!\nYour input is correct.' :
         'Oops!\nThat doesn\'t look quite right.\nPlease try again.';
-      if (passes){
-	status.style.color='green';
-	if ( window.location !== window.parent.location ) {
-        window.wpSGL.submitSGLActivity(action, function(err, response) {
-          // TODO does this method use the node callback style?
+      if (passes) {
+        status.style.color='green';
+        if ( window.location !== window.parent.location ) {
+          window.wpSGL.submitSGLActivity(action, function(err, response) {
+            // TODO does this method use the node callback style?
           console.log('SGL submit');
           if (err) {
             console.log('err');
@@ -81,18 +80,18 @@ export default function init({uploadTargetContainerSelector, validate, action, s
           console.log(response);
           window.wpSGL.postLeaderboard(score, function(err, response) {
             // TODO does this method use the node callback style?
-            console.log('SGL post leaderboard');
-            if (err) {
-              console.log('err');
-              console.log(err);
-            }
-            console.log('response');
-            console.log(response);
+          console.log('SGL post leaderboard');
+          if (err) {
+            console.log('err');
+            console.log(err);
+          }
+          console.log('response');
+          console.log(response);
           });
-        });
-	}
+          });
+        }
       }
     };
     reader.readAsText(file);
   });
-}
+};
