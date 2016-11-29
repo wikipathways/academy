@@ -16,13 +16,13 @@ window.wpAcademy.validateGPML = function(args) {
   var uploadTargetContainer = document.querySelector(uploadTargetContainerSelector);
 
   // based on http://html5demos.com/file-api
-  const uploadTarget = document.createElement('div');
+  var uploadTarget = document.createElement('div');
   uploadTarget.setAttribute('id', 'upload-target');
   uploadTarget.setAttribute('style',
       'border: 10px dashed #ccc; height: 300px; margin: 20px auto; padding: 10px;')
   uploadTargetContainer.appendChild(uploadTarget);
 
-  const status = document.createElement('p');
+  var status = document.createElement('p');
   status.setAttribute('id', 'status');
   status.style.pointerEvents = 'none';
   status.style.position = 'relative';
@@ -58,7 +58,7 @@ window.wpAcademy.validateGPML = function(args) {
   emitter.on('file', function (file) {
     var reader = new FileReader();
     reader.onload = function(evt) {
-      const srcElement = evt.hasOwnProperty('srcElement') ? evt.srcElement : evt.target;
+      var srcElement = evt.hasOwnProperty('srcElement') ? evt.srcElement : evt.target;
       var actualStr = srcElement.result;
       var passes = validate(actualStr);
       status.style.visibility = 'visible';
