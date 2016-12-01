@@ -37,17 +37,17 @@
           <h1>
             <a id="intro" class="anchor" href="#intro" aria-hidden="true">
               <span aria-hidden="true" class="octicon octicon-link">
-                Setting Pathway Information Free: Third step
+                Setting Pathway Information Free: Final touches
               </span>
             </a>
           </h1>
 
           <h2>Background</h2>
-          <p>In this task, you will add citrate and it's indirect conversion to fatty acids and lipids
-          (fatty acid synthase).
+          <p>In this task, you will finalize the pathway layout, complete a quality control checklist
+          and add a literature reference.
           </p>
           <h2>Your Mission</h2>
-          <p>Draw the conversion reactions highlighted in the below figure.</p>
+          <p>Make final adjustments to pathway layout, go through the checklist and add a literature reference</p>
           <ul>
             <li>To complete this challenge, click the "Launch Editor" button below. You will 
             receive your challenge as a file named "WikiPathwaysAcademy-Challenge.jnlp". 
@@ -56,14 +56,22 @@
             <details>
              <summary>Perform the challenge tasks...</summary>
               <ul>
-                <li>Add a metabolite node for citrate</li>
-                <li>Add a bolded label for "Fatty acids and lipids"</li>
-                <li>Draw the conversion arrows between the nodes, and add anchors to the indirect arrow</li>
-                <li>Add the gene product that catalyze the indirect interaction, FASN</li>
-                <li>Add the catalysis arrow for FASN</li>
-                <li>Add two grouped gene product nodes for PRKAB1 and PRKAA2</li>
-                <li>Add the inhibition arrow for the PRKAB1/PRKAA2 group</li>
-                <li>Done!</li>
+                <h4>Adjust layout</h4>
+                <li>Starting at the top of the pathway, make sure the first 4 metabolites are aligned</li>
+                <li>Similarly, align the three sets of metabolites on each side of the Krebs cycle</li>
+                <li>Make sure each data node size is adjusted so that the text label is readable</li>
+                <h4>Final checklist</li>
+                <li>Did you indicate the correct species? Highlight the Pathway Information area in the top left and
+                review the Species entry in the Properties tab.</li>
+                <li>Do all data nodes have the correct database references? For each datanode, select it and review the Backpage
+                tab. Follow any of the linkouts to public databases for any identities you are unsure of.</li>
+                <li>Did you use the correct interaction types? Are they properly attached to
+				datanodes or other interactions? To highlight any unconnected interactions, click Ctrl+L (or Command+L on Mac). </li>
+                <h4>Add a literature reference</h4>
+                <li>Right-click on the Pathway Information Area and select <b>Literature>Add literature reference</b></li>
+                <li>In the <b>Literature reference properties</b> window, type in the PMID for the original article: 26536169</li>
+                <li>Click <b>Query PubMed</b>. When the results are loaded, click OK</li>
+                <li>Congratulations! You have converted your first pathway model from the scientific literature.</li>
               </ul>
             </details>
             </li>
@@ -71,7 +79,7 @@
             <li>Drag-n-drop the GPML file below to submit.</li>
           </ul>
           <form style="padding:0px; background:none;">
-                  <input type="hidden" name="wpidload" value="WP3920">
+                  <input type="hidden" name="wpidload" value="WP3918">
           </form>
           <button id="download-from-page" type="button" class="btn btn-primary btn-lg" style="display:none;">Launch Editor</button>
 
@@ -104,10 +112,8 @@
           <div id="upload-target-container"></div>  
 
           <br>  
-          
-          <img src="fig-met-1-third.png">
-          
-	  <p><a href="fig-met-1-third-solution.gpml">Click to download solution file (For Testing Only)</a>
+                    
+	  <p><a href="fig-met-1-fourth-solution.gpml">Click to download solution file (For Testing Only)</a>
 	</p>
 		<br /> <br /> <br />
 	      </section>
@@ -130,14 +136,14 @@
           var actualDoc = window.xmlReader.parseSync(actualStr);
 
           // DataNode count
-          return window.xmlQuery(actualDoc).find('DataNode').map(function(node) { return node.name }).length === 14 &&
+          return window.xmlQuery(actualDoc).find('DataNode').map(function(node) { return node.name }).length === 28 &&
             window.xmlQuery(actualDoc).find('DataNode').map(function(DataNodeEl) {
               return DataNodeEl.attributes.hasOwnProperty('TextLabel') && DataNodeEl.attributes.hasOwnProperty('GraphId');
             })
             .reduce(function(acc, pass) {
               return acc && pass;
             }) &&
-            window.xmlQuery(actualDoc).find('Interaction').length === 13 &&
+            window.xmlQuery(actualDoc).find('Interaction').length === 29 &&
             window.xmlQuery(actualDoc).find('Interaction').map(function(InteractionEl) {
               var points = window.xmlQuery(InteractionEl).find('Point');
               return points.length === 2 &&
@@ -152,7 +158,7 @@
               return acc && pass;
             });
         },
-        action: 'fig-met-1-third',
+        action: 'fig-met-1-last',
         points: 5
       });
     </script>
