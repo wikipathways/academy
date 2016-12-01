@@ -128,14 +128,14 @@
           var actualDoc = window.xmlReader.parseSync(actualStr);
 
           // DataNode count
-          return window.xmlQuery(actualDoc).find('DataNode').map(function(node) { return node.name }).length === 2 &&
+          return window.xmlQuery(actualDoc).find('DataNode').map(function(node) { return node.name }).length === 10 &&
             window.xmlQuery(actualDoc).find('DataNode').map(function(DataNodeEl) {
               return DataNodeEl.attributes.hasOwnProperty('TextLabel') && DataNodeEl.attributes.hasOwnProperty('GraphId');
             })
             .reduce(function(acc, pass) {
               return acc && pass;
             }) &&
-            window.xmlQuery(actualDoc).find('Interaction').length === 1 &&
+            window.xmlQuery(actualDoc).find('Interaction').length === 9 &&
             window.xmlQuery(actualDoc).find('Interaction').map(function(InteractionEl) {
               var points = window.xmlQuery(InteractionEl).find('Point');
               return points.length === 2 &&
