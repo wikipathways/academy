@@ -135,14 +135,15 @@
 	  var xrefIds = [];
 	  $(actualStr).find('DataNode').each(function(){
 		  count++;
-		  labels.push( $(this).attr("TextLabel"));
-		  xrefDbs.push( $(this).find('Xref').attr("Database"));
-		  xrefIds.push( $(this).find('Xref').attr("ID"));
+		  labels.push( $(this).attr('TextLabel').toUpperCase());
+		  xrefDbs.push( $(this).find('Xref').attr('Database'));
+		  xrefIds.push( $(this).find('Xref').attr('ID'));
 	  });
 	  //console.log('DataNode count: '+count);
 	  //console.log(labels+', '+xrefDbs+', '+xrefIds);
-
+		
 	  // Validation
+	  // Note: Check label names in all caps for case-insentive validation
 	  var err = '';
 	  err += (count == 1) ? '' : 'Incorrect number of nodes: '+count+'. ';
 	  err += (labels.includes("ACO2")) ? '' : 'Missing ACO2 node. ';  
