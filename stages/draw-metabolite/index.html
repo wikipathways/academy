@@ -134,16 +134,17 @@
 	  var xrefIds = [];
 	  $(actualStr).find('DataNode').each(function(){
 		  count++;
-		  labels.push( $(this).attr("TextLabel").toUpperCase());
-		  xrefDbs.push( $(this).find('Xref').attr("Database"));
-		  xrefIds.push( $(this).find('Xref').attr("ID"));
+		  labels.push( $(this).attr('TextLabel').toUpperCase());
+		  xrefDbs.push( $(this).find('Xref').attr('Database'));
+		  xrefIds.push( $(this).find('Xref').attr('ID'));
 	  });
 	  //console.log('DataNode count: '+count);
 	  //console.log(labels+', '+xrefDbs+', '+xrefIds);
 	  // Validation
+	  // Note: Check label names in all caps for case-insentive validation
 	  var err = '';
 	  err += (count == 1) ? '' : 'Incorrect number of nodes: '+count+'. ';
-	  err += (labels.includes("GLUCOSE")) ? '' : 'Missing glucose node. ';  
+	  err += (labels.includes('GLUCOSE')) ? '' : 'Missing glucose node. ';  
 	  err += (xrefDbs.length != 0) ? '' : 'Missing Xref datasource. ';
 	  err += (xrefIds.length != 0) ? '' : 'Missing Xref identifier. ';
 	  if (err.length == 0){
