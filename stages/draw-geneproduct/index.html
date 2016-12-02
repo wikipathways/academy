@@ -118,22 +118,44 @@
     <script type="text/javascript" src="../../javascripts/sgl-init.js"></script>
     <script type="text/javascript" src="../../javascripts/sgl.js"></script>
     <script type="text/javascript" src="../../javascripts/download-jnlp.js"></script>
-    <script type="text/javascript" src="../../javascripts/upload-target.js"></script>
+    <script type="text/javascript" src="../../javascripts/file-dragger.js"></script>
+    <script type="text/javascript" src="../../javascripts/validate-gpml.js"></script>
+
 
     <script type="text/javascript">
-      window.wpAcademy.init({
-        uploadTargetContainerSelector: '#upload-target-container',
+      window.wpAcademy.validateGPML({
+	uploadTargetContainerSelector: '#upload-target-container',
         validate: function(actualStr) {          
-          var actualDoc = window.xmlReader.parseSync(actualStr);
-          // DataNode count
-          return window.xmlQuery(actualDoc).find('DataNode').map(function(node) { return node.name }).length === 1 &&
-            window.xmlQuery(actualDoc).find('DataNode').map(function(DataNodeEl) {
-              return DataNodeEl.attributes.hasOwnProperty('TextLabel') && DataNodeEl.attributes.hasOwnProperty('GraphId');
-            })
-            .reduce(function(acc, pass) {
-              return acc && pass;
-            });
-           },
+          //console.log(actualStr);
+
+	  // DataNodes
+	  var count = 0;
+	  var labels = [];
+	  var xrefDbs = [];
+	  var xrefIds = [];
+	  $(actualStr).find('DataNode').each(function(){
+		  count++;
+		  labels.push( $(this).attr("TextLabel"));
+		  xrefDbs.push( $(this).find('Xref').attr("Database"));
+		  xrefIds.push( $(this).find('Xref').attr("ID"));
+	  });
+	  //console.log('DataNode count: '+count);
+	  //console.log(labels+', '+xrefDbs+', '+xrefIds);
+
+	  // Validation
+	  var err = '';
+	  err += (count == 1) ? '' : 'Incorrect number of nodes: '+count+'. ';
+	  err += (labels.includes("ACO2")) ? '' : 'Missing ACO2 node. ';  
+	  err += (xrefDbs.length != 0) ? '' : 'Missing Xref datasource. ';
+	  err += (xrefIds.length != 0) ? '' : 'Missing Xref identifier. ';
+	  if (err.length == 0){
+		  console.log('GPML is valid');
+		  return true;
+	  }else {
+		  console.log('GPML errors: '+err);
+	  	  return false
+	  }
+         },
          action: 'draw-geneproduct',
          points: 5
       });
