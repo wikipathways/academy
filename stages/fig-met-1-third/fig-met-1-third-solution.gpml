@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Pathway xmlns="http://pathvisio.org/GPML/2013a" Name="fig1-met1-solution" Version="20161128" Organism="Homo sapiens">
+<Pathway xmlns="http://pathvisio.org/GPML/2013a" Name="fig-met-1-third-solution" Version="20161128" Organism="Homo sapiens">
   <Comment Source="WikiPathways-description">Do not modify or delete. This pathway is part of the collection of content used by [https://wikipathways.github.io/academy/ WikiPathways Academy].</Comment>
-  <Graphics BoardWidth="776.5663643858202" BoardHeight="851.6450216450218" />
+  <Graphics BoardWidth="744.5952117898802" BoardHeight="515.8303695077044" />
   <DataNode TextLabel="D-Glucose" GraphId="ab04e" Type="Metabolite">
     <Graphics CenterX="297.72484141950963" CenterY="107.44111092062404" Width="90.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" Color="0000ff" />
     <Xref Database="HMDB" ID="HMDB00122" />
@@ -42,8 +42,8 @@
     <Graphics CenterX="230.22484141950966" CenterY="332.44111092062406" Width="55.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" />
     <Xref Database="Ensembl" ID="ENSG00000134333" />
   </DataNode>
-  <DataNode TextLabel="PRKAB1" GraphId="f2cb2" Type="GeneProduct" GroupRef="f9301">
-    <Graphics CenterX="553.687770773547" CenterY="439.2559593443651" Width="66.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" />
+  <DataNode TextLabel="PRKAB1" GraphId="f2cb2" Type="GeneProduct" GroupRef="f3bec">
+    <Graphics CenterX="555.5026528062151" CenterY="448.3303695077044" Width="66.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" />
     <Xref Database="Ensembl" ID="ENSG00000111725" />
   </DataNode>
   <DataNode TextLabel="citrate" GraphId="f730b" Type="Metabolite">
@@ -54,8 +54,8 @@
     <Graphics CenterX="297.72484141950963" CenterY="211.44111092062397" Width="134.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" Color="0000ff" />
     <Xref Database="ChEBI" ID="CHEBI:4170" />
   </DataNode>
-  <DataNode TextLabel="PRKAA2" GraphId="fba38" Type="GeneProduct" GroupRef="f9301">
-    <Graphics CenterX="553.687770773547" CenterY="464.2559593443651" Width="66.0" Height="25.0" ZOrder="32773" FontSize="12" Valign="Middle" />
+  <DataNode TextLabel="PRKAA2" GraphId="fba38" Type="GeneProduct" GroupRef="f3bec">
+    <Graphics CenterX="555.5026528062151" CenterY="473.3303695077044" Width="66.0" Height="25.0" ZOrder="32773" FontSize="12" Valign="Middle" />
     <Xref Database="Ensembl" ID="ENSG00000162409" />
   </DataNode>
   <Interaction GraphId="id1154a162">
@@ -119,7 +119,7 @@
   </Interaction>
   <Interaction GraphId="idb8a52776">
     <Graphics ZOrder="12288" LineThickness="1.0">
-      <Point X="553.687770773547" Y="418.7559593443651" GraphRef="afd76" RelX="0.0" RelY="-1.0" />
+      <Point X="555.5026528062151" Y="423.8303695077044" GraphRef="de5cd" RelX="0.0" RelY="-1.0" />
       <Point X="536.7915184458031" Y="395.47563694149994" GraphRef="db3f6" RelX="0.0" RelY="0.0" ArrowHead="mim-inhibition" />
     </Graphics>
     <Xref Database="" ID="" />
@@ -160,7 +160,7 @@
   <Label TextLabel="Glycolysis" GraphId="c8832">
     <Graphics CenterX="298.1851179673321" CenterY="62.14156079854811" Width="90.0" Height="25.0" ZOrder="28672" FillColor="ffffff" FontWeight="Bold" FontSize="12" Valign="Middle" />
   </Label>
-  <Group GroupId="f9301" GraphId="afd76" Style="Group" />
+  <Group GroupId="f3bec" GraphId="de5cd" Style="Complex" TextLabel="AMPK" />
   <InfoBox CenterX="0.0" CenterY="0.0" />
   <Biopax />
 </Pathway>
