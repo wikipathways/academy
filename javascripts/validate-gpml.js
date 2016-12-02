@@ -3,7 +3,7 @@ window.wpAcademy.validateGPML = function(args) {
   var uploadTargetContainerSelector = args.uploadTargetContainerSelector;
   var validate = args.validate;
   var action = args.action;
-  var score = args.score;
+  var points = args.points;
   window.addEventListener('dragover', function(e) {
     e = e || event;
     e.preventDefault();
@@ -78,7 +78,7 @@ window.wpAcademy.validateGPML = function(args) {
           }
           console.log('response');
           console.log(response);
-          window.wpSGL.postLeaderboard(score, function(err, response) {
+          window.wpSGL.postLeaderboard(points, function(err, response) {
             // TODO does this method use the node callback style?
           console.log('SGL post leaderboard');
           if (err) {
