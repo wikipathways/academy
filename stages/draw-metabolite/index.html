@@ -143,10 +143,12 @@
 	  // Validation
 	  // Note: Check label names in all caps for case-insentive validation
 	  var err = '';
-	  err += (count == 1) ? '' : 'Incorrect number of nodes: '+count+'. ';
-	  err += (labels.includes('GLUCOSE')) ? '' : 'Missing glucose node. ';  
-	  err += (xrefDbs.length != 0) ? '' : 'Missing Xref datasource. ';
-	  err += (xrefIds.length != 0) ? '' : 'Missing Xref identifier. ';
+	  err += (count == 1) ? '' : 'Incorrect number of nodes: '+nodes+' detected. ';
+          err += (labels.includes('GLUCOSE')) ? '' : 'Missing Glucose node. ';
+          for (i=0;i<labels.length;i++){
+                  err += (xrefDbs[i] != '') ? '' : 'Missing Xref database for: '+labels[i]+'. ';
+                  err += (xrefIds[i] != '') ? '' : 'Missing Xref identifier for: '+labels[i]+'. ';
+          }
 	  if (err.length == 0){
 		  console.log('GPML is valid');
 		  return true;
