@@ -139,54 +139,7 @@
     <script type="text/javascript">
       window.wpAcademy.validateGPML({
 	uploadTargetContainerSelector: '#upload-target-container',
-        validate: function(actualStr) {          
-          //console.log(actualStr);
-		
-	  // DataNodes
-	  var nodes = 0;
-	  var labels = [];
-	  var xrefDbs = [];
-	  var xrefIds = [];
-	  var graphIds = [];
-	  $(actualStr).find('DataNode').each(function(){
-		  nodes++;
-		  labels.push( $(this).attr('TextLabel').toUpperCase());
-		  xrefDbs.push( $(this).find('Xref').attr('Database'));
-		  xrefIds.push( $(this).find('Xref').attr('ID'));
-		  graphIds.push( $(this).arrt('GraphId'));
-	  });
-	  console.log('DataNode count: '+nodes);
-	  console.log(labels+', '+xrefDbs+', '+xrefIds);
-		
-	  // Interactions
-	  var ints = 0;
-	  var graphRefs = [];
-	  $(actualStr).find('Interaction').each(function(){
-		  ints++;
-		  $(this).find('Graphics').find('Point').each(function() {
-			  var gr = $(this).attr('GraphRef');
-			  var ah = $(this).attr('ArrowHead');
-			  if (null === ah) { ah = 'line';}
-			  graphRefs.push( Object.gr = ah);
-		  });
-	  });
-	  console.log('Int count: '+ints);
-	  console.log(graphRefs);
-		
-	  // Validation
-	  var err = '';
-	  err += (nodes == 2) ? '' : 'Incorrect number of nodes: '+nodes+'. ';
-	  err += (labels.includes('ACO2')) ? '' : 'Missing ACO2 node. ';  
-	  err += (xrefDbs.length != 0) ? '' : 'Missing Xref datasource. ';
-	  err += (xrefIds.length != 0) ? '' : 'Missing Xref identifier. ';
-	  if (err.length == 0){
-		  console.log('GPML is valid');
-		  return true;
-	  }else {
-		  console.log('GPML errors: '+err);
-	  	  return false
-	  }
-         },
+        validate: 'draw-conversion-solution.gpml', 
         action: 'draw-conversion',
         points: 5
       });
