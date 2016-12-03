@@ -66,12 +66,13 @@ window.wpAcademy.validateGPML = function(args) {
     reader.onload = function(evt) {
       var srcElement = evt.hasOwnProperty('srcElement') ? evt.srcElement : evt.target;
       var userGpml = srcElement.result;
-      var passes = validateGpml(userGpml,solutionGpml);
+      var errors = validateGpml(userGpml,solutionGpml);
+      var passes = (errors.length == 0) ? true : false;
       status.style.visibility = 'visible';
       status.style.fontSize = '20px';
       status.style.color = 'red';
       status.textContent = passes ? 'Congratulations!\nYour input is correct.' :
-        'Oops!\nThat doesn\'t look quite right.\nPlease try again.';
+        "Oops!\nThat doesn\'t look quite right.\nPlease try again.\n"+errors;
       if (passes) {
         status.style.color='green';
         if ( window.location !== window.parent.location ) {
@@ -224,13 +225,6 @@ function validateGpml(userGpml,solutionGpml){
 
           });
 
-          if (err.length == 0){
-                  console.log('GPML is valid');
-                  return true;
-          }else {
-                  console.log('GPML errors: '+err);
-                  return false
-          }
-     
+	  return err;
 }
 
