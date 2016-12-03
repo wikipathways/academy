@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Pathway xmlns="http://pathvisio.org/GPML/2013a" Name="fig-met-1-last-solution" Version="20161128" Organism="Homo sapiens">
   <Comment Source="WikiPathways-description">Do not modify or delete. This pathway is part of the collection of content used by [https://wikipathways.github.io/academy/ WikiPathways Academy].</Comment>
-  <BiopaxRef>a4a</BiopaxRef>
+  <BiopaxRef>b84</BiopaxRef>
   <Graphics BoardWidth="723.1396763996801" BoardHeight="802.3748341175058" />
   <DataNode TextLabel="OGDH" GraphId="a51ac" Type="GeneProduct">
     <Graphics CenterX="556.4200756737278" CenterY="624.7152922608363" Width="55.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" />
@@ -48,7 +48,7 @@
     <Xref Database="ChEBI" ID="CHEBI:15361" />
   </DataNode>
   <DataNode TextLabel="FASN" GraphId="d1d7f" Type="GeneProduct">
-    <Graphics CenterX="478.753106526723" CenterY="328.874834117505" Width="50.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" />
+    <Graphics CenterX="472.753106526723" CenterY="315.874834117505" Width="50.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" />
     <Xref Database="Ensembl" ID="ENSG00000169710" />
   </DataNode>
   <DataNode TextLabel="Pentose Phosphate&#xA;Pathway" GraphId="e42e6" Type="Pathway">
@@ -63,8 +63,8 @@
     <Graphics CenterX="656.1396763996801" CenterY="585.1020909004368" Width="74.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" Color="0000ff" />
     <Xref Database="ChEBI" ID="CHEBI:14321" />
   </DataNode>
-  <DataNode TextLabel="PRKAB1" GraphId="f2cb2" Type="GeneProduct" GroupRef="f9301">
-    <Graphics CenterX="516.8456655103892" CenterY="409.78227513383894" Width="66.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" />
+  <DataNode TextLabel="PRKAB1" GraphId="f2cb2" Type="GeneProduct" GroupRef="e473f">
+    <Graphics CenterX="519.9364096120228" CenterY="411.967393101171" Width="66.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" />
     <Xref Database="Ensembl" ID="ENSG00000111725" />
   </DataNode>
   <DataNode TextLabel="alpha-ketoglutarate" GraphId="f702b" Type="Metabolite">
@@ -95,8 +95,8 @@
     <Graphics CenterX="218.8275166900613" CenterY="545.8748341175057" Width="52.0" Height="25.0" ZOrder="32772" FontSize="12" Valign="Middle" />
     <Xref Database="Ensembl" ID="ENSG00000146701" />
   </DataNode>
-  <DataNode TextLabel="PRKAA2" GraphId="fba38" Type="GeneProduct" GroupRef="f9301">
-    <Graphics CenterX="516.8456655103892" CenterY="434.78227513383894" Width="66.0" Height="25.0" ZOrder="32773" FontSize="12" Valign="Middle" />
+  <DataNode TextLabel="PRKAA2" GraphId="fba38" Type="GeneProduct" GroupRef="e473f">
+    <Graphics CenterX="519.9364096120228" CenterY="436.967393101171" Width="66.0" Height="25.0" ZOrder="32773" FontSize="12" Valign="Middle" />
     <Xref Database="Ensembl" ID="ENSG00000162409" />
   </DataNode>
   <DataNode TextLabel="succinate" GraphId="c546a" Type="Metabolite">
@@ -212,15 +212,15 @@
   <Interaction GraphId="idaa11f5a0">
     <Graphics ZOrder="12288" LineStyle="Broken" LineThickness="1.0">
       <Point X="397.75310652672187" Y="424.624834117505" GraphRef="f730b" RelX="1.0" RelY="-0.5" />
-      <Point X="543.7531065267223" Y="340.874834117505" GraphRef="b4a3f" RelX="-1.0" RelY="0.0" ArrowHead="mim-conversion" />
+      <Point X="540.7531065267223" Y="329.874834117505" GraphRef="b4a3f" RelX="-1.0" RelY="0.0" ArrowHead="mim-conversion" />
       <Anchor Position="0.6992593997983589" Shape="None" GraphId="db3f6" />
     </Graphics>
     <Xref Database="" ID="" />
   </Interaction>
   <Interaction GraphId="idb8a52776">
     <Graphics ZOrder="12288" LineThickness="1.0">
-      <Point X="516.8456655103892" Y="389.28227513383894" GraphRef="afd76" RelX="0.0" RelY="-1.0" />
-      <Point X="499.84497889728254" Y="366.0618593843924" GraphRef="db3f6" RelX="0.0" RelY="0.0" ArrowHead="mim-inhibition" />
+      <Point X="519.9364096120228" Y="387.467393101171" GraphRef="cc507" RelX="0.0" RelY="-1.0" />
+      <Point X="497.7472006978875" Y="358.37000598661047" GraphRef="db3f6" RelX="0.0" RelY="0.0" ArrowHead="mim-inhibition" />
     </Graphics>
     <Xref Database="" ID="" />
   </Interaction>
@@ -271,8 +271,8 @@
   </Interaction>
   <Interaction GraphId="idde3eaab1">
     <Graphics ZOrder="12288" LineThickness="1.0">
-      <Point X="478.753106526723" Y="341.374834117505" GraphRef="d1d7f" RelX="0.0" RelY="1.0" />
-      <Point X="499.84497889728254" Y="366.0618593843924" GraphRef="db3f6" RelX="0.0" RelY="0.0" ArrowHead="mim-catalysis" />
+      <Point X="472.753106526723" Y="328.374834117505" GraphRef="d1d7f" RelX="0.0" RelY="1.0" />
+      <Point X="497.7472006978875" Y="358.37000598661047" GraphRef="db3f6" RelX="0.0" RelY="0.0" ArrowHead="mim-catalysis" />
     </Graphics>
     <Xref Database="" ID="" />
   </Interaction>
@@ -323,7 +323,7 @@
     <Xref Database="" ID="" />
   </Interaction>
   <Label TextLabel="Fatty acids and lipids" GraphId="b4a3f">
-    <Graphics CenterX="610.7531065267223" CenterY="340.874834117505" Width="134.0" Height="25.0" ZOrder="28672" FillColor="ffffff" FontWeight="Bold" FontSize="12" Valign="Middle" />
+    <Graphics CenterX="607.7531065267223" CenterY="329.874834117505" Width="134.0" Height="25.0" ZOrder="28672" FillColor="ffffff" FontWeight="Bold" FontSize="12" Valign="Middle" />
   </Label>
   <Label TextLabel="Glycolysis" GraphId="c8832">
     <Graphics CenterX="261.34301270417416" CenterY="32.667876588021784" Width="90.0" Height="25.0" ZOrder="28672" FillColor="ffffff" FontWeight="Bold" FontSize="12" Valign="Middle" />
@@ -331,10 +331,10 @@
   <Label TextLabel="Krebs cycle" GraphId="d59e3">
     <Graphics CenterX="372.97640653357547" CenterY="594.3920145190561" Width="90.0" Height="25.0" ZOrder="32780" FillColor="ffffff" FontWeight="Bold" FontSize="12" Valign="Middle" />
   </Label>
-  <Group GroupId="f9301" GraphId="afd76" Style="Group" />
+  <Group GroupId="e473f" GraphId="cc507" Style="Complex" TextLabel="AMPK" />
   <InfoBox CenterX="0.0" CenterY="0.0" />
   <Biopax>
-    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="a4a">
+    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="b84">
       <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">26536169</bp:ID>
       <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
       <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Comprehensive Molecular Characterization of Papillary Renal-Cell Carcinoma.</bp:TITLE>
