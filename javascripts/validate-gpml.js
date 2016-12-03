@@ -115,6 +115,12 @@ function parseGpml(gpml){
                   var xid = $(this).find('Xref').attr('ID');
                   data[gi] = [tl,ty,xdb,xid,[]]; //insert array placeholder for interaction collection
           });
+	  // Label collection
+	  $(gpml).find('Label').each(function(){
+                  var gi = $(this).attr('GraphId');
+                  var tl = $(this).attr('TextLabel').toUpperCase();
+                  data[gi] = [tl,'Label','NULL','NULL',[]];
+          });
 
           // Group collection
           $(gpml).find('Group').each(function(){
