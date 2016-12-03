@@ -125,47 +125,7 @@
     <script type="text/javascript">
       window.wpAcademy.validateGPML({
 	uploadTargetContainerSelector: '#upload-target-container',
-<<<<<<< HEAD
 	validate: 'draw-metabolite-solution.gpml', 
-=======
-        validate: function(actualStr) {          
-          //console.log(actualStr);
-
-	  // DataNodes
-	  var labels = [];
-	  var xrefDbs = [];
-	  var xrefIds = [];
-	  $(actualStr).find('DataNode').each(function(){
-		  labels.push( $(this).attr('TextLabel').toUpperCase());
-		  xrefDbs.push( $(this).find('Xref').attr('Database'));
-		  xrefIds.push( $(this).find('Xref').attr('ID'));
-	  });
-	  //console.log('DataNode count: '+labels.length);
-	  //console.log(labels+', '+xrefDbs+', '+xrefIds);
-		
-	  // Validation
-	  // Note: Check label names in all caps for case-insentive validation
-          var checkLabels = [
-                  'GLUCOSE',
-                  ];
-          var err = '';
-          err += (labels.length == checkLabels.length) ? '' : 'Incorrect number of nodes: '+labels.length+' detected. ';
-          for (i=0;i<checkLabels.length;i++){
-                  err += (labels.includes(checkLabels[i])) ? '' : 'Missing '+checkLabels[i]+' node. ';
-          }    
-          for (i=0;i<labels.length;i++){
-                  err += (xrefDbs[i] != '') ? '' : 'Missing Xref database for: '+labels[i]+'. ';
-                  err += (xrefIds[i] != '') ? '' : 'Missing Xref identifier for: '+labels[i]+'. ';
-          }
-	  if (err.length == 0){
-		  console.log('GPML is valid');
-		  return true;
-	  }else {
-		  console.log('GPML errors: '+err);
-	  	  return false
-	  }
-         },
->>>>>>> 6ff3a2a868f3364c64b6495d60517b19c0d6844f
          action: 'draw-metabolite',
          points: 5
       });
