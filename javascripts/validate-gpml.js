@@ -122,11 +122,32 @@ function parseGpml(gpml){
                   data[gi] = ['GROUP','Group','NULL','NULL',[]];
           });
 
+	  // Compartment collection
+	  $(gpml).find('Shape').each(function(){
+		  var gi = $(this).attr('GraphId');
+		  $(this).find('Attribute').each(function(){
+			  if ($(this).attr('Key') == 'org.pathvisio.CellularComponentProperty'){
+				  var cc = $(this).attr('Value').toUpperCase();
+				  data[gi] = [cc,'Shape','NULL','NULL',[]];
+			  }
+		  });
+	  });
+
           // Anchor collection
           $(gpml).find('Interaction').each(function(){
-                  $(this).find('Graphics').find('Anchor').each(function(){
+		  var anchorlabel = 'ANCHOR';
+		  $(this).find('Graphics').find('Point').each(function() {
+		  	var gr = $(this).attr('GraphRef');
+			 if (undefined === data[gr]){
+                                console.log('GraphRef pointing to missing GraphId: '+gr);
+                          } else {
+                                anchorlabel += '_'+data[gr][0];
+			  }
+		  });
+		  $(this).find('Graphics').find('Anchor').each(function(){
                         var gi = $(this).attr('GraphId');
-                        data[gi] = ['ANCHOR','Anchor','NULL','NULL',[]];
+
+                        data[gi] = [anchorlabel.toUpperCase(),'Anchor','NULL','NULL',[]];
                   });
           });
 
@@ -143,6 +164,19 @@ function parseGpml(gpml){
                           }
                   });
           });
+
+	  // Fix anchor interaction arrays by merging per interaction
+	  data2 = data;
+	  $.each(data, function(k1,v1){
+		if (v1[1] == 'Anchor'){
+	  		$.each(data2, function(k2,v2){
+				if (v1[0] === v2[0] && k1 != k2){
+					Array.prototype.push.apply(data[k1][4], data2[k2][4]);
+				}
+			});
+		}
+	  });				
+
           console.log(data);
 
 	  return data;
@@ -154,7 +188,7 @@ function validateGpml(userGpml,solutionGpml){
           var err = '';
 	  userDataCount = Object.keys(userData).length;
           solutionDataCount = Object.keys(solutionData).length;
-          err += (userDataCount == solutionDataCount) ? '' : 'Incorrect number of nodes: '+userDataCount+' detected. ';
+          err += (userDataCount == solutionDataCount) ? '' : 'Incorrect number of nodes: '+userDataCount+' detected, '+solutionDataCount+' expected. ';
 
           var userlabels = [];
           $.each(userData, function(userkey, userval){
