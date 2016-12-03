@@ -37,6 +37,6 @@ Stage type      | JS/CSS                              | Notes
 ----------------|-------------------------------------|---------------------------------------------------
 download jnlp   | download-jnlp.js                    | specify wpid as ```value``` in form input ```name="wpidload"```
 multiple choice | choice.js, choice.css               | specify activity name as ```id``` in div ```class="choices"```
-validate GPML   | file-dragger.js, validate-gpml.js   | specify activity and points in script
+validate GPML   | file-dragger.js, validate-gpml.js   | specify solution file, activity and points in ```script```
 web service     | webservice.js, webservice.css       | specify activity name as form ```id```
 All types       | sgl.js, sgl-init.js, stylesheet.css |  
