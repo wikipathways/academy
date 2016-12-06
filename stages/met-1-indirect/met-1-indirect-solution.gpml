@@ -35,7 +35,7 @@
     <Graphics CenterX="284.3936257960389" CenterY="135.82560623193865" Width="66.66666666666667" Height="20.0" ZOrder="32768" FontSize="10" Valign="Middle" />
     <Xref Database="Entrez Gene" ID="3157" />
   </DataNode>
-  <DataNode TextLabel="SC4MOL" GraphId="b31" Type="GeneProduct" GroupRef="b39b6">
+  <DataNode TextLabel="MSMO1" GraphId="b31" Type="GeneProduct" GroupRef="b39b6">
     <Attribute Key="org.pathvisio.model.BackpageHead" Value="SC4MOL | sterol-C4-methyl oxidase-like" />
     <Graphics CenterX="646.3207101336652" CenterY="277.7051469412658" Width="66.66666666666667" Height="20.0" ZOrder="32768" FontSize="10" Valign="Middle" />
     <Xref Database="Entrez Gene" ID="6307" />
