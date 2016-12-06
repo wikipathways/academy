@@ -7,8 +7,8 @@
   <BiopaxRef>ea9</BiopaxRef>
   <BiopaxRef>cdc</BiopaxRef>
   <BiopaxRef>e73</BiopaxRef>
-  <Graphics BoardWidth="709.6540434669985" BoardHeight="679.0097543709028" />
-  <DataNode TextLabel="NSDHL" GraphId="a12" Type="GeneProduct" GroupRef="b39b6">
+  <Graphics BoardWidth="717.6540434669985" BoardHeight="679.0097543709028" />
+  <DataNode TextLabel="NSDHL" GraphId="a12" Type="GeneProduct" GroupRef="a9b64">
     <Attribute Key="org.pathvisio.model.BackpageHead" Value="NSDHL | NAD(P) dependent steroid dehydrogenase-..." />
     <Graphics CenterX="646.3207101336652" CenterY="261.70514694126564" Width="66.66666666666667" Height="20.0" ZOrder="32768" FontSize="10" Valign="Middle" />
     <Xref Database="Entrez Gene" ID="50814" />
@@ -34,11 +34,6 @@
     <Attribute Key="org.pathvisio.model.BackpageHead" Value="HMGCS1 | 3-hydroxy-3-methylglutaryl-Coenzyme A ..." />
     <Graphics CenterX="284.3936257960389" CenterY="135.82560623193865" Width="66.66666666666667" Height="20.0" ZOrder="32768" FontSize="10" Valign="Middle" />
     <Xref Database="Entrez Gene" ID="3157" />
-  </DataNode>
-  <DataNode TextLabel="SC4MOL" GraphId="b31" Type="GeneProduct" GroupRef="b39b6">
-    <Attribute Key="org.pathvisio.model.BackpageHead" Value="SC4MOL | sterol-C4-methyl oxidase-like" />
-    <Graphics CenterX="646.3207101336652" CenterY="281.7051469412658" Width="66.66666666666667" Height="20.0" ZOrder="32768" FontSize="10" Valign="Middle" />
-    <Xref Database="Entrez Gene" ID="6307" />
   </DataNode>
   <DataNode TextLabel="Lathosterol" GraphId="b63" Type="Metabolite">
     <Graphics CenterX="563.1092436974785" CenterY="246.10644257703103" Width="76.33333333333333" Height="16.0" ZOrder="32768" FontSize="10" Valign="Middle" Color="0000ff" />
@@ -67,9 +62,13 @@
     <Graphics CenterX="284.26479302098085" CenterY="452.4996480292816" Width="66.66666666666667" Height="20.0" ZOrder="32768" FontSize="10" Valign="Middle" />
     <Xref Database="Entrez Gene" ID="4597" />
   </DataNode>
-  <DataNode TextLabel="CYP51A1" GraphId="d4d" Type="GeneProduct" GroupRef="b39b6">
+  <DataNode TextLabel="MSMO1" GraphId="c6b25" Type="GeneProduct" GroupRef="a9b64">
+    <Graphics CenterX="646.3207101336652" CenterY="281.70514694126564" Width="66.667" Height="20.0" ZOrder="32768" FontSize="10" Valign="Middle" />
+    <Xref Database="Entrez Gene" ID="6307" />
+  </DataNode>
+  <DataNode TextLabel="CYP51A1" GraphId="d4d" Type="GeneProduct" GroupRef="a9b64">
     <Attribute Key="org.pathvisio.model.BackpageHead" Value="CYP51A1 | cytochrome P450 family 51 subfamily..." />
-    <Graphics CenterX="646.3207101336652" CenterY="301.7051469412658" Width="66.66666666666667" Height="20.0" ZOrder="32768" FontSize="10" Valign="Middle" />
+    <Graphics CenterX="646.3207101336652" CenterY="301.70514694126564" Width="66.66666666666667" Height="20.0" ZOrder="32768" FontSize="10" Valign="Middle" />
     <Xref Database="Entrez Gene" ID="1595" />
   </DataNode>
   <DataNode TextLabel="HMGCR" GraphId="d8b" Type="GeneProduct">
@@ -363,7 +362,7 @@
   </Interaction>
   <Interaction GraphId="idf70e1c50">
     <Graphics ZOrder="12288" LineThickness="1.0">
-      <Point X="604.987376800332" Y="281.70514694126575" GraphRef="c3e7c" RelX="-1.0" RelY="0.0" />
+      <Point X="604.9872101336653" Y="281.70514694126564" GraphRef="afb8d" RelX="-1.0" RelY="0.0" />
       <Point X="563.1092436974786" Y="281.8119646572457" GraphRef="bf5b2" RelX="0.0" RelY="0.0" ArrowHead="mim-catalysis" />
     </Graphics>
     <Xref Database="" ID="" />
@@ -376,7 +375,7 @@
     </Graphics>
     <Xref Database="" ID="" />
   </Interaction>
-  <Group GroupId="b39b6" GraphId="c3e7c" Style="Group" />
+  <Group GroupId="a9b64" GraphId="afb8d" Style="Group" />
   <InfoBox CenterX="8.333333333333334" CenterY="5.0" />
   <Biopax />
 </Pathway>
