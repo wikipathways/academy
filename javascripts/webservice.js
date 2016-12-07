@@ -41,7 +41,7 @@ $(document).ready(function(){
                         console.log(user);
 			if(comment.includes('New pathway') && user.includes(username)){
 				showResult('success');
-                        	sendSGLActivity('wp-add-ontology');
+                        	sendSGLActivity('wp-publish');
 			} else {
 				showResult('error');
 			}
