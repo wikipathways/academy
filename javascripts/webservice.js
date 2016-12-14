@@ -149,6 +149,37 @@ $(document).ready(function(){
         });
   });
 
+  $('#wp-add-literature-button').click( function() {
+        var username= $('[name=username]').val();
+        var wpid= $('[name=wpid]').val();
+        console.log('posting to web service');
+        $('.results').hide();
+        var timestamp = getAnHourAgo();
+        console.log(timestamp);
+        $.ajax({
+                type: 'GET',
+                url: 'https://webservice.wikipathways.org/getPathwayHistory?pwId='+wpid+'&timestamp='+timestamp+'&format=xml',
+                dataType: 'xml',
+                success: function (response) {
+                        console.log(response);
+                        //var t = $(response).children().text();
+                         var comment = $(response).find('ns2\\:comment').text();
+                         var user = $(response).find('ns2\\:user').text();
+                        console.log(comment);
+                        console.log(user);
+                        if(user.includes(username)){
+                                showResult('success');
+                                sendSGLActivity('wp-add-literature');
+                        } else {
+                                showResult('error');
+                        }
+                },
+                error: function (error) {
+                        console.log(error);
+                        showResult('error');
+                }
+        });
+  });
 
   function showResult(result){
 		$('#'+result).slideToggle('slow', function(){
