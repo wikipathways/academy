@@ -181,6 +181,36 @@ $(document).ready(function(){
         });
   });
 
+  $('#wp-tag-delete-button').click( function() {
+        var username= $('[name=username]').val();
+        var wpid= $('[name=wpid]').val();
+        console.log('posting to web service');
+        $('.results').hide();
+        $.ajax({
+                type: 'GET',
+                url: 'http://webservice.wikipathways.org/getCurationTags?pwId='+wpid+'&format=xml',
+                dataType: 'xml',
+                success: function (response) {
+                        console.log(response);
+                        //var t = $(response).children().text();
+                         var comment = $(response).find('ns2\\:name').text();
+                         var user = $(response).find('ns2\\:userModified').text();
+                        console.log(comment);
+                        console.log(user);
+                        if(comment.includes('ProposedDeletion') && user.includes(username)){
+                                showResult('success');
+                                sendSGLActivity('wp-tag-delete');
+                        } else {
+                                showResult('error');
+                        }
+                },
+                error: function (error) {
+                        console.log(error);
+                        showResult('error');
+                }
+        });
+  });
+
   function showResult(result){
 		$('#'+result).slideToggle('slow', function(){
 			$('html, body').animate({
