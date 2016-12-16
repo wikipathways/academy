@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="../../stylesheets/choice.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="../../stylesheets/webservice.css" media="screen" />
 
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -39,49 +39,44 @@
           <h1>
             <a id="intro" class="anchor" href="#intro" aria-hidden="true">
               <span aria-hidden="true" class="octicon octicon-link">
-               Biology 101 - Gene Products 
+              WikiPathways: Add Pathway Descriptions
               </span>
             </a>
           </h1>
 
           <h2>Background</h2>
 	  <p>
-	  	  A <a href="https://en.wikipedia.org/wiki/Gene_product">Gene Product</a> is the biochemical 
-	  	  material resulting from expression of a gene through the processes of 
-	  	  <a href="https://en.wikipedia.org/wiki/Transcription_(genetics)" target="_blank">
-		  transcription</a> and
-		  <a href="https://en.wikipedia.org/wiki/Translation_(biology)" target="_blank">translation</a>. 
-		  Gene products are an integral part of pathways, and it is important to understand what they
-		  actually are to model them correctly. 
-	 </p>
+	  WikiPathways provides a space for pathway description. Like figure legends, this space should
+	  be used to give a concise explanation of purpose and important features of a pathway. Sometimes,
+	   however, a pathway author goes through all the trouble of submitting a great model but negelct 
+	   to describe it. We need your help in providing high-quality descriptions for these pathways.
+	</p>
           <h2>Challenge</h2>
 	  <p>
-	  Review the concepts above and then answer the following multiple choice question.
+	  Add a description to the pathway below by following the link to WikiPathways. Click "Verify" 
+	  if you have saved a new description for that pathway. Click "Next >>" 
+	  to load the next pathway that needs a description. You will need to be logged in at 
+	  WikiPathways in order to access the editing controls.
 	  </p> 
-          <br />  
-	  <div class="choices" id="bio-geneproducts">
-		  <p><span>What are the possible products of a gene?</span></p>
-		<p><a class="false" href="javascript:void(0);"><span class="fa fa-circle-thin fa-2x"></span></a> 
-		 RNA, Metabolite
-		</p>
-		<p><a class="false" href="javascript:void(0);"><span class="fa fa-circle-thin fa-2x"></span></a> 
-		 Metabolite, Protein
-		</p>
-		<p><a class="true" href="javascript:void(0);"><span class="fa fa-circle-thin fa-2x"></span></a> 
-		 Protein, RNA
-		</p>
-	  </div>
-	  <br /> 
-	  <div class="results" id="ex1" style="display:none;">
-		  <h2>Explanation</h2>
-		  <p>That’s correct! And WikiPathways allows you to specify molecule types as you draw 
-			  a pathway. Though most often, we use the “Gene Product” type to mean either RNA or protein.</p>
-	  </div> 
-	  <div class="results" id="ex2" style="display:none;">
-		  <h2>Explanation</h2>
-		  <p>Are you sure? Review the links in the background section and choose another answer.</p>
-	  </div>
-	<br /> <br /> <br /> 
+	  <br />
+	  <div >
+		  <form id="fix-description">
+			  <div id="next-pathway">Loading...</div>
+			  <input type="hidden" name="tag" value="Curation:MissingDescription">
+                          <input type="hidden" name="wpid" value="">
+                  </form>
+		 <br />
+		  <button id="fix-description-button">Verify</button>
+	</div>
+	<div class="results" id="success" style="display:none;">
+		<h2>Result</h2>
+		<p>You did it!</p>
+	</div>
+	 <div class="results" id="error" style="display:none;">
+		 <h2>Result</h2>
+		 <p>Hmm... something went wrong. Try again.</p>
+	 </div>
+		<br /> <br /> <br />
 	</section>
 	    </div>
 	  </div>
@@ -92,6 +87,6 @@
     <script type="text/javascript" src="https://www.sciencegamelab.org/js/sciapi.js"></script>
     <script type="text/javascript" src="../../javascripts/sgl-init.js"></script>
     <script type="text/javascript" src="../../javascripts/sgl.js"></script>
-    <script type="text/javascript" src="../../javascripts/choice.js"></script>
+    <script type="text/javascript" src="../../javascripts/taskfeed.js"></script>
   </body>
 </html>
