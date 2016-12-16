@@ -22,7 +22,7 @@ $(document).ready(function(){
 	$('[name=wpid]').val(wpid); 
 	$.ajax({
 		type: 'GET',
-		url: 'http://webservice.wikipathways.org/getPathwayAs?fileType=png&pwId='+wpid+'&revision=0',
+		url: 'https://webservice.wikipathways.org/getPathwayAs?fileType=png&pwId='+wpid+'&revision=0',
 		dataType: 'text',
 		success: function (data) {
 			//console.log(data);
@@ -43,7 +43,7 @@ $(document).ready(function(){
 	nextlist = [];
 	$.ajax({
 		type: 'GET',
-		url: 'http://webservice.wikipathways.org/getCurationTagsByName?tagName='+tag+'&format=json',
+		url: 'https://webservice.wikipathways.org/getCurationTagsByName?tagName='+tag+'&format=json',
 		dataType: 'json',
 		success: function (response) {
 			var randomArray = getRandomArray(0,response.tags.length);
