@@ -72,7 +72,7 @@ function getRandomArray(min, max) {
 }
 	
 
-  $('#fix-description-button').click( function() {
+  $('#task-description-button').click( function() {
         var wpid= $('[name=wpid]').val();
         console.log('verifying '+wpid);
         $('.results').hide();
@@ -89,7 +89,7 @@ function getRandomArray(min, max) {
                         console.log(comment);
                         if(comment.includes('Modified description') ){
                                 showResult('success');
-                                sendSGLActivity('fix-description');
+                                sendSGLActivity('task-description');
                         } else {
                                 showResult('error');
                         }
