@@ -188,7 +188,7 @@ $(document).ready(function(){
         $('.results').hide();
         $.ajax({
                 type: 'GET',
-                url: 'http://webservice.wikipathways.org/getCurationTags?pwId='+wpid+'&format=xml',
+                url: 'https://webservice.wikipathways.org/getCurationTags?pwId='+wpid+'&format=xml',
                 dataType: 'xml',
                 success: function (response) {
                         console.log(response);
