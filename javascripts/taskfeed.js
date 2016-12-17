@@ -1,12 +1,14 @@
 $(document).ready(function(){
 	count = 0;
-	nextlist = [];
+	total = 0;
+	nextlist = {};
 	loadPathways();
 
 	$('#next-pathway-button').click( function() {
         	count++;
         	console.log(count);
-    		if (count == nextlist.length){
+		$('#pathway-info').html('');
+    		if (count == Object.keys(nextlist).length){
 				$('#next-pathway').html("Loading next pathway...");
         		loadPathways();
                 	count = 0;
@@ -17,7 +19,7 @@ $(document).ready(function(){
 
 
   function showNext(){
-	var wpid = nextlist[count];
+	var wpid = nextlist.count.id;
 	$('#next-pathway').html("Loading next pathway...");
 	$('[name=wpid]').val(wpid); 
 	$.ajax({
@@ -27,8 +29,14 @@ $(document).ready(function(){
 		success: function (data) {
 			//console.log(data);
 			var png = $(data).find('ns1\\:data').text();
-			$('#next-pathway').html('<a href="http://wikipathways.org/index.php/Pathway:'+wpid+
+			$('#next-pathway').html('<a href="'+nextlist.count.url+
 				'"target="_blank"><img width="600px" src="data:image/png;base64,'+png+'" />');
+			$('#pathway-info').html('Title: <a href="'+nextlist.count.url+
+						'"target="_blank"><b>'+nextlist.count.name+
+						'</b></a> ('+nextlist.count.id+')'+
+						'<br />Species: '+nextlist.count.species+
+						'<br /><br />');
+						
 		},
                 error: function (error) {
                         console.log(error);
@@ -40,15 +48,18 @@ $(document).ready(function(){
   function loadPathways(){
 	var tag= $('[name=tag]').val();
 	console.log(tag);
-	nextlist = [];
+	nextlist = {};
 	$.ajax({
 		type: 'GET',
 		url: 'https://webservice.wikipathways.org/getCurationTagsByName?tagName='+tag+'&format=json',
 		dataType: 'json',
 		success: function (response) {
-			var randomArray = getRandomArray(0,response.tags.length);
+			console.log(response);
+			total = response.tags.length;
+			$('#footer-info').html('<i>'+total+' pathways remaining</i>');
+			var randomArray = getRandomArray(0,total);
 			for (x=0;x<10;x++){
-				nextlist.push(response.tags[randomArray[x]].pathway.id);
+				nextlist.count = response.tags[randomArray[x]].pathway;
 			}
 			console.log(nextlist);
 			showNext();
@@ -59,17 +70,17 @@ $(document).ready(function(){
 	});
   }				
     
-function getRandomArray(min, max) {
-  var min = Math.ceil(min);
-  var max = Math.floor(max);
-  var arr = [];
-  while (arr.length <10) {
+  function getRandomArray(min, max) {
+    var min = Math.ceil(min);
+    var max = Math.floor(max);
+    var arr = [];
+    while (arr.length <10) {
 	var r = Math.floor(Math.random() * (max - min)) + min;
         if (arr.indexOf(r) > -1) continue;
 	arr.push(r);
+    }
+    return arr;
   }
-  return arr;
-}
 
 
 
@@ -94,6 +105,8 @@ function getRandomArray(min, max) {
 			$('.results').hide();
                         if(!alllist.includes(wpid) ){
                                 showResult('success');
+				total--;
+				$('#footer-info').html(total+' pathways remaining');
                                 sendSGLActivity(sglactivity);
                         } else {
                                 showResult('error');
