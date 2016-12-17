@@ -64,9 +64,10 @@
 			  <div id="next-pathway">Loading next pathway...</div>
 			  <input type="hidden" name="tag" value="Curation:NoInteractions">
                           <input type="hidden" name="wpid" value="">
+                          <input type="hidden" name="sglactivity" value="task-unconnected">
                   </form>
 		 <br />
-		  <button id="task-unconnected-button">Verify</button>
+		  <button id="task-verify-cleared-button">Verify</button>
 		  <button id="next-pathway-button">Next</button>
 	</div>
 	<div class="results" id="success" style="display:none;">
@@ -77,6 +78,10 @@
 		 <h2>Result</h2>
 		 <p>Hmm... something went wrong. Try again.</p>
 	 </div>
+         <div class="results" id="checking" style="display:none;">
+                 <h2>Result</h2>
+                 <p>Checking...</p>
+         </div>
 		<br /> <br /> <br />
 	</section>
 	    </div>

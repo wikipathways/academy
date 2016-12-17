@@ -70,12 +70,47 @@ function getRandomArray(min, max) {
   }
   return arr;
 }
-	
 
-  $('#task-description-button').click( function() {
+
+
+  $('#task-verify-cleared-button').click( function() {
         var wpid= $('[name=wpid]').val();
+        var sglactivity= $('[name=sgl]').val();
+	var tag= $('[name=tag]').val();
         console.log('verifying '+wpid);
         $('.results').hide();
+	showResult('checking');
+	var alllist = [];
+        $.ajax({
+                type: 'GET',
+                url: 'https://webservice.wikipathways.org/getCurationTagsByName?tagName='+tag+'&format=json',
+                dataType: 'json',
+                success: function (response) {
+			var clear = false;
+                        for (x=0;x<response.tags.length;x++){
+                                alllist.push(response.tags[x].pathway.id);
+                        }
+                        console.log(alllist);
+			$('.results').hide();
+                        if(!alllist.includes(wpid) ){
+                                showResult('success');
+                                sendSGLActivity(sglactivity);
+                        } else {
+                                showResult('error');
+                        }
+                },
+                error: function (error) {
+                        console.log(error);
+                }
+        });
+  });	
+
+  $('#task-verify-comment-button').click( function() {
+        var wpid= $('[name=wpid]').val();
+	var commenttext= $('[name=comment]').val();
+	var sglactivity= $('[name=sgl]').val();
+        console.log('verifying '+wpid);
+	$('.results').hide();
         var timestamp = getAnHourAgo();
         console.log(timestamp);
         $.ajax({
@@ -87,9 +122,9 @@ function getRandomArray(min, max) {
                         //var t = $(response).children().text();
                          var comment = $(response).find('ns2\\:comment').text();
                         console.log(comment);
-                        if(comment.includes('Modified description') ){
+                        if(comment.includes(commenttext) ){
                                 showResult('success');
-                                sendSGLActivity('task-description');
+                                sendSGLActivity(sglactivity);
                         } else {
                                 showResult('error');
                         }
