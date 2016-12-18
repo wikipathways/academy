@@ -3,6 +3,7 @@ $(document).ready(function(){
 	total = 0;
 	nextlist = {};
 	loadPathways();
+	$('#next-pathway-button').prop('disabled',false);
 
 	$('#next-pathway-button').click( function() {
         	count++;
@@ -10,10 +11,16 @@ $(document).ready(function(){
 		$('#pathway-info').html('');
 		$('.results').hide();
     		if (count == Object.keys(nextlist).length){
+			if($('[name=tag]').val()=='RecentChanges'){
+				taskComplete();
+				return;
+			} else {
 				$('#next-pathway').html("Loading next pathway...");
         		loadPathways();
                 	count = 0;
+			}
         	}else {
+			if ($('[name=tag]').val()=='RecentChanges'){updateFooter(--total);}
 			showNext();
 		}
 	});		
@@ -50,6 +57,7 @@ $(document).ready(function(){
   function loadPathways(){
 	var tag= $('[name=tag]').val();
 	console.log(tag);
+	if (tag=='RecentChanges'){loadRecentlyChangedPathways(); return;}
 	nextlist = {};
 	$.ajax({
 		type: 'GET',
@@ -96,6 +104,39 @@ $(document).ready(function(){
 	});
   }				
 
+  function loadRecentlyChangedPathways() {
+        nextlist = {};
+	var timestamp = getDaysAgo(14);
+	console.log(timestamp);
+        $.ajax({
+                type: 'GET',
+                url: 'http://webservice.wikipathways.org/getRecentChanges?timestamp='+timestamp+'&format=json',
+                dataType: 'json',
+                success: function (response) {
+                        console.log(response);
+                        total = response.pathways.length;
+                        if(total==0){
+                                taskComplete();
+                        } else {
+				var z=0;
+				for(x=0;x<total;x++){
+					if(response.pathways[x].revision!=0){
+						nextlist[z] = response.pathways[x];
+						z++;
+					}
+				}
+				total = Object.keys(nextlist).length;
+				updateFooter(total);
+				console.log(nextlist);
+				showNext();
+			}
+		},
+                error: function (error) {
+                        console.log(error);
+                }
+        });
+  }	
+
   function taskComplete(){
 	$('#next-pathway').html('This task is complete! Please try another task.');
         $('#next-pathway-button').prop('disabled',true);
@@ -114,41 +155,6 @@ $(document).ready(function(){
     return arr;
   }
 
-
-/**
-  $('#task-verify-cleared-button').click( function() {
-        var wpid= $('[name=wpid]').val();
-	if(!wpid.includes("WP")){console.log('Invalid wpid: '+wpid); return;}
-        var sglactivity= $('[name=sgl]').val();
-	var tag= $('[name=tag]').val();
-        console.log('verifying '+wpid);
-        $('.results').hide();
-	showResult('checking');
-        $.ajax({
-                type: 'GET',
-                url: 'https://webservice.wikipathways.org/getCurationTagsByName?tagName='+tag+'&format=json',
-                dataType: 'json',
-                success: function (response) {
-			var alllist = [];
-                        for (x=0;x<response.tags.length;x++){
-                                alllist.push(response.tags[x].pathway.id);
-                        }
-                        //console.log(alllist);
-			$('.results').hide();
-                        if(!alllist.includes(wpid) ){
-                                showResult('success');
-				updateFooter(--total);
-                                sendSGLActivity(sglactivity);
-                        } else {
-                                showResult('error');
-                        }
-                },
-                error: function (error) {
-                        console.log(error);
-                }
-        });
-  });	
-*/
 
   $('#task-verify-description-button').click( function() {
 	  verifyComment("Modified description");
@@ -194,11 +200,10 @@ $(document).ready(function(){
           verifyTag("Curation:Stub", "added");
   });
 
-  $('#task-verify-untag-unconnected-button').click( function() {
-          verifyTag("Curation:NoInteractions", "removed");
+  $('#task-verify-untag-button').click( function() {
+          verifyTag($('[name=tag]').val(), "removed");
   });
 
- 
   function verifyComment(commenttext){
         var wpid= $('[name=wpid]').val();
 	if(!wpid.includes("WP")){console.log('Invalid wpid: '+wpid); return;}
@@ -218,7 +223,6 @@ $(document).ready(function(){
                         console.log(comment);
                         if(comment.includes(commenttext) ){
                                 showResult('success');
-				updateFooter(--total);
                                 sendSGLActivity(sglactivity);
                         } else {
                                 showResult('error');
@@ -291,22 +295,54 @@ $(document).ready(function(){
 
   }
   
+  /**
+   * returns timestamp as YYYYMMDDhhmmss, e.g., 20161214162000
+   */
   function getAnHourAgo(){
 	var d = new Date(Date.now());
 	var YYYY = d.getFullYear();
 	var MM = forceDoubleDigit(d.getMonth()) + 1; //only month is zero-based 
 	var DD = forceDoubleDigit(d.getDate());
 	var hh = d.getHours();
-		if(hh>0){
-			forceDoubleDigit(hh-1); // an hour ago
-		} else {
-			hh = '23'; //an hour ago, yesterday
-			DD = forceDoubleDigit(DD-1); // I think '00' day actually works in wp webservice...
-		}
+	if(hh>0){
+		hh = forceDoubleDigit(hh-1); // an hour ago
+	} else {
+		hh = '23'; //an hour ago, yesterday
+		DD = forceDoubleDigit(DD-1); // I think '00' day actually works in wp webservice...
+	}
 	var mm = forceDoubleDigit(d.getMinutes());
         var ss = forceDoubleDigit(d.getSeconds());
 	return(""+YYYY+MM+DD+hh+mm+ss);	
   }
+  /**
+   * takes integer for number of days
+   * assumes 30 days per month for simplicity
+   * 0 for today
+   *	
+   * returns timestamp as YYYYMMDDhhmmss, e.g., 20161214162000
+   */
+  function getDaysAgo(days){
+        var d = new Date(Date.now());
+        var YYYY = d.getFullYear();
+        var MM = forceDoubleDigit(d.getMonth()) + 1; //only month is zero-based 
+        var DD = d.getDate();
+	if(DD>days){
+		DD = forceDoubleDigit(DD-days); // days ago
+	} else {
+		DD = forceDoubleDigit(DD-days+30); // end of last month; wp webservice will ignore possible innaccuracies in Feb dates
+		if (MM==1){  	// if Jan, then Dec last year
+			MM = 12;	
+			YY = YY-1;			
+		} else {
+			MM = forceDoubleDigit(MM-1);
+		}
+	}
+        var hh = forceDoubleDigit(d.getHours());
+        var mm = forceDoubleDigit(d.getMinutes());
+        var ss = forceDoubleDigit(d.getSeconds());
+        return(""+YYYY+MM+DD+hh+mm+ss);   
+  }
+
   function forceDoubleDigit(x){
 	if(x<10)
 		x='0'+x;
