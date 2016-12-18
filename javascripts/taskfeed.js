@@ -106,7 +106,7 @@ $(document).ready(function(){
 
   function loadRecentlyChangedPathways() {
         nextlist = {};
-	var timestamp = getDaysAgo(14);
+	var timestamp = getDaysAgo(10);
 	console.log(timestamp);
         $.ajax({
                 type: 'GET',
