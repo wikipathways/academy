@@ -33,7 +33,7 @@
           <h1>
             <a id="intro" class="anchor" href="#intro" aria-hidden="true">
               <span aria-hidden="true" class="octicon octicon-link">
-              WikiPathways: Connect Interactions to Nodes
+              WikiPathways: Assess Pathways Under Construction
               </span>
             </a>
           </h1>
@@ -55,19 +55,24 @@
 	  <br />
 	  <div >
 		  <form id="task-feed">
-                        <div style="float:left;" id="next-pathway">Loading next pathway...</div>
-                        <div style="float:left; margin-left:20px;">
-                               <div id="pathway-info"></div>
-                               <div id="footer-info"></div>
-                        </div>
-                        <div style="clear:both;"></div>
-			  <input type="hidden" name="tag" value="Curation:NoInteractions">
-                          <input type="hidden" name="wpid" value="">
-                          <input type="hidden" name="sglactivity" value="task-unconnected">
-                  </form>
+			<div style="float:left;" id="next-pathway">Loading next pathway...</div>
+			<div style="float:left; margin-left:20px;">
+			       <div id="pathway-info"></div>
+			       <div id="footer-info"></div>
+			</div>
+			<div style="clear:both;"></div>
+			<input type="hidden" name="tag" value="Curation:UnderConstruction">
+            		<input type="hidden" name="wpid" value="">
+			<input type="hidden" name="sglactivity" value="task-under-construction">
+          </form>
 		 <br />
-		  <button id="task-verify-untag-unconnected-button">Verify</button>
+		 <button id="task-verify-cleared-button">Verify <b>Under Construction</b> tag removed</button>
 		  <button id="next-pathway-button">Next</button>
+		  <br /><button id="task-verify-tag-deletion-button">Verify <b>Deletion</b> tag added</button>
+		  <br /><button id="task-verify-tag-needswork-button">Verify <b>Needs Work</b> tag added</button>
+		  <br /><button id="task-verify-tag-stub-button">Verify <b>Stub</b> tag added</button>
+		  <br /><button id="task-verify-tag-curated-button">Verify <b>Curated</b> tag added</button>
+		  <br /><button id="task-verify-tag-featured-button">Verify <b>Featured</b> tag added</button>
 	</div>
 	<div class="results" id="success" style="display:none;">
 		<h2>Result</h2>
@@ -77,10 +82,6 @@
 		 <h2>Result</h2>
 		 <p>Hmm... something went wrong. Try again.</p>
 	 </div>
-         <div class="results" id="checking" style="display:none;">
-                 <h2>Result</h2>
-                 <p>Checking...</p>
-         </div>
 		<br /> <br /> <br />
 	</section>
 	    </div>
