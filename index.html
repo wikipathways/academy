@@ -53,14 +53,19 @@
 	  models!
 	  <br /> <br />
 	  Start your path towards becoming a WikiPathways author and contributor. <button 
-		  class="btn btn-primary btn-lg" type="button" onclick="location.href='path.html';">
+		  id="enter-button" class="btn btn-primary btn-lg" type="button" onclick="location.href='path.html';">
 		  Enter the Adacemy</button>
 	  </p> 
-	  <a href="path.html"><img src="images/WP-banner.png" alt="Pile of Pathways" style="width:500px;"></a>
+	  <img src="images/WP-banner.png" alt="Pile of Pathways" style="width:500px;">
 	  <br /><br /> 
             <script type="text/javascript" src="https://www.draw.io/js/viewer.min.js"></script>
   
       </div>
     </div>
+    <script  type="text/javascript">
+	    if ( window.location !== window.parent.location ){
+		    document.getElementById('enter-button').style.display='none';
+	    }
+    </script>
   </body>
 </html>
