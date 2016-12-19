@@ -220,10 +220,30 @@ $(document).ready(function(){
 
   }
 
-  function sendSGLActivity(action){
-	  console.log(action);
-
-  }
+function sendSGLActivity(action){
+	console.log(action);	
+    if ( window.location !== window.parent.location ) {
+	window.wpSGL.submitSGLActivity(action, function(err, response) {
+		console.log('SGL submit activity');
+	 	if (err) {
+			console.log('err');
+			console.log(err);
+		}
+		console.log('response');
+		console.log(response);
+	
+		window.wpSGL.postLeaderboard(5, function(err, response) {
+			console.log('SGL post to leaderboard');
+			if (err) {
+				console.log('err');
+				console.log(err);
+			}
+			console.log('response');
+			console.log(response);
+		});
+	});
+    }
+}
   
   function getAnHourAgo(){
 	var d = new Date(Date.now());
