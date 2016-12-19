@@ -110,7 +110,7 @@ $(document).ready(function(){
 	console.log(timestamp);
         $.ajax({
                 type: 'GET',
-                url: 'http://webservice.wikipathways.org/getRecentChanges?timestamp='+timestamp+'&format=json',
+                url: 'https://webservice.wikipathways.org/getRecentChanges?timestamp='+timestamp+'&format=json',
                 dataType: 'json',
                 success: function (response) {
                         console.log(response);
