@@ -35,8 +35,8 @@ $(document).ready(function(){
                 success: function (response) {
                         console.log(response);
                         //var t = $(response).children().text();
-                         var comment = $(response).find('ns2\\:comment').text();
-                         var user = $(response).find('ns2\\:user').text();
+                         var comment = $(response).find('ns2\\:comment, comment').text();
+                         var user = $(response).find('ns2\\:user, user').text();
                         console.log(comment);
                         console.log(user);
 			if(comment.includes('New pathway') && user.includes(username)){
@@ -99,8 +99,8 @@ $(document).ready(function(){
 		success: function (response) {
 			console.log(response);
 			//var t = $(response).children().text();
-			 var comment = $(response).find('ns2\\:comment').text(); 
-			 var user = $(response).find('ns2\\:user').text();
+			 var comment = $(response).find('ns2\\:comment, comment').text(); 
+			 var user = $(response).find('ns2\\:user, user').text();
 			console.log(comment);
 			console.log(user);
                         if(comment.includes('Ontology Term') && user.includes(username)){
@@ -131,8 +131,8 @@ $(document).ready(function(){
                 success: function (response) {
                         console.log(response);
                         //var t = $(response).children().text();
-                         var comment = $(response).find('ns2\\:comment').text();
-                         var user = $(response).find('ns2\\:user').text();
+                         var comment = $(response).find('ns2\\:comment, comment').text();
+                         var user = $(response).find('ns2\\:user, user').text();
                         console.log(comment);
                         console.log(user);
                         if(user.includes(username)){
@@ -163,8 +163,8 @@ $(document).ready(function(){
                 success: function (response) {
                         console.log(response);
                         //var t = $(response).children().text();
-                         var comment = $(response).find('ns2\\:comment').text();
-                         var user = $(response).find('ns2\\:user').text();
+                         var comment = $(response).find('ns2\\:comment, comment').text();
+                         var user = $(response).find('ns2\\:user, user').text();
                         console.log(comment);
                         console.log(user);
                         if(user.includes(username)){
@@ -193,8 +193,8 @@ $(document).ready(function(){
                 success: function (response) {
                         console.log(response);
                         //var t = $(response).children().text();
-                         var comment = $(response).find('ns2\\:name').text();
-                         var user = $(response).find('ns2\\:userModified').text();
+                         var comment = $(response).find('ns2\\:name, name').text();
+                         var user = $(response).find('ns2\\:userModified, userModified').text();
                         console.log(comment);
                         console.log(user);
                         if(comment.includes('ProposedDeletion') && user.includes(username)){
