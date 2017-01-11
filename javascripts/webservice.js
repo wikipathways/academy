@@ -67,8 +67,8 @@ $(document).ready(function(){
                 success: function (response) {
                         console.log(response);
                         //var t = $(response).children().text();
-                         var comment = $(response).find("[nodeName=ns2:comment]").text();
-                         var user = $(response).find("[nodeName=ns2:user]").text();
+                         var comment = $(response).find('ns2\\:comment, comment').text();
+                         var user = $(response).find('ns2\\:user, user').text();
                         console.log(comment);
                         console.log(user);
                         if(comment.includes('Modified description') && user.includes(username)){
