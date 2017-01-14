@@ -37,7 +37,7 @@ $(document).ready(function(){
 		dataType: 'text',
 		success: function (data) {
 			//console.log(data);
-			var png = $(data).find('ns1\\:data').text();
+			var png = $(data).find('ns1\\:data, data').text();
 			$('#next-pathway').html('<a href="'+nextlist[count].url+
 				'"target="_blank"><img width="600px" src="data:image/png;base64,'+png+'" />');
 			$('#pathway-info').html('Title: <a href="'+nextlist[count].url+
@@ -219,7 +219,7 @@ $(document).ready(function(){
                 success: function (response) {
                         //console.log(response);
                         //var t = $(response).children().text();
-                         var comment = $(response).find('ns2\\:comment').text();
+                         var comment = $(response).find('ns2\\:comment, comment').text();
                         console.log(comment);
                         if(comment.includes(commenttext) ){
                                 showResult('success');
@@ -321,7 +321,7 @@ function sendSGLActivity(action){
   function getAnHourAgo(){
 	var d = new Date(Date.now());
 	var YYYY = d.getFullYear();
-	var MM = forceDoubleDigit(d.getMonth()) + 1; //only month is zero-based 
+	var MM = forceDoubleDigit(d.getMonth()+1); //only month is zero-based 
 	var DD = forceDoubleDigit(d.getDate());
 	var hh = d.getHours();
 	if(hh>0){
@@ -344,7 +344,7 @@ function sendSGLActivity(action){
   function getDaysAgo(days){
         var d = new Date(Date.now());
         var YYYY = d.getFullYear();
-        var MM = forceDoubleDigit(d.getMonth()) + 1; //only month is zero-based 
+        var MM = forceDoubleDigit(d.getMonth()+1); //only month is zero-based 
         var DD = d.getDate();
 	if(DD>days){
 		DD = forceDoubleDigit(DD-days); // days ago
