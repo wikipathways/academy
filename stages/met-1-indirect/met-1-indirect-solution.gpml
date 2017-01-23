@@ -7,7 +7,7 @@
   <BiopaxRef>ea9</BiopaxRef>
   <BiopaxRef>cdc</BiopaxRef>
   <BiopaxRef>e73</BiopaxRef>
-  <Graphics BoardWidth="731.0" BoardHeight="679.0097543709028" />
+  <Graphics BoardWidth="709.6540434669985" BoardHeight="679.0097543709028" />
   <DataNode TextLabel="NSDHL" GraphId="a12" Type="GeneProduct" GroupRef="b39b6">
     <Attribute Key="org.pathvisio.model.BackpageHead" Value="NSDHL | NAD(P) dependent steroid dehydrogenase-..." />
     <Graphics CenterX="646.3207101336652" CenterY="257.70514694126564" Width="66.66666666666667" Height="20.0" ZOrder="32768" FontSize="10" Valign="Middle" />
@@ -121,7 +121,7 @@
     <Graphics CenterX="370.0" CenterY="99.0" Width="74.33333333333333" Height="16.0" ZOrder="32768" FontSize="10" Valign="Middle" Color="0000ff" />
     <Xref Database="CAS" ID="72-89-9" />
   </DataNode>
-  <DataNode TextLabel="Dimethylallylpyrophosphate" GraphId="fce72" Type="Metabolite">
+  <DataNode TextLabel="Dimethylallyl pyrophosphate" GraphId="fce72" Type="Metabolite">
     <Graphics CenterX="151.27502573612358" CenterY="496.9845153753352" Width="151.88176471647557" Height="20.0" ZOrder="32768" FontSize="10" Valign="Middle" Color="0000ff" />
     <Xref Database="CAS" ID="358-72-5" />
   </DataNode>
