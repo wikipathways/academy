@@ -43,7 +43,7 @@
 	  <b>The goal of this task is to ensure that recent pathway edits are appropriate and that relevant tags are updated.</b>
 	</p>
           <h2>Instructions</h2>
-	  <p>
+	  
 	  <ul>
 	  <li>For the pathway below, follow the link to the Pathway at WikiPathways. You will need to be logged in at WikiPathways in order to access the editing controls.</li> 
 	  <li>Perform the following tasks:</li>
@@ -77,7 +77,7 @@
 	  <i>Note: The above criteria are used mainly for the archive of human and mouse pathways. For species other than human and mouse, these 
 	  criteria are slightly more relaxed. Specifically, pathways don't need to have completed interactions, as long as most datanodes are annotated. 
 	  Even without completed interactions, these pathways are useful for gene set analysis.</i>
-	  </p> 
+	  
 	  
 	  <br />
 	  <div >
@@ -93,20 +93,21 @@
 			<input type="hidden" name="sglactivity" value="task-recent-changes">
           </form>
 		 <br />
-		 <button id="task-verify-tag-underconstruction-button">Verify <b>Under Construction</b> tag added</button>
-		  <button id="next-pathway-button">Next pathway</button>
-		  <br /><button id="task-verify-tag-tutorial-button">Verify <b>Tutorial</b> tag added</button>
-		  <br /><button id="task-verify-tag-needswork-button">Verify <b>Needs Work</b> tag added</button>
-		  <br /><button id="task-verify-tag-stub-button">Verify <b>Stub</b> tag added</button>
-		   <br /><button id="task-verify-tag-deletion-button">Verify <b>Deletion</b> tag added</button>
-		  <br /><button id="task-verify-tag-curated-button">Verify <b>Curated</b> tag added</button>
-		  <br /><button id="task-verify-tag-featured-button">Verify <b>Featured</b> tag added</button>
-		  <br /><button id="task-verify-description-button">Verify <b>Description</b> modified</button>
-		  <br /><button id="task-verify-title-button">Verify <b>Title</b> modified</button>
-		  <br /><button id="task-verify-ontology-button">Verify <b>Ontology Terms</b> added</button>
+		 <button id="task-verify-tag-underconstruction-button" class="btn btn-default">Verify <b>Under Construction</b> tag added</button>
+		  <button id="next-pathway-button" class="btn btn-primary">Next pathway</button>
+		  <br /><button id="task-verify-tag-tutorial-button" class="btn btn-default">Verify <b>Tutorial</b> tag added</button>
+		  <br /><button id="task-verify-tag-needswork-button" class="btn btn-default">Verify <b>Needs Work</b> tag added</button>
+		  <br /><button id="task-verify-tag-stub-button" class="btn btn-default">Verify <b>Stub</b> tag added</button>
+		   <br /><button id="task-verify-tag-deletion-button" class="btn btn-default">Verify <b>Deletion</b> tag added</button>
+		  <br /><button id="task-verify-tag-curated-button" class="btn btn-default">Verify <b>Curated</b> tag added</button>
+		  <br /><button id="task-verify-tag-featured-button" class="btn btn-default">Verify <b>Featured</b> tag added</button>
+		  <br /><button id="task-verify-description-button" class="btn btn-default">Verify <b>Description</b> modified</button>
+		  <br /><button id="task-verify-title-button" class="btn btn-default">Verify <b>Title</b> modified</button>
+		  <br /><button id="task-verify-ontology-button" class="btn btn-default">Verify <b>Ontology Terms</b> added</button>
 	
-		  <a href="../task-under-construction/index.html" class="btn btn-info btn-lg pull-right">Next step</a>
+		  
 	</div>
+	<div><a href="../task-under-construction/index.html" class="btn btn-info btn-lg pull-right">Next step</a></div>
 	<div class="results" id="success" style="display:none;">
 		<h2>Result</h2>
 		<p>You did it!</p>
