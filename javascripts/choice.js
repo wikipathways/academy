@@ -9,6 +9,7 @@ function(){
                         $(this).find('span').addClass('fa-check-circle');
 			showExplanation('ex1');
 			sendSGLActivity($('.choices').prop('id'));
+			$("a:contains('Next step')").show(); // Sara added this - little extra feedback. You can take it out if you don't like it. ;)
 		} else {
 			$(this).find('span').addClass('wrong');
 			$(this).find('span').addClass('fa-times-circle');
@@ -30,6 +31,7 @@ function showExplanation(ex){
 function sendSGLActivity(action){
 	console.log(action);	
     if ( window.location !== window.parent.location ) {
+	    //console.log(window.wpSGL);
 	window.wpSGL.submitSGLActivity(action, function(err, response) {
 		console.log('SGL submit activity');
 	 	if (err) {

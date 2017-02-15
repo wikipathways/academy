@@ -1,7 +1,8 @@
 window.$(window).load(function() {
     if ( window.location !== window.parent.location ) {
         document.getElementById('banner').style.display = "none";
-        document.getElementById('next-button').style.display = "none";
+        //document.getElementById('next-button').style.display = "none"; // When next button doesn't have an ID, this line causes the code to die.
+        $("a:contains('Next step')").hide(); // If all next buttons have the same text, this will work too.
         var token;
         var myParam = location.search.split('token=')[1];
         if (typeof myParam !== 'undefined' && myParam !== null) {
