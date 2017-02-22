@@ -9,7 +9,6 @@ function(){
                         $(this).find('span').addClass('fa-check-circle');
 			showExplanation('ex1');
 			sendSGLActivity($('.choices').prop('id'));
-			$("a:contains('Next step')").show(); // Sara added this - little extra feedback. You can take it out if you don't like it. ;)
 		} else {
 			$(this).find('span').addClass('wrong');
 			$(this).find('span').addClass('fa-times-circle');
