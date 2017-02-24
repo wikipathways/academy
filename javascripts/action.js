@@ -1,4 +1,4 @@
-$(document).ready(
+$(document).ready(function(){
 setTimeout(function(){
 	action = ($('.action').prop('id'));
 
@@ -14,4 +14,5 @@ setTimeout(function(){
   	console.log(response);
 	  });
   }
-}, 3000); );
+}, 3000); 
+});
