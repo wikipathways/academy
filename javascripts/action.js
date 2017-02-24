@@ -7,12 +7,11 @@ setTimeout(function(){
     window.wpSGL.submitSGLActivity(action, function(err, response) {
     console.log('SGL submit activity');
 	  if (err) {
-			console.log('err');
+		console.log('err');
   		console.log(err);
   	}
   	console.log('response');
   	console.log(response);
 	  });
   }
-}, 3000);
-  );
+}, 3000); );
