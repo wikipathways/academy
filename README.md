@@ -35,6 +35,7 @@ There are a handful of challenge types collected in the stages dir. Each type de
 
 Stage type      | JS/CSS                              | Notes
 ----------------|-------------------------------------|---------------------------------------------------
+read only       | read-only.js                        | specify activity name as ```id``` in div ```class="readonly"```
 download jnlp   | download-jnlp.js                    | specify wpid as ```value``` in form input ```name="wpidload"```
 multiple choice | choice.js, choice.css, cdn:font-awesome | specify activity name as ```id``` in div ```class="choices"```
 task feed | taskfeed.js, webservice.css | specify values in ```task-feed``` form; note verify-button types in taskfeed.js    
