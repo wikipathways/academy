@@ -1,7 +1,6 @@
 $(document).ready(
-function(){
-setTimeout(function(){alert("3 seconds...")}, 3000);
-  action = ($('.action').prop('id'));
+setTimeout(function(){
+	action = ($('.action').prop('id'));
 
 	console.log(action);	
   if ( window.location !== window.parent.location ) {
@@ -15,4 +14,5 @@ setTimeout(function(){alert("3 seconds...")}, 3000);
   	console.log(response);
 	  });
   }
-});
+}, 3000);
+  );
