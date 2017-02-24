@@ -4,7 +4,7 @@ $(document).ready(function(){
 		  
 function SGLCallback()
 {
-    if (!$.isFunction(window.wpSGL.submitSGLActivity)) {
+    if (typeof window.wpSGL == 'undefined') {
        setTimeout( SGLCallback, 1000);
        return;
     }
