@@ -1,6 +1,6 @@
 $(document).ready(
 function(){
-
+setTimeout(function(){alert("3 seconds...")}, 3000);
   action = ($('.action').prop('id'));
 
 	console.log(action);	
