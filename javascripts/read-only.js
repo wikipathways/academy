@@ -12,7 +12,7 @@ function SGLCallback()
 }
 		  
 function sendSGLActivity(){
-	action = ($('.action').prop('id'));
+	action = ($('.readonly').prop('id'));
 
 	console.log(action);	
   if ( window.location !== window.parent.location ) {
