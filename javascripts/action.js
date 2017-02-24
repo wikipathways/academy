@@ -1,4 +1,17 @@
 $(document).ready(function(){
+	SGLCallback();	
+)};
+		  
+function SGLCallback()
+{
+    if (!$.isFunction(window.wpSGL.submitSGLActivity)) {
+       setTimeout( SGLCallback, 1000);
+       return;
+    }
+    sendSGLActivity();
+}
+		  
+function sendSGLActivity(){
 	action = ($('.action').prop('id'));
 
 	console.log(action);	
@@ -13,4 +26,5 @@ $(document).ready(function(){
   	console.log(response);
 	  });
   }
-});
+}
+
