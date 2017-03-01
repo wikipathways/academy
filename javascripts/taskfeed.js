@@ -87,12 +87,14 @@ $(document).ready(function(){
 					showNext();
 				}						
 			}else {
+				filteredResponseTags = filter(response.tags, tag);
+				total = filteredResponseTags.length;
 				updateFooter(total);
 				var y = 10;
 				if(total<y){y = total;}
 				var selectionArray = getRandomArray(0,total,y);
 				for (x=0;x<y;x++){
-					nextlist[x] = response.tags[selectionArray[x]].pathway;
+					nextlist[x] = filteredResponseTags[selectionArray[x]].pathway;
 				}
 				console.log(nextlist);
 				showNext();
@@ -103,6 +105,49 @@ $(document).ready(function(){
         	}
 	});
   }				
+
+  function filter(responseTags,tag){
+	  var testPathways = ['WP4','WP2582','WP2919','WP3539','WP3900','WP3902','WP3903','WP3905','WP3907','WP3908','WP3909','WP3910','WP3917','WP3918','WP3919','WP3920','WP3921','WP3966'];
+	  var netpathPathways = ['WP1325','WP539','WP375','WP862','WP363','WP1098','WP754','WP980','WP10','WP895','WP1131','WP118','WP1320','WP297','WP781','WP1092','WP8','WP856','WP748','WP905','WP147','WP1168','WP397','WP937','WP1376','WP116','WP1374','WP182','WP1141','WP93','WP790','WP934','WP1341','WP1353','WP774','WP1346','WP407','WP886','WP815','WP818','WP1171','WP574','WP1121','WP512','WP373','WP827','WP1150','WP1322','WP319','WP1103','WP1315','WP1087','WP759','WP485','WP1094','WP783','WP1359','WP135','WP747','WP68','WP744','WP450','WP800','WP858','WP151','WP355','WP37','WP1329','WP488','WP387','WP569','WP855','WP44','WP1319','WP252','WP1382','WP1091','WP1180','WP750','WP946','WP913','WP849','WP199','WP1348','WP265','WP867','WP811','WP1369','WP929','WP457','WP246','WP1163','WP860','WP908','WP362','WP809','WP285','WP1354','WP274','WP1144','WP572','WP258','WP5','WP752','WP926','WP1323','WP1096','WP1367','WP794','WP1161'];
+
+	  var filteredResponseTags = [];
+
+	if (tag == "Curation:Tutorial"){
+		for (x=0;x<responseTags.length;x++){
+			if (testPathways.indexOf(responseTags[x].pathway.id) < 0){
+				console.log(responseTags[x].pathway.id);
+				filteredResponseTags.push(responseTags[x]);
+			}
+		}
+	}
+
+	if (tag == "Curation:NoInteractions"){
+		var reactomePathways =[];
+		$.ajax({
+                  type: 'GET',
+                  url: 'https://webservice.wikipathways.org/getCurationTagsByName?tagName=Curation:Reactome_Approved&format=json',
+                  dataType: 'json',
+                  success: function (response) {
+                        console.log(response);
+			for (y=0;y<response.tags.length;y++){
+				reactomePathways.push(response.tags[y].pathway.id);
+			}
+		  },
+		  error: function(error){
+			  console.log(error);
+		  }
+		});
+		for (x=0;x<responseTags.length;x++){
+			if (netpathPathways.indexOf(responseTags[x].pathway.id) < 0 &&
+			    reactomePathways.indexOf(responseTags[x].pathway.id) < 0){
+				    filteredResponseTags.push(responseTags[x]);
+			}
+		}
+	
+	}
+
+	return filteredResponseTags;
+  }
 
   function loadRecentlyChangedPathways() {
         nextlist = {};
