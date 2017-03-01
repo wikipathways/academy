@@ -539,6 +539,10 @@ aside#sidebar p.repo-owner a {
   margin-bottom: 40px;
 }
 
+#pathway-info a{
+  color: #FFA500;
+}
+
 a.button {
   width: 200px;
   height: 80px;
