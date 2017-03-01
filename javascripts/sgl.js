@@ -2,6 +2,7 @@ window.$(window).load(function() {
     if ( window.location !== window.parent.location ) {
         document.getElementById('banner').style.display = "none";
         $("a:contains('Next step')").hide(); // If all next buttons have the same text, this will work too.
+        $("a:contains('Previous step')").hide();
         var token;
         var myParam = location.search.split('token=')[1];
         if (typeof myParam !== 'undefined' && myParam !== null) {
