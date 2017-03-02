@@ -1,7 +1,16 @@
 window.$(window).load(function() {
     if ( window.location !== window.parent.location ) {
         document.getElementById('banner').style.display = "none";
-        $("a:contains('step')").hide(); // If all next buttons have the same text, this will work too.
+        //$("a:contains('step')").hide(); // If all next buttons have the same text, this will work too.
+        
+        if ($("#next-button").length){
+        $("#next-button").hide;
+        }
+
+        if ($("#prev-button").length){
+        $("#prev-button").hide;
+        }       
+        
         var token;
         var myParam = location.search.split('token=')[1];
         if (typeof myParam !== 'undefined' && myParam !== null) {
