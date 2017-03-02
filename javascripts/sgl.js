@@ -4,12 +4,12 @@ window.$(window).load(function() {
         //$("a:contains('step')").hide(); // If all next buttons have the same text, this will work too.
         
         if ($("#next-button").length){
-        $("#next-button").hide;
-        }
+            $("#next-button").hide();
+            }
 
         if ($("#prev-button").length){
-        $("#prev-button").hide;
-        }       
+            $("#prev-button").hide();
+            }       
         
         var token;
         var myParam = location.search.split('token=')[1];
