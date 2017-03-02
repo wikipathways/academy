@@ -3,12 +3,12 @@ window.$(window).load(function() {
         document.getElementById('banner').style.display = "none";
         //$("a:contains('step')").hide(); // If all next buttons have the same text, this will work too.
         
-        if ($("#next-button").length){
-            $("#next-button").hide();
+        if ($('#next-button').length){
+            $('#next-button').hide();
             }
 
-        if ($("#prev-button").length){
-            $("#prev-button").hide();
+        if ($('#prev-button').length){
+            $('#prev-button').hide();
             }       
         
         var token;
