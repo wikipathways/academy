@@ -121,7 +121,7 @@ $(document).ready(function(){
 				filteredResponseTags.push(responseTags[x]);
 			}
 		}
-		callback(filteredReponseTags);
+		callback(filteredResponseTags);
 	}
 
 	else if (tag == "Curation:NoInteractions"){
