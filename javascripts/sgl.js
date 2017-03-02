@@ -1,8 +1,13 @@
 window.$(window).load(function() {
     if ( window.location !== window.parent.location ) {
-        document.getElementById('banner').style.display = "none";
+        //document.getElementById('banner').style.display = "none";
         //$("a:contains('step')").hide(); // If all next buttons have the same text, this will work too.
         
+        if ($('#banner').length){
+            $('#banner').hide();
+            }
+
+            
         if ($('#next-button').length){
             $('#next-button').hide();
             }
