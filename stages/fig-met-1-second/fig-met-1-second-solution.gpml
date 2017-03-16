@@ -2,7 +2,7 @@
 <Pathway xmlns="http://pathvisio.org/GPML/2013a" Name="fig-met1-second-solution" Version="20161128" Organism="Homo sapiens">
   <Comment Source="WikiPathways-description">Do not modify or delete. This pathway is part of the collection of content used by [https://wikipathways.github.io/academy/ WikiPathways Academy].</Comment>
   <Graphics BoardWidth="600.72484141951" BoardHeight="448.94111092062406" />
-  <DataNode TextLabel="D-Glucose" GraphId="ab04e" Type="Metabolite">
+  <DataNode TextLabel="Glucose" GraphId="ab04e" Type="Metabolite">
     <Graphics CenterX="297.72484141950963" CenterY="107.44111092062404" Width="90.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" Color="0000ff" />
     <Xref Database="HMDB" ID="HMDB00122" />
   </DataNode>
@@ -30,7 +30,7 @@
     <Graphics CenterX="297.22484141950963" CenterY="298.44111092062406" Width="77.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" Color="0000ff" />
     <Xref Database="ChEBI" ID="CHEBI:15361" />
   </DataNode>
-  <DataNode TextLabel="Pentose Phosphate&#xA;Pathway" GraphId="e42e6" Type="Pathway">
+  <DataNode TextLabel="Pentose Phosphate Pathway" GraphId="e42e6" Type="Pathway">
     <Graphics CenterX="505.72484141950997" CenterY="211.44111092062397" Width="130.0" Height="25.0" ZOrder="32768" FontWeight="Bold" FontSize="12" Valign="Middle" ShapeType="None" Color="14961e" />
     <Xref Database="WikiPathways" ID="WP134" />
   </DataNode>
