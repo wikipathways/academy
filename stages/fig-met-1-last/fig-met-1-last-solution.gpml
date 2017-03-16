@@ -11,7 +11,7 @@
     <Graphics CenterX="486.253106526723" CenterY="492.87483411750503" Width="71.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" Color="0000ff" />
     <Xref Database="ChEBI" ID="CHEBI:16087" />
   </DataNode>
-  <DataNode TextLabel="D-Glucose" GraphId="ab04e" Type="Metabolite">
+  <DataNode TextLabel="Glucose" GraphId="ab04e" Type="Metabolite">
     <Graphics CenterX="260.8827361563517" CenterY="77.9674267100977" Width="90.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" Color="0000ff" />
     <Xref Database="HMDB" ID="HMDB00122" />
   </DataNode>
@@ -51,7 +51,7 @@
     <Graphics CenterX="508.753106526723" CenterY="296.874834117505" Width="50.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" />
     <Xref Database="Ensembl" ID="ENSG00000169710" />
   </DataNode>
-  <DataNode TextLabel="Pentose Phosphate&#xA;Pathway" GraphId="e42e6" Type="Pathway">
+  <DataNode TextLabel="Pentose Phosphate Pathway" GraphId="e42e6" Type="Pathway">
     <Graphics CenterX="468.88273615635205" CenterY="181.96742671009764" Width="130.0" Height="25.0" ZOrder="32768" FontWeight="Bold" FontSize="12" Valign="Middle" ShapeType="None" Color="14961e" />
     <Xref Database="WikiPathways" ID="WP134" />
   </DataNode>
@@ -196,7 +196,7 @@
   <Interaction GraphId="id71fb9845">
     <Graphics ZOrder="12288" LineThickness="1.0">
       <Point X="259.8827361563517" Y="389.46742671009787" GraphRef="cba05" RelX="0.0" RelY="1.0" />
-      <Point X="334.75310652672187" Y="424.624834117505" GraphRef="f730b" RelX="-1.0" RelY="-0.5" ArrowHead="Arrow" />
+      <Point X="334.75310652672187" Y="424.624834117505" GraphRef="f730b" RelX="-1.0" RelY="-0.5" ArrowHead="mim-conversion" />
     </Graphics>
     <Xref Database="" ID="" />
   </Interaction>
