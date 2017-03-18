@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	count = 0;
 	total = 0;
-	prevlist = {};
+	prevlist = [];
 	nextlist = {};
 	loadPathways();
 	$('#next-pathway-button').prop('disabled',false);
@@ -61,7 +61,7 @@ $(document).ready(function(){
 	var tag= $('[name=tag]').val();
 	console.log(tag);
 	if (tag=='RecentChanges'){loadRecentlyChangedPathways(); return;}
-	prevlist.push(nextlist);
+	//prevlist.push(nextlist.id);
 	nextlist = {};
 	$.ajax({
 		type: 'GET',
@@ -99,7 +99,7 @@ $(document).ready(function(){
                                 	if(total<y){y = total;}
                                 	var selectionArray = getRandomArray(0,total,y);
                                 	for (x=0;x<y;){
-						if (prevlist.indexOf(filteredResponseTags[selectionArray[x]]) < 0){
+						if (prevlist.indexOf(filteredResponseTags[selectionArray[x]].pathway.id) < 0){
 						    //exclude pathways seen before in current page load
 						    nextlist[x] = filteredResponseTags[selectionArray[x]].pathway;
 						    x++;
