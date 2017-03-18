@@ -61,7 +61,7 @@ $(document).ready(function(){
 	var tag= $('[name=tag]').val();
 	console.log(tag);
 	if (tag=='RecentChanges'){loadRecentlyChangedPathways(); return;}
-	//prevlist.push(nextlist.id);
+	prevlist = prevlist.concat(Object.keys(nextlist).map(function(k){return nextlist[k].id}))
 	nextlist = {};
 	$.ajax({
 		type: 'GET',
