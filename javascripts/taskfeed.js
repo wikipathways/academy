@@ -1,6 +1,7 @@
 $(document).ready(function(){
 	count = 0;
 	total = 0;
+	original = 0;
 	prevlist = [];
 	nextlist = {};
 	loadPathways();
@@ -14,7 +15,6 @@ $(document).ready(function(){
     		if (count == Object.keys(nextlist).length){
 			if($('[name=tag]').val()=='RecentChanges'){
 				taskComplete();
-				updateFooter(0);
 				return;
 			} else {
 				$('#next-pathway').html("Loading next pathway...");
@@ -72,41 +72,59 @@ $(document).ready(function(){
 			total = response.tags.length;
 			if(total==0){
 				taskComplete();
+				return;
 			} else if (tag=="Curation:AnalysisCollection" || tag =="Curation:FeaturedPathway"){
 				var z=0;
 				for (x=0;x<total;x++){
-					if (response.tags[x].revision!=response.tags[x].pathway.revision
-					   && z<10){
+					if (response.tags[x].revision!=response.tags[x].pathway.revision){
 						nextlist[z] = response.tags[x].pathway;
 						z++;
 					   }
 				}
-                        	console.log(nextlist);
 				total = Object.keys(nextlist).length;
+                        	console.log(nextlist);
                         	if (total==0){
-                                	taskComplete();
-                                	return;
+                        	        taskComplete();
+                        	        return;
                         	} else {
-				 	updateFooter(total);
-					showNext();
-				}						
+                        	        updateFooter(total);
+                        	        showNext();
+                        	}
 			}else {
 				filter(response.tags, tag, function(filteredResponseTags){
 					//using callback to sync nested ajax calls
 					total = filteredResponseTags.length;
-                                	updateFooter(total);
+					//store original total for footer count calc
+					if (prevlist.length == 0){
+						original=total;
+					}
+					total = filteredResponseTags.length;
                                 	var y = 10;
                                 	if(total<y){y = total;}
-                                	var selectionArray = getRandomArray(0,total,y);
-                                	for (x=0;x<y;){
-						//if (prevlist.indexOf(filteredResponseTags[selectionArray[x]].pathway.id) < 0){
+					var z=0;
+                                	for (x=0;x<total;x++){
+						if (z==y){break;}
+						if (prevlist.indexOf(filteredResponseTags[x].pathway.id) < 0){
 						    //exclude pathways seen before in current page load
-						    nextlist[x] = filteredResponseTags[selectionArray[x]].pathway;
-						    x++;
-						//}
+						    nextlist[z] = filteredResponseTags[x].pathway;
+						    z++;
+						}
 			           	}
-                                	console.log(nextlist);
-                                	showNext();	
+					if (Object.keys(nextlist).length >original - prevlist.length){
+						// handles case where tags are added during review
+						total = Object.keys(nextlist).length;
+					} else {
+						// handles case where tags are unchanged or removed during review
+						total = original - prevlist.length;
+					}
+                        		console.log(nextlist);
+                        		if (total==0){
+                        		        taskComplete();
+                        		        return;
+                        		} else {
+                        		        updateFooter(total);
+                        		        showNext();
+                        		}
 				});
 			}
 		},
@@ -143,7 +161,7 @@ $(document).ready(function(){
 		callback(filteredResponsePathways);
 	}
 
-	else if (tag == "Curation:NoInteractions"){
+	else if (tag == "Curation:NoInteractions" || tag == "Curation:NeedsWork"){
 		var filteredResponseTags = [];
 		var reactomePathways =[];
 		$.ajax({
@@ -215,6 +233,7 @@ $(document).ready(function(){
 	$('#next-pathway').html('This task is complete! Please try another task.');
         $('#next-pathway-button').prop('disabled',true);
         $('[name=wpid]').val('');
+	updateFooter(0);
     }
 
   function getRandomArray(min, max, num) {
