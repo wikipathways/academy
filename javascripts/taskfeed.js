@@ -99,11 +99,11 @@ $(document).ready(function(){
                                 	if(total<y){y = total;}
                                 	var selectionArray = getRandomArray(0,total,y);
                                 	for (x=0;x<y;){
-						if (prevlist.indexOf(filteredResponseTags[selectionArray[x]].pathway.id) < 0){
+						//if (prevlist.indexOf(filteredResponseTags[selectionArray[x]].pathway.id) < 0){
 						    //exclude pathways seen before in current page load
 						    nextlist[x] = filteredResponseTags[selectionArray[x]].pathway;
 						    x++;
-						}
+						//}
 			           	}
                                 	console.log(nextlist);
                                 	showNext();	
