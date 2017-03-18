@@ -182,6 +182,7 @@ $(document).ready(function(){
                         } else {
 				filter(response.pathways, 'RecentChanges', function(filteredResponsePathways){
 				//using callback to sync nested ajax calls
+					total = filteredResponsePathways.length;
 					var z=0;
 					for(x=0;x<total;x++){
 						if(filteredResponsePathways[x].revision!=0){
