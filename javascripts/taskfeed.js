@@ -13,6 +13,7 @@ $(document).ready(function(){
     		if (count == Object.keys(nextlist).length){
 			if($('[name=tag]').val()=='RecentChanges'){
 				taskComplete();
+				updateFooter(0);
 				return;
 			} else {
 				$('#next-pathway').html("Loading next pathway...");
