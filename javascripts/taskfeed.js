@@ -108,20 +108,29 @@ $(document).ready(function(){
 	});
   }				
 
-  function filter(responseTags,tag,callback){
+  function filter(responseX,tag,callback){
 	  var testPathways = ['WP4','WP2545','WP2582','WP2605','WP2606','WP2610','WP2611','WP2919','WP3418','WP3539','WP3590','WP3900','WP3902','WP3903','WP3905','WP3907','WP3908','WP3909','WP3910','WP3913','WP3917','WP3918','WP3919','WP3920','WP3921','WP3923','WP3961','WP3966'];
 	  var netpathPathways = ['WP539','WP375','WP862','WP363','WP1098','WP754','WP980','WP10','WP895','WP1131','WP118','WP1320','WP297','WP781','WP1092','WP8','WP856','WP748','WP905','WP147','WP1168','WP397','WP937','WP1376','WP116','WP1374','WP182','WP1141','WP93','WP790','WP934','WP1341','WP1353','WP774','WP1346','WP407','WP886','WP815','WP818','WP1171','WP574','WP1121','WP512','WP373','WP827','WP1150','WP1322','WP319','WP1103','WP3227','WP2032','WP1315','WP1087','WP759','WP485','WP1094','WP783','WP1359','WP135','WP747','WP68','WP744','WP450','WP800','WP858','WP151','WP355','WP37','WP1329','WP488','WP387','WP569','WP855','WP44','WP1319','WP252','WP1382','WP1091','WP1180','WP750','WP946','WP913','WP849','WP199','WP1348','WP265','WP867','WP811','WP1369','WP929','WP457','WP246','WP1163','WP860','WP908','WP362','WP809','WP285','WP1354','WP274','WP1144','WP572','WP258','WP5','WP752','WP926','WP1323','WP1096','WP1367','WP794','WP1161','WP2374','WP3277 ','WP2380','WP3141','WP3888','WP2203','WP2355','WP3265','WP2324','WP3124','WP2332','WP3159','WP3191','WP69','WP1011','WP2035','WP3158','WP2037','WP2034','WP3274','WP2018','WP3153','WP22','WP205','WP364','WP127','WP395','WP286','WP49','WP23','WP47','WP231','WP366','WP304','WP53','WP437','WP61','WP138','WP195','WP1345','WP894','WP780','WP352','WP480','WP1130','WP492','WP1325','WP244','WP2036','WP973','WP3271','WP1031','WP1055','WP968','WP976','WP1012','WP974','WP1022','WP1004','WP1052','WP1047','WP985','WP1014','WP897','WP1133','WP1045','WP1025'];
 
-	  var filteredResponseTags = [];
+	  var filteredResponseX = [];
 
 	if (tag == "Curation:Tutorial"){
-		for (x=0;x<responseTags.length;x++){
-			if (testPathways.indexOf(responseTags[x].pathway.id) < 0){
-				console.log(responseTags[x].pathway.id);
-				filteredResponseTags.push(responseTags[x]);
+		for (x=0;x<responseX.length;x++){
+			if (testPathways.indexOf(responseX[x].pathway.id) < 0){
+				console.log(responseX[x].pathway.id);
+				filteredResponseX.push(responseX[x]);
 			}
 		}
-		callback(filteredResponseTags);
+		callback(filteredResponseX);
+	}
+	else if (tag == "RecentChanges"){
+		for (x=0;x<responseX.length;x++){
+			if (testPathways.indexOf(responseX[x].id) < 0){
+				console.log(responseX[x].id);
+				filteredResponseX.push(responseX[x]);
+			}
+		}
+		callback(filteredResponseX);
 	}
 
 	else if (tag == "Curation:NoInteractions"){
@@ -135,13 +144,13 @@ $(document).ready(function(){
 			for (y=0;y<response.tags.length;y++){
 				reactomePathways.push(response.tags[y].pathway.id);
 			}
-                	for (x=0;x<responseTags.length;x++){
-                        	if (netpathPathways.indexOf(responseTags[x].pathway.id) < 0 &&
-                            	reactomePathways.indexOf(responseTags[x].pathway.id) < 0){
-                                    filteredResponseTags.push(responseTags[x]);
+                	for (x=0;x<responseX.length;x++){
+                        	if (netpathPathways.indexOf(responseX[x].pathway.id) < 0 &&
+                            	reactomePathways.indexOf(responseX[x].pathway.id) < 0){
+                                    filteredResponseX.push(responseX[x]);
                         	}
                 	}
-			callback(filteredResponseTags);
+			callback(filteredResponseX);
 		  },
 		  error: function(error){
 			  console.log(error);
@@ -150,7 +159,7 @@ $(document).ready(function(){
 	
 	}
 	else {
-		callback(responseTags);
+		callback(responseX);
 	}
   }
 
@@ -168,17 +177,20 @@ $(document).ready(function(){
                         if(total==0){
                                 taskComplete();
                         } else {
-				var z=0;
-				for(x=0;x<total;x++){
-					if(response.pathways[x].revision!=0){
-						nextlist[z] = response.pathways[x];
-						z++;
+				filter(response.pathways, 'RecentChanges', function(filteredResponsePathways){
+				//using callback to sync nested ajax calls
+					var z=0;
+					for(x=0;x<total;x++){
+						if(filteredResponsePathways[x].revision!=0){
+							nextlist[z] = filteredResponsePathways[x];
+							z++;
+						}
 					}
-				}
-				total = Object.keys(nextlist).length;
-				updateFooter(total);
-				console.log(nextlist);
-				showNext();
+					total = Object.keys(nextlist).length;
+					updateFooter(total);
+					console.log(nextlist);
+					showNext();
+				});
 			}
 		},
                 error: function (error) {
