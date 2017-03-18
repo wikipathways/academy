@@ -99,7 +99,7 @@ $(document).ready(function(){
                                 	if(total<y){y = total;}
                                 	var selectionArray = getRandomArray(0,total,y);
                                 	for (x=0;x<y;){
-						if (prevlist.indexOf(filteredResponseTags[selectionArray[x]]<0){
+						if (prevlist.indexOf(filteredResponseTags[selectionArray[x]]) < 0){
 						    //exclude pathways seen before in current page load
 						    nextlist[x] = filteredResponseTags[selectionArray[x]].pathway;
 						    x++;
