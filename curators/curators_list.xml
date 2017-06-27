@@ -4,11 +4,13 @@
 List of WikiPathways Admin Curators</description>
 <language>en</language>
 <item>
-<title>Anders Riutta</title>
-<link>http://wikipathways.org/index.php/User:Ariutta</link>  
+  <title>Anders Riutta</title>
+  <description>Gladstone Institutes, San Francisco, CA</description>
+  <link>http://wikipathways.org/index.php/User:Ariutta</link>  
 </item>
 <item>
-<title>Alex Pico</title>
-<link>http://wikipathways.org/index.php/User:AlexanderPico</link>  
-</item>
+  <title>Alex Pico</title>
+  <description>Gladstone Institutes, San Francisco, CA</description>
+  <link>http://wikipathways.org/index.php/User:AlexanderPico</link>  
+  </item>
 </rss>
