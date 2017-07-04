@@ -5,9 +5,7 @@ List of WikiPathways Admin Curators</description>
 <language>en</language>
 <item>
   <image>
-    <url>https://wikipathways.github.io/academy/curators/alex.png</url>
-    <title>pic</title>
-    <link>http://wikipathways.org/index.php/User:AlexanderPico</link>
+    <imgurl>https://wikipathways.github.io/academy/curators/alex.png</imgurl>
   </image>
   <title>Alex Pico (Gladstone Institutes, San Francisco, USA)</title>
   <link>http://wikipathways.org/index.php/User:AlexanderPico</link>
