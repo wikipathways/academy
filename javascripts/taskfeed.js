@@ -284,6 +284,9 @@ $(document).ready(function(){
   $('#task-verify-tag-underconstruction-button').click( function() {
           verifyTag("Curation:UnderConstruction", "added");
   });
+  $('#task-verify-tag-underconstruction-button').hide();
+
+
 
   $('#task-verify-tag-needswork-button').click( function() {
           verifyTag("Curation:NeedsWork", "added");
