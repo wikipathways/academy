@@ -248,6 +248,7 @@ $(document).ready(function(){
     return arr;
   }
 
+      if ( window.location !== window.parent.location ) { // e.g., if embedded at SGL
 
   $('#task-verify-description-button').click( function() {
 	  verifyComment("Modified description");
@@ -284,9 +285,6 @@ $(document).ready(function(){
   $('#task-verify-tag-underconstruction-button').click( function() {
           verifyTag("Curation:UnderConstruction", "added");
   });
-  $('#task-verify-tag-underconstruction-button').hide();
-
-
 
   $('#task-verify-tag-needswork-button').click( function() {
           verifyTag("Curation:NeedsWork", "added");
@@ -299,6 +297,21 @@ $(document).ready(function(){
   $('#task-verify-untag-button').click( function() {
           verifyTag($('[name=tag]').val(), "removed");
   });
+      } else { // if at wikipathways.github.io, then hide these verification buttons
+
+  $('#task-verify-description-button').hide();
+  $('#task-verify-title-button').hide();
+  $('#task-verify-ontology-button').hide();
+  $('#task-verify-reversion-button').hide();
+  $('#task-verify-tag-tutorial-button').hide();
+  $('#task-verify-tag-deletion-button').hide();
+  $('#task-verify-tag-curated-button').hide();
+  $('#task-verify-tag-featured-button').hide();
+  $('#task-verify-tag-underconstruction-button').hide();
+  $('#task-verify-tag-needswork-button').hide();
+  $('#task-verify-tag-stub-button').hide();
+  $('#task-verify-untag-button').hide();
+      }
 
   function verifyComment(commenttext){
         var wpid= $('[name=wpid]').val();
