@@ -39,66 +39,33 @@
             </a>
           </h1>
 
-          <h2>Background</h2>
-	  <p>This step covers a few remaining quality assurance tasks that are part of the basic quality assurance protocol. 
-	  If you have additional time after completing these, or have spent less than 30 minutes on the basic protocol, continue to additional quality assurance
-          tasks by clicking the <b>Next step</b> button.</p>
-         <h2>Instructions</h2>
-         <h3>Delete pathways tagged for deletion</h3>
-	<p>The goal of this task is to removed pathways with expired "Requested deletion" tags. <b><i>Note that deletion can only be performed by sysop accounts</b></i></p>
-	<ul>
-		<li>Follow the link to review the list of pathways tagged for deletion:  		
-		<a href="http://wikipathways.org/index.php?title=Special:CurationTags&showPathwaysFor=Curation:ProposedDeletion" target="_blank">Pathways tagged for deletion</a></li> 
-		<li>Check the last column for pathways that are ready to be deleted; look for the delete icon.</li>
-		<li>Simply click on the delete icon to delete these pathways</li>
-	</ul>
-	 <hr/>	
-         <h3>Jenkins Test Report</h3>
-	 <p>The main goal of this task is to perform a few quick and easy pathway content curation tasks, for the Curated collection, which is routinely used in data analysis. 
-         The scope of this work should be limited to about 15-30 minutes.</p>
-		<ul>
-			<li>Click the link below to see the Jenkins Test Report:
-			<br />
-			<a href="https://jenkins.bigcat.unimaas.nl/job/WikiPathways%20Curation%20(WP2RDF%20Curation)/lastCompletedBuild/testReport/" target="_blank">Jenkins Test Report</a>	
-			<br />
-			<li>Check the "All Failed Tests" list for any of the following test names:</li>
-			<ul>
-				<li><b>nl.unimaas.bigcat.wikipathways.curator.General.noIdentifierURIs</b> -- 
-					Which identifies datanodes that are annotated with something other than an identifier, e.g., a symbol or blank</li>
-				<li><b>nl.unimaas.bigcat.wikipathways.curator.EnsemblGenes.*** (e.g., wrongEnsemblIDForRatSpecies)</b> -- 
-					Which identifies incorrect or unrecognized Ensembl IDs <br />
-			<i><b>Note: You can ignore the other failed tests, which are better suited as topics for future Curation Events.</i></b></li>
-			</ul>
-			</ul>
-			<li>Click on the + to expand these test results, for example:</li>
-			<br />
-			<blockquote>
-			Data nodes with a 'noIdentifier' URI: [["node","label","homepage"], 
-			["http://bio2rdf.org/geneid:noIdentifier", "TKT",
-			"http://www.wikipathways.org/instance/WP421_r79853"] ] expected:<0> but was:<1>
-			</blockquote>
-				<p>This means that on pathway <b>WP421</b> the data node labeled <b>TKT</b> is missing a proper identifier.</p>
-				<ul>
-				<li>For each error message, open the relevant pathway and update the problematic annotation</li>
-				<li>Double check to make sure the system name is correct</li>
-				<li><b>And don't forget to update curation tags after editing</b></li>
-				</ul>
-	 <hr/>
-	 <h3>Test search</h3>
+          <h2>Congratulations</h2>
+	  <p>You are almost done! There are just a few more steps in the quality assurance protocol. </p>
+
+
+	 <h2>Test search</h2>
 	 <p>The goal of this task is to make sure that the search feature is working and the index is up-to-date.</p>
 	 <ul>
-	 <li>Search for the newest pathway by title by copying the pathway title from the top of the <a href="http://wikipathways.org/index.php/Special:NewPathwaysPage" target="_blank">New Pathways</a> 
-		page listing, but make sure the pathway is public and not private.</li>
-	 <li>Paste the title into the search field in the left sidebar</li>
-	 <li>There may be many results, but <b>be sure that the newest pathway is among them</b>. If not, then send an email to the 
-	 WP dev list (wikipathways-devel AT googlegroups DOT com) describing the problem.</li>
+	 <li>Search for a new pathway by title. Open the list of <a href="http://wikipathways.org/index.php/Special:NewPathwaysPage" target="_blank">New Pathways</a> 
+		and attempt to search for it by entering the title into the left sidebar search tool.</li>
+	 <li>There may be many results, but <b>be sure that the new pathway is among them</b>. If not, then send an email to the 
+	 WikiPathways Developer list <wikipathways-devel@googlegroups.com> describing the problem.</li>
 	 </ul>
-	 <hr/>
-	 <h3>Admin curation logistics</h3>
+	
+		
+		<h2>Sign off and pass the torch</h2>
 	 <ul>
-	 <li>Send a curation report to the development team (wikipathways-devel AT googlegroups DOT com) summarizing your activities.</li>
-	 <li>That's it! <b>Thanks for helping to make WikiPathways a high-quality resource for pathway information!</b></li>
+	 <li>Send a curation report to the WikiPathways Developer list <wikipathways-devel@googlegroups.com> summarizing your activities 
+		 along with any issues or questions. </li>
+		 <li>If you are on the official curator rotation list, then be sure to <a href="https://github.com/wikipathways/academy/blob/gh-pages/curators/curators_list.xml">
+			 edit the list</a> and cut/paste your <b>item</b> to the bottom of the list. <i>Note: the RSS feed updates hourly, so it may take a while for the
+			 change to display on the front page of WikiPathways.</i>
+			 <li>If you are a sysops administrator, then please also review the <a href="http://wikipathways.org/index.php?title=Special:CurationTags&showPathwaysFor=Curation:ProposedDeletion" target="_blank">Pathways tagged for deletion</a></li> 
+	 <li>That's it! <b>Thanks for helping to make WikiPathways a high-quality resource for pathway information!</b>If you have additional time, 
+		 feel free to take on additional tasks by clicking the <b>Next step</b> button.</li>
 	 </ul>
+
+		
          <br />  
 	<div id="prev-button">
 	<a href="../task-featured/index.html" class="btn btn-info btn-lg pull-left">Previous step</a></div>
