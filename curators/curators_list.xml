@@ -4,13 +4,6 @@
 List of WikiPathways Admin Curators</description>
 <language>en</language>
 <item>
-  <title>Martina Kutmon (Maastricht University)</title>
-  <link>http://www.wikipathways.org/index.php/User:Mkutmon</link>
-    <image>
-    <url>https://wikipathways.github.io/academy/curators/MartinaKutmon.png</url>
-  </image>
-</item>
-<item>
   <title>Susan Coort (Maastricht University)</title>
   <link>http://www.wikipathways.org/index.php/User:Susan</link>
     <image>
@@ -92,6 +85,13 @@ List of WikiPathways Admin Curators</description>
   <link>http://www.wikipathways.org/index.php/User:Elisa</link>
     <image>
     <url>https://wikipathways.github.io/academy/curators/ElisaCirillo.png</url>
+  </image>
+</item>
+<item>
+  <title>Martina Kutmon (Maastricht University)</title>
+  <link>http://www.wikipathways.org/index.php/User:Mkutmon</link>
+    <image>
+    <url>https://wikipathways.github.io/academy/curators/MartinaKutmon.png</url>
   </image>
 </item>
 </rss>
