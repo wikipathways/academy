@@ -4,13 +4,6 @@
 List of WikiPathways Admin Curators</description>
 <language>en</language>
 <item>
-  <title>Susan Coort (Maastricht University)</title>
-  <link>http://www.wikipathways.org/index.php/User:Susan</link>
-    <image>
-    <url>https://wikipathways.github.io/academy/curators/SusanCoort.png</url>
-  </image>
-</item>
-<item>
   <title>Denise Slenter (Maastricht University)</title>
   <link>http://www.wikipathways.org/index.php/User:DeSI</link>
     <image>
@@ -99,6 +92,13 @@ List of WikiPathways Admin Curators</description>
   <link>http://www.wikipathways.org/index.php/User:Fehrhart</link>
     <image>
     <url>https://wikipathways.github.io/academy/curators/FriederikeEhrhart.png</url>
+  </image>
+</item>
+  <item>
+  <title>Susan Coort (Maastricht University)</title>
+  <link>http://www.wikipathways.org/index.php/User:Susan</link>
+    <image>
+    <url>https://wikipathways.github.io/academy/curators/SusanCoort.png</url>
   </image>
 </item>
 </rss>
