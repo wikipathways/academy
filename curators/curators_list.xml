@@ -4,13 +4,6 @@
 List of WikiPathways Admin Curators</description>
 <language>en</language>
 <item>
-  <title>Andra Waagmeester (Maastricht University)</title>
-  <link>http://www.wikipathways.org/index.php/User:Andra</link>
-    <image>
-    <url>https://wikipathways.github.io/academy/curators/AndraWaagmeester.png</url>
-  </image>
-</item>
-<item>
   <title>Mirella Kalafati (Maastricht University)</title>
   <link>http://www.wikipathways.org/index.php/User:MirellaKalafati</link>
     <image>
@@ -99,6 +92,13 @@ List of WikiPathways Admin Curators</description>
   <link>http://www.wikipathways.org/index.php/User:Marvin_M2</link>
     <image>
     <url>https://wikipathways.github.io/academy/curators/MarvinMartens.png</url>
+  </image>
+</item>
+<item>
+  <title>Andra Waagmeester (Maastricht University)</title>
+  <link>http://www.wikipathways.org/index.php/User:Andra</link>
+    <image>
+    <url>https://wikipathways.github.io/academy/curators/AndraWaagmeester.png</url>
   </image>
 </item>
 </rss>
