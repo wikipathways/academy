@@ -4,13 +4,6 @@
 List of WikiPathways Admin Curators</description>
 <language>en</language>
 <item>
-  <title>Ryan Miller (Maastricht University)</title>
-  <link>http://www.wikipathways.org/index.php/User:Ryanmiller</link>
-    <image>
-    <url>https://wikipathways.github.io/academy/curators/RyanMiller.png</url>
-  </image>
-</item>
-<item>
   <title>Amadeo Muñoz García (Maastricht University)</title>
   <link>http://www.wikipathways.org/index.php/User:Madeomuga</link>
     <image>
@@ -99,6 +92,13 @@ List of WikiPathways Admin Curators</description>
   <link>http://www.wikipathways.org/index.php/User:Khanspers</link>
     <image>
     <url>https://wikipathways.github.io/academy/curators/kristina.jpg</url>
+  </image>
+</item>
+<item>
+  <title>Ryan Miller (Maastricht University)</title>
+  <link>http://www.wikipathways.org/index.php/User:Ryanmiller</link>
+    <image>
+    <url>https://wikipathways.github.io/academy/curators/RyanMiller.png</url>
   </image>
 </item>
 </rss>
