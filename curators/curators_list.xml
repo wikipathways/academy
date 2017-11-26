@@ -3,13 +3,6 @@
 <description>
 List of WikiPathways Admin Curators</description>
   <language>en</language>
-  <item>
-  <title>Denise Slenter (Maastricht University)</title>
-  <link>http://www.wikipathways.org/index.php/User:DeSl</link>
-    <image>
-    <url>https://wikipathways.github.io/academy/curators/DeniseSlenter.png</url>
-  </image>
-</item>
 <item>
   <title>Martina Summer-Kutmon (Maastricht University)</title>
   <link>http://www.wikipathways.org/index.php/User:Mkutmon</link>
@@ -99,6 +92,13 @@ List of WikiPathways Admin Curators</description>
   <link>http://www.wikipathways.org/index.php/User:Susan</link>
     <image>
     <url>https://wikipathways.github.io/academy/curators/SusanCoort.png</url>
+  </image>
+</item>
+    <item>
+  <title>Denise Slenter (Maastricht University)</title>
+  <link>http://www.wikipathways.org/index.php/User:DeSl</link>
+    <image>
+    <url>https://wikipathways.github.io/academy/curators/DeniseSlenter.png</url>
   </image>
 </item>
 </rss>
