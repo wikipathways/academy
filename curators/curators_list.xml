@@ -3,15 +3,15 @@
 <description>
 List of WikiPathways Admin Curators</description>
   <language>en</language>
-
-  <item>
-  <title>Mirella Kalafati (Maastricht University)</title>
-  <link>http://www.wikipathways.org/index.php/User:MirellaKalafati</link>
+  
+<item>
+  <title>Denise Slenter (Maastricht University)</title>
+  <link>http://www.wikipathways.org/index.php/User:DeSl</link>
     <image>
-    <url>https://wikipathways.github.io/academy/curators/MirellaKalafati.png</url>
+    <url>https://wikipathways.github.io/academy/curators/DeniseSlenter.png</url>
   </image>
-</item> 
-  <item>
+</item>
+   <item>
   <title>Alexander Pico (Gladstone Institutes)</title>
   <link>http://wikipathways.org/index.php/User:AlexanderPico</link>
   <image>
@@ -74,14 +74,14 @@ List of WikiPathways Admin Curators</description>
     <url>https://wikipathways.github.io/academy/curators/SusanCoort.png</url>
   </image>
 </item>
-    <item>
-  <title>Denise Slenter (Maastricht University)</title>
-  <link>http://www.wikipathways.org/index.php/User:DeSl</link>
+  <item>
+  <title>Mirella Kalafati (Maastricht University)</title>
+  <link>http://www.wikipathways.org/index.php/User:MirellaKalafati</link>
     <image>
-    <url>https://wikipathways.github.io/academy/curators/DeniseSlenter.png</url>
+    <url>https://wikipathways.github.io/academy/curators/MirellaKalafati.png</url>
   </image>
-</item>
-<item>
+</item>    
+  <item>
   <title>Martina Summer-Kutmon (Maastricht University)</title>
   <link>http://www.wikipathways.org/index.php/User:Mkutmon</link>
     <image>
