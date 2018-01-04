@@ -3,8 +3,6 @@
 <description>
 List of WikiPathways Admin Curators</description>
   <language>en</language>
-
-</item>
    <item>
   <title>Alexander Pico (Gladstone Institutes)</title>
   <link>http://wikipathways.org/index.php/User:AlexanderPico</link>
@@ -102,5 +100,6 @@ List of WikiPathways Admin Curators</description>
     <image>
     <url>https://wikipathways.github.io/academy/curators/DeniseSlenter.png</url>
   </image>
+ </item>
 </rss>
 
