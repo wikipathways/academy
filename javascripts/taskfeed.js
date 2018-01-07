@@ -461,7 +461,7 @@ function sendSGLActivity(action){
 		DD = forceDoubleDigit(DD-days+30); // end of last month; wp webservice will ignore possible innaccuracies in Feb dates
 		if (MM==1){  	// if Jan, then Dec last year
 			MM = 12;	
-			YY = YY-1;			
+			YYYY = YYYY-1;			
 		} else {
 			MM = forceDoubleDigit(MM-1);
 		}
