@@ -1,106 +1,103 @@
 <rss version="2.0">
-<title>Wikipathways curators</title>
-<description>
-List of WikiPathways Admin Curators</description>
+  <title>Wikipathways curators</title>
+  <description>List of WikiPathways Admin Curators</description>
   <language>en</language>
-  <item>  
-  <title>Anders Riutta (Gladstone Institutes)</title>
-  <link>http://wikipathways.org/index.php/User:Ariutta</link>
-  <image>
-    <url>https://wikipathways.github.io/academy/curators/anders.jpg</url>
-  </image>
-</item>
   <item>
-  <title>Elisa Cirillo (Maastricht University)</title>
-  <link>http://www.wikipathways.org/index.php/User:Elisa</link>
+    <title>Elisa Cirillo (Maastricht University)</title>
+    <link>http://www.wikipathways.org/index.php/User:Elisa</link>
     <image>
-    <url>https://wikipathways.github.io/academy/curators/ElisaCirillo.png</url>
-  </image>
-</item>
-<item>
-  <title>Kristina Hanspers (Gladstone Institutes)</title>
-  <link>http://www.wikipathways.org/index.php/User:Khanspers</link>
-    <image>
-    <url>https://wikipathways.github.io/academy/curators/kristina.jpg</url>
-  </image>
-</item>
-<item>
-  <title>Ryan Miller (Maastricht University)</title>
-  <link>http://www.wikipathways.org/index.php/User:Ryanmiller</link>
-    <image>
-    <url>https://wikipathways.github.io/academy/curators/RyanMiller.png</url>
-  </image>
-</item>
-<item>
-  <title>Amadeo Muñoz García (Maastricht University)</title>
-  <link>http://www.wikipathways.org/index.php/User:Madeomuga</link>
-    <image>
-    <url>https://wikipathways.github.io/academy/curators/AmadeoMunozGarcia.png</url>
-  </image>
-</item>
-<item>
-  <title>Egon Willighagen (Maastricht University)</title>
-  <link>http://www.wikipathways.org/index.php/User:Egonw</link>
-    <image>
-    <url>https://wikipathways.github.io/academy/curators/egon.jpg</url>
-  </image>
-</item>
-<item>
-  <title>Friederike Ehrhart (Maastricht University)</title>
-  <link>http://www.wikipathways.org/index.php/User:Fehrhart</link>
-    <image>
-    <url>https://wikipathways.github.io/academy/curators/FriederikeEhrhart.png</url>
-  </image>
-</item>
-    <item>
-  <title>Susan Coort (Maastricht University)</title>
-  <link>http://www.wikipathways.org/index.php/User:Susan</link>
-    <image>
-    <url>https://wikipathways.github.io/academy/curators/SusanCoort.png</url>
-  </image>
-</item>
+      <url>https://wikipathways.github.io/academy/curators/ElisaCirillo.png</url>
+    </image>
+  </item>
   <item>
-  <title>Mirella Kalafati (Maastricht University)</title>
-  <link>http://www.wikipathways.org/index.php/User:MirellaKalafati</link>
+    <title>Kristina Hanspers (Gladstone Institutes)</title>
+    <link>http://www.wikipathways.org/index.php/User:Khanspers</link>
     <image>
-    <url>https://wikipathways.github.io/academy/curators/MirellaKalafati.png</url>
-  </image>
-</item>    
+      <url>https://wikipathways.github.io/academy/curators/kristina.jpg</url>
+    </image>
+  </item>
   <item>
-  <title>Martina Summer-Kutmon (Maastricht University)</title>
-  <link>http://www.wikipathways.org/index.php/User:Mkutmon</link>
+    <title>Ryan Miller (Maastricht University)</title>
+    <link>http://www.wikipathways.org/index.php/User:Ryanmiller</link>
     <image>
-    <url>https://wikipathways.github.io/academy/curators/MartinaKutmon.png</url>
-  </image>
-</item>
-<item>
-  <title>Marvin Martens (Maastricht University)</title>
-  <link>http://www.wikipathways.org/index.php/User:Marvin_M2</link>
-    <image>
-    <url>https://wikipathways.github.io/academy/curators/MarvinMartens.png</url>
-  </image>
-</item>
+      <url>https://wikipathways.github.io/academy/curators/RyanMiller.png</url>
+    </image>
+  </item>
   <item>
-  <title>Andra Waagmeester (Micelio)</title>
-  <link>http://www.wikipathways.org/index.php/User:Andra</link>
+    <title>Amadeo Muñoz García (Maastricht University)</title>
+    <link>http://www.wikipathways.org/index.php/User:Madeomuga</link>
     <image>
-    <url>https://wikipathways.github.io/academy/curators/AndraWaagmeester.png</url>
-  </image>
-</item>
+      <url>https://wikipathways.github.io/academy/curators/AmadeoMunozGarcia.png</url>
+    </image>
+  </item>
   <item>
-  <title>Denise Slenter (Maastricht University)</title>
-  <link>http://www.wikipathways.org/index.php/User:DeSl</link>
+    <title>Egon Willighagen (Maastricht University)</title>
+    <link>http://www.wikipathways.org/index.php/User:Egonw</link>
     <image>
-    <url>https://wikipathways.github.io/academy/curators/DeniseSlenter.png</url>
-  </image>
- </item>
-     <item>
-  <title>Alexander Pico (Gladstone Institutes)</title>
-  <link>http://wikipathways.org/index.php/User:AlexanderPico</link>
-  <image>
-    <url>https://wikipathways.github.io/academy/curators/alex.png</url>
-  </image>
-</item>
-
+      <url>https://wikipathways.github.io/academy/curators/egon.jpg</url>
+    </image>
+  </item>
+  <item>
+    <title>Friederike Ehrhart (Maastricht University)</title>
+    <link>http://www.wikipathways.org/index.php/User:Fehrhart</link>
+    <image>
+      <url>https://wikipathways.github.io/academy/curators/FriederikeEhrhart.png</url>
+    </image>
+  </item>
+  <item>
+    <title>Susan Coort (Maastricht University)</title>
+    <link>http://www.wikipathways.org/index.php/User:Susan</link>
+    <image>
+      <url>https://wikipathways.github.io/academy/curators/SusanCoort.png</url>
+    </image>
+  </item>
+  <item>
+    <title>Mirella Kalafati (Maastricht University)</title>
+    <link>http://www.wikipathways.org/index.php/User:MirellaKalafati</link>
+    <image>
+      <url>https://wikipathways.github.io/academy/curators/MirellaKalafati.png</url>
+    </image>
+  </item>
+  <item>
+    <title>Martina Summer-Kutmon (Maastricht University)</title>
+    <link>http://www.wikipathways.org/index.php/User:Mkutmon</link>
+    <image>
+      <url>https://wikipathways.github.io/academy/curators/MartinaKutmon.png</url>
+    </image>
+  </item>
+  <item>
+    <title>Marvin Martens (Maastricht University)</title>
+    <link>http://www.wikipathways.org/index.php/User:Marvin_M2</link>
+    <image>
+      <url>https://wikipathways.github.io/academy/curators/MarvinMartens.png</url>
+    </image>
+  </item>
+  <item>
+    <title>Andra Waagmeester (Micelio)</title>
+    <link>http://www.wikipathways.org/index.php/User:Andra</link>
+    <image>
+      <url>https://wikipathways.github.io/academy/curators/AndraWaagmeester.png</url>
+    </image>
+  </item>
+  <item>
+    <title>Denise Slenter (Maastricht University)</title>
+    <link>http://www.wikipathways.org/index.php/User:DeSl</link>
+    <image>
+      <url>https://wikipathways.github.io/academy/curators/DeniseSlenter.png</url>
+    </image>
+  </item>
+  <item>
+    <title>Alexander Pico (Gladstone Institutes)</title>
+    <link>http://wikipathways.org/index.php/User:AlexanderPico</link>
+    <image>
+      <url>https://wikipathways.github.io/academy/curators/alex.png</url>
+    </image>
+  </item>
+  <item>
+    <title>Anders Riutta (Gladstone Institutes)</title>
+    <link>http://wikipathways.org/index.php/User:Ariutta</link>
+    <image>
+      <url>https://wikipathways.github.io/academy/curators/anders.jpg</url>
+    </image>
+  </item>
 </rss>
-
