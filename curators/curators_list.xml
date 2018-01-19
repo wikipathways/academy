@@ -2,14 +2,7 @@
   <title>Wikipathways curators</title>
   <description>List of WikiPathways Admin Curators</description>
   <language>en</language>
-  <item>
-    <title>Elisa Cirillo (Maastricht University)</title>
-    <link>http://www.wikipathways.org/index.php/User:Elisa</link>
-    <image>
-      <url>https://wikipathways.github.io/academy/curators/ElisaCirillo.png</url>
-    </image>
-  </item>
-  <item>
+   <item>
     <title>Kristina Hanspers (Gladstone Institutes)</title>
     <link>http://www.wikipathways.org/index.php/User:Khanspers</link>
     <image>
@@ -98,6 +91,13 @@
     <link>http://wikipathways.org/index.php/User:Ariutta</link>
     <image>
       <url>https://wikipathways.github.io/academy/curators/anders.jpg</url>
+    </image>
+  </item>
+   <item>
+    <title>Elisa Cirillo (Maastricht University)</title>
+    <link>http://www.wikipathways.org/index.php/User:Elisa</link>
+    <image>
+      <url>https://wikipathways.github.io/academy/curators/ElisaCirillo.png</url>
     </image>
   </item>
 </rss>
