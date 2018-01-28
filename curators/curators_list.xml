@@ -2,13 +2,6 @@
   <title>Wikipathways curators</title>
   <description>List of WikiPathways Admin Curators</description>
   <language>en</language>
-   <item>
-    <title>Kristina Hanspers (Gladstone Institutes)</title>
-    <link>http://www.wikipathways.org/index.php/User:Khanspers</link>
-    <image>
-      <url>https://wikipathways.github.io/academy/curators/kristina.jpg</url>
-    </image>
-  </item>
   <item>
     <title>Ryan Miller (Maastricht University)</title>
     <link>http://www.wikipathways.org/index.php/User:Ryanmiller</link>
@@ -98,6 +91,13 @@
     <link>http://www.wikipathways.org/index.php/User:Elisa</link>
     <image>
       <url>https://wikipathways.github.io/academy/curators/ElisaCirillo.png</url>
+    </image>
+  </item>
+  <item>
+    <title>Kristina Hanspers (Gladstone Institutes)</title>
+    <link>http://www.wikipathways.org/index.php/User:Khanspers</link>
+    <image>
+      <url>https://wikipathways.github.io/academy/curators/kristina.jpg</url>
     </image>
   </item>
 </rss>
