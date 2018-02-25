@@ -2,14 +2,6 @@
   <title>Wikipathways curators</title>
   <description>List of WikiPathways Admin Curators</description>
   <language>en</language>
-
-  <item>
-    <title>Egon Willighagen (Maastricht University)</title>
-    <link>http://www.wikipathways.org/index.php/User:Egonw</link>
-    <image>
-      <url>https://wikipathways.github.io/academy/curators/egon.jpg</url>
-    </image>
-  </item>
   <item>
     <title>Friederike Ehrhart (Maastricht University)</title>
     <link>http://www.wikipathways.org/index.php/User:Fehrhart</link>
@@ -106,6 +98,13 @@
     <link>http://www.wikipathways.org/index.php/User:Ddigles</link>
     <image>
       <url>https://wikipathways.github.io/academy/curators/DanielaDigles.png</url>
+    </image>
+  </item>
+  <item>
+    <title>Egon Willighagen (Maastricht University)</title>
+    <link>http://www.wikipathways.org/index.php/User:Egonw</link>
+    <image>
+      <url>https://wikipathways.github.io/academy/curators/egon.jpg</url>
     </image>
   </item>
 </rss>
