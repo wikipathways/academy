@@ -3,27 +3,6 @@
   <description>List of WikiPathways Admin Curators</description>
   <language>en</language>
   <item>
-    <title>Susan Coort (Maastricht University)</title>
-    <link>http://www.wikipathways.org/index.php/User:Susan</link>
-    <image>
-      <url>https://wikipathways.github.io/academy/curators/SusanCoort.png</url>
-    </image>
-  </item>
-  <item>
-    <title>Mirella Kalafati (Maastricht University)</title>
-    <link>http://www.wikipathways.org/index.php/User:MirellaKalafati</link>
-    <image>
-      <url>https://wikipathways.github.io/academy/curators/MirellaKalafati.png</url>
-    </image>
-  </item>
-  <item>
-    <title>Martina Summer-Kutmon (Maastricht University)</title>
-    <link>http://www.wikipathways.org/index.php/User:Mkutmon</link>
-    <image>
-      <url>https://wikipathways.github.io/academy/curators/MartinaKutmon.png</url>
-    </image>
-  </item>
-  <item>
     <title>Marvin Martens (Maastricht University)</title>
     <link>http://www.wikipathways.org/index.php/User:Marvin_M2</link>
     <image>
@@ -105,6 +84,27 @@
     <link>http://www.wikipathways.org/index.php/User:Fehrhart</link>
     <image>
       <url>https://wikipathways.github.io/academy/curators/FriederikeEhrhart.png</url>
+    </image>
+  </item>
+  <item>
+    <title>Susan Coort (Maastricht University)</title>
+    <link>http://www.wikipathways.org/index.php/User:Susan</link>
+    <image>
+      <url>https://wikipathways.github.io/academy/curators/SusanCoort.png</url>
+    </image>
+  </item>
+  <item>
+    <title>Mirella Kalafati (Maastricht University)</title>
+    <link>http://www.wikipathways.org/index.php/User:MirellaKalafati</link>
+    <image>
+      <url>https://wikipathways.github.io/academy/curators/MirellaKalafati.png</url>
+    </image>
+  </item>
+  <item>
+    <title>Martina Summer-Kutmon (Maastricht University)</title>
+    <link>http://www.wikipathways.org/index.php/User:Mkutmon</link>
+    <image>
+      <url>https://wikipathways.github.io/academy/curators/MartinaKutmon.png</url>
     </image>
   </item>
 </rss>
