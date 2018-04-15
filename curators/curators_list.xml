@@ -4,13 +4,6 @@
   <language>en</language>
   
   <item>
-    <title>Alexander Pico (Gladstone Institutes)</title>
-    <link>http://wikipathways.org/index.php/User:AlexanderPico</link>
-    <image>
-      <url>https://wikipathways.github.io/academy/curators/alex.png</url>
-    </image>
-  </item>
-  <item>
     <title>Andra Waagmeester (Micelio)</title>
     <link>http://www.wikipathways.org/index.php/User:Andra</link>
     <image>
@@ -108,4 +101,12 @@
       <url>https://wikipathways.github.io/academy/curators/DeniseSlenter.png</url>
     </image>
   </item>
+    <item>
+    <title>Alexander Pico (Gladstone Institutes)</title>
+    <link>http://wikipathways.org/index.php/User:AlexanderPico</link>
+    <image>
+      <url>https://wikipathways.github.io/academy/curators/alex.png</url>
+    </image>
+  </item>
+
 </rss>
