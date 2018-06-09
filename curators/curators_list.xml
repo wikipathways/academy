@@ -3,10 +3,10 @@
   <description>List of WikiPathways Admin Curators</description>
   <language>en</language>
   <item>
-    <title>Ryan Miller (Maastricht University)</title>
-    <link>http://www.wikipathways.org/index.php/User:Ryanmiller</link>
+    <title>Egon Willighagen (Maastricht University)</title>
+    <link>http://www.wikipathways.org/index.php/User:Egonw</link>
     <image>
-      <url>https://wikipathways.github.io/academy/curators/RyanMiller.png</url>
+      <url>https://wikipathways.github.io/academy/curators/egon.jpg</url>
     </image>
   </item>
   <item>
@@ -24,13 +24,6 @@
     </image>
   </item>
   <item>
-    <title>Egon Willighagen (Maastricht University)</title>
-    <link>http://www.wikipathways.org/index.php/User:Egonw</link>
-    <image>
-      <url>https://wikipathways.github.io/academy/curators/egon.jpg</url>
-    </image>
-  </item>
-    <item>
     <title>Friederike Ehrhart (Maastricht University)</title>
     <link>http://www.wikipathways.org/index.php/User:Fehrhart</link>
     <image>
@@ -107,5 +100,11 @@
       <url>https://wikipathways.github.io/academy/curators/kristina.jpg</url>
     </image>
   </item>
-  
+  <item>
+    <title>Ryan Miller (Maastricht University)</title>
+    <link>http://www.wikipathways.org/index.php/User:Ryanmiller</link>
+    <image>
+      <url>https://wikipathways.github.io/academy/curators/RyanMiller.png</url>
+    </image>
+  </item>
 </rss>
