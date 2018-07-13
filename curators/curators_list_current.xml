@@ -4,13 +4,6 @@
   <language>en</language>
 
   <item>
-    <title>Friederike Ehrhart (Maastricht University)</title>
-    <link>http://www.wikipathways.org/index.php/User:Fehrhart</link>
-    <image>
-      <url>https://wikipathways.github.io/academy/curators/FriederikeEhrhart.png</url>
-    </image>
-  </item>
-  <item>
     <title>Susan Coort (Maastricht University)</title>
     <link>http://www.wikipathways.org/index.php/User:Susan</link>
     <image>
@@ -106,6 +99,13 @@
     <link>http://www.wikipathways.org/index.php/User:Ddigles</link>
     <image>
       <url>https://wikipathways.github.io/academy/curators/DanielaDigles.png</url>
+    </image>
+  </item>
+    <item>
+    <title>Friederike Ehrhart (Maastricht University)</title>
+    <link>http://www.wikipathways.org/index.php/User:Fehrhart</link>
+    <image>
+      <url>https://wikipathways.github.io/academy/curators/FriederikeEhrhart.png</url>
     </image>
   </item>
   
