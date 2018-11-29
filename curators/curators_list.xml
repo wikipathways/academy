@@ -4,35 +4,12 @@
 <description>List of WikiPathways Admin Curators</description>
 <link>https://vm1.wikipathways.org/curators_list.xml</link>
 <item>
-     <title>Friederike Ehrhart (Maastricht University)</title>
-     <link>http://www.wikipathways.org/index.php/User:Fehrhart</link>
- <description>&lt;img src="https://wikipathways.github.io/academy/curators/FriederikeEhrhart.png"></description>
-</item>
-<item>
-     <title>Susan Coort (Maastricht University)</title>
-     <link>http://www.wikipathways.org/index.php/User:Susan</link>
- <description>&lt;img src="https://wikipathways.github.io/academy/curators/SusanCoort.png"></description>
-</item>
-<item>
-     <title>Mirella Kalafati (Maastricht University)</title>
-     <link>http://www.wikipathways.org/index.php/User:MirellaKalafati</link>
- <description>&lt;img src="https://wikipathways.github.io/academy/curators/MirellaKalafati.png"></description>
-</item>
-<item>
-     <title>Martina Summer-Kutmon (Maastricht University)</title>
-     <link>http://www.wikipathways.org/index.php/User:Mkutmon</link>
- <description>&lt;img src="https://wikipathways.github.io/academy/curators/MartinaKutmon.png"></description>
-</item>
-<item>
-     <title>Marvin Martens (Maastricht University)</title>
-     <link>http://www.wikipathways.org/index.php/User:Marvin_M2</link>
- <description>&lt;img src="https://wikipathways.github.io/academy/curators/MarvinMartens.png"></description>
-</item>
-<item>
-     <title>Denise Slenter (Maastricht University)</title>
-     <link>http://www.wikipathways.org/index.php/User:DeSl</link>
- <description>&lt;img src="https://wikipathways.github.io/academy/curators/DeniseSlenter.png"></description>
-</item>
+    <title>Elisson Lopes(UFMG, Brazil)</title>
+    <link>http://www.wikipathways.org/index.php/User:Elisson_nl</link>
+    <image>
+      <url>https://wikipathways.github.io/academy/curators/ElissonLopes.jpg</url>
+    </image>
+  </item>
    <item>
      <title>Alexander Pico (Gladstone Institutes)</title>
      <link>http://wikipathways.org/index.php/User:AlexanderPico</link>
@@ -77,6 +54,36 @@
      <title>Daniela Digles (University of Vienna)</title>
      <link>http://www.wikipathways.org/index.php/User:Ddigles</link>
  <description>&lt;img src="https://wikipathways.github.io/academy/curators/DanielaDigles.png"></description>
-</item>     
+</item>  
+     <item>
+     <title>Friederike Ehrhart (Maastricht University)</title>
+     <link>http://www.wikipathways.org/index.php/User:Fehrhart</link>
+ <description>&lt;img src="https://wikipathways.github.io/academy/curators/FriederikeEhrhart.png"></description>
+</item>
+<item>
+     <title>Susan Coort (Maastricht University)</title>
+     <link>http://www.wikipathways.org/index.php/User:Susan</link>
+ <description>&lt;img src="https://wikipathways.github.io/academy/curators/SusanCoort.png"></description>
+</item>
+<item>
+     <title>Mirella Kalafati (Maastricht University)</title>
+     <link>http://www.wikipathways.org/index.php/User:MirellaKalafati</link>
+ <description>&lt;img src="https://wikipathways.github.io/academy/curators/MirellaKalafati.png"></description>
+</item>
+<item>
+     <title>Martina Summer-Kutmon (Maastricht University)</title>
+     <link>http://www.wikipathways.org/index.php/User:Mkutmon</link>
+ <description>&lt;img src="https://wikipathways.github.io/academy/curators/MartinaKutmon.png"></description>
+</item>
+<item>
+     <title>Marvin Martens (Maastricht University)</title>
+     <link>http://www.wikipathways.org/index.php/User:Marvin_M2</link>
+ <description>&lt;img src="https://wikipathways.github.io/academy/curators/MarvinMartens.png"></description>
+</item>
+<item>
+     <title>Denise Slenter (Maastricht University)</title>
+     <link>http://www.wikipathways.org/index.php/User:DeSl</link>
+ <description>&lt;img src="https://wikipathways.github.io/academy/curators/DeniseSlenter.png"></description>
+</item>
  </channel>
 </rss>
