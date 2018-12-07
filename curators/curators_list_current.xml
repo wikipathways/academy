@@ -2,12 +2,7 @@
   <title>Wikipathways curators</title>
   <description>List of WikiPathways Admin Curators</description>
   <language>en</language>
-    <item>
-     <title>Alexander Pico (Gladstone Institutes)</title>
-     <link>http://wikipathways.org/index.php/User:AlexanderPico</link>
- <description>&lt;img src="https://wikipathways.github.io/academy/curators/alex.png"></description>
-</item>
-    <item>
+  <item>
     <title>Andra Waagmeester (Gene Wiki)</title>
     <link>http://www.wikipathways.org/index.php/User:Andra</link>
     <image>
@@ -21,7 +16,7 @@
       <url>https://wikipathways.github.io/academy/curators/anders.jpg</url>
     </image>
   </item>
-    <item>
+  <item>
     <title>Kristina Hanspers (Gladstone Institutes)</title>
     <link>http://www.wikipathways.org/index.php/User:Khanspers</link>
     <image>
@@ -105,4 +100,10 @@
       <url>https://wikipathways.github.io/academy/curators/ElissonLopes.jpg</url>
     </image>
   </item>
+  <item>
+     <title>Alexander Pico (Gladstone Institutes)</title>
+     <link>http://wikipathways.org/index.php/User:AlexanderPico</link>
+ <description>&lt;img src="https://wikipathways.github.io/academy/curators/alex.png"></description>
+</item>
+
 </rss>
