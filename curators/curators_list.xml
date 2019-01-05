@@ -4,19 +4,9 @@
 <description>List of WikiPathways Admin Curators</description>
 <link>https://vm1.wikipathways.org/curators_list.xml</link>
 <item>
-     <title>Elisa Cirillo (Maastricht University)</title>
-     <link>http://www.wikipathways.org/index.php/User:Elisa</link>
- <description>&lt;img src="https://wikipathways.github.io/academy/curators/ElisaCirillo.png"></description>
-</item>
-<item>
      <title>Kristina Hanspers (Gladstone Institutes)</title>
      <link>http://www.wikipathways.org/index.php/User:Khanspers</link>
  <description>&lt;img src="https://wikipathways.github.io/academy/curators/kristina.jpg"></description>
-</item>
-<item>
-     <title>Ryan Miller (Maastricht University)</title>
-     <link>http://www.wikipathways.org/index.php/User:Ryanmiller</link>
- <description>&lt;img src="https://wikipathways.github.io/academy/curators/RyanMiller.png"></description>
 </item>
 <item>
      <title>Egon Willighagen (Maastricht University)</title>
