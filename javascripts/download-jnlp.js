@@ -6,7 +6,7 @@ $(document).ready(function() {
             localStorage.setItem('showChallengeInstructions', 'false');
           }
           // server must set Content-Disposition: attachment
-          window.location = 'https://rcbranch.wikipathways.org/wpi/extensions/PathwayViewer/pathway-jnlp.php?identifier='+wpid+'&filename=WikiPathwaysAcademy-Challenge';
+          window.location = 'https://wikipathways.org/wpi/extensions/PathwayViewer/pathway-jnlp.php?identifier='+wpid+'&filename=WikiPathwaysAcademy-Challenge';
           getShowInstructions();
         });
 });
