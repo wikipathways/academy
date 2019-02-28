@@ -506,6 +506,11 @@ header h2 {
   margin: 0 auto;
 }
 
+#stage-bio {
+  background: #FFD966;
+  height: 50px;
+}
+
 #content-wrapper {
   padding-top: 30px;
   border-top: solid 1px #fff;
