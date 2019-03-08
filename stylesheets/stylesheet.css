@@ -478,6 +478,14 @@ header {
   border-bottom: solid 1px #275da1;
 }
 
+header2 {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
+  background: #2e7bcf url(../images/header2-yellow.jpg) 0 0 repeat-x;
+  border-bottom: solid 1px #275da1;
+}
+
 header h1 {
   width: 540px;
   margin-top: 0;
@@ -504,11 +512,6 @@ header h2 {
   position: relative;
   width: 940px;
   margin: 0 auto;
-}
-
-#stage-bio {
-  background: #FFD966;
-  height: 50px;
 }
 
 #content-wrapper {
@@ -562,6 +565,7 @@ a.button small {
   display: block;
   font-size: 11px;
 }
+
 header a.button {
   position: absolute;
   top: 0;
