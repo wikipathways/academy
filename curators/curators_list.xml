@@ -3,11 +3,6 @@
 <title>Wikipathways curators</title>
 <description>List of WikiPathways Admin Curators</description>
 <link>https://vm1.wikipathways.org/curators_list.xml</link> 
-     <item>
-     <title>Egon Willighagen (Maastricht University)</title>
-     <link>http://www.wikipathways.org/index.php/User:Egonw</link>
- <description>&lt;img src="https://wikipathways.github.io/academy/curators/egon.jpg"></description>
-</item>
 <item>
      <title>Amadeo Muñoz García (Maastricht University)</title>
      <link>http://www.wikipathways.org/index.php/User:Madeomuga</link>
@@ -74,6 +69,11 @@
      <title>Anders Riutta (Gladstone Institutes)</title>
      <link>http://wikipathways.org/index.php/User:Ariutta</link>
  <description>&lt;img src="https://wikipathways.github.io/academy/curators/anders.jpg"></description>
+</item>
+<item>
+     <title>Egon Willighagen (Maastricht University)</title>
+     <link>http://www.wikipathways.org/index.php/User:Egonw</link>
+ <description>&lt;img src="https://wikipathways.github.io/academy/curators/egon.jpg"></description>
 </item>
  </channel>
 </rss>
