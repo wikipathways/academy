@@ -3,13 +3,6 @@
   <description>List of WikiPathways Admin Curators</description>
   <language>en</language>
   <item>
-    <title>Marvin Martens (Maastricht University)</title>
-    <link>http://www.wikipathways.org/index.php/User:Marvin_M2</link>
-    <image>
-      <url>https://wikipathways.github.io/academy/curators/MarvinMartens.png</url>
-    </image>
-  </item>
-  <item>
     <title>Denise Slenter (Maastricht University)</title>
     <link>http://www.wikipathways.org/index.php/User:DeSl</link>
     <image>
@@ -96,6 +89,13 @@
     <link>http://www.wikipathways.org/index.php/User:Mkutmon</link>
     <image>
       <url>https://wikipathways.github.io/academy/curators/MartinaKutmon.png</url>
+    </image>
+  </item>
+  <item>
+    <title>Marvin Martens (Maastricht University)</title>
+    <link>http://www.wikipathways.org/index.php/User:Marvin_M2</link>
+    <image>
+      <url>https://wikipathways.github.io/academy/curators/MarvinMartens.png</url>
     </image>
   </item>
 </rss>
