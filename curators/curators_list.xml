@@ -3,11 +3,6 @@
 <title>Wikipathways curators</title>
 <description>List of WikiPathways Admin Curators</description>
 <link>https://vm1.wikipathways.org/curators_list.xml</link> 
-     <item>
-     <title>Denise Slenter (Maastricht University)</title>
-     <link>http://www.wikipathways.org/index.php/User:DeSl</link>
- <description>&lt;img src="https://wikipathways.github.io/academy/curators/DeniseSlenter.png"></description>
-</item>
    <item>
     <title>Elisson Lopes (UFMG, Brazil)</title>
     <link>http://www.wikipathways.org/index.php/User:Elisson_nl</link>
@@ -74,6 +69,11 @@
      <title>Marvin Martens (Maastricht University)</title>
      <link>http://www.wikipathways.org/index.php/User:Marvin_M2</link>
  <description>&lt;img src="https://wikipathways.github.io/academy/curators/MarvinMartens.png"></description>
+</item>
+     <item>
+     <title>Denise Slenter (Maastricht University)</title>
+     <link>http://www.wikipathways.org/index.php/User:DeSl</link>
+ <description>&lt;img src="https://wikipathways.github.io/academy/curators/DeniseSlenter.png"></description>
 </item>
  </channel>
 </rss>
