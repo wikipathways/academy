@@ -3,11 +3,6 @@
 <title>Wikipathways curators</title>
 <description>List of WikiPathways Admin Curators</description>
 <link>https://vm1.wikipathways.org/curators_list.xml</link> 
- <item>
-     <title>Andra Waagmeester (Gene Wiki)</title>
-     <link>http://www.wikipathways.org/index.php/User:Andra</link>
- <description>&lt;img src="https://wikipathways.github.io/academy/curators/AndraWaagmeester.png"></description>
-</item>
      <item>
      <title>Kristina Hanspers (Gladstone Institutes)</title>
      <link>http://www.wikipathways.org/index.php/User:Khanspers</link>
@@ -69,6 +64,11 @@
      <title>Alexander Pico (Gladstone Institutes)</title>
      <link>http://wikipathways.org/index.php/User:AlexanderPico</link>
  <description>&lt;img src="https://wikipathways.github.io/academy/curators/alex.png"></description>
+</item>
+ <item>
+     <title>Andra Waagmeester (Gene Wiki)</title>
+     <link>http://www.wikipathways.org/index.php/User:Andra</link>
+ <description>&lt;img src="https://wikipathways.github.io/academy/curators/AndraWaagmeester.png"></description>
 </item>
  </channel>
 </rss>
