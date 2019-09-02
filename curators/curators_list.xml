@@ -4,17 +4,7 @@
 <description>List of WikiPathways Admin Curators</description>
 <link>https://vm1.wikipathways.org/curators_list.xml</link> 
   
-  <item>
-     <title>Friederike Ehrhart (Maastricht University)</title>
-     <link>http://www.wikipathways.org/index.php/User:Fehrhart</link>
- <description>&lt;img src="https://wikipathways.github.io/academy/curators/FriederikeEhrhart.png"></description>
-</item>
-     <item>
-     <title>Susan Coort (Maastricht University)</title>
-     <link>http://www.wikipathways.org/index.php/User:Susan</link>
- <description>&lt;img src="https://wikipathways.github.io/academy/curators/SusanCoort.png"></description>
-</item>
-     <item>
+<item>
      <title>Mirella Kalafati (Maastricht University)</title>
      <link>http://www.wikipathways.org/index.php/User:MirellaKalafati</link>
  <description>&lt;img src="https://wikipathways.github.io/academy/curators/MirellaKalafati.png"></description>
@@ -70,6 +60,16 @@
      <title>Daniela Digles (University of Vienna)</title>
      <link>http://www.wikipathways.org/index.php/User:Ddigles</link>
  <description>&lt;img src="https://wikipathways.github.io/academy/curators/DanielaDigles.png"></description>
+</item>
+<item>
+     <title>Friederike Ehrhart (Maastricht University)</title>
+     <link>http://www.wikipathways.org/index.php/User:Fehrhart</link>
+ <description>&lt;img src="https://wikipathways.github.io/academy/curators/FriederikeEhrhart.png"></description>
+</item>
+     <item>
+     <title>Susan Coort (Maastricht University)</title>
+     <link>http://www.wikipathways.org/index.php/User:Susan</link>
+ <description>&lt;img src="https://wikipathways.github.io/academy/curators/SusanCoort.png"></description>
 </item>
  </channel>
 </rss>
