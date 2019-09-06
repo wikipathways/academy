@@ -3,13 +3,6 @@
   <description>List of WikiPathways Admin Curators</description>
   <language>en</language>
   <item>
-    <title>Mirella Kalafati (Maastricht University)</title>
-    <link>http://www.wikipathways.org/index.php/User:MirellaKalafati</link>
-    <image>
-      <url>https://wikipathways.github.io/academy/curators/MirellaKalafati.png</url>
-    </image>
-  </item>
-  <item>
     <title>Martina Summer-Kutmon (Maastricht University)</title>
     <link>http://www.wikipathways.org/index.php/User:Mkutmon</link>
     <image>
@@ -33,8 +26,10 @@
   <item>
      <title>Alexander Pico (Gladstone Institutes)</title>
      <link>http://wikipathways.org/index.php/User:AlexanderPico</link>
- <description>&lt;img src="https://wikipathways.github.io/academy/curators/alex.png"></description>
-</item>
+     <image>
+      <url><img src="https://wikipathways.github.io/academy/curators/alex.png"></url>
+    </image>
+  </item>
   <item>
     <title>Andra Waagmeester (Gene Wiki)</title>
     <link>http://www.wikipathways.org/index.php/User:Andra</link>
