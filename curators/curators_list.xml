@@ -4,11 +4,6 @@
 <description>List of WikiPathways Admin Curators</description>
 <link>https://vm1.wikipathways.org/curators_list.xml</link> 
      <item>
-     <title>Martina Summer-Kutmon (Maastricht University)</title>
-     <link>http://www.wikipathways.org/index.php/User:Mkutmon</link>
- <description>&lt;img src="https://wikipathways.github.io/academy/curators/MartinaKutmon.png"></description>
-</item>
-     <item>
      <title>Marvin Martens (Maastricht University)</title>
      <link>http://www.wikipathways.org/index.php/User:Marvin_M2</link>
  <description>&lt;img src="https://wikipathways.github.io/academy/curators/MarvinMartens.png"></description>
@@ -69,6 +64,11 @@
      <title>Mirella Kalafati (Maastricht University)</title>
      <link>http://www.wikipathways.org/index.php/User:MirellaKalafati</link>
  <description>&lt;img src="https://wikipathways.github.io/academy/curators/MirellaKalafati.png"></description>
+</item>
+     <item>
+     <title>Martina Summer-Kutmon (Maastricht University)</title>
+     <link>http://www.wikipathways.org/index.php/User:Mkutmon</link>
+ <description>&lt;img src="https://wikipathways.github.io/academy/curators/MartinaKutmon.png"></description>
 </item>
  </channel>
 </rss>
