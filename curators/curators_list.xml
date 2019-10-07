@@ -4,24 +4,14 @@
 <description>List of WikiPathways Admin Curators</description>
 <link>https://vm1.wikipathways.org/curators_list.xml</link> 
   <item>
-     <title>Alexander Pico (Gladstone Institutes)</title>
-     <link>http://wikipathways.org/index.php/User:AlexanderPico</link>
- <description>&lt;img src="https://wikipathways.github.io/academy/curators/alex.png"></description>
-</item>
- <item>
-     <title>Andra Waagmeester (Gene Wiki)</title>
-     <link>http://www.wikipathways.org/index.php/User:Andra</link>
- <description>&lt;img src="https://wikipathways.github.io/academy/curators/AndraWaagmeester.png"></description>
+     <title>Anders Riutta (Gladstone Institutes)</title>
+     <link>http://wikipathways.org/index.php/User:Ariutta</link>
+ <description>&lt;img src="https://wikipathways.github.io/academy/curators/anders.jpg"></description>
 </item>
      <item>
      <title>Kristina Hanspers (Gladstone Institutes)</title>
      <link>http://www.wikipathways.org/index.php/User:Khanspers</link>
  <description>&lt;img src="https://wikipathways.github.io/academy/curators/kristina.jpg"></description>
-</item>
-     <item>
-     <title>Anders Riutta (Gladstone Institutes)</title>
-     <link>http://wikipathways.org/index.php/User:Ariutta</link>
- <description>&lt;img src="https://wikipathways.github.io/academy/curators/anders.jpg"></description>
 </item>
    <item>
      <title>Denise Slenter (Maastricht University)</title>
@@ -70,5 +60,15 @@
       <url>https://wikipathways.github.io/academy/curators/ElissonLopes.jpg</url>
     </image>
   </item>
+  <item>
+     <title>Alexander Pico (Gladstone Institutes)</title>
+     <link>http://wikipathways.org/index.php/User:AlexanderPico</link>
+ <description>&lt;img src="https://wikipathways.github.io/academy/curators/alex.png"></description>
+</item>
+ <item>
+     <title>Andra Waagmeester (Gene Wiki)</title>
+     <link>http://www.wikipathways.org/index.php/User:Andra</link>
+ <description>&lt;img src="https://wikipathways.github.io/academy/curators/AndraWaagmeester.png"></description>
+</item>
  </channel>
 </rss>
