@@ -4,13 +4,6 @@
   <description>List of WikiPathways Admin Curators</description>
   <language>en</language>
   <item>
-    <title>Anders Riutta (Gladstone Institutes)</title>
-    <link>http://wikipathways.org/index.php/User:Ariutta</link>
-    <image>
-      <url>https://wikipathways.github.io/academy/curators/anders.jpg</url>
-    </image>
-  </item>
-  <item>
     <title>Kristina Hanspers (Gladstone Institutes)</title>
     <link>http://www.wikipathways.org/index.php/User:Khanspers</link>
     <image>
@@ -87,5 +80,12 @@
       <url>https://wikipathways.github.io/academy/curators/AndraWaagmeester.png</url>
     </image>
 </item>
+     <item>
+    <title>Anders Riutta (Gladstone Institutes)</title>
+    <link>http://wikipathways.org/index.php/User:Ariutta</link>
+    <image>
+      <url>https://wikipathways.github.io/academy/curators/anders.jpg</url>
+    </image>
+  </item>
  </channel>
 </rss>
