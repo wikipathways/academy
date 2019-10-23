@@ -10,7 +10,15 @@ Go to https://wikipathways.github.io/academy/ and follow the step-by-step instru
 
 How to Develop
 ====
-Make pull requests to this repo in order to fix or provide new content. The clickable skill tree image itself can be editted via the draw.io app for Google Docs: [WP Academy Tasks](https://drive.google.com/a/gladstone.ucsf.edu/file/d/0BxIWXP93jPy9QzhNakhobk81X1U/view?usp=sharing). Paste updated embed code into path.html (File>Embed>HTML... uncheck "Lightbox" then copy/paste). If you don't have edit permissions, send suggested changes to alex.pico@gladstone.ucsf.edu. 
+Make pull requests to this repo in order to fix or provide new content. 
+The clickable skill tree image itself can be editted via the draw.io app for Google Docs: [WP Academy Tasks](https://drive.google.com/a/gladstone.ucsf.edu/file/d/0BxIWXP93jPy9QzhNakhobk81X1U/view?usp=sharing). 
+* Open the diagram in draw.io. 
+* Export the diagram as html under File>Embed>HTML... , making sure to uncheck "Lightbox".
+* Paste the embed code into a text editor.
+* Add width/height settings to the diagram div, for example: "width: 959px; height: 724px". This is necessary to make sure the diagram is sized properly. 
+* Paste updated embed code into path.html 
+
+If you don't have edit permissions, send suggested changes to alex.pico@gladstone.ucsf.edu. 
 
 The first time you clone the repo (and subsequent dev sessions):
 * `npm install`
