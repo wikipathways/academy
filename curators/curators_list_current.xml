@@ -4,20 +4,6 @@
   <description>List of WikiPathways Admin Curators</description>
   <language>en</language>
   <item>
-    <title>Denise Slenter (Maastricht University)</title>
-    <link>http://www.wikipathways.org/index.php/User:DeSl</link>
-    <image>
-      <url>https://wikipathways.github.io/academy/curators/DeniseSlenter.png</url>
-    </image>
-  </item>
-  <item>
-   <title>Amadeo Muñoz García (Maastricht University)</title>
-   <link>http://www.wikipathways.org/index.php/User:Madeomuga</link>
-   <image>
-     <url>https://wikipathways.github.io/academy/curators/AmadeoMunozGarcia.png</url>
-   </image>
-  </item>
-  <item>
     <title>Daniela Digles (University of Vienna)</title>
     <link>http://www.wikipathways.org/index.php/User:Ddigles</link>
     <image>
@@ -86,6 +72,20 @@
     <image>
       <url>https://wikipathways.github.io/academy/curators/kristina.jpg</url>
     </image>
+  </item>
+    <item>
+    <title>Denise Slenter (Maastricht University)</title>
+    <link>http://www.wikipathways.org/index.php/User:DeSl</link>
+    <image>
+      <url>https://wikipathways.github.io/academy/curators/DeniseSlenter.png</url>
+    </image>
+  </item>
+  <item>
+   <title>Amadeo Muñoz García (Maastricht University)</title>
+   <link>http://www.wikipathways.org/index.php/User:Madeomuga</link>
+   <image>
+     <url>https://wikipathways.github.io/academy/curators/AmadeoMunozGarcia.png</url>
+   </image>
   </item>
  </channel>
 </rss>
