@@ -4,20 +4,6 @@
   <description>List of WikiPathways Admin Curators</description>
   <language>en</language>
     <item>
-    <title>Elisson Lopes(UFMG, Brazil)</title>
-    <link>http://www.wikipathways.org/index.php/User:Elisson_nl</link>
-    <image>
-      <url>https://wikipathways.github.io/academy/curators/ElissonLopes.jpg</url>
-    </image>
-  </item>
-    <item>
-     <title>Alexander Pico (Gladstone Institutes)</title>
-     <link>http://wikipathways.org/index.php/User:AlexanderPico</link>
-     <image>
-      <url>https://wikipathways.github.io/academy/curators/alex.png</url>
-    </image>
-  </item>
-    <item>
     <title>Andra Waagmeester (Gene Wiki)</title>
     <link>http://www.wikipathways.org/index.php/User:Andra</link>
     <image>
@@ -92,6 +78,20 @@
     <link>http://www.wikipathways.org/index.php/User:Marvin_M2</link>
     <image>
       <url>https://wikipathways.github.io/academy/curators/MarvinMartens.png</url>
+    </image>
+  </item>
+    <item>
+    <title>Elisson Lopes(UFMG, Brazil)</title>
+    <link>http://www.wikipathways.org/index.php/User:Elisson_nl</link>
+    <image>
+      <url>https://wikipathways.github.io/academy/curators/ElissonLopes.jpg</url>
+    </image>
+  </item>
+    <item>
+     <title>Alexander Pico (Gladstone Institutes)</title>
+     <link>http://wikipathways.org/index.php/User:AlexanderPico</link>
+     <image>
+      <url>https://wikipathways.github.io/academy/curators/alex.png</url>
     </image>
   </item>
  </channel>
