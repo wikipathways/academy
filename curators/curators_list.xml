@@ -30,10 +30,10 @@
      <link>http://wikipathways.org/index.php/User:AlexanderPico</link>
      <description>&lt;img src="https://wikipathways.github.io/academy/curators/alex.png"></description>
 </item>
-<item>
-     <title>Andra Waagmeester (Gene Wiki)</title>
-     <link>http://www.wikipathways.org/index.php/User:Andra</link>
- <description>&lt;img src="https://wikipathways.github.io/academy/curators/AndraWaagmeester.png"></description>
+  <item>
+     <title>Laurent Winckers (Maastricht University)</title>
+     <link>http://www.wikipathways.org/index.php/User:Laurent</link>
+     <description>&lt;img src="https://wikipathways.github.io/academy/curators/LaurentWinckers.jpeg"></description>
 </item>
   <item>
      <title>Anders Riutta (Gladstone Institutes)</title>
@@ -71,9 +71,9 @@
      <description>&lt;img src="https://wikipathways.github.io/academy/curators/MartinaKutmon.png"></description>
 </item>
      <item>
-     <title>Laurent Winckers (Maastricht University)</title>
-     <link>http://www.wikipathways.org/index.php/User:Laurent</link>
-     <description>&lt;img src="https://wikipathways.github.io/academy/curators/LaurentWinckers.jpeg"></description>
+     <title>Andra Waagmeester (Gene Wiki)</title>
+     <link>http://www.wikipathways.org/index.php/User:Andra</link>
+ <description>&lt;img src="https://wikipathways.github.io/academy/curators/AndraWaagmeester.png"></description>
 </item>
  </channel>
 </rss>
