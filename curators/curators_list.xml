@@ -4,14 +4,9 @@
 <description>List of WikiPathways Admin Curators</description>
 <link>https://vm1.wikipathways.org/curators_list.xml</link> 
 <item>
-     <title>Martina Summer-Kutmon (Maastricht University)</title>
-     <link>http://www.wikipathways.org/index.php/User:Mkutmon</link>
-     <description>&lt;img src="https://wikipathways.github.io/academy/curators/MartinaKutmon.png"></description>
-</item>
-     <item>
-     <title>Laurent Winckers (Maastricht University)</title>
-     <link>http://www.wikipathways.org/index.php/User:Laurent</link>
-     <description>&lt;img src="https://wikipathways.github.io/academy/curators/LaurentWinckers.jpeg"></description>
+     <title>Kristina Hanspers (Gladstone Institutes)</title>
+     <link>http://www.wikipathways.org/index.php/User:Khanspers</link>
+     <description>&lt;img src="https://wikipathways.github.io/academy/curators/kristina.jpg"></description>
 </item>
      <item>
      <title>Lauren Dupuis (Maastricht University)</title>
@@ -45,11 +40,6 @@
      <link>http://wikipathways.org/index.php/User:Ariutta</link>
      <description>&lt;img src="https://wikipathways.github.io/academy/curators/anders.jpg"></description>
 </item>
-      <item>
-     <title>Kristina Hanspers (Gladstone Institutes)</title>
-     <link>http://www.wikipathways.org/index.php/User:Khanspers</link>
-     <description>&lt;img src="https://wikipathways.github.io/academy/curators/kristina.jpg"></description>
-</item>
      <item>
      <title>Denise Slenter (Maastricht University)</title>
      <link>http://www.wikipathways.org/index.php/User:DeSl</link>
@@ -75,6 +65,15 @@
      <link>http://www.wikipathways.org/index.php/User:Susan</link>
      <description>&lt;img src="https://wikipathways.github.io/academy/curators/SusanCoort.png"></description>
 </item>
-
+<item>
+     <title>Martina Summer-Kutmon (Maastricht University)</title>
+     <link>http://www.wikipathways.org/index.php/User:Mkutmon</link>
+     <description>&lt;img src="https://wikipathways.github.io/academy/curators/MartinaKutmon.png"></description>
+</item>
+     <item>
+     <title>Laurent Winckers (Maastricht University)</title>
+     <link>http://www.wikipathways.org/index.php/User:Laurent</link>
+     <description>&lt;img src="https://wikipathways.github.io/academy/curators/LaurentWinckers.jpeg"></description>
+</item>
  </channel>
 </rss>
