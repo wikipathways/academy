@@ -9,11 +9,6 @@
      <description>&lt;img src="https://wikipathways.github.io/academy/curators/LaurenDupuis.jpg"></description>
 </item>
 <item>
-     <title>Amadeo Muñoz García (Maastricht University)</title>
-     <link>http://www.wikipathways.org/index.php/User:Madeomuga</link>
-     <description>&lt;img src="https://wikipathways.github.io/academy/curators/AmadeoMunozGarcia.png"></description>
-</item>
-<item>
     <title>Elisson Lopes (UFMG, Brazil)</title>
     <link>http://www.wikipathways.org/index.php/User:Elisson_nl</link>
     <image>
@@ -74,6 +69,11 @@
      <title>Kristina Hanspers (Gladstone Institutes)</title>
      <link>http://www.wikipathways.org/index.php/User:Khanspers</link>
      <description>&lt;img src="https://wikipathways.github.io/academy/curators/kristina.jpg"></description>
+</item>
+<item>
+     <title>Amadeo Muñoz García (Maastricht University)</title>
+     <link>http://www.wikipathways.org/index.php/User:Madeomuga</link>
+     <description>&lt;img src="https://wikipathways.github.io/academy/curators/AmadeoMunozGarcia.png"></description>
 </item>
  </channel>
 </rss>
