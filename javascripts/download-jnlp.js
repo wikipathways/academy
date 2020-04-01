@@ -6,7 +6,7 @@ $(document).ready(function() {
             localStorage.setItem('showChallengeInstructions', 'false');
           }
           // server must set Content-Disposition: attachment
-          window.location = 'http://releases.pathvisio.org/current/webstart/pathvisio.jnlp.php?identifier='+wpid+'&filename=WikiPathwaysAcademy-Challenge';
+          window.location = 'http://releases.pathvisio.org/current/webstart/pathvisio.jnlp?identifier='+wpid+'&filename=WikiPathwaysAcademy-Challenge';
           getShowInstructions();
         });
 });
