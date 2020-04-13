@@ -3,13 +3,6 @@
   <title>Wikipathways curators</title>
   <description>List of WikiPathways Admin Curators</description>
     <language>en</language>
-    <item>
-     <title>Alexander Pico (Gladstone Institutes)</title>
-     <link>http://wikipathways.org/index.php/User:AlexanderPico</link>
-     <image>
-      <url>https://wikipathways.github.io/academy/curators/alex.png</url>
-    </image>
-  </item>
 <item>
     <title>Laurent Winckers (Maastricht University)</title>
     <link>http://www.wikipathways.org/index.php/User:Laurent</link>
@@ -92,6 +85,13 @@
     <link>http://www.wikipathways.org/index.php/User:Elisson_nl</link>
     <image>
       <url>https://wikipathways.github.io/academy/curators/ElissonLopes.jpg</url>
+    </image>
+  </item>
+   <item>
+     <title>Alexander Pico (Gladstone Institutes)</title>
+     <link>http://wikipathways.org/index.php/User:AlexanderPico</link>
+     <image>
+      <url>https://wikipathways.github.io/academy/curators/alex.png</url>
     </image>
   </item>
  </channel>
