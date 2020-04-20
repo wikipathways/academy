@@ -4,11 +4,6 @@
 <description>List of WikiPathways Admin Curators</description>
 <link>https://vm1.wikipathways.org/curators_list.xml</link>  
   <item>
-     <title>Laurent Winckers (Maastricht University)</title>
-     <link>http://www.wikipathways.org/index.php/User:Laurent</link>
-     <description>&lt;img src="https://wikipathways.github.io/academy/curators/LaurentWinckers.jpeg"></description>
-</item>
-  <item>
      <title>Anders Riutta (Gladstone Institutes)</title>
      <link>http://wikipathways.org/index.php/User:Ariutta</link>
      <description>&lt;img src="https://wikipathways.github.io/academy/curators/anders.jpg"></description>
@@ -67,6 +62,11 @@
      <title>Alexander Pico (Gladstone Institutes)</title>
      <link>http://wikipathways.org/index.php/User:AlexanderPico</link>
      <description>&lt;img src="https://wikipathways.github.io/academy/curators/alex.png"></description>
+</item>
+  <item>
+     <title>Laurent Winckers (Maastricht University)</title>
+     <link>http://www.wikipathways.org/index.php/User:Laurent</link>
+     <description>&lt;img src="https://wikipathways.github.io/academy/curators/LaurentWinckers.jpeg"></description>
 </item>
  </channel>
 </rss>
