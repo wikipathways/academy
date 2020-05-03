@@ -2,17 +2,7 @@
 <channel>
 <title>Wikipathways curators</title>
 <description>List of WikiPathways Admin Curators</description>
-<link>https://vm1.wikipathways.org/curators_list.xml</link>  
-  <item>
-     <title>Anders Riutta (Gladstone Institutes)</title>
-     <link>http://wikipathways.org/index.php/User:Ariutta</link>
-     <description>&lt;img src="https://wikipathways.github.io/academy/curators/anders.jpg"></description>
-</item>
-     <item>
-     <title>Marvin Martens (Maastricht University)</title>
-     <link>http://www.wikipathways.org/index.php/User:Marvin_M2</link>
-     <description>&lt;img src="https://wikipathways.github.io/academy/curators/MarvinMartens.png"></description>
-</item>
+<link>https://vm1.wikipathways.org/curators_list.xml</link> 
 <item>
      <title>Daniela Digles (University of Vienna)</title>
      <link>http://www.wikipathways.org/index.php/User:Ddigles</link>
@@ -67,6 +57,16 @@
      <title>Laurent Winckers (Maastricht University)</title>
      <link>http://www.wikipathways.org/index.php/User:Laurent</link>
      <description>&lt;img src="https://wikipathways.github.io/academy/curators/LaurentWinckers.jpeg"></description>
+</item>
+ <item>
+     <title>Anders Riutta (Gladstone Institutes)</title>
+     <link>http://wikipathways.org/index.php/User:Ariutta</link>
+     <description>&lt;img src="https://wikipathways.github.io/academy/curators/anders.jpg"></description>
+</item>
+     <item>
+     <title>Marvin Martens (Maastricht University)</title>
+     <link>http://www.wikipathways.org/index.php/User:Marvin_M2</link>
+     <description>&lt;img src="https://wikipathways.github.io/academy/curators/MarvinMartens.png"></description>
 </item>
  </channel>
 </rss>
