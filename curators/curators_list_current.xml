@@ -4,13 +4,6 @@
   <description>List of WikiPathways Admin Curators</description>
     <language>en</language>
     <item>
-    <title>Daniela Digles (University of Vienna)</title>
-    <link>http://www.wikipathways.org/index.php/User:Ddigles</link>
-    <image>
-      <url>https://wikipathways.github.io/academy/curators/DanielaDigles.png</url>
-    </image>
-  </item>
-    <item>
     <title>Friederike Ehrhart (Maastricht University)</title>
     <link>http://www.wikipathways.org/index.php/User:Fehrhart</link>
     <image>
@@ -92,6 +85,13 @@
     <link>http://www.wikipathways.org/index.php/User:Marvin_M2</link>
     <image>
       <url>https://wikipathways.github.io/academy/curators/MarvinMartens.png</url>
+    </image>
+  </item>
+    <item>
+    <title>Daniela Digles (University of Vienna)</title>
+    <link>http://www.wikipathways.org/index.php/User:Ddigles</link>
+    <image>
+      <url>https://wikipathways.github.io/academy/curators/DanielaDigles.png</url>
     </image>
   </item>
  </channel>
