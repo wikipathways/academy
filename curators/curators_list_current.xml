@@ -17,13 +17,14 @@
       <url>https://wikipathways.github.io/academy/curators/alex.png</url>
     </image>
   </item>
-   <item>
-    <title>Laurent Winckers (Maastricht University)</title>
-    <link>http://www.wikipathways.org/index.php/User:Laurent</link>
-    <image>
-      <url>https://wikipathways.github.io/academy/curators/LaurentWinckers.jpeg</url>
+    
+    <item>
+     <title>Egon Willighagen (Maastricht University)</title>
+     <link>http://wikipathways.org/index.php/User:Egonw</link>
+      <image>
+      <url>https://wikipathways.github.io/academy/curators/egon.jpg</url>
     </image>
-  </item>
+</item>
         <item>
     <title>Anders Riutta (Gladstone Institutes)</title>
     <link>http://wikipathways.org/index.php/User:Ariutta</link>
@@ -64,6 +65,13 @@
     <link>http://www.wikipathways.org/index.php/User:Mkutmon</link>
     <image>
       <url>https://wikipathways.github.io/academy/curators/MartinaKutmon.png</url>
+    </image>
+  </item>
+    <item>
+    <title>Laurent Winckers (Maastricht University)</title>
+    <link>http://www.wikipathways.org/index.php/User:Laurent</link>
+    <image>
+      <url>https://wikipathways.github.io/academy/curators/LaurentWinckers.jpeg</url>
     </image>
   </item>
     <item>
