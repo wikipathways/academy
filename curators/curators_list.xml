@@ -8,10 +8,10 @@
      <link>http://wikipathways.org/index.php/User:AlexanderPico</link>
      <description>&lt;img src="https://wikipathways.github.io/academy/curators/alex.png"></description>
 </item>
-  <item>
-     <title>Laurent Winckers (Maastricht University)</title>
-     <link>http://www.wikipathways.org/index.php/User:Laurent</link>
-     <description>&lt;img src="https://wikipathways.github.io/academy/curators/LaurentWinckers.jpeg"></description>
+     <item>
+     <title>Egon Willighagen (Maastricht University)</title>
+     <link>http://wikipathways.org/index.php/User:Egonw</link>
+     <description>&lt;img src="https://wikipathways.github.io/academy/curators/egon.jpg"></description>
 </item>
  <item>
      <title>Anders Riutta (Gladstone Institutes)</title>
@@ -42,6 +42,11 @@
      <title>Martina Summer-Kutmon (Maastricht University)</title>
      <link>http://www.wikipathways.org/index.php/User:Mkutmon</link>
      <description>&lt;img src="https://wikipathways.github.io/academy/curators/MartinaKutmon.png"></description>
+</item>
+     <item>
+     <title>Laurent Winckers (Maastricht University)</title>
+     <link>http://www.wikipathways.org/index.php/User:Laurent</link>
+     <description>&lt;img src="https://wikipathways.github.io/academy/curators/LaurentWinckers.jpeg"></description>
 </item>
      <item>
      <title>Andra Waagmeester (Gene Wiki)</title>
