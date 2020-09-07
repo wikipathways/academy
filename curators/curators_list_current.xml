@@ -4,13 +4,6 @@
   <description>List of WikiPathways Admin Curators</description>
     <language>en</language>
     <item>
-    <title>Laurent Winckers (Maastricht University)</title>
-    <link>http://www.wikipathways.org/index.php/User:Laurent</link>
-    <image>
-      <url>https://wikipathways.github.io/academy/curators/LaurentWinckers.jpeg</url>
-    </image>
-  </item>
-    <item>
     <title>Andra Waagmeester (Gene Wiki)</title>
     <link>http://www.wikipathways.org/index.php/User:Andra</link>
     <image>
@@ -107,6 +100,13 @@
     <link>http://www.wikipathways.org/index.php/User:Mkutmon</link>
     <image>
       <url>https://wikipathways.github.io/academy/curators/MartinaKutmon.png</url>
+    </image>
+  </item>
+    <item>
+    <title>Laurent Winckers (Maastricht University)</title>
+    <link>http://www.wikipathways.org/index.php/User:Laurent</link>
+    <image>
+      <url>https://wikipathways.github.io/academy/curators/LaurentWinckers.jpeg</url>
     </image>
   </item>
  </channel>
