@@ -4,20 +4,6 @@
   <description>List of WikiPathways Admin Curators</description>
     <language>en</language>
     <item>
-    <title>Elisson Lopes(UFMG, Brazil)</title>
-    <link>http://www.wikipathways.org/index.php/User:Elisson_nl</link>
-    <image>
-      <url>https://wikipathways.github.io/academy/curators/ElissonLopes.jpg</url>
-    </image>
-  </item>
-   <item>
-     <title>Alexander Pico (Gladstone Institutes)</title>
-     <link>http://wikipathways.org/index.php/User:AlexanderPico</link>
-     <image>
-      <url>https://wikipathways.github.io/academy/curators/alex.png</url>
-    </image>
-  </item>
-    <item>
     <title>Anders Riutta (Gladstone Institutes)</title>
     <link>http://wikipathways.org/index.php/User:Ariutta</link>
     <image>
@@ -100,6 +86,20 @@
    <image>
      <url>https://wikipathways.github.io/academy/curators/AmadeoMunozGarcia.png</url>
    </image>
+  </item>
+    <item>
+    <title>Elisson Lopes(UFMG, Brazil)</title>
+    <link>http://www.wikipathways.org/index.php/User:Elisson_nl</link>
+    <image>
+      <url>https://wikipathways.github.io/academy/curators/ElissonLopes.jpg</url>
+    </image>
+  </item>
+   <item>
+     <title>Alexander Pico (Gladstone Institutes)</title>
+     <link>http://wikipathways.org/index.php/User:AlexanderPico</link>
+     <image>
+      <url>https://wikipathways.github.io/academy/curators/alex.png</url>
+    </image>
   </item>
  </channel>
 </rss>
