@@ -5,7 +5,7 @@
     <Graphics CenterX="119.80762250453704" CenterY="107.23230490018169" Width="80.0" Height="20.0" ZOrder="32768" FontSize="10" Valign="Middle" Color="0000ff" />
     <Xref Database="HMDB" ID="HMDB00122" />
   </DataNode>
-  <DataNode TextLabel="Glucose-6-phosphate" GraphId="a6b23" Type="Metabolite">
+  <DataNode TextLabel="Glucose 6-phosphate" GraphId="a6b23" Type="Metabolite">
     <Graphics CenterX="119.73230490018204" CenterY="172.2323049001817" Width="119.0" Height="20.0" ZOrder="32768" FontSize="10" Valign="Middle" Color="0000ff" />
     <Xref Database="HMDB" ID="HMDB01401" />
   </DataNode>
