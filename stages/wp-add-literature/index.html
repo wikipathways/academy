@@ -49,8 +49,9 @@
           <h2>Challenge</h2>
 	  <p>
 	  Add a literature reference to your tutorial pathway at WikiPathways. You will need your username and 
-	  password to update WikiPathways from the editor tool.
+	  password to update WikiPathways from the editor tool, as well as the WPID for your pathway.
 	  </p> 
+	<!--
 	  <div >
                   <form id="download-pathway">
                           Provide the WPID
@@ -60,13 +61,15 @@
                   </form>
 
           	<button id="download-from-page" type="button" class="btn btn-primary btn-lg" style="display:none;" onclick="passValueForward();">Launch Editor</button>
-
+	-->
           <!-- Button trigger modal -->
+	<!--
           <button id="launch-modal" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" onclick="passValueForward();">
             Launch Editor
           </button>
-
+	-->
           <!-- Modal -->
+	<!--
           <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
@@ -87,12 +90,15 @@
           </div>  
 	  <br />
           <br />
+	-->
           <ul>
+		  <li>Launch PathVisio. To open your pathway, go to <b>Plugins > WikiPathways > Search</b>. Type in the WPID in the <b>Keyword Search</b> tab and click <b>Enter</b>. When the search results load,
+		    double-click the entry for your pathway to open it.</li>
 		  <li>Once you have your pathway loaded, double-click on the textbox in the upper-left that includes title and 
 		  organism. </li>
-		  <li>Select the literature tab and click on the "New reference" button. </li>
-		  <li>Enter PubMed ID <b>12235098</b> and click "Query PubMed".</li>
-		  <li>Notice how the publication fields are filled in automatically and click "OK".</li>
+		  <li>Select the <b>Literature</b> tab and click the <b>New reference</b> button. </li>
+		  <li>Enter PubMed ID "12235098" and click <b>Query PubMed</b>.</li>
+		  <li>Notice how the publication fields are filled in automatically and click <b>OK</b>.</li>
 		  <li>This is how you add a reference for the whole pathway, or a large portion of it. Feel free to add
 		   references to individual nodes or edges by same steps, starting with double-clicking on the element.</li>
                   <li>When you are done, find the WikiPathway menu under <b>Plugins</b> in the editor toolbar and select <b>Update</b></li>
