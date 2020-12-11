@@ -12,11 +12,12 @@ How to Develop
 ====
 Make pull requests to this repo in order to fix or provide new content. 
 The clickable skill tree image itself can be editted via the draw.io app for Google Docs: [WP Academy Tasks](https://drive.google.com/a/gladstone.ucsf.edu/file/d/0BxIWXP93jPy9QzhNakhobk81X1U/view?usp=sharing). 
-* Open the diagram in draw.io. 
-* Export the diagram as html under File>Embed>HTML... , making sure to uncheck "Lightbox".
-* Paste the embed code into a text editor.
-* Add width/height settings to the diagram div, for example: "width: 959px; height: 724px". This is necessary to make sure the diagram is sized properly. 
-* Paste updated embed code into path.html 
+* Open the diagram in draw.io and make any necessary changes.
+* Export the diagram as html under File>Embed>HTML... , making sure to uncheck "Lightbox". Leave other settings as-is.
+* Open the html export in a text editor.
+* Locate the `<div class="mxgraph"` part and in the `style` attribute add "width: 959px; height: 724px". This is necessary to make sure the diagram is sized properly. 
+* Copy the code entire `<div class="mxgraph"` div.
+* Open the path.html document in a text editor and replace paste updated embed code into path.html.
 
 If you don't have edit permissions, send suggested changes to alex.pico@gladstone.ucsf.edu. 
 
