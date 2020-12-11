@@ -34,47 +34,27 @@
           <h1>
             <a id="intro" class="anchor" href="#intro" aria-hidden="true">
               <span aria-hidden="true" class="octicon octicon-link">
-              Cholesterol Biosynthesis - End of the road
+              Setup PathVisio
               </span>
             </a>
           </h1>
-
-          <h2>Background</h2>
-	  <p>
-	  We are now at the end of the cholesterol biosynthesis pathway, and have seen how cholesterol
-	  is synthesized from acetyl-CoA in a series of steps catalyzed by many different enzymes. 
-	  </p>
-          <h2>Challenge</h2>
-          <br />  
-	  <div class="choices" id="walk-met-1-last">
-		  <p><span>How would the level of cholesterol change if the enzyme HMGCR was inhibited or decreased?</span></p>
-		<p><a class="false" href="javascript:void(0);"><span class="fa fa-circle-thin fa-2x"></span></a> 
-		 The level of cholesterol would be increased
-		</p>
-		<p><a class="true" href="javascript:void(0);"><span class="fa fa-circle-thin fa-2x"></span></a> 
-		 The level of cholesterol would be decreased 
-		</p>
-		<p><a class="false" href="javascript:void(0);"><span class="fa fa-circle-thin fa-2x"></span></a> 
-		 No change in the level of cholesterol
-		</p>
-	  </div>
-	  <br /> 
-	  <div class="results" id="ex1" style="display:none;">
-		  <h2>Explanation</h2>
-		  <p>
-		  That’s correct! And that is how some cholesterol-lowering drugs work, by inhibiting the HMGCR enzyme. See how that 
-		  works in the <a href="http://www.wikipathways.org/index.php/Pathway:WP430" target="_blank">Statin Pathway</a>. 
-			  <br>Continue to the <b>Pathway Building Blocks</b> track to learn the basics of drawing a pathway.
-		  </p>
-		  
-	  </div> 
-	  <div class="results" id="ex2" style="display:none;">
-		  <h2>Explanation</h2>
-		  <p>Are you sure? Review the pathway and choose another answer. </p>
-	  </div>
-	  <img src="../../images/cholesterol-full.png" alt="Cholesterol Biosynthesis Pathway" style="width:600px;">
+        <p>To complete this and subsequent drawing challenges, you need to install PathVisio, setup a mapping database for finding genes, gene products and metabolites and load the WikiPathways plugin to communicate directly with WikiPathways.</p>
+        <h2>Install PathVisio</h2>
+		<ul>
+		<li>Follow the PathVisio 
+          <a href="https://pathvisio.github.io/tutorials/installation_guide.html#binary-installation" target="_blank">Installation instructions</a> for your operating system.</li>
+        </ul>
+        <h2>Setup a mapping database</h2>
+            <li>Launch PathVisio.</li>
+			<li>Select <b>Data > Identifier mapping setup</b> and click <b>Add</b>. In the interface select <b>BridgeRest webservice</b> in the left sidebar.</li>
+			<li>In the <b>Species</b> drop-down, select "Homo sapiens", then click <b>OK</b>. Exit the <b>BridgeDb Configuration</b> interface by clicking <b>OK</b>.</li>
+        <h2>Install the WikiPathways plugin</h2>
+        <li>In PathVisio, go to <b>Plugins > Plugin manager</b>. Find the WikiPathways plugin from the list of plugins on the left side.</li> 
+        <li>Click the <b>Install</b> button to install.</li>
+		<li><b>Note:</b> PathVisio requires Java 8 and does not work with Java 10/11. To upgrade your Java, follow instructions <a href="https://www.java.com/en/download/help/mac_java_update.xml" target="_blank">here</a>.</li>
+            
 	<div id="next-button">
-	  <a href="../walk-install-pv/index.html" class="btn btn-info btn-lg pull-right">Next step</a>
+	  <a href="../draw-geneproduct/index.html" class="btn btn-info btn-lg pull-right">Next step</a>
           </div>
 	<br /> <br /> <br />
 	      </section>
