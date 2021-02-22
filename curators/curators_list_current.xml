@@ -3,27 +3,6 @@
   <title>Wikipathways curators</title>
   <description>List of WikiPathways Admin Curators</description>
     <language>en</language>
-   <item>
-     <title>Alexander Pico (Gladstone Institutes)</title>
-     <link>http://wikipathways.org/index.php/User:AlexanderPico</link>
-     <image>
-      <url>https://wikipathways.github.io/academy/curators/alex.png</url>
-    </image>
-  </item>
-    <item>
-    <title>Anders Riutta (Gladstone Institutes)</title>
-    <link>http://wikipathways.org/index.php/User:Ariutta</link>
-    <image>
-      <url>https://wikipathways.github.io/academy/curators/anders.jpg</url>
-    </image>
-  </item>
-     <item>
-    <title>Marvin Martens (Maastricht University)</title>
-    <link>http://www.wikipathways.org/index.php/User:Marvin_M2</link>
-    <image>
-      <url>https://wikipathways.github.io/academy/curators/MarvinMartens.png</url>
-    </image>
-  </item>
     <item>
     <title>Daniela Digles (University of Vienna)</title>
     <link>http://www.wikipathways.org/index.php/User:Ddigles</link>
@@ -106,6 +85,27 @@
     <link>http://www.wikipathways.org/index.php/User:Elisson_nl</link>
     <image>
       <url>https://wikipathways.github.io/academy/curators/ElissonLopes.jpg</url>
+    </image>
+  </item>
+ <item>
+     <title>Alexander Pico (Gladstone Institutes)</title>
+     <link>http://wikipathways.org/index.php/User:AlexanderPico</link>
+     <image>
+      <url>https://wikipathways.github.io/academy/curators/alex.png</url>
+    </image>
+  </item>
+    <item>
+    <title>Anders Riutta (Gladstone Institutes)</title>
+    <link>http://wikipathways.org/index.php/User:Ariutta</link>
+    <image>
+      <url>https://wikipathways.github.io/academy/curators/anders.jpg</url>
+    </image>
+  </item>
+     <item>
+    <title>Marvin Martens (Maastricht University)</title>
+    <link>http://www.wikipathways.org/index.php/User:Marvin_M2</link>
+    <image>
+      <url>https://wikipathways.github.io/academy/curators/MarvinMartens.png</url>
     </image>
   </item>
  </channel>
