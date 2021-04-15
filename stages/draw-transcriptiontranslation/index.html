@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="../../stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="../../stylesheets/print.css" media="print">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>WikiPathways Academy</title>
+</head>
+
+  <body>
+
+    <header id="banner">
+      <div class="inner">
+        <h1>WikiPathways Academy</h1>
+        <h2>Organized challenges for new WikiPathways authors</h2>
+	<a href="../../path.html" class="button"><small>Return to</small>Overview</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1>
+            <a id="intro" class="anchor" href="#intro" aria-hidden="true">
+              <span aria-hidden="true" class="octicon octicon-link">
+                Draw a Transcription-Translation
+              </span>
+            </a>
+          </h1>
+
+          <h2>Background</h2>
+
+          <p>Genes are transcribed into proteins, with Alternative Splicing as a regulatory mechanism controling the functioning of proteins. Source: <a href="https://doi.org/10.1007/s00424-018-2136-x" target="_blank">Kyu Kim et al. 2018</a>
+		        As an example, we will look at Actin, consisting of six different isoforms with only minor variants between their amino acid sequences, yet distinct cellular functions. Source: <a href="https://dx.doi.org/10.1002%2Fcm.20475" target="_blank">Perrin and Ervasti, 2010</a>
+		  
+		  </p>
+
+          <h2>Your Mission</h2>
+          <p>Draw the interaction depicted in this figure, include annotating the interaction with the given PubMed ID:</p>
+          <img src="draw-transcriptiontranslation-solution.png">
+          
+          <ul>
+            <li>Launch PathVisio. To open the starter pathway, go to <b>Plugins > WikiPathways > Search</b>. Type in "WP5081" in the <b>Keyword Search</b> 
+		    tab and click <b>Enter</b>. When the search results load, double-click the entry for WP5081 to open it.</li>
+		  <li>Perform the challenge tasks:</li>
+                <ul>
+		<li>Select the <b>Transcription-Translation</b> interaction from the <b>MIM-interaction</b> panel or the toolbar.</li>
+                <li>Click on the canvas to place the object.</li>
+                <li>With the interaction selected, drag the ends (yellow squares) to depict the Transcription-Translation from the GeneProduct (left) to the Protein (right).</li>
+                <li>The interaction is correctly connected, if the block at the ends of the interaction (yellow) overlap with the side of the DataNodes (red) and light up green. </li>
+				<li>Add the PubMed ID provided (11053242) to the Transcription-Translation interaction under "Literature, New reference" (similar menu to DataNodes). </li>
+                <li>Done!</li>
+              </ul>
+            <li>When you have completed the challenge, save your work as a GPML file under <b>File > Save As</b>.</li>
+            <li>Drag-and-drop the GPML file below to submit.</li>
+          </ul>
+	  <!--
+          <form style="padding:0px; background:none;">
+                  <input type="hidden" name="wpidload" value="WP5081">
+          </form>
+          <button id="download-from-page" type="button" class="btn btn-primary btn-lg" style="display:none;">Launch Editor</button>
+          -->
+          <!-- Button trigger modal -->
+	  <!--
+          <button id="launch-modal" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+            Launch Editor
+          </button>
+          -->
+          <!-- Modal -->
+	<!--
+          <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="myModalLabel"></h4>
+                </div>
+                <div class="modal-body">
+                  <img src="../../images/jnlp-instructions.png">
+                </div>
+                <div class="modal-footer">
+                  <label><input type="checkbox" id="dont-show-instructions" value="first_checkbox"> Don't show instructions again </label>
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                  <button id="download-from-modal" type="button" class="btn btn-primary" data-dismiss="modal">Download</button>
+                </div>
+              </div>
+            </div>
+          </div>  
+	-->
+
+          <div id="upload-target-container"></div>  
+	  <div id="next-button">
+		 <a href="../met-1-overview/index.html" class="btn btn-info btn-lg pull-right">Next step</a></div>
+          <br>  
+          <br> 
+	  <!--<p><a href="draw-transcriptiontranslation-solution.gpml">Click to download solution file (For Testing Only)</a>
+	  </p>-->
+		<br /> <br /> <br />
+	      </section>
+          </div> 
+    </div>       
+
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://www.sciencegamelab.org/js/sciapi.js"></script>
+    <script type="text/javascript" src="../../javascripts/sgl-init.js"></script>
+    <script type="text/javascript" src="../../javascripts/sgl.js"></script>
+    <script type="text/javascript" src="../../javascripts/download-jnlp.js"></script>
+    <script type="text/javascript" src="../../javascripts/file-dragger.js"></script>
+    <script type="text/javascript" src="../../javascripts/validate-gpml.js"></script>
+
+
+    <script type="text/javascript">
+      window.wpAcademy.validateGPML({
+	uploadTargetContainerSelector: '#upload-target-container',
+        validate: 'draw-transcriptiontranslation-solution.gpml', 
+         action: 'draw-transcriptiontranslation',
+         points: 5
+      });
+    </script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-1605246-2', 'auto');
+  ga('send', 'pageview');
+
+</script>  </body>
+</html>
