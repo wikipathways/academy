@@ -4,21 +4,6 @@
 <description>List of WikiPathways Admin Curators</description>
 <link>https://vm1.wikipathways.org/curators_list.xml</link>     
 <item>
-     <title>Andra Waagmeester (Gene Wiki)</title>
-     <link>http://www.wikipathways.org/index.php/User:Andra</link>
- <description>&lt;img src="https://wikipathways.github.io/academy/curators/AndraWaagmeester.png"></description>
-</item>
-<item>
-      <title>Denise Slenter (Maastricht University)</title>
-      <link>http://www.wikipathways.org/index.php/User:DeSl</link>
-      <description>&lt;img src="https://wikipathways.github.io/academy/curators/DeniseSlenter.png"></description>
-</item>
-<item>
-     <title>Kristina Hanspers (Gladstone Institutes)</title>
-     <link>http://www.wikipathways.org/index.php/User:Khanspers</link>
-     <description>&lt;img src="https://wikipathways.github.io/academy/curators/kristina.jpg"></description>
-</item>
-<item>
      <title>Lauren Dupuis (Maastricht University)</title>
      <link>http://www.wikipathways.org/index.php/User:L_Dupuis</link>
      <description>&lt;img src="https://wikipathways.github.io/academy/curators/LaurenDupuis.jpg"></description>
@@ -77,6 +62,21 @@
      <title>Laurent Winckers (Maastricht University)</title>
      <link>http://www.wikipathways.org/index.php/User:Laurent</link>
      <description>&lt;img src="https://wikipathways.github.io/academy/curators/LaurentWinckers.jpeg"></description>
+</item>
+<item>
+     <title>Andra Waagmeester (Gene Wiki)</title>
+     <link>http://www.wikipathways.org/index.php/User:Andra</link>
+ <description>&lt;img src="https://wikipathways.github.io/academy/curators/AndraWaagmeester.png"></description>
+</item>
+<item>
+      <title>Denise Slenter (Maastricht University)</title>
+      <link>http://www.wikipathways.org/index.php/User:DeSl</link>
+      <description>&lt;img src="https://wikipathways.github.io/academy/curators/DeniseSlenter.png"></description>
+</item>
+<item>
+     <title>Kristina Hanspers (Gladstone Institutes)</title>
+     <link>http://www.wikipathways.org/index.php/User:Khanspers</link>
+     <description>&lt;img src="https://wikipathways.github.io/academy/curators/kristina.jpg"></description>
 </item>
 </channel>
 </rss>
