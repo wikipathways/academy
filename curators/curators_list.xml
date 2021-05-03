@@ -4,11 +4,6 @@
 <description>List of WikiPathways Admin Curators</description>
 <link>https://vm1.wikipathways.org/curators_list.xml</link>     
 <item>
-     <title>Lauren Dupuis (Maastricht University)</title>
-     <link>http://www.wikipathways.org/index.php/User:L_Dupuis</link>
-     <description>&lt;img src="https://wikipathways.github.io/academy/curators/LaurenDupuis.jpg"></description>
-</item>
-<item>
      <title>Amadeo Muñoz García (Maastricht University)</title>
      <link>http://www.wikipathways.org/index.php/User:Madeomuga</link>
      <description>&lt;img src="https://wikipathways.github.io/academy/curators/AmadeoMunozGarcia.png"></description>
@@ -77,6 +72,11 @@
      <title>Kristina Hanspers (Gladstone Institutes)</title>
      <link>http://www.wikipathways.org/index.php/User:Khanspers</link>
      <description>&lt;img src="https://wikipathways.github.io/academy/curators/kristina.jpg"></description>
+</item>
+<item>
+     <title>Lauren Dupuis (Maastricht University)</title>
+     <link>http://www.wikipathways.org/index.php/User:L_Dupuis</link>
+     <description>&lt;img src="https://wikipathways.github.io/academy/curators/LaurenDupuis.jpg"></description>
 </item>
 </channel>
 </rss>
