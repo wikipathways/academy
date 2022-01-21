@@ -34,32 +34,68 @@
           <h1>
             <a id="intro" class="anchor" href="#intro" aria-hidden="true">
               <span aria-hidden="true" class="octicon octicon-link">
-               Setting Pathway Information Free - Overview 
+               Setting Pathway Information Free - Start 
               </span>
             </a>
           </h1>
 
           <h2>Background</h2>
 		<p>
-	  	This quest desribes the process of curating a pathway model from existing information. The information, or content, underlying a pathway
-        model can come from many different sources, for example published literature, your own research or other types of pathway information resources, like websites.
-        Most commonly, the pathway information comes from one of more published articles. 
+	  	  In this quest, you will learn how to convert a published static pathway figure from the scientific
+	  	  literature to an interactive pathway model at WikiPathways. The figure is depicted below and is from  
+	  	  <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4775252/" target="_blank">Linehan, et al. The New England journal of medicine. 2016;374(2):135-145.</a>
 	 	</p>
-        <p>To find a published paper with pathway information, here are some resources:</p>
-	 	<dl>
-	 	<dt><a href="https://gladstone-bioinformatics.shinyapps.io/shiny-25years/" target="_blank">25 Years of Pathway Figures</a></dt>
-            <dd>The WikiPathways team has searched the literature over the past 25 years for pathway figures. This interactive tool lets you filter, search and view their findings. <b>Search for your favorite gene, disease, or search by figure or pathway title</b>.</dd>
-        <dt><a href="https://github.com/wikipathways/pathway-curation-tasks/issues" target="_blank">WikiPathways Pathway Curation Tasks</a></dt>
-            <dd>A list of pathway topics requested by the WikiPathways community.</dd>
-	 	</dl>
+	 	<p>
+	 	The pathway depicts parts of the Glycolysis and Krebs cycle pathways. There are some key points about how the pathway is
+		represented in the figure and how this relates to our pathway model:</p>
+	 	<ul>
+	 	<li>The figure includes specific data overlaid on the pathway nodes (red and blue). For a general-purpose 
+		pathway model, node color should be excluded.</li>
+	 	<li>The figure includes RNA and Protein nodes for the same gene product. We will use only one <b>Gene 
+	 	Product</b> node to represent both protein and RNA forms.</li>
+	 	</ul>
+          <h2>Challenge</h2>
+          <br />  
+	  <div class="choices" id="fig-met-1-overview">
+		  <p><span>How many <b>inhibitory</b> interactions are in this pathway?</span></p>
+		<p><a class="false" href="javascript:void(0);"><span class="fa fa-circle-thin fa-2x"></span></a> 
+		 4
+		</p>
+		<p><a class="true" href="javascript:void(0);"><span class="fa fa-circle-thin fa-2x"></span></a> 
+		 2
+		</p>
+		<p><a class="false" href="javascript:void(0);"><span class="fa fa-circle-thin fa-2x"></span></a> 
+		 10
+		</p>
+	  </div>
 	  <br /> 
+	  <div class="results" id="ex1" style="display:none;">
+		  <h2>Explanation</h2>
+		  <p>That’s correct! There are 2 inhibitory interaction arrows.</p>
+	  </div> 
+	  <div class="results" id="ex2" style="display:none;">
+		  <h2>Explanation</h2>
+		  <p>Are you sure? Review the figures again and choose another answer.</p>
+	  </div>
+	  <p>
+	  <b>Original pathway figure from literature (left) and corresponding pathway model at WikiPathways (right).</b>
+	  </p>
+	 <div class="row">
+            <div class="col-md-6">
+               <img src="Linehan_etal_fig3D.png" alt="Linehan et al" style="width:80%">
+            </div>
+         <div class="col-md-6">
+          <img src="fig-met-1-overview.png" alt="met 1 overview" style="width:80%">
+            </div>
+        </div>
+	<br />
         <div id="next-button">
-		<a href="../fig-met-1-start/index.html" class="btn btn-info btn-lg pull-right">Next step</a></div>
+		<a href="../fig-met-1-first/index.html" class="btn btn-info btn-lg pull-right">Next step</a></div>
 	     
 	
 	</section>
 	    </div>
-	  </div> 
+	  </div>
 
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
