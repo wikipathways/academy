@@ -765,8 +765,9 @@ ol {
 }
 
 dl dd {
-  font-style: italic;
+  /*font-style: italic;*/
   font-weight: 100;
+  margin-bottom: 20px;
 }
 
 footer {
