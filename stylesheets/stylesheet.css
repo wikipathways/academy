@@ -765,8 +765,7 @@ ol {
 }
 
 dl dd {
-  /*font-style: italic;*/
-  font-weight: 100;
+  font-weight: 400;
   margin-bottom: 20px;
 }
 
