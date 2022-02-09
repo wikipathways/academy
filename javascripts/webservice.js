@@ -252,10 +252,8 @@ function sendSGLActivity(action){
 	var MM = forceDoubleDigit(d.getMonth()+1); //only month is zero-based 
 	var DD = forceDoubleDigit(d.getDate());
 	var hh = d.getHours();
-	console.log(hh)
 		if(hh>0){
 			hh = forceDoubleDigit(hh-1); // an hour ago
-			console.log(hh)
 		} else {
 			hh = '23'; //an hour ago, yesterday
 			DD = forceDoubleDigit(DD-1); // I think '00' day actually works in wp webservice...
