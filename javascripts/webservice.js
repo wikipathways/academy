@@ -254,14 +254,14 @@ function sendSGLActivity(action){
 	var hh = d.getHours();
 	console.log(hh)
 		if(hh>0){
-			forceDoubleDigit(hh-1); // an hour ago
+			hh = forceDoubleDigit(hh-1); // an hour ago
+			console.log(hh)
 		} else {
 			hh = '23'; //an hour ago, yesterday
 			DD = forceDoubleDigit(DD-1); // I think '00' day actually works in wp webservice...
 		}
 	var mm = forceDoubleDigit(d.getMinutes());
         var ss = forceDoubleDigit(d.getSeconds());
-	console.log(hh)
 	return(""+YYYY+MM+DD+hh+mm+ss);	
   }
   function forceDoubleDigit(x){
