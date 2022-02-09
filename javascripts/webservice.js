@@ -251,6 +251,7 @@ function sendSGLActivity(action){
 	var MM = forceDoubleDigit(d.getMonth()+1); //only month is zero-based 
 	var DD = forceDoubleDigit(d.getDate());
 	var hh = d.getHours();
+	console.log(hh)
 		if(hh>0){
 			forceDoubleDigit(hh-1); // an hour ago
 		} else {
@@ -259,6 +260,7 @@ function sendSGLActivity(action){
 		}
 	var mm = forceDoubleDigit(d.getMinutes());
         var ss = forceDoubleDigit(d.getSeconds());
+	console.log(hh)
 	return(""+YYYY+MM+DD+hh+mm+ss);	
   }
   function forceDoubleDigit(x){
