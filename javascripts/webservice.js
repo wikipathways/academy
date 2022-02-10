@@ -11,7 +11,7 @@ $(document).ready(function(){
 		success: function (response) {
 			console.log(response);
 			showResult('success');
-			sendSGLActivity('wp-account');
+			//sendSGLActivity('wp-account');
 		//	var t = $(response).children().text();
 		//	console.log(t);
 		},
@@ -41,7 +41,7 @@ $(document).ready(function(){
                         console.log(user);
 			if(comment.includes('New pathway') && user.includes(username)){
 				showResult('success');
-                        	sendSGLActivity('wp-publish');
+                        	//sendSGLActivity('wp-publish');
 			} else {
 				showResult('error');
 			}
@@ -73,7 +73,7 @@ $(document).ready(function(){
                         console.log(user);
                         if(comment.includes('Modified description') && user.includes(username)){
                                 showResult('success');
-                                sendSGLActivity('wp-description');
+                                //sendSGLActivity('wp-description');
                         } else {
                                 showResult('error');
                         }
@@ -105,7 +105,7 @@ $(document).ready(function(){
 			console.log(user);
                         if(comment.includes('Ontology Term') && user.includes(username)){
                                 showResult('success');
-                                sendSGLActivity('wp-add-ontology');
+                                //sendSGLActivity('wp-add-ontology');
                         } else {
                                 showResult('error');
                         }
@@ -137,7 +137,7 @@ $(document).ready(function(){
                         console.log(user);
                         if(user.includes(username)){
                                 showResult('success');
-                                sendSGLActivity('wp-edit-pathway');
+                                //sendSGLActivity('wp-edit-pathway');
                         } else {
                                 showResult('error');
                         }
@@ -169,7 +169,7 @@ $(document).ready(function(){
                         console.log(user);
                         if(user.includes(username)){
                                 showResult('success');
-                                sendSGLActivity('wp-add-literature');
+                                //sendSGLActivity('wp-add-literature');
                         } else {
                                 showResult('error');
                         }
@@ -199,7 +199,7 @@ $(document).ready(function(){
                         console.log(user);
                         if(comment.includes('ProposedDeletion') && user.includes(username)){
                                 showResult('success');
-                                sendSGLActivity('wp-tag-delete');
+                                //sendSGLActivity('wp-tag-delete');
                         } else {
                                 showResult('error');
                         }
