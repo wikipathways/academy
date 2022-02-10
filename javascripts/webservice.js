@@ -247,8 +247,9 @@ function sendSGLActivity(action){
   
   function getAnHourAgo(){
 	var d = new Date(Date.now());
-	console.log(d);
-	console.log(d.valueOf());
+	var test = new Date.UTC(Date.now());
+	console.log(test);
+	console.log(test.valueOf());
 	var YYYY = d.getFullYear();
 	var MM = forceDoubleDigit(d.getMonth()+1); //only month is zero-based 
 	var DD = forceDoubleDigit(d.getDate());
