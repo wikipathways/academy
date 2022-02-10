@@ -247,13 +247,11 @@ function sendSGLActivity(action){
   
   function getAnHourAgo(){
 	var d = new Date(Date.now());
-	var test = new Date.UTC(Date.now());
-	console.log(test);
 	console.log(test.valueOf());
-	var YYYY = d.getFullYear();
-	var MM = forceDoubleDigit(d.getMonth()+1); //only month is zero-based 
-	var DD = forceDoubleDigit(d.getDate());
-	var hh = d.getHours();
+	var YYYY = d.getUTCFullYear();
+	var MM = forceDoubleDigit(d.getUTCMonth()+1); //only month is zero-based 
+	var DD = forceDoubleDigit(d.getUTCDate());
+	var hh = d.getUTCHours();
 		if(hh>0){
 			//hh = forceDoubleDigit(hh-1); // an hour ago
 			hh = forceDoubleDigit(hh-3); // three hours ago. preliminary fix to account for time zone issue.
@@ -261,8 +259,8 @@ function sendSGLActivity(action){
 			hh = '23'; //an hour ago, yesterday
 			DD = forceDoubleDigit(DD-1); // I think '00' day actually works in wp webservice...
 		}
-	var mm = forceDoubleDigit(d.getMinutes());
-        var ss = forceDoubleDigit(d.getSeconds());
+	var mm = forceDoubleDigit(d.getUTCMinutes());
+        var ss = forceDoubleDigit(d.getUTCSeconds());
 	return(""+YYYY+MM+DD+hh+mm+ss);	
   }
   function forceDoubleDigit(x){
