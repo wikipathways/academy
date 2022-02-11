@@ -247,8 +247,8 @@ function sendSGLActivity(action){
   
   function getAnHourAgo(){
 	var d = new Date(Date.now());
-	var YYYY = d.getUTCFullYear();
-	var MM = forceDoubleDigit(d.getUTCMonth()+1); //only month is zero-based 
+	var YYYY = d.getUTCFullYear(); //use UTC since the WP web service uses UTC for timestamps
+	var MM = forceDoubleDigit(d.getUTCMonth()+1); //only month is zero-based.
 	var DD = forceDoubleDigit(d.getUTCDate());
 	var hh = d.getUTCHours();
 		if(hh>0){
