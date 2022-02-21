@@ -4,11 +4,6 @@
 <description>List of WikiPathways Admin Curators</description>
 <link>https://vm1.wikipathways.org/curators_list.xml</link>  
 <item>
-     <title>Andra Waagmeester (Gene Wiki)</title>
-     <link>http://www.wikipathways.org/index.php/User:Andra</link>
- <description>&lt;img src="https://wikipathways.github.io/academy/curators/AndraWaagmeester.png"></description>
-</item>
-<item>
       <title>Denise Slenter (Maastricht University)</title>
       <link>http://www.wikipathways.org/index.php/User:DeSl</link>
       <description>&lt;img src="https://wikipathways.github.io/academy/curators/DeniseSlenter.png"></description>
@@ -77,6 +72,11 @@
      <title>Susan Coort (Maastricht University)</title>
      <link>http://www.wikipathways.org/index.php/User:Susan</link>
      <description>&lt;img src="https://wikipathways.github.io/academy/curators/SusanCoort.png"></description>
+</item>
+     <item>
+     <title>Andra Waagmeester (Gene Wiki)</title>
+     <link>http://www.wikipathways.org/index.php/User:Andra</link>
+ <description>&lt;img src="https://wikipathways.github.io/academy/curators/AndraWaagmeester.png"></description>
 </item>
 </channel>
 </rss>
