@@ -210,7 +210,7 @@ function validateGpml(userGpml,solutionGpml){
                 var typematch = true;
                 $.each(userData, function(userkey, userval){
 			console.log(solval[4]);
-			console.log(userval[4];
+			console.log(userval[4]);
                         if (solval[0] == userval[0]){
                           intmatch = false;
                           typematch = false;
