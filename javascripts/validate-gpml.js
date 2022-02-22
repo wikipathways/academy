@@ -167,12 +167,9 @@ function parseGpml(gpml){
                           if (undefined === data[gr]){
                                 console.log('GraphRef pointing to missing GraphId: '+gr);
                           } else {
-				console.log(data[gr][4]);
-				console.log(data[ah]);
                                 data[gr][4].push(ah);
                           }
                   });
-	console.log(data);
           });
 
 	  // Fix anchor interaction arrays by merging per interaction
@@ -212,6 +209,8 @@ function validateGpml(userGpml,solutionGpml){
                 var intmatch = true;
                 var typematch = true;
                 $.each(userData, function(userkey, userval){
+			console.log(solval[4]);
+			console.log(userval[4];
                         if (solval[0] == userval[0]){
                           intmatch = false;
                           typematch = false;
@@ -223,6 +222,7 @@ function validateGpml(userGpml,solutionGpml){
                           }
                         }
                 });
+		console.log(intmatch);
                 err += (typematch) ? '' : 'Incorrect molecule type for '+solval[0]+'. ';
                 err += (intmatch) ? '' : 'Incorrect interactions for '+solval[0]+'. ';
 
