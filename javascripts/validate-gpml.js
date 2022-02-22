@@ -167,11 +167,12 @@ function parseGpml(gpml){
                           if (undefined === data[gr]){
                                 console.log('GraphRef pointing to missing GraphId: '+gr);
                           } else {
-				console.log(data[gr]);
-				  console.log(data[ah]);
+				console.log(data[gr][4]);
+				console.log(data[ah]);
                                 data[gr][4].push(ah);
                           }
                   });
+	console.log(data);
           });
 
 	  // Fix anchor interaction arrays by merging per interaction
