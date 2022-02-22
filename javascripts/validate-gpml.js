@@ -218,8 +218,10 @@ function validateGpml(userGpml,solutionGpml){
                                 typematch = true;
                           }
                           if ($(solval[4]).not(userval[4]).length === 0 && $(userval[4]).not(solval[4]).length === 0){
-				console.log((solval[4]).not(userval[4]).length);
-				 console.log((userval[4]).not(solval[4]).length);
+				var slength = (solval[4]).not(userval[4]).length;
+				var ulength = (userval[4]).not(solval[4]).length;
+				console.log(slength);
+				 console.log(ulength);
                                 intmatch = true;
                           }
                         }
