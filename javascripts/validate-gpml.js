@@ -209,9 +209,11 @@ function validateGpml(userGpml,solutionGpml){
                 var intmatch = true;
                 var typematch = true;
                 $.each(userData, function(userkey, userval){
-			console.log(solval[4]);
-			console.log(userval[4]);
+			//console.log(solval[4]);
+			//console.log(userval[4]);
                         if (solval[0] == userval[0]){
+			console.log(solval[0]);
+			console.log(userval[0]);
                           intmatch = false;
                           typematch = false;
                           if (solval[1] == userval[1]){
