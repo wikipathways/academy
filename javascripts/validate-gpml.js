@@ -192,8 +192,8 @@ function validateGpml(userGpml,solutionGpml){
 	 var userData = parseGpml(userGpml);
  	 var solutionData = parseGpml(solutionGpml);
 	
-	console.log(userData)
-	console.log(solutionData)
+	console.log(userData);
+	console.log(solutionData);
 
           var err = '';
 	  userDataCount = Object.keys(userData).length;
@@ -222,9 +222,9 @@ function validateGpml(userGpml,solutionGpml){
                                 intmatch = true;
                           }
                         }
+			console.log(typematch);
+			console.log(intmatch);
                 });
-		console.log(solval[0])
-		console.log(solval[1])
                 err += (typematch) ? '' : 'Incorrect molecule type for '+solval[0]+'. ';
                 err += (intmatch) ? '' : 'Incorrect interactions for '+solval[0]+'. ';
 
