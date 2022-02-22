@@ -209,8 +209,6 @@ function validateGpml(userGpml,solutionGpml){
                 var intmatch = true;
                 var typematch = true;
                 $.each(userData, function(userkey, userval){
-			//console.log(solval[4]);
-			//console.log(userval[4]);
                         if (solval[0] == userval[0]){
 			console.log(solval[0]);
 			console.log(userval[0]);
@@ -220,6 +218,8 @@ function validateGpml(userGpml,solutionGpml){
                                 typematch = true;
                           }
                           if ($(solval[4]).not(userval[4]).length === 0 && $(userval[4]).not(solval[4]).length === 0){
+				console.log(solval[4]).not(userval[4]).length);
+				 console.log(userval[4]).not(solval[4]).length);
                                 intmatch = true;
                           }
                         }
