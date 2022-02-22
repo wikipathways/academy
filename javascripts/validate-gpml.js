@@ -191,6 +191,9 @@ function parseGpml(gpml){
 function validateGpml(userGpml,solutionGpml){
 	 var userData = parseGpml(userGpml);
  	 var solutionData = parseGpml(solutionGpml);
+	
+	console.log(userData)
+	console.log(solutionData)
 
           var err = '';
 	  userDataCount = Object.keys(userData).length;
