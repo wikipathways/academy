@@ -220,6 +220,8 @@ function validateGpml(userGpml,solutionGpml){
                           }
                         }
                 });
+		console.log(solval[0])
+		console.log(userval[0])
                 err += (typematch) ? '' : 'Incorrect molecule type for '+solval[0]+'. ';
                 err += (intmatch) ? '' : 'Incorrect interactions for '+solval[0]+'. ';
 
