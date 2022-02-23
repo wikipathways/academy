@@ -211,11 +211,6 @@ function validateGpml(userGpml,solutionGpml){
                 var intmatch = true;
                 var typematch = true;
                 $.each(userData, function(userkey, userval){
-			console.log('userkey: '+userkey+' solkey: '+solkey);
-			var solvaltest = $(solval[4]).not(userval[4]).length;
-			var uservaltest = $(userval[4]).not(solval[4]).length;
-			console.log('solvaltest: '+solvaltest+' uservaltest: '+uservaltest);
-			
                         if (solval[0] == userval[0]){
                           intmatch = false;
                           typematch = false;
@@ -223,7 +218,11 @@ function validateGpml(userGpml,solutionGpml){
                                 typematch = true;
                           }
                           if ($(solval[4]).not(userval[4]).length === 0 && $(userval[4]).not(solval[4]).length === 0){
-                                intmatch = true;	  
+                                console.log('userkey: '+userkey+' solkey: '+solkey);
+				var solvaltest = $(solval[4]).not(userval[4]).length;
+				var uservaltest = $(userval[4]).not(solval[4]).length;
+				console.log('solvaltest: '+solvaltest+' uservaltest: '+uservaltest);
+				intmatch = true;	  
 			  }
                         }
                 });
