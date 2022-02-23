@@ -218,11 +218,10 @@ function validateGpml(userGpml,solutionGpml){
                                 typematch = true;
                           }
                           if ($(solval[4]).not(userval[4]).length === 0 && $(userval[4]).not(solval[4]).length === 0){
-                                console.log('userkey: '+userkey+' solkey: '+solkey);
-				var solvaltest = $(solval[4]).not(userval[4]).length;
-				var uservaltest = $(userval[4]).not(solval[4]).length;
-				console.log('solvaltest: '+solvaltest+' uservaltest: '+uservaltest);
 				intmatch = true;	  
+			  } else {
+				
+				console.log('doesnt match: '+userkey+' and '+solkey);	  
 			  }
                         }
                 });
