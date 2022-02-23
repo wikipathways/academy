@@ -1,37 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Pathway xmlns="http://pathvisio.org/GPML/2013a" Name="WikiPathways Academy: draw-transport" Version="20211019" Organism="Homo sapiens">
-  <Graphics BoardWidth="554.0" BoardHeight="474.0" />
-  <DataNode TextLabel="5-fluorouracil" GraphId="a07a5" Type="Metabolite">
-    <Graphics CenterX="368.0" CenterY="356.0" Width="90.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" Color="0000ff" />
-    <Xref Database="ChEBI" ID="CHEBI:46345" />
-  </DataNode>
-  <DataNode TextLabel="5-fluorouracil" GraphId="abe10" Type="Metabolite">
-    <Graphics CenterX="368.0" CenterY="162.0" Width="90.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" Color="0000ff" />
-    <Xref Database="ChEBI" ID="CHEBI:46345" />
-  </DataNode>
-  <DataNode TextLabel="SLC22A7" GraphId="d39ba" Type="GeneProduct">
-    <Graphics CenterX="248.0" CenterY="242.0" Width="90.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" />
+<Pathway xmlns="http://pathvisio.org/GPML/2013a" Name="WikiPathways Academy: draw-transport" Version="20211018" Organism="Homo sapiens">
+  <Comment Source="WikiPathways-description">Do not modify or delete. This pathway is part of the collection of content used by [https://wikipathways.github.io/academy/ WikiPathways Academy].</Comment>
+  <Graphics BoardWidth="651.0" BoardHeight="454.0" />
+  <DataNode TextLabel="SLC22A7" GraphId="b4e94" Type="GeneProduct">
+    <Graphics CenterX="356.0" CenterY="145.0" Width="90.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" />
     <Xref Database="Ensembl" ID="ENSG00000137204" />
   </DataNode>
+  <DataNode TextLabel="5-fluorouracil" GraphId="cb3ef" Type="Metabolite">
+    <Graphics CenterX="461.0" CenterY="32.0" Width="90.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" Color="0000ff" />
+    <Xref Database="ChEBI" ID="CHEBI:46345" />
+  </DataNode>
+  <DataNode TextLabel="5-fluorouracil" GraphId="dbe94" Type="Metabolite">
+    <Graphics CenterX="459.0" CenterY="223.0" Width="90.0" Height="25.0" ZOrder="32769" FontSize="12" Valign="Middle" Color="0000ff" />
+    <Xref Database="ChEBI" ID="CHEBI:46345" />
+  </DataNode>
   <Interaction>
     <Graphics ZOrder="12288" LineThickness="1.0">
-      <Point X="368.0" Y="174.5" GraphRef="abe10" RelX="0.0" RelY="1.0" />
-      <Point X="368.0" Y="343.5" GraphRef="a07a5" RelX="0.0" RelY="-1.0" ArrowHead="mim-conversion" />
-      <Anchor Position="0.4" Shape="None" GraphId="dc40a" />
+      <Point X="461.0" Y="44.5" GraphRef="cb3ef" RelX="0.0" RelY="1.0" />
+      <Point X="459.0" Y="210.5" GraphRef="dbe94" RelX="0.0" RelY="-1.0" ArrowHead="mim-conversion" />
+      <Anchor Position="0.4" Shape="None" GraphId="b1628" />
     </Graphics>
     <Xref Database="" ID="" />
   </Interaction>
   <Interaction>
     <Graphics ZOrder="12288" LineThickness="1.0">
-      <Point X="293.0" Y="242.0" GraphRef="d39ba" RelX="1.0" RelY="0.0" />
-      <Point X="368.0" Y="242.10000000000002" GraphRef="dc40a" RelX="0.0" RelY="0.0" ArrowHead="mim-catalysis" />
+      <Point X="401.0" Y="145.0" GraphRef="b4e94" RelX="1.0" RelY="0.0" />
+      <Point X="460.2" Y="110.9" GraphRef="b1628" RelX="0.0" RelY="0.0" ArrowHead="mim-catalysis" />
     </Graphics>
     <Xref Database="" ID="" />
   </Interaction>
-  <Shape TextLabel="Liver cell" GraphId="d3cfb">
+  <Shape TextLabel="Liver cell" GraphId="ee8ac">
     <Attribute Key="org.pathvisio.CellularComponentProperty" Value="Cell" />
     <Attribute Key="org.pathvisio.DoubleLineProperty" Value="Double" />
-    <Graphics CenterX="346.5" CenterY="267.5" Width="349.0" Height="281.0" ZOrder="16384" FontSize="12" Align="Right" ShapeType="RoundedRectangle" LineThickness="3.0" Color="c0c0c0" Rotation="0.0" />
+    <Graphics CenterX="431.5" CenterY="284.0" Width="379.0" Height="280.0" ZOrder="16384" FontSize="12" Align="Right" ShapeType="RoundedRectangle" LineThickness="3.0" Color="c0c0c0" Rotation="0.0" />
   </Shape>
   <InfoBox CenterX="0.0" CenterY="0.0" />
   <Biopax />
