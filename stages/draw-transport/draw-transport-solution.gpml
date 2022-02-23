@@ -6,15 +6,15 @@
     <Graphics CenterX="356.0" CenterY="145.0" Width="90.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" />
     <Xref Database="Ensembl" ID="ENSG00000137204" />
   </DataNode>
-  <DataNode TextLabel="5-Fluorouracil deoxyriboside" GraphId="cb3ef" Type="Metabolite">
+  <DataNode TextLabel="5-fluorouracil" GraphId="cb3ef" Type="Metabolite">
     <Graphics CenterX="461.0" CenterY="32.0" Width="90.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" Color="0000ff" />
-    <Xref Database="ChEBI" ID="CHEBI:60761" />
+    <Xref Database="ChEBI" ID="CHEBI:46345" />
   </DataNode>
   <DataNode TextLabel="5-fluorouracil" GraphId="dbe94" Type="Metabolite">
     <Graphics CenterX="459.0" CenterY="223.0" Width="90.0" Height="25.0" ZOrder="32769" FontSize="12" Valign="Middle" Color="0000ff" />
     <Xref Database="ChEBI" ID="CHEBI:46345" />
   </DataNode>
-  <Interaction GraphId="id58d3960e">
+  <Interaction>
     <Graphics ZOrder="12288" LineThickness="1.0">
       <Point X="461.0" Y="44.5" GraphRef="cb3ef" RelX="0.0" RelY="1.0" />
       <Point X="459.0" Y="210.5" GraphRef="dbe94" RelX="0.0" RelY="-1.0" ArrowHead="mim-conversion" />
@@ -22,7 +22,7 @@
     </Graphics>
     <Xref Database="" ID="" />
   </Interaction>
-  <Interaction GraphId="ide9620961">
+  <Interaction>
     <Graphics ZOrder="12288" LineThickness="1.0">
       <Point X="401.0" Y="145.0" GraphRef="b4e94" RelX="1.0" RelY="0.0" />
       <Point X="460.2" Y="110.9" GraphRef="b1628" RelX="0.0" RelY="0.0" ArrowHead="mim-catalysis" />
