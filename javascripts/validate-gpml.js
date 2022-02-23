@@ -184,13 +184,15 @@ function parseGpml(gpml){
 		}
 	  });				
 
-          console.log(data);
+          //console.log(data);
 
 	  return data;
 }
 function validateGpml(userGpml,solutionGpml){
 	 var userData = parseGpml(userGpml);
  	 var solutionData = parseGpml(solutionGpml);
+	 console.log(userData);
+	 console.log(solutionData);
 
           var err = '';
 	  userDataCount = Object.keys(userData).length;
@@ -209,6 +211,7 @@ function validateGpml(userGpml,solutionGpml){
                 var intmatch = true;
                 var typematch = true;
                 $.each(userData, function(userkey, userval){
+			//console.log('userkey: '+userkey);
                         if (solval[0] == userval[0]){
                           intmatch = false;
                           typematch = false;
