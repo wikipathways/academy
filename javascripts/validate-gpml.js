@@ -219,12 +219,11 @@ function validateGpml(userGpml,solutionGpml){
                                 typematch = true;
                           }
                           if ($(solval[4]).not(userval[4]).length === 0 && $(userval[4]).not(solval[4]).length === 0){
-                                intmatch = true;
-			  else {
+                                intmatch = true;	  
+			  } else {
 		          var solvaltest = (solval[4]).not(userval[4]).length;
 			  var uservaltest = (userval[4]).not(solval[4]).length;
-			  console.log('solvaltest: '+solvaltest+' uservaltest: '+uservaltest);	  
-			  }
+			  console.log('solvaltest: '+solvaltest+' uservaltest: '+uservaltest);
                           }
                         }
                 });
