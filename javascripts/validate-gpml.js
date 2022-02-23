@@ -220,6 +220,11 @@ function validateGpml(userGpml,solutionGpml){
                           }
                           if ($(solval[4]).not(userval[4]).length === 0 && $(userval[4]).not(solval[4]).length === 0){
                                 intmatch = true;
+			  else {
+		          var solvaltest = (solval[4]).not(userval[4]).length;
+			  var uservaltest = (userval[4]).not(solval[4]).length;
+			  console.log('solvaltest: '+solvaltest+' uservaltest: '+uservaltest);	  
+			  }
                           }
                         }
                 });
