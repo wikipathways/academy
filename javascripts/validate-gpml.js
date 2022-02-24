@@ -214,6 +214,7 @@ function validateGpml(userGpml,solutionGpml){
                         if (solval[0] == userval[0]){
                           intmatch = false;
                           typematch = false;
+			  console.log('comparison: '+'+userkey+' and '+solkey);
                           if (solval[1] == userval[1]){
                                 typematch = true;
                           }
