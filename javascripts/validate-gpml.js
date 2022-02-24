@@ -221,8 +221,11 @@ function validateGpml(userGpml,solutionGpml){
                           if ($(solval[4]).not(userval[4]).length === 0 && $(userval[4]).not(solval[4]).length === 0){
 				intmatch = true;	  
 			  } else {
-				
-				console.log('doesnt match: '+userkey+' and '+solkey);	  
+				console.log('doesnt match: '+userkey+' and '+solkey);
+			 	const userlabelsunique = Array.from(new Set(userlabels));
+				  if(userlabels.length != userlabelsunique.length){
+				  intmatch = true;	  	  
+				  }
 			  }
                         }
                 });
