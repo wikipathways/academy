@@ -214,22 +214,21 @@ function validateGpml(userGpml,solutionGpml){
                         if (solval[0] == userval[0]){
                           intmatch = false;
                           typematch = false;
-			  console.log('comparison: '+userkey+' and '+solkey);
                           if (solval[1] == userval[1]){
                                 typematch = true;
                           }
                           if ($(solval[4]).not(userval[4]).length === 0 && $(userval[4]).not(solval[4]).length === 0){
-				intmatch = true;	  
-			  } else {
-				console.log('doesnt match: '+userkey+' and '+solkey);
-			 	const userlabelsunique = Array.from(new Set(userlabels));
-				  if(userlabels.length != userlabelsunique.length){
-				  intmatch = true;	  	  
-				  }
+				intmatch = true; 	  
+			  } 
+			  //special case to deal with transport, which includes duplciated nodes
+		          else { 
+			 	const userlabelsunique = Array.from(new Set(userlabels)); //check if duplicates exist in data object, i.e. in the gpml
+				if(userlabels.length != userlabelsunique.length){
+				intmatch = true;	  	  
+				}
 			  }
                         }
                 });
-		console.log(intmatch);
                 err += (typematch) ? '' : 'Incorrect molecule type for '+solval[0]+'. ';
                 err += (intmatch) ? '' : 'Incorrect interactions for '+solval[0]+'. ';
 
