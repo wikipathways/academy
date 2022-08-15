@@ -3,12 +3,6 @@
 <title>Wikipathways curators</title>
 <description>List of WikiPathways Admin Curators</description>
 <link>https://vm1.wikipathways.org/curators_list.xml</link>  
- 
-<item>
-     <title>Nhung Pham (Maastricht University)</title>
-     <link>http://www.wikipathways.org/index.php/User:NhungP</link>
-     <description>&lt;img src="https://wikipathways.github.io/academy/curators/NhungPham.png"></description>
-</item>
      <item>
      <title>Finterly Hu (Maastricht University)</title>
      <link>http://www.wikipathways.org/index.php/User:Finterly</link>
@@ -74,5 +68,10 @@
      <link>http://www.wikipathways.org/index.php/User:Fehrhart</link>
      <description>&lt;img src="https://wikipathways.github.io/academy/curators/FriederikeEhrhart.png"></description>
 </item> 
+<item>
+     <title>Nhung Pham (Maastricht University)</title>
+     <link>http://www.wikipathways.org/index.php/User:NhungP</link>
+     <description>&lt;img src="https://wikipathways.github.io/academy/curators/NhungPham.png"></description>
+</item>
 </channel>
 </rss>
