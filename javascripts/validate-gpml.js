@@ -104,9 +104,9 @@ window.wpAcademy.validateGPML = function(args) {
 };
 
 function parseGpml(gpml){
-          //console.log(gpml);
+      //console.log(gpml);
 
-          // DataNode collection
+      // DataNode collection
           var data = {};
           $(gpml).find('DataNode').each(function(){
                   var gi = $(this).attr('GraphId');
@@ -123,7 +123,7 @@ function parseGpml(gpml){
                   data[gi] = [tl,'Label','NULL','NULL',[]];
           });
 
-          // Group collection
+      // Group collection
           $(gpml).find('Group').each(function(){
                   var gi = $(this).attr('GraphId');
                   data[gi] = ['GROUP','Group','NULL','NULL',[]];
@@ -140,7 +140,7 @@ function parseGpml(gpml){
 		  });
 	  });
 
-          // Anchor collection
+      // Anchor collection
           $(gpml).find('Interaction').each(function(){
 		  var anchorlabel = 'ANCHOR';
 		  $(this).find('Graphics').find('Point').each(function() {
@@ -158,7 +158,14 @@ function parseGpml(gpml){
                   });
           });
 
-          // Interaction collection
+       // State collection
+       $(gpml).find('State').each(function(){
+		  var gi = $(this).attr('GraphId');
+          var tl = $(this).attr('TextLabel').toUpperCase();
+          data[gi] = [tl,'State','NULL','NULL',[]];
+	  });
+
+       // Interaction collection
           $(gpml).find('Interaction').each(function(){
                   $(this).find('Graphics').find('Point').each(function() {
                           var gr = $(this).attr('GraphRef');
