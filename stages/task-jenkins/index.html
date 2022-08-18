@@ -42,28 +42,49 @@
 	  <p>To review the <a href="https://jenkins.bigcat.unimaas.nl/job/WikiPathways%20Expert%20Curation/lastCompletedBuild/testReport/nl.unimaas.bigcat.wikipathways.curator/" target="_blank">results</a> from the automated Jenkins tests. The tests check for many aspects of WikiPathways curation, and the list of failed tests corresponds to curation issues in WikiPathways.</p>
       
       <h2>Unknown DataNode Type</h2>
+      <p>The goal of this task is to assign Unknown data nodes to their proper type, or to convert them to graphical objcts.</p>
       <ul>
-          <li>On the report page, expand the entries ending in <b>DataNodes.unknownTypes</b>.</li>
-          <li>Find the WPID for an affected pathway.</li>
-          <li>Open the relevant pathway in PathVisio using the WPID, then find the problematic node by the label listed in the Jenkins report.</li>
+          <li>On the <a href="https://jenkins.bigcat.unimaas.nl/job/WikiPathways%20Expert%20Curation/lastCompletedBuild/testReport/" target="_blank"></a>report page, expand the entries ending in <b>DataNodes.unknownTypes</b>.</li>
+          <li>The report will include some information on the data node in question:
+          <code>http://www.wikipathways.org/instance/WP2209_r117419 http://rdf.wikipathways.org/Pathway/WP2209_r117419/DataNode/da315 (Catalyst reactions)</code>
+          In this case, the data node with label <b>Catalyst reactions</b> is of type Unkown.</li>
+          <li>Open the relevant pathway in PathVisio using the WikiPathways plugin and the WPID listed in the report, then find the problematic node, using its label.</li>
           <li>If it's clear what type the node should be, assign it. If it's not a data node, redraw as graphical element. <b>Pro-tip:</b> One can use the <a href="https://pathvisio.org/plugins/typeconverter.html" target="_blank">TypeConverter plugin</a> to quickly change the type of a Data Node.</li>       
       </ul>
       <h2>Weird Characters in Titles</h2>
+      <p>The goal of this task is to ensure pathway titles do not include character values that are not allowed.</p>
 	  <ul>
-          <li>Update title at WP</li>
+          <li>On the <a href="https://jenkins.bigcat.unimaas.nl/job/WikiPathways%20Expert%20Curation/lastCompletedBuild/testReport/" target="_blank"></a>report page, expand the entries ending in <b>weirdCharacterTitles</b>.</li>
+          <li>The report will include a summary for each affected title: 
+          <code>http://www.wikipathways.org/instance/WP2813_r102405 'Mammary gland development pathway - Embryonic development (Stage 1 of 4)' has 2 weird characters</code>
+          In this case, the title includes two rounded brackets, which are not allowed.
+          </li>
+          <li>Find the WPID for an affected pathway.</li>
+          <li>Go to <a href="https://www.wikipathways.org/" target="_blank">WikiPathways</a> and update the title to avoid special characters. See our <a href="https://www.wikipathways.org/index.php/Help:Guidelines#Pathway_naming" target="_blank">author guidelines</a> for details on pathway titles.</li>
 	  </ul>	
       <h2>Duplicate Titles</h2>
 	  <ul>
-          <li>Review the affected pathways to compare them. If one is just a copy of the other with no other new information, delete it.</li>
-          <li>If the pathways are unique, update one of the titles to better reflect the content.</li>
+          <li>On the <a href="https://jenkins.bigcat.unimaas.nl/job/WikiPathways%20Expert%20Curation/lastCompletedBuild/testReport/" target="_blank"></a>report page, expand the entries ending in <b>duplicateTitles</b>.</li>
+          <li>The report will include a statement describing two pathways with the same title:
+              <code>http://www.wikipathways.org/instance/WP2231_r118114 'Programmed cell death and cell engulfment - Caenorhabditis elegans' is duplicate title of http://www.wikipathways.org/instance/WP2829_r118448</code>
+          </li>
+          <li>Review the two pathways to compare them. Process as follows:
+              <ul>
+                  <li>If one pathway is just a copy of the other with no other new information, tag the latest version of the pathway for deletion.</li>
+                  <li>If the pathways are unique, update one of the titles to better reflect the content, for example .</li>
+              </ul></li>
 	  </ul>	
-      <h2>Unreviewed Identifiers</h2>
+      <h2>UniProt Unreviewed Identifiers</h2>
 	  <ul>
-          <li>The report includes instructions on what to do.</li>
+          <li>...</li>
 	  </ul>	
       <h2>Possible Translocations</h2>
 	  <ul>
-          <li>Remodel based on <a href="https://new.wikipathways.org/academy/stages/draw-transport/">this</a>.</li>
+          <li>On the <a href="https://jenkins.bigcat.unimaas.nl/job/WikiPathways%20Expert%20Curation/lastCompletedBuild/testReport/" target="_blank"></a>report page, expand the entries ending in <b>possibleTranslocations</b>.</li>
+          <li>The report will list several instances of interactions between identical metabolites:
+          <code>https://wikipathways.github.io/WikiPathwaysCurator/InteractionTests/possibleTranslocations). . Details:
+http://www.wikipathways.org/instance/WP2941_r118621</code></li>
+          <li>If the details of the transport/translocation is known, remodel based on <a href="https://new.wikipathways.org/academy/stages/draw-transport/">this</a>.</li>
 	  </ul>
       <h2>Too Many InChiKeys</h2>
 	  <ul>
