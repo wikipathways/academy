@@ -46,7 +46,7 @@
       <ul>
           <li>On the <a href="https://jenkins.bigcat.unimaas.nl/job/WikiPathways%20Expert%20Curation/lastCompletedBuild/testReport/" target="_blank"></a>report page, expand the entries ending in <b>DataNodes.unknownTypes</b>.</li>
           <li>The report will include some information on the data node in question:
-          <code>http://www.wikipathways.org/instance/WP2209_r117419 http://rdf.wikipathways.org/Pathway/WP2209_r117419/DataNode/da315 (Catalyst reactions)</code>
+          <br /><code>http://www.wikipathways.org/instance/WP2209_r117419 http://rdf.wikipathways.org/Pathway/WP2209_r117419/DataNode/da315 (Catalyst reactions)</code><br />
           In this case, the data node with label <b>Catalyst reactions</b> is of type Unkown.</li>
           <li>Open the relevant pathway in PathVisio using the WikiPathways plugin and the WPID listed in the report, then find the problematic node, using its label.</li>
           <li>If it's clear what type the node should be, assign it. If it's not a data node, redraw as graphical element. <b>Pro-tip:</b> One can use the <a href="https://pathvisio.org/plugins/typeconverter.html" target="_blank">TypeConverter plugin</a> to quickly change the type of a Data Node.</li>       
@@ -56,7 +56,7 @@
 	  <ul>
           <li>On the <a href="https://jenkins.bigcat.unimaas.nl/job/WikiPathways%20Expert%20Curation/lastCompletedBuild/testReport/" target="_blank"></a>report page, expand the entries ending in <b>weirdCharacterTitles</b>.</li>
           <li>The report will include a summary for each affected title: 
-          <code>http://www.wikipathways.org/instance/WP2813_r102405 'Mammary gland development pathway - Embryonic development (Stage 1 of 4)' has 2 weird characters</code>
+          <br /><code>http://www.wikipathways.org/instance/WP2813_r102405 'Mammary gland development pathway - Embryonic development (Stage 1 of 4)' has 2 weird characters</code><br />
           In this case, the title includes two rounded brackets, which are not allowed.
           </li>
           <li>Find the WPID for an affected pathway.</li>
@@ -66,7 +66,7 @@
 	  <ul>
           <li>On the <a href="https://jenkins.bigcat.unimaas.nl/job/WikiPathways%20Expert%20Curation/lastCompletedBuild/testReport/" target="_blank"></a>report page, expand the entries ending in <b>duplicateTitles</b>.</li>
           <li>The report will include a statement describing two pathways with the same title:
-              <code>http://www.wikipathways.org/instance/WP2231_r118114 'Programmed cell death and cell engulfment - Caenorhabditis elegans' is duplicate title of http://www.wikipathways.org/instance/WP2829_r118448</code>
+              <br /><code>http://www.wikipathways.org/instance/WP2231_r118114 'Programmed cell death and cell engulfment - Caenorhabditis elegans' is duplicate title of http://www.wikipathways.org/instance/WP2829_r118448</code><br />
           </li>
           <li>Review the two pathways to compare them. Process as follows:
               <ul>
@@ -82,8 +82,8 @@
 	  <ul>
           <li>On the <a href="https://jenkins.bigcat.unimaas.nl/job/WikiPathways%20Expert%20Curation/lastCompletedBuild/testReport/" target="_blank"></a>report page, expand the entries ending in <b>possibleTranslocations</b>.</li>
           <li>The report will list several instances of interactions between identical metabolites:
-          <code>https://wikipathways.github.io/WikiPathwaysCurator/InteractionTests/possibleTranslocations). . Details:
-http://www.wikipathways.org/instance/WP2941_r118621</code></li>
+          <br /><code>https://wikipathways.github.io/WikiPathwaysCurator/InteractionTests/possibleTranslocations). . Details:
+http://www.wikipathways.org/instance/WP2941_r118621</code><br /></li>
           <li>If the details of the transport/translocation is known, remodel based on <a href="https://new.wikipathways.org/academy/stages/draw-transport/">this</a>.</li>
 	  </ul>
       <h2>Too Many InChiKeys</h2>
