@@ -114,19 +114,19 @@ function parseGpml(gpml){
                   var ty = $(this).attr('Type');
                   var xdb = $(this).find('Xref').attr('Database');
                   var xid = $(this).find('Xref').attr('ID');
-                  data[gi] = [tl,ty,xdb,xid,[]]; //insert array placeholder for interaction collection
+                  data[gi] = [tl,ty,xdb,xid,'NULL',[]]; //insert array placeholder for interaction collection
           });
 	  // Label collection
 	  $(gpml).find('Label').each(function(){
                   var gi = $(this).attr('GraphId');
                   var tl = $(this).attr('TextLabel').toUpperCase();
-                  data[gi] = [tl,'Label','NULL','NULL',[]];
+                  data[gi] = [tl,'Label','NULL','NULL','NULL',[]];
           });
 
       // Group collection
           $(gpml).find('Group').each(function(){
                   var gi = $(this).attr('GraphId');
-                  data[gi] = ['GROUP','Group','NULL','NULL',[]];
+                  data[gi] = ['GROUP','Group','NULL','NULL','NULL',[]];
           });
 
 	  // Compartment collection
@@ -135,7 +135,7 @@ function parseGpml(gpml){
 		  $(this).find('Attribute').each(function(){
 			  if ($(this).attr('Key') == 'org.pathvisio.CellularComponentProperty'){
 				  var cc = $(this).attr('Value').toUpperCase();
-				  data[gi] = [cc,'Shape','NULL','NULL',[]];
+				  data[gi] = [cc,'Shape','NULL','NULL','NULL',[]];
 			  }
 		  });
 	  });
@@ -162,7 +162,8 @@ function parseGpml(gpml){
        $(gpml).find('State').each(function(){
 		  var gi = $(this).attr('GraphId');
           var tl = $(this).attr('TextLabel').toUpperCase();
-          data[gi] = [tl,'State','NULL','NULL',[]];
+          var cm = $(this).find('Comment');
+          data[gi] = [tl,'State','NULL','NULL',cm,[]];
 	  });
 
        // Interaction collection
@@ -174,7 +175,7 @@ function parseGpml(gpml){
                           if (undefined === data[gr]){
                                 console.log('GraphRef pointing to missing GraphId: '+gr);
                           } else {
-                                data[gr][4].push(ah);
+                                data[gr][5].push(ah);
                           }
                   });
           });
@@ -185,7 +186,7 @@ function parseGpml(gpml){
 		if (v1[1] == 'Anchor'){
 	  		$.each(data2, function(k2,v2){
 				if (v1[0] === v2[0] && k1 != k2){
-					Array.prototype.push.apply(data[k1][4], data2[k2][4]);
+					Array.prototype.push.apply(data[k1][5], data2[k2][5]);
 				}
 			});
 		}
@@ -202,7 +203,7 @@ function validateGpml(userGpml,solutionGpml){
 	 console.log(solutionData);
 
           var err = '';
-	  userDataCount = Object.keys(userData).length;
+	      userDataCount = Object.keys(userData).length;
           solutionDataCount = Object.keys(solutionData).length;
           err += (userDataCount == solutionDataCount) ? '' : 'Incorrect number of nodes: '+userDataCount+' detected, '+solutionDataCount+' expected. ';
 
@@ -224,10 +225,10 @@ function validateGpml(userGpml,solutionGpml){
                           if (solval[1] == userval[1]){
                                 typematch = true;
                           }
-                          if ($(solval[4]).not(userval[4]).length === 0 && $(userval[4]).not(solval[4]).length === 0){
+                          if ($(solval[5]).not(userval[5]).length === 0 && $(userval[5]).not(solval[5]).length === 0){
 				intmatch = true; 	  
 			  } 
-			  //special case to deal with transport, which includes duplciated nodes
+			  //special case to deal with transport, which includes duplicated nodes
 		          else { 
 			 	const userlabelsunique = Array.from(new Set(userlabels)); //check if duplicates exist in data object, i.e. in the gpml
 				if(userlabels.length != userlabelsunique.length){
