@@ -39,17 +39,22 @@
           </h1>
 
           <h2>Goal</h2>
-	  <p>To work on issues from the <a href="https://jenkins.bigcat.unimaas.nl/job/WikiPathways%20Expert%20Curation/lastCompletedBuild/testReport/nl.unimaas.bigcat.wikipathways.curator/" target="_blank">automated Jenkins tests</a>. The tests check for many aspects of WikiPathways curation, and the list of failed tests corresponds to potential curation tasks.</p>
+	  <p>To work on issues from the <a href="https://jenkins.bigcat.unimaas.nl/job/WikiPathways%20Expert%20Curation/lastCompletedBuild/testReport/nl.unimaas.bigcat.wikipathways.curator/" target="_blank">automated Jenkins tests</a>. These tests check for many aspects of WikiPathways curation, and the list of failed tests corresponds to potential curation tasks. The list of individual issues can be quite long; the point of this task is NOT to fix all of them; fixing even one issue is considered a success!</p>
       
       <h2>Unknown DataNode Type</h2>
-      <p>The goal of this task is to assign Unknown data nodes to their proper type, or to convert them to graphical objcts.</p>
+      <p>The goal of this task is to assign Unknown data nodes to their proper type, or to convert them to graphical objects/labels.</p>
       <ul>
           <li>On the <a href="https://jenkins.bigcat.unimaas.nl/job/WikiPathways%20Expert%20Curation/lastCompletedBuild/testReport/" target="_blank"></a>report page, expand the entries ending in <b>DataNodes.unknownTypes</b>.</li>
           <li>The report will include some information on the data node in question:
           <br /><code>http://www.wikipathways.org/instance/WP2209_r117419 http://rdf.wikipathways.org/Pathway/WP2209_r117419/DataNode/da315 (Catalyst reactions)</code><br />
           In this case, the data node with label <b>Catalyst reactions</b> is of type Unkown.</li>
           <li>Open the relevant pathway in PathVisio using the WikiPathways plugin and the WPID listed in the report, then find the problematic node, using its label.</li>
-          <li>If it's clear what type the node should be, assign it. If it's not a data node, redraw as graphical element. <b>Pro-tip:</b> One can use the <a href="https://pathvisio.org/plugins/typeconverter.html" target="_blank">TypeConverter plugin</a> to quickly change the type of a Data Node.</li>       
+          <li>If it's clear what type the node should be, assign it. If it's not a data node, redraw as Label (graphical element). <b>Pro-tip:</b> One can use the <a href="https://pathvisio.org/plugins/typeconverter.html" target="_blank">TypeConverter plugin</a> to quickly change the type of a Data Node. Examples:</li>  
+          <ul>
+              <li>A DataNode that has been annotated with a database identifier, or that can be annotated with an identifier, should be either Gene Product, Protein, Metabolite, RNA or Pathway. For example, <b>H2O</b> should be a <b>metabolite</b>.</li>
+              <li>A DataNode representing a process that does not have an identifier in a public database should be converted into a Label, for example <b>Lifespan</b>.</li>
+          </ul>
+          
       </ul>
       <h2>Weird Characters in Titles</h2>
       <p>The goal of this task is to ensure pathway titles do not include character values that are not allowed.</p>
@@ -86,10 +91,7 @@
 http://www.wikipathways.org/instance/WP2941_r118621</code><br /></li>
           <li>If the details of the transport/translocation is known, remodel based on <a href="https://new.wikipathways.org/academy/stages/draw-transport/">this</a>.</li>
 	  </ul>
-      <h2>Too Many InChiKeys</h2>
-	  <ul>
-          <li>...</li>
-	  </ul>	
+    
       <h2>Interactions With Labels</h2>
 	  <ul>
           <li>...</li>
