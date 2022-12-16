@@ -39,18 +39,18 @@
           </h1>
 
           <h2>Goal</h2>
-	  <p>
-	 To improve pathways that are tagged with the "Needs work" tag with the ultimate goal of including
-	  them in the "Approved pathway" collection. </b>
-	  </p>
+            <p>The goal of this task is to improve pathways that are tagged with the <b>Needs work</b> tag with the ultimate goal of including
+	  them in the <b>Approved pathway</b> collection.</p>
           <h2>Instructions</h2>
 	  
 	  <ul>
-	  <li>Click the pathway image or title below to view the pathway at WikiPathways.</li>
-	  <li>Using the suggestions in the "Needs work" tag as a guide, make suggested edits to the pathway.</li>
-		  <li>If you have address all the issues, then <b>add</b> the "Approved pathway" tag and <b>remove</b> the "Needs work" tag.</li>
-		  <li>Otherwise, if issues remain, <b>edit</b> the "Needs work" tag to update the suggested edits</li>
-	  <li>Click "Next" to load the next pathway.</li>
+      <li>You will need to have <a href="https://pathvisio.org/" target="_blank">PathVisio</a> and the <a href="https://pathvisio.org/plugins/wikipathways.html" target="_blank">WikiPathways plugin</a> installed and running.</li>
+      <li>Click the pathway image or title below to view the pathway at WikiPathways.</li>
+	  <li>To open the pathway in PathVisio, search WikiPathways for the pathway title or WPID using the WikiPathways App, under <b>Plugins > WikiPathways > Search</b>.</li>
+	  <li>Using the suggestions in the <b>Needs work</b> tag at WikiPathways as a guide, make suggested edits to the pathway in PathVisio. To submit your changes to WikiPathways, click <b>Plugins > WikiPathways > Update</b> and enter a description of your edits.</li>
+      <li>If you've addressed all the issues, add the <b>Approved pathway</b> tag and remove the <b>Needs work</b> tag.</li>
+      <li>Otherwise, if issues remain, edit the <b>Needs work</b> tag and update the suggested edits.</li>
+	  <li>Click <b>Next pathway</b> below and repeat this process for the next pathway.</li>
 	  </ul>
 	  
 	  <br />
@@ -67,17 +67,16 @@
                           <input type="hidden" name="sglactivity" value="task-needs-work">
                   </form>
 		 <br />
-		  <button id="task-verify-untag-button"class="btn btn-default">Verify</button>
+          <button id="task-verify-untag-button"class="btn btn-default">Verify</button>
 		  <button id="next-pathway-button" class="btn btn-primary">Next pathway</button>
 	</div>
 	<br />
 	<div id="prev-button">
 	<a href="../qaprotocol-extra/index.html" class="btn btn-info btn-lg pull-left">Previous step</a></div>
 	<div id="next-button">
-	<a href="../task-description/index.html" class="btn btn-info btn-lg pull-right">Next step</a>
-	</div>
-		
-	<div class="results" id="success" style="display:none;">
+	<a href="../task-description/index.html" class="btn btn-info btn-lg pull-right">Next step</a></div>
+            
+    <div class="results" id="success" style="display:none;">
 		<h2>Result</h2>
 		<p>You did it!</p>
 	</div>
@@ -90,6 +89,7 @@
                  <p>Checking...</p>
          </div>
 		<br /> <br /> <br />
+
 	</section>
 	    </div>
 	  </div>
