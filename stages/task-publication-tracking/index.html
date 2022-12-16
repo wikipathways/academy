@@ -33,42 +33,29 @@
           <h1>
             <a id="intro" class="anchor" href="#intro" aria-hidden="true">
               <span aria-hidden="true" class="octicon octicon-link">
-              WikiPathways: Review Outdated Featured Collection Tags 
+              WikiPathways: Track publications 
               </span>
             </a>
           </h1>
 
           <h2>Goal</h2>
 	  <p>
-	  To make sure "Featured" pathways are high-quality and up-to-date. <i>Note: pathways tagged as "Featured", 
-		  will be displayed on the front page of WikiPathways.</i>
-	</p>
+	  The purpose of this task is to track relevant publications that mention specific WikiPathways models.</p>
           <h2>Instructions</h2>
 	  
 	  <ul>
-	  <li>Click the pathway image or title below to view the pathway at WikiPathways. You will need to be logged in at WikiPathways.</li>
-		  <li><b>Review</b> the edits made since the last tagged version. Revert an edit, if necessary. Then <b>update</b> the faded 
-              "Featured version" tag by clicking on the <b>click here</b> link in the tag.</li>
-	  <li>Click "Next" to load the next pathway.</li>
-</ul>
-	 	   
+	  <li>Start by opening a tab with the <a href="https://www.ncbi.nlm.nih.gov/pmc/?term=(wikipathways)&report=imagesdocsum&dispmax=100" target="_blank">latest PMC image search results</a> for WikiPathways. This listing shows any PMC-indexed publication mentioning "WikiPathways" in the figure caption.</li>
+      <li>To find papers referencing specific pathway models, do a page search (<b>Ctrl+F</b>) for "WP". Record the PMCID ID for the publication, by clicking on the figure result to open the article. As an example, we will use <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9603647/" target="_blank">PMC9603647</a>, which references <b>WPID4629</b>.</li>
+      <li>Find the corresponding pathway on <a href="https://new.wikipathways.org/" target="_blank">WikiPathways</a>, for example <a href="https://new.wikipathways.org/pathways/WP4629.html" target="_blank">WP4629</a>.</li>
+      <li>In the <b>Cited In</b> section, click the pencil icon to edit the list. This will open a new browser tab with the <b>citedin_lookup.yaml</b> file open in edit mode.</li>
+      <li>Click anywhere in the editable area and use <b>Ctrl+F</b> to search for the WPID, for example "WP4629".</li>
+      <li>If the PMCID has not already been added, add an entry under the relevant WPID in the following format: 
+          <pre>- link: PMC9603647</pre>
+          </li>
+      <li>Enter a commit message ("added citation for WP4629") and click <b>Commit changes</b>.</li>
+      <li>Repeat for any other WPID mentioned in the search results list.</li>
+      </ul>  
 	  <br />
-	  <div >
-		  <form id="task-feed">
-                        <div style="float:left;" id="next-pathway">Loading next pathway...</div>
-                        <div style="float:left; margin-left:20px;">
-                               <div id="pathway-info"></div>
-                               <div id="footer-info"></div>
-                        </div>
-                        <div style="clear:both;"></div>
-			  <input type="hidden" name="tag" value="Curation:FeaturedPathway">
-                          <input type="hidden" name="wpid" value="">
-                          <input type="hidden" name="sglactivity" value="task-featured">
-                  </form>
-		 <br />
-		  <button id="task-verify-tag-featured-button" class="btn btn-default">Verify</button>
-		  <button id="next-pathway-button" class="btn btn-primary">Next pathway</button>
-	</div>
 	<br />
 	<div id="prev-button">
 	<a href="../task-curated/index.html" class="btn btn-info btn-lg pull-left">Previous step</a></div>
