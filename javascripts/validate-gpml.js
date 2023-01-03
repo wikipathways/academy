@@ -167,6 +167,7 @@ function parseGpml(gpml){
 	  });
 
        // Interaction collection
+	  console.log(data);
           $(gpml).find('Interaction').each(function(){
                   $(this).find('Graphics').find('Point').each(function() {
                           var gr = $(this).attr('GraphRef');
@@ -179,6 +180,7 @@ function parseGpml(gpml){
                           }
                   });
           });
+	  console.log(data);
 
 	  // Fix anchor interaction arrays by merging per interaction
 	  data2 = data;
@@ -192,7 +194,7 @@ function parseGpml(gpml){
 		}
 	  });				
 
-          console.log(data);
+          //console.log(data);
 
 	  return data;
 }
