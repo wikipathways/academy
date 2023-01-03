@@ -192,7 +192,7 @@ function parseGpml(gpml){
 		}
 	  });				
 
-          //console.log(data);
+          console.log(data);
 
 	  return data;
 }
