@@ -114,19 +114,20 @@ function parseGpml(gpml){
                   var ty = $(this).attr('Type');
                   var xdb = $(this).find('Xref').attr('Database');
                   var xid = $(this).find('Xref').attr('ID');
-                  data[gi] = [tl,ty,xdb,xid,'NULL',[]]; //insert array placeholder for interaction collection
+                  //data[gi] = [tl,ty,xdb,xid,'NULL',[]]; //insert array placeholder for interaction collection
+                  data[gi] = [tl,ty,xdb,xid,'NULL'];
           });
 	  // Label collection
 	  $(gpml).find('Label').each(function(){
                   var gi = $(this).attr('GraphId');
                   var tl = $(this).attr('TextLabel').toUpperCase();
-                  data[gi] = [tl,'Label','NULL','NULL','NULL',[]];
+                  data[gi] = [tl,'Label','NULL','NULL','NULL'];
           });
 
       // Group collection
           $(gpml).find('Group').each(function(){
                   var gi = $(this).attr('GraphId');
-                  data[gi] = ['GROUP','Group','NULL','NULL','NULL',[]];
+                  data[gi] = ['GROUP','Group','NULL','NULL','NULL'];
           });
 
 	  // Compartment collection
@@ -135,13 +136,13 @@ function parseGpml(gpml){
 		  $(this).find('Attribute').each(function(){
 			  if ($(this).attr('Key') == 'org.pathvisio.CellularComponentProperty'){
 				  var cc = $(this).attr('Value').toUpperCase();
-				  data[gi] = [cc,'Shape','NULL','NULL','NULL',[]];
+				  data[gi] = [cc,'Shape','NULL','NULL','NULL'];
 			  }
 		  });
 	  });
 
       // Anchor collection
-          $(gpml).find('Interaction').each(function(){
+      $(gpml).find('Interaction').each(function(){
 		  var anchorlabel = 'ANCHOR';
 		  $(this).find('Graphics').find('Point').each(function() {
 		  	var gr = $(this).attr('GraphRef');
@@ -154,7 +155,7 @@ function parseGpml(gpml){
 		  $(this).find('Graphics').find('Anchor').each(function(){
                         var gi = $(this).attr('GraphId');
 
-                        data[gi] = [anchorlabel.toUpperCase(),'Anchor','NULL','NULL',[]];
+                        data[gi] = [anchorlabel.toUpperCase(),'Anchor','NULL','NULL','NULL'];
                   });
           });
 
@@ -163,12 +164,16 @@ function parseGpml(gpml){
 		  var gi = $(this).attr('GraphId');
           var tl = $(this).attr('TextLabel').toUpperCase();
           var cm = $(this).find('Comment');
-          data[gi] = [tl,'State','NULL','NULL',cm,[]];
-	  });
+          data[gi] = [tl,'State','NULL','NULL',cm];
+	     });
 
-       // Interaction collection
-	  console.log(data);
-          $(gpml).find('Interaction').each(function(){
+      // Interaction collection
+	    console.log(data);
+      $(gpml).find('Interaction').each(function(){
+            var gi = $(this).attr('GraphId');
+            var interactionlabel = 'INTERACTION';
+            /* var points = {};
+            var arrowheads = {}; */
                   $(this).find('Graphics').find('Point').each(function() {
                           var gr = $(this).attr('GraphRef');
                           var ah = $(this).attr('ArrowHead');
@@ -176,11 +181,16 @@ function parseGpml(gpml){
                           if (undefined === data[gr]){
                                 console.log('GraphRef pointing to missing GraphId: '+gr);
                           } else {
-                                data[gr][5].push(ah);
+                            interactionlabel += '_'+data[gr][0];
+                            /* points[gi].push(gr);
+                            arrowheads[gi].push(ah);
+                            console.log(points); 
+                            console.log(arrowheads); */
                           }
                   });
+                  data[gi] = [interactionlabel.toUpperCase(),'Interaction','NULL','NULL','NULL'];
           });
-	  console.log(data);
+	    console.log(data);
 
 	  // Fix anchor interaction arrays by merging per interaction
 	  data2 = data;
