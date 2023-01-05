@@ -168,12 +168,10 @@ function parseGpml(gpml){
 	     });
 
       // Interaction collection
-	    console.log(data);
+	    //console.log(data);
       $(gpml).find('Interaction').each(function(){
             var gi = $(this).attr('GraphId');
             var interactionlabel = 'INTERACTION';
-            /* var points = {};
-            var arrowheads = {}; */
                   $(this).find('Graphics').find('Point').each(function() {
                           var gr = $(this).attr('GraphRef');
                           var ah = $(this).attr('ArrowHead');
@@ -182,15 +180,11 @@ function parseGpml(gpml){
                                 console.log('GraphRef pointing to missing GraphId: '+gr);
                           } else {
                             interactionlabel += '_'+data[gr][0];
-                            /* points[gi].push(gr);
-                            arrowheads[gi].push(ah);
-                            console.log(points); 
-                            console.log(arrowheads); */
                           }
                   });
                   data[gi] = [interactionlabel.toUpperCase(),'Interaction','NULL','NULL','NULL'];
           });
-	    console.log(data);
+	    //console.log(data);
 
 	  // Fix anchor interaction arrays by merging per interaction
 	  data2 = data;
@@ -204,7 +198,7 @@ function parseGpml(gpml){
 		}
 	  });				
 
-          //console.log(data);
+    //console.log(data);
 
 	  return data;
 }
@@ -214,19 +208,20 @@ function validateGpml(userGpml,solutionGpml){
 	 console.log(userData);
 	 console.log(solutionData);
 
-          var err = '';
+        var err = '';
 	      userDataCount = Object.keys(userData).length;
-          solutionDataCount = Object.keys(solutionData).length;
-          err += (userDataCount == solutionDataCount) ? '' : 'Incorrect number of nodes: '+userDataCount+' detected, '+solutionDataCount+' expected. ';
+        solutionDataCount = Object.keys(solutionData).length;
+        err += (userDataCount == solutionDataCount) ? '' : 'Incorrect number of objects: '+userDataCount+' detected, '+solutionDataCount+' expected. ';
 
-          var userlabels = [];
-          $.each(userData, function(userkey, userval){
+        var userlabels = [];
+
+        $.each(userData, function(userkey, userval){
                 userlabels.push(userval[0]);
                 err += (userval[2] != '') ? '' : 'Missing Xref database for: '+userval[0]+'. ';
                 err += (userval[3] != '') ? '' : 'Missing Xref identifier for: '+userval[0]+'. ';
-          });
+        });
 
-          $.each(solutionData, function(solkey, solval){
+        $.each(solutionData, function(solkey, solval){
                 err += (userlabels.includes(solval[0])) ? '' : 'Missing '+solval[0]+' node. ';
                 var intmatch = true;
                 var typematch = true;
@@ -238,22 +233,21 @@ function validateGpml(userGpml,solutionGpml){
                                 typematch = true;
                           }
                           if ($(solval[5]).not(userval[5]).length === 0 && $(userval[5]).not(solval[5]).length === 0){
-				intmatch = true; 	  
-			  } 
-			  //special case to deal with transport, which includes duplicated nodes
-		          else { 
-			 	const userlabelsunique = Array.from(new Set(userlabels)); //check if duplicates exist in data object, i.e. in the gpml
-				if(userlabels.length != userlabelsunique.length){
-				intmatch = true;	  	  
-				}
-			  }
-                        }
+				        intmatch = true; 	  
+			              } 
+			          //special case to deal with transport, which includes duplicated nodes
+		            else { 
+			 	        const userlabelsunique = Array.from(new Set(userlabels)); //check if duplicates exist in data object, i.e. in the gpml
+				        if(userlabels.length != userlabelsunique.length){
+				        intmatch = true;	  	  
+				            }
+			            }
+                }
                 });
-                err += (typematch) ? '' : 'Incorrect molecule type for '+solval[0]+'. ';
-                err += (intmatch) ? '' : 'Incorrect interactions for '+solval[0]+'. ';
+              err += (typematch) ? '' : 'Incorrect molecule type for '+solval[0]+'. ';
+              err += (intmatch) ? '' : 'Incorrect interactions for '+solval[0]+'. ';
 
           });
-
 	  return err;
 }
 
