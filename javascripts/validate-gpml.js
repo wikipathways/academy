@@ -164,9 +164,9 @@ function parseGpml(gpml){
 		      var gi = $(this).attr('GraphId');
           var tl = $(this).attr('TextLabel').toUpperCase();
           //var cm = $(this).attr('Comment');
-          var cm = $(this).find('Comment').textContent;
+          var cml = $(this).find('Comment').textContent.length;
           //var cm = $(this).find('Comment');
-          console.log(cm);
+          console.log(cml);
           data[gi] = [tl,'State','NULL','NULL',cm];
 	     });
 
