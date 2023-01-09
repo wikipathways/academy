@@ -173,14 +173,6 @@ function parseGpml(gpml){
             cm = 'NULL';
             console.log('cm is undefined');
           }
-
-            if ($(this.find('Comment')) === cm){
-              cm = 'NULL';
-              console.log('cm is undefined');
-            } else {
-              cm = 'COMMENT';
-            }
-            
             data[gi] = [tl,'State','NULL','NULL',cm];
 	     });
 
