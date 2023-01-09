@@ -145,7 +145,7 @@ function parseGpml(gpml){
       $(gpml).find('Interaction').each(function(){
 		  var anchorlabel = 'ANCHOR';
 		  $(this).find('Graphics').find('Point').each(function() {
-		  	var gr = $(this).attr('GraphRef');
+		   var gr = $(this).attr('GraphRef');
 			 if (undefined === data[gr]){
                                 console.log('GraphRef pointing to missing GraphId: '+gr);
                           } else {
@@ -163,15 +163,25 @@ function parseGpml(gpml){
       $(gpml).find('State').each(function(){
 		      var gi = $(this).attr('GraphId');
           var tl = $(this).attr('TextLabel').toUpperCase();
-          var cm = $(this).find('Comment');
-            if (undefined === cm){
+
+          //var cm = $(this).find('Comment');
+
+          if ($(this).find('Comment') != null ) {
+            cm = 'COMMENT';
+          }
+          else {
+            cm = 'NULL';
+            console.log('cm is undefined');
+          }
+
+            if ($(this.find('Comment')) === cm){
               cm = 'NULL';
               console.log('cm is undefined');
             } else {
               cm = 'COMMENT';
             }
-          console.log(cm);
-          data[gi] = [tl,'State','NULL','NULL',cm];
+            
+            data[gi] = [tl,'State','NULL','NULL',cm];
 	     });
 
       // Interaction collection
