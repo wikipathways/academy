@@ -163,13 +163,15 @@ function parseGpml(gpml){
       $(gpml).find('State').each(function(){
 		      var gi = $(this).attr('GraphId');
           var tl = $(this).attr('TextLabel').toUpperCase();
-          //var cm = $(this).attr('Comment');
-          $(this).find('Comment').each(function() {
-          var cm = $(this).textContent;
-          //var cm = $(this).find('Comment');
+          var cm = $(this).find('Comment');
+            if (undefined === cm){
+              cm = 'NULL';
+              console.log('cm is undefined');
+            } else {
+              cm = 'COMMENT';
+            }
           console.log(cm);
           data[gi] = [tl,'State','NULL','NULL',cm];
-        });
 	     });
 
       // Interaction collection
