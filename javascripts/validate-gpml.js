@@ -163,26 +163,16 @@ function parseGpml(gpml){
       $(gpml).find('State').each(function(){
 		      var gi = $(this).attr('GraphId');
           var tl = $(this).attr('TextLabel').toUpperCase();
-
-          //var cm = $(this).find('Comment');
-
-/*           if ($(this).find('Comment') != null) {
+          //Note: The following code for evaluating whether a comment is found or not doesn't work......
+          var comment = $(this).find('Comment');
+          console.log(comment);
+          if (comment != null) {
             cm = 'COMMENT';
           }
           else {
             cm = 'NULL';
-            console.log('cm is undefined');
-          } */
-          let comment = document.getElementsByName("Comment");
-          if (comment != null){
-            console.log('cm is not null');
-            cm = 'COMMENT';
+            console.log('cm is empty');
           }
-          else {
-            cm = 'NULL';
-            console.log('cm is undefined');
-          }
-
           data[gi] = [tl,'State','NULL','NULL',cm];
 	     });
 
@@ -241,7 +231,7 @@ function validateGpml(userGpml,solutionGpml){
         });
 
         $.each(solutionData, function(solkey, solval){
-                err += (userlabels.includes(solval[0])) ? '' : 'Missing '+solval[0]+' node. ';
+                err += (userlabels.includes(solval[0])) ? '' : 'Missing '+solval[0]+' object. ';
                 var intmatch = true;
                 var typematch = true;
                 $.each(userData, function(userkey, userval){
