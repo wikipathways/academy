@@ -166,14 +166,24 @@ function parseGpml(gpml){
 
           //var cm = $(this).find('Comment');
 
-          if ($(this).find('Comment') != null ) {
+/*           if ($(this).find('Comment') != null) {
+            cm = 'COMMENT';
+          }
+          else {
+            cm = 'NULL';
+            console.log('cm is undefined');
+          } */
+          let comment = document.getElementsByName("Comment");
+          if (comment != null){
+            console.log('cm is not null');
             cm = 'COMMENT';
           }
           else {
             cm = 'NULL';
             console.log('cm is undefined');
           }
-            data[gi] = [tl,'State','NULL','NULL',cm];
+
+          data[gi] = [tl,'State','NULL','NULL',cm];
 	     });
 
       // Interaction collection
