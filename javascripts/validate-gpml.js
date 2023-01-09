@@ -164,10 +164,12 @@ function parseGpml(gpml){
 		      var gi = $(this).attr('GraphId');
           var tl = $(this).attr('TextLabel').toUpperCase();
           //var cm = $(this).attr('Comment');
-          var cml = $(this).find('Comment').textContent.length;
+          $(this).find('Comment').each(function() {
+          var cm = $(this).textContent;
           //var cm = $(this).find('Comment');
-          console.log(cml);
+          console.log(cm);
           data[gi] = [tl,'State','NULL','NULL',cm];
+        });
 	     });
 
       // Interaction collection
