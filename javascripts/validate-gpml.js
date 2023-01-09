@@ -163,7 +163,8 @@ function parseGpml(gpml){
       $(gpml).find('State').each(function(){
 		      var gi = $(this).attr('GraphId');
           var tl = $(this).attr('TextLabel').toUpperCase();
-          var cm = $(this).find('Comment');
+          var cm = $(this).attr('Comment');
+          //var cm = $(this).find('Comment');
           //var cm = $(this).find('Comment');
           console.log(cm);
           data[gi] = [tl,'State','NULL','NULL',cm];
