@@ -234,6 +234,8 @@ function validateGpml(userGpml,solutionGpml){
 
         $.each(solutionData, function(solkey, solval){
                 err += (userlabels.includes(solval[0])) ? '' : 'Missing '+solval[0]+' object. ';
+                err += (userlabels.includes(solval[5])) ? '' : 'Interaction '+solval[0]+' has incorrect interaction type: '+solval[5]+'. ';
+
                 var intmatch = true;
                 var typematch = true;
                 $.each(userData, function(userkey, userval){
@@ -244,12 +246,12 @@ function validateGpml(userGpml,solutionGpml){
                                 typematch = true;
                           }
                           //I dont think the following code works.....
-                          //if ($(solval[5]).not(userval[5]).length === 0 && $(userval[5]).not(solval[5]).length === 0)
-                          if ($(solval[5] != userval[5]))
+                          if ($(solval[5]).not(userval[5]).length === 0 && $(userval[5]).not(solval[5]).length === 0){
+                          /* if ($(solval[5] != userval[5]))
                           {
                           console.log("interactions dont match");
-				                  intmatch = true; 	  
-			                    } 
+				                  intmatch = true; */	  
+			                    }  
 			          //special case to deal with transport, which includes duplicated nodes
 		            else { 
 			 	        const userlabelsunique = Array.from(new Set(userlabels)); //check if duplicates exist in data object, i.e. in the gpml
