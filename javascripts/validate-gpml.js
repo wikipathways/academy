@@ -181,17 +181,19 @@ function parseGpml(gpml){
       $(gpml).find('Interaction').each(function(){
             var gi = $(this).attr('GraphId');
             var interactionlabel = 'INTERACTION';
+            var interactiontype = "INTERACTIONType";
                   $(this).find('Graphics').find('Point').each(function() {
                           var gr = $(this).attr('GraphRef');
                           var ah = $(this).attr('ArrowHead');
                           if (undefined === ah) { ah = 'Line';}
+                          interactiontype += '_'+ah;
                           if (undefined === data[gr]){
                                 console.log('GraphRef pointing to missing GraphId: '+gr);
                           } else {
                             interactionlabel += '_'+data[gr][0];
                           }
                   });
-                  data[gi] = [interactionlabel.toUpperCase(),'Interaction',ah,'NULL','NULL'];
+                  data[gi] = [interactionlabel.toUpperCase(),'Interaction',interactiontype.toUpperCase(),'NULL','NULL'];
           });
 	    //console.log(data);
 
