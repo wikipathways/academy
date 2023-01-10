@@ -234,7 +234,7 @@ function validateGpml(userGpml,solutionGpml){
 
         $.each(solutionData, function(solkey, solval){
                 err += (userlabels.includes(solval[0])) ? '' : 'Missing '+solval[0]+' object. ';
-                err += (userlabels.includes(solval[5])) ? '' : 'Interaction '+solval[0]+' has incorrect interaction type: '+solval[5]+'. ';
+                // err += (userlabels.includes(solval[5])) ? '' : 'Interaction '+solval[0]+' has incorrect interaction type: '+solval[5]+'. ';
 
                 var intmatch = true;
                 var typematch = true;
