@@ -193,7 +193,7 @@ function parseGpml(gpml){
                             interactionlabel += '_'+data[gr][0];
                           }
                   });
-                  data[gi] = [interactionlabel.toUpperCase(),'Interaction',interactiontype.toUpperCase(),'NULL','NULL'];
+                  data[gi] = [interactionlabel.toUpperCase(),'Interaction','NULL','NULL',interactiontype.toUpperCase()];
           });
 	    //console.log(data);
 
@@ -243,9 +243,13 @@ function validateGpml(userGpml,solutionGpml){
                           if (solval[1] == userval[1]){
                                 typematch = true;
                           }
-                          if ($(solval[5]).not(userval[5]).length === 0 && $(userval[5]).not(solval[5]).length === 0){
-				        intmatch = true; 	  
-			              } 
+                          //I dont think the following code works.....
+                          //if ($(solval[5]).not(userval[5]).length === 0 && $(userval[5]).not(solval[5]).length === 0)
+                          if ($(solval[5] != userval[5]))
+                          {
+                          console.log("interactions dont match");
+				                  intmatch = true; 	  
+			                    } 
 			          //special case to deal with transport, which includes duplicated nodes
 		            else { 
 			 	        const userlabelsunique = Array.from(new Set(userlabels)); //check if duplicates exist in data object, i.e. in the gpml
