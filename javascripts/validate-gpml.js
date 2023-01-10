@@ -191,7 +191,7 @@ function parseGpml(gpml){
                             interactionlabel += '_'+data[gr][0];
                           }
                   });
-                  data[gi] = [interactionlabel.toUpperCase(),'Interaction','NULL','NULL','NULL'];
+                  data[gi] = [interactionlabel.toUpperCase(),'Interaction',ah,'NULL','NULL'];
           });
 	    //console.log(data);
 
