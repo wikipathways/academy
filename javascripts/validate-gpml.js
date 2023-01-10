@@ -115,19 +115,19 @@ function parseGpml(gpml){
                   var xdb = $(this).find('Xref').attr('Database');
                   var xid = $(this).find('Xref').attr('ID');
                   //data[gi] = [tl,ty,xdb,xid,'NULL',[]]; //insert array placeholder for interaction collection
-                  data[gi] = [tl,ty,xdb,xid,'NULL'];
+                  data[gi] = [tl,ty,xdb,xid,[]]; //insert array placeholder for interaction collection
           });
 	  // Label collection
 	  $(gpml).find('Label').each(function(){
                   var gi = $(this).attr('GraphId');
                   var tl = $(this).attr('TextLabel').toUpperCase();
-                  data[gi] = [tl,'Label','NULL','NULL','NULL'];
+                  data[gi] = [tl,'Label','NULL','NULL',[]];
           });
 
       // Group collection
           $(gpml).find('Group').each(function(){
                   var gi = $(this).attr('GraphId');
-                  data[gi] = ['GROUP','Group','NULL','NULL','NULL'];
+                  data[gi] = ['GROUP','Group','NULL','NULL',[]];
           });
 
 	  // Compartment collection
@@ -136,7 +136,7 @@ function parseGpml(gpml){
 		  $(this).find('Attribute').each(function(){
 			  if ($(this).attr('Key') == 'org.pathvisio.CellularComponentProperty'){
 				  var cc = $(this).attr('Value').toUpperCase();
-				  data[gi] = [cc,'Shape','NULL','NULL','NULL'];
+				  data[gi] = [cc,'Shape','NULL','NULL',[]];
 			  }
 		  });
 	  });
@@ -155,7 +155,7 @@ function parseGpml(gpml){
 		  $(this).find('Graphics').find('Anchor').each(function(){
                         var gi = $(this).attr('GraphId');
 
-                        data[gi] = [anchorlabel.toUpperCase(),'Anchor','NULL','NULL','NULL'];
+                        data[gi] = [anchorlabel.toUpperCase(),'Anchor','NULL','NULL',[]];
                   });
           });
 
@@ -164,7 +164,7 @@ function parseGpml(gpml){
 		      var gi = $(this).attr('GraphId');
           var tl = $(this).attr('TextLabel').toUpperCase();
           //Note: The following code for evaluating whether a comment is found or not doesn't work......
-          var comment = $(this).find('Comment');
+          /* var comment = $(this).find('Comment');
           console.log(comment);
           if (comment != null) {
             cm = 'COMMENT';
@@ -172,16 +172,17 @@ function parseGpml(gpml){
           else {
             cm = 'NULL';
             console.log('cm is empty');
-          }
-          data[gi] = [tl,'State','NULL','NULL',cm];
+          } */
+          data[gi] = [tl,'State','NULL','NULL',[]];
 	     });
 
       // Interaction collection
-	    //console.log(data);
       $(gpml).find('Interaction').each(function(){
-            var gi = $(this).attr('GraphId');
+
+            /* var gi = $(this).attr('GraphId');
             var interactionlabel = 'INTERACTION';
-            var interactiontype = "INTERACTIONType";
+            var interactiontype = "INTERACTIONType"; */
+
                   $(this).find('Graphics').find('Point').each(function() {
                           var gr = $(this).attr('GraphRef');
                           var ah = $(this).attr('ArrowHead');
@@ -190,12 +191,12 @@ function parseGpml(gpml){
                           if (undefined === data[gr]){
                                 console.log('GraphRef pointing to missing GraphId: '+gr);
                           } else {
-                            interactionlabel += '_'+data[gr][0];
+                            data[gr][4].push(ah);
+                            //interactionlabel += '_'+data[gr][0];
                           }
                   });
-                  data[gi] = [interactionlabel.toUpperCase(),'Interaction','NULL','NULL',interactiontype.toUpperCase()];
+                  //data[gi] = [interactionlabel.toUpperCase(),'Interaction','NULL','NULL',interactiontype.toUpperCase()];
           });
-	    //console.log(data);
 
 	  // Fix anchor interaction arrays by merging per interaction
 	  data2 = data;
@@ -234,10 +235,10 @@ function validateGpml(userGpml,solutionGpml){
 
         $.each(solutionData, function(solkey, solval){
                 err += (userlabels.includes(solval[0])) ? '' : 'Missing '+solval[0]+' object. ';
-                // err += (userlabels.includes(solval[5])) ? '' : 'Interaction '+solval[0]+' has incorrect interaction type: '+solval[5]+'. ';
 
                 var intmatch = true;
                 var typematch = true;
+              
                 $.each(userData, function(userkey, userval){
                         if (solval[0] == userval[0]){
                           intmatch = false;
@@ -245,26 +246,21 @@ function validateGpml(userGpml,solutionGpml){
                           if (solval[1] == userval[1]){
                                 typematch = true;
                           }
-                          //I dont think the following code works.....
-                          if ($(solval[5]).not(userval[5]).length === 0 && $(userval[5]).not(solval[5]).length === 0){
-                          /* if ($(solval[5] != userval[5]))
-                          {
-                          console.log("interactions dont match");
-				                  intmatch = true; */	  
+                          if ($(solval[4]).not(userval[4]).length === 0 && $(userval[4]).not(solval[4]).length === 0){
+				                  intmatch = true; 
 			                    }  
-			          //special case to deal with transport, which includes duplicated nodes
-		            else { 
-			 	        const userlabelsunique = Array.from(new Set(userlabels)); //check if duplicates exist in data object, i.e. in the gpml
-				        if(userlabels.length != userlabelsunique.length){
-				        intmatch = true;	  	  
-				            }
-			            }
-                }
-                });
+			                    //special case to deal with transport, which includes duplicated nodes
+		                      else { 
+			 	                    const userlabelsunique = Array.from(new Set(userlabels)); //check if duplicates exist in data object, i.e. in the gpml
+				                    if(userlabels.length != userlabelsunique.length){
+				                      intmatch = true;	  	  
+				                    }
+			                      }
+                          }
+                        });
               err += (typematch) ? '' : 'Incorrect molecule type for '+solval[0]+'. ';
-              err += (intmatch) ? '' : 'Incorrect interactions for '+solval[0]+'. ';
-
-          });
+              err += (intmatch) ? '' : 'Incorrect interactions for '+solval[0]+'. ';    
+              });
 	  return err;
 }
 
