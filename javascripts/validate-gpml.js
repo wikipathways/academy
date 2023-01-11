@@ -187,7 +187,6 @@ function parseGpml(gpml){
                           var gr = $(this).attr('GraphRef');
                           var ah = $(this).attr('ArrowHead');
                           if (undefined === ah) { ah = 'Line';}
-                          interactiontype += '_'+ah;
                           if (undefined === data[gr]){
                                 console.log('GraphRef pointing to missing GraphId: '+gr);
                           } else {
