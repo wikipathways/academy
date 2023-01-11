@@ -204,7 +204,7 @@ function parseGpml(gpml){
 		if (v1[1] == 'Anchor'){
 	  		$.each(data2, function(k2,v2){
 				if (v1[0] === v2[0] && k1 != k2){
-					Array.prototype.push.apply(data[k1][5], data2[k2][5]);
+					Array.prototype.push.apply(data[k1][4], data2[k2][4]);
 				}
 			});
 		}
