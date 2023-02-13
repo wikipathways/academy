@@ -39,8 +39,8 @@
 
           <h2>Background</h2>
           <p>In this task, you will complete the first two reactions in the published figure. These 
-         include the conversion from glucose to glucose-6-phosphate, and the input from glucose-6-phosphate to
-         the pentose phosphate pathway. 
+         include the conversion from glucose to glucose-6-phosphate, and the interaction from glucose-6-phosphate to
+         the Pentose Phosphate Pathway. 
           </p>
           <h2>Your Mission</h2>
           <p>Draw the conversion reactions highlighted in the below figure.</p>
@@ -56,9 +56,12 @@
                 <li>Instead of searching for an ID, enter the id “WP134” in the <b>Identifier</b> field, and enter “WikiPathways” 
 		in the <b>Database field</b>.</li>
 		<li>Type in “Pentose Phosphate Pathway” as the <b>Text label</b>. Click <b>OK</b>.</li>
-                <li>Draw the mim-conversion arrows between the nodes, and add anchors to each.</li>
-                <li>Add the gene products that catalyze the conversions, HK1 and G6PD.</li>
-                <li>Add the two mim-catalysis arrows for HK1 and G6PD.</li>
+                <li>Draw the mim-conversion arrows between the glucose and glucose-6-phosphate nodes, and add an anchor to it.</li>
+		<li>For the interaction between glucose-6-phosphate node and the pentose phosphate pathway node, add the default arrow interaction.</li>
+                <li>Add the gene products that catalyze the conversion between glucose and glucose-6-phosphate, HK1. For the interaction between glucose-6-phosphate and the
+			pentose phosphate pathway, we will <b>not</b> add the catalyzing enzyme node (G6PD), since this interaction is generic and does not end with a specific
+			metabolite.</li>
+                <li>Add the two mim-catalysis arrows for HK1.</li>
                 <li>To add the glycolysis label, select <b>Label</b> from the <b>Graphical elements</b> palette in the <b>Objects</b> tab.</li>
                 <li>Double-click the label to open its properties.</li>
                 <li>Type in “Glycolysis“ and click <b>OK</b>.</li>
