@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Pathway xmlns="http://pathvisio.org/GPML/2013a" Name="fig-met1-second-solution" Version="20161128" Organism="Homo sapiens">
   <Comment Source="WikiPathways-description">Do not modify or delete. This pathway is part of the collection of content used by [https://wikipathways.github.io/academy/ WikiPathways Academy].</Comment>
-  <Graphics BoardWidth="672.0" BoardHeight="448.94111092062406" />
+  <Graphics BoardWidth="654.0" BoardHeight="448.94111092062406" />
   <DataNode TextLabel="Glucose" GraphId="ab04e" Type="Metabolite">
     <Graphics CenterX="297.72484141950963" CenterY="107.44111092062404" Width="90.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" Color="0000ff" />
     <Xref Database="HMDB" ID="HMDB00122" />
-  </DataNode>
-  <DataNode TextLabel="G6PD" GraphId="b04a8" Type="GeneProduct">
-    <Graphics CenterX="395.63228243584393" CenterY="174.44111092062397" Width="50.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" />
-    <Xref Database="Ensembl" ID="ENSG00000160211" />
   </DataNode>
   <DataNode TextLabel="lactate" GraphId="c2954" Type="Metabolite">
     <Graphics CenterX="152.72484141950972" CenterY="298.44111092062406" Width="68.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" Color="0000ff" />
@@ -68,14 +64,6 @@
     <Graphics ZOrder="12288" LineThickness="1.0">
       <Point X="364.72484141950963" Y="211.44111092062397" GraphRef="fd5d5" RelX="1.0" RelY="0.0" />
       <Point X="440.7248414195101" Y="211.44111092062397" GraphRef="e42e6" RelX="-1.0" RelY="0.0" ArrowHead="Arrow" />
-      <Anchor Position="0.4" Shape="None" GraphId="f5629" />
-    </Graphics>
-    <Xref Database="" ID="" />
-  </Interaction>
-  <Interaction GraphId="id5c1f7e17">
-    <Graphics ZOrder="12288" LineThickness="1.0">
-      <Point X="395.63228243584393" Y="186.94111092062397" GraphRef="b04a8" RelX="0.0" RelY="1.0" />
-      <Point X="395.12484141950983" Y="211.44111092062397" GraphRef="f5629" RelX="0.0" RelY="0.0" ArrowHead="mim-catalysis" />
     </Graphics>
     <Xref Database="" ID="" />
   </Interaction>
@@ -115,4 +103,3 @@
   <InfoBox CenterX="0.0" CenterY="0.0" />
   <Biopax />
 </Pathway>
-
