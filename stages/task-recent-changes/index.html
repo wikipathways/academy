@@ -39,38 +39,36 @@
           </h1>
 
           <h2>Goal</h2>
-	  <p>The goal of this task is to assess all edits made to pathways in the last 10 days.</p>
+	  <p>The goal of this task is to assess all edits made to pathways in the last 10 days. This will include existing pathways that were added as well as newly added pathways.</p>
       <h2>Instructions</h2>
 	  
 	  <ul>
 	  <li>Click the pathway image or title below to view the pathway at WikiPathways. You will need to be logged in at WikiPathways.</li> 
-      <li>Use the <b>History</b> tab to compare the recent edit with the prior version. Does the edit match the comment? It is a valid change? 
-			If not, then revert the edit. If unsure, start a discussion on the <b>Talk</b> page.</li>
-			<li>Consider adding quality tags to the pathway:</li>
-	  		<ul>
-	  		<li><b>Approved version</b>: Interactions must be complete and most datanodes must be annotated. Overall, the pathway model 
-				should be useful for data visualization and analysis.</li>
-            <li><b>Featured version</b>: In addition to meeting the <b>Approved</b> criteria, the pathway must have a good description and one or more 
-      		ontology tags. Overall, a <b>Featured</b> pathway should have a consistent and informative annotated layout that contributes to the understanding of the biological process.</li>
-		  </ul>
+      <li>Use the <b>History</b> tab to compare the recent edit with the prior version. <b>Does the edit match the comment? It is a valid change?</b> 
+			If not, revert the edit. If unsure, start a discussion on the <b>Talk</b> page.</li>
+		  <li>Consider adding the <b>Approved version</b> tag to the pathway. <b>Criteria</b>Interactions must be complete, most datanodes must be annotated, the pathway must have a description, at least
+				one literature reference and at least one ontology tag. Overall, the pathway model should be useful for data visualization and analysis.</li>
 		<h3>For New Pathways</h3>
-		  <ul>
+		<ul>
 			  <li>Assess the pathway title. Titles should be <b>less than 80 characters long</b> and <b>should not contain special characters</b>. 
 			  Titles should be descriptive, avoid too many acronyms.</li>
               <li>Assess the technical and stylistic aspects of the content. Feel free to make changes to the pathway and 
-			start discussions pointing to training material (e.g, http://academy.wikipathways.org) or appropriate Help pages.</li>
+			start discussions pointing to training material (e.g, http://academy.wikipathways.org).</li>
 			  <li>Add <i>at least</i> a top-level <b>pathway ontology term</b>.</li>
 			  <li>Consider adding quality tags to the pathway:</li>
 			  	  <ul>
-	  		       <li><b>Under Construction</b>: the pathway appears incomplete, but has some real content.</li>
+	  		       <li><b>Under Construction</b>: the pathway appears incomplete, but is not a test pathway (i.e. the content is unique).</li>
      			    <li><b>Test Pathway</b>: the pathway is entirely empty, is filled with random content, or has "Test" in the title.</li>
 	  		      </ul>
 		  </ul>
 
 	<br />	  
-	  <li>Click <b>Next pathway</b> to load the next pathway and repeat the process. The function simply counts down the pathways edited in the last 10 days. Refresh will restart the countdown.</li>
-
+	  <li>Click the <b>Next pathway</b> to load the next pathway and repeat the process. The function simply counts down the pathways edited in the last 10 days. Refresh will restart the countdown.</li>
 	  </ul> 
+	<p>If you have a question related to one of the pathways you reviewed, report it to our curation issues tracker by clicking the button below. Issues reported here will be discussed in the Community Curation meetings.</p>
+	  <div id="curation-button">
+	<a href="https://github.com/wikipathways/wikipathways-help/issues" class="btn btn-info btn-lg pull-right">Report curation issue</a></div>
+		
 	  <br />
 	  <div >
 		  <form id="task-feed">
@@ -87,16 +85,7 @@
 		 <br />
           <button id="task-verify-tag-underconstruction-button" class="btn btn-default">Verify <b>Under construction</b> tag added</button>
           <button id="next-pathway-button" class="btn btn-primary">Next pathway</button>
-          <br /><button id="task-verify-tag-tutorial-button" class="btn btn-default">Verify <b>Test pathway</b> tag added</button>
-		  <br /><button id="task-verify-tag-needswork-button" class="btn btn-default">Verify <b>Needs work</b> tag added</button>
-		  <br /><button id="task-verify-tag-stub-button" class="btn btn-default">Verify <b>Incomplete</b> tag added</button>
-		  <br /><button id="task-verify-tag-deletion-button" class="btn btn-default">Verify <b>Request deletion</b> tag added</button>
-		  <br /><button id="task-verify-tag-curated-button" class="btn btn-default">Verify <b>Approved version</b> tag added</button>
-		  <br /><button id="task-verify-tag-featured-button" class="btn btn-default">Verify <b>Featured version</b> tag added</button>
-		  <br /><button id="task-verify-description-button" class="btn btn-default">Verify <b>Add description</b> modified</button>
-		  <br /><button id="task-verify-title-button" class="btn btn-default">Verify <b>Title</b> modified</button>
-		  <br /><button id="task-verify-ontology-button" class="btn btn-default">Verify <b>Ontology Terms</b> added</button>
-		  
+          <br />
 	</div>
 	<br />
 	<div id="next-button">
