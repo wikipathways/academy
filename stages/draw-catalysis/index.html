@@ -39,19 +39,32 @@
 
           <h2>Background</h2>
 
-          <p><b>Catalysis</b> is the conversion of one entity (metabolite or protein) into another, aided by a catalyst, or enzyme. A catalysis reaction involves a change in the chemical structure of a metabolite, small molecule or protein. Catalysis reactions are drawn as <b>two data nodes (metabolites, small molecules or proteins), a third data node (enzyme) and a mim-catalysis interaction</b>, pointing from the enzyme to an anchor on a conversion line between the subtrate and the product.</p>
+          <p><b>Catalysis</b> is the conversion of one entity (metabolite or protein) into another, aided by a catalyst, or enzyme. A catalysis reaction involves a change in the 
+		  chemical structure of a metabolite, small molecule or protein. Catalysis reactions are drawn as <b>two data nodes (metabolites, small molecules or proteins), 
+		  a third data node (enzyme) and a mim-catalysis interaction</b>, pointing from the enzyme to an anchor on a conversion line between the subtrate and the product.</p>
 
           <h2>Your Mission</h2>
           <p>Draw the <b>catalysis reaction</b> depicted in this figure:</p>
           <img src="draw-catalysis-solution.png" width="350px">
+	  <p>This reaction is described in many publications. For our example, we will use the publication from <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3121847/" target=_blank>Strushkevich et al.</a>
+		which includes the following sentence:<br />
+		  "The first step in steroid hormone biosynthesis is the <b>conversion</b> of <b>cholesterol</b> to <b>pregnenolone</b> and isocaproic aldehyde by mitochondrial <b>CYP11A1</b>."<br />
+		When translating this sentence to a reaction in a pathway model, the corresponding entities and interactions are:
+		  <ul>
+			  <li>Substrate Data Node: Cholesterol</li>
+			  <li>Enzyme Data Node: CYP11A1</li>
+			  <li>Product Data Node: Pregnenolone</li>
+			  <li>Substrate to Product Interaction: mim-conversion</li>
+			  <li>Enzyme to Conversion Interaction: mim-catalysis</li>
+		</p>
           <br>
           
           <ul>
             <li>Launch PathVisio. To open the starter pathway, go to <b>Plugins > WikiPathways > Search</b>. Type in "WP3966" in the "Keyword Search" tab and click "Enter". When the search results load,
-		    double-click the entry for WP3966 to open it.</li>
+		    double-click the entry for WP3966 to open it. This starter pathway already contains the Substrate and Product Data Nodes, and the Conversion interaction between them.</li>
 	    <li>Perform the challenge tasks:</li>
               <ul>
-		      <li>Select <b>Gene</b> from the <b>Data Node</b> palette in the <b>Objects</b> tab.</li>
+		<li>Select <b>Gene</b> from the <b>Data Node</b> palette in the <b>Objects</b> tab.</li>
                 <li>Click on the canvas to place the node.</li>
                 <li>Double-click on the node to open its properties.</li>
                 <li>Search for “CYP11A1”; Choose any of the entries that just say “CYP11A1”; Click <b>OK</b> to select the identifier, and then click <b>OK</b> again to close the node properties window.
