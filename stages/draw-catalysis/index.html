@@ -48,19 +48,19 @@
           <img src="draw-catalysis-solution.png" width="350px">
 	  <p>This reaction is described in many publications. For our example, we will use the publication from <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3121847/" target=_blank>Strushkevich et al.</a>
 		which includes the following sentence:<br />
-		  <code>"The first step in steroid hormone biosynthesis is the <b>conversion</b> of <b>cholesterol</b> to <b>pregnenolone</b> and isocaproic aldehyde by mitochondrial <b>CYP11A1</b>."</code><br />
-		When translating this sentence to a reaction in a pathway model, the corresponding entities and interactions are:
+		  <blockquote>"The first step in steroid hormone biosynthesis is the <b>conversion</b> of <b>cholesterol</b> to <b>pregnenolone</b> and isocaproic aldehyde by mitochondrial <b>CYP11A1</b>."</blockquote>
+		When translating this sentence to a reaction in a pathway model, the corresponding entities and interactions that we extract are:
 		  <ul>
-			  <li>Substrate Data Node: Cholesterol</li>
-			  <li>Enzyme Data Node: CYP11A1</li>
-			  <li>Product Data Node: Pregnenolone</li>
-			  <li>Substrate to Product Interaction: mim-conversion</li>
-			  <li>Enzyme to Conversion Interaction: mim-catalysis</li>
+			  <li><b>Cholesterol</b>: Substrate Data Node. This is the start of the reaction.</li>
+			  <li><b>CYP11A1</b>: Enzyme Data Node</li>
+			  <li><b>Pregnenolone</b>: Product Data Node. This is the end of the reaction.</li>
+			  <li><b>mim-conversion</b>: The Interaction going from the Substrate Data Node to the Product Data Node.</li>
+			  <li><b>mim-catalysis</b>: The Interaction going from the Enzyme Data Node to the conversion Interaction: </li>
 		</p>
           <br>
           
           <ul>
-            <li>Launch PathVisio. To open the starter pathway, go to <b>Plugins > WikiPathways > Search</b>. Type in "WP3966" in the "Keyword Search" tab and click "Enter". When the search results load,
+            <li>Launch PathVisio. To open the starter pathway, go to <b>Plugins > WikiPathways > Search</b>. Type in "WP3966" in the <b>Keyword Search</b> tab and click <b>Enter</b>. When the search results load,
 		    double-click the entry for WP3966 to open it. This starter pathway already contains the Substrate and Product Data Nodes, and the Conversion interaction between them.</li>
 	    <li>Perform the challenge tasks:</li>
               <ul>
