@@ -47,32 +47,31 @@
           <p>Draw the <b>catalysis reaction</b> depicted in this figure:</p>
           <img src="draw-catalysis-solution.png" width="350px">
 	  <p>This reaction is described in many publications. For our example, we will use the publication from <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3121847/" target=_blank>Strushkevich et al.</a>
-		which includes the following sentence:<br />
+		which includes the following sentence:</p>
 		  <blockquote>"The first step in steroid hormone biosynthesis is the <b>conversion</b> of <b>cholesterol</b> to <b>pregnenolone</b> and isocaproic aldehyde by mitochondrial <b>CYP11A1</b>."</blockquote>
 		When translating this sentence to a reaction in a pathway model, the corresponding entities and interactions that we extract are:
 		  <ul>
-			  <li><b>Cholesterol</b>: Substrate Data Node. This is the start of the reaction.</li>
-			  <li><b>CYP11A1</b>: Enzyme Data Node.</li>
-			  <li><b>Pregnenolone</b>: Product Data Node. This is the end of the reaction.</li>
-			  <li><b>mim-conversion</b>: The interaction connecting the substrate Data Node to the product Data Node.</li>
-			  <li><b>mim-catalysis</b>: The interaction connecting the enzyme Data Node to the conversion interaction.</li>
-		</p>
+			  <li><b>Cholesterol</b>: Metabolite Data Node. This is the start of the reaction.</li>
+			  <li><b>CYP11A1</b>: GeneProduct Data Node.</li>
+			  <li><b>Pregnenolone</b>: Metabolite Data Node. This is the end of the reaction.</li>
+			  <li><b>mim-conversion</b>: The interaction connecting the Cholesterol Data Node to the Pregnenolone Data Node.</li>
+			  <li><b>mim-catalysis</b>: The interaction connecting the GeneProduct Data Node to the conversion interaction.</li>
+		</ul>
           <br>
           
           <ul>
             <li>Launch PathVisio. To open the starter pathway, go to <b>Plugins > WikiPathways > Search</b>. Type in "WP3966" in the <b>Keyword Search</b> tab and click <b>Enter</b>. When the search results load,
-		    double-click the entry for WP3966 to open it. This starter pathway already contains the Substrate and Product Data Nodes, and the Conversion interaction between them.</li>
+		    double-click the entry for WP3966 to open it. This starter pathway already contains the metabolite Data Nodes, and the conversion interaction between them.</li>
 	    <li>Perform the challenge tasks:</li>
               <ul>
-		<li>Select <b>Gene</b> from the <b>Data Node</b> palette in the <b>Objects</b> tab.</li>
+		<li>Select <b>GeneProduct</b> from the <b>Data Node</b> palette in the <b>Objects</b> tab.</li>
                 <li>Click on the canvas to place the node.</li>
                 <li>Double-click on the node to open its properties.</li>
                 <li>Search for “CYP11A1”; Choose any of the entries that just say “CYP11A1”; Click <b>OK</b> to select the identifier, and then click <b>OK</b> again to close the node properties window.
 		<li>Select the <b>mim-catalysis</b> arrow from the <b>MIM interactions</b> palette in the <b>Objects</b> tab: <img src="../../images/mim-catalysis-glyph.png"></li>
                 <li>Drag and drop anywhere on the canvas to create the interaction.</li>
                 <li>Drag the plain end (start) of the interaction over a target area on the enzyme node.</li>
-                <li>Drag the catalysis end (end) of the interaction over the anchor (small dot) on the conversion line. Note that in the case of the 
-		      jnlp downloaded in this challenge, the anchor has been added to the conversion. In order to add an anchor to any interaction, select the
+                <li>Drag the catalysis end (end) of the interaction over the anchor (small dot) on the conversion line. In order to add an anchor to any interaction, select the
 			interaction, and then right-cick and select <b>Add anchor</b>.</li>
                 <li>(Optional) Align nodes using toolbar actions.</li>
                 <li>Done!</li>
