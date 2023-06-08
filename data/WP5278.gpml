@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Pathway xmlns="http://pathvisio.org/GPML/2013a" Name="WikiPathways Academy: draw-phosphorylation" Version="20220816" Organism="Homo sapiens">
+  <Comment Source="WikiPathways-description">Do not modify or delete. This pathway is part of the collection of content used by [https://wikipathways.github.io/academy/ WikiPathways Academy].</Comment>
+  <Graphics BoardWidth="232.71738051794136" BoardHeight="310.6210224379706"/>
+  <DataNode TextLabel="AKT1" GraphId="a5cab" Type="GeneProduct" GroupRef="eb4e3">
+    <Graphics CenterX="157.00406142962288" CenterY="92.4592039448736" Width="57.731481481481296" Height="25.0" ZOrder="32820" FontSize="12" Valign="Middle"/>
+    <Xref Database="Ensembl" ID="ENSG00000142208"/>
+  </DataNode>
+  <DataNode TextLabel="AKT2" GraphId="cbb74" Type="GeneProduct" GroupRef="eb4e3">
+    <Graphics CenterX="157.00406142962288" CenterY="117.4592039448736" Width="57.731481481481296" Height="25.0" ZOrder="32821" FontSize="12" Valign="Middle"/>
+    <Xref Database="Ensembl" ID="ENSG00000105221"/>
+  </DataNode>
+  <DataNode TextLabel="AKT3" GraphId="c4b69" Type="GeneProduct" GroupRef="eb4e3">
+    <Graphics CenterX="157.00406142962288" CenterY="142.4592039448737" Width="57.731481481481296" Height="25.0" ZOrder="32822" FontSize="12" Valign="Middle"/>
+    <Xref Database="Ensembl" ID="ENSG00000117020"/>
+  </DataNode>
+  <DataNode TextLabel="BAD" GraphId="e60cc" Type="GeneProduct">
+    <Graphics CenterX="157.00406142962277" CenterY="210.32957431524392" Width="57.731481481481296" Height="25.0" ZOrder="32823" FontSize="12" Valign="Middle"/>
+    <Xref Database="Ensembl" ID="ENSG00000002330"/>
+  </DataNode>
+  <Interaction GraphId="bd9fe">
+    <Graphics ZOrder="32817" LineThickness="1.0">
+      <Point X="157.00406142962277" Y="222.82957431524392" GraphRef="e60cc" RelX="0.0" RelY="1.0"/>
+      <Point X="157.71738051794136" Y="255.62102243797062" GraphRef="f171e" RelX="0.0" RelY="-1.0" ArrowHead="Arrow"/>
+    </Graphics>
+    <Xref Database="" ID=""/>
+  </Interaction>
+  <Interaction GraphId="f05f9">
+    <Graphics ZOrder="32818" LineThickness="1.0">
+      <Point X="157.00406142962288" Y="162.9592039448737" GraphRef="d26be" RelX="0.0" RelY="1.0"/>
+      <Point X="157.00406142962277" Y="197.82957431524392" GraphRef="e60cc" RelX="0.0" RelY="-1.0" ArrowHead="mim-inhibition"/>
+    </Graphics>
+    <Xref Database="" ID=""/>
+  </Interaction>
+  <Label TextLabel="Survival" GraphId="f171e">
+    <Graphics CenterX="157.71738051794136" CenterY="268.1210224379706" Width="90.0" Height="25.0" ZOrder="32819" FillColor="ffffff" FontWeight="Bold" FontSize="12" Valign="Middle"/>
+  </Label>
+  <Group GroupId="eb4e3" GraphId="d26be" Style="Group"/>
+  <InfoBox CenterX="0.0" CenterY="0.0"/>
+  <Biopax/>
+</Pathway>
