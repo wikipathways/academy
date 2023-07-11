@@ -32,46 +32,36 @@
           <h1>
             <a id="intro" class="anchor" href="#intro" aria-hidden="true">
               <span aria-hidden="true" class="octicon octicon-link">
-                Draw a Conversion
+                Draw Graphical Line
               </span>
             </a>
           </h1>
 
           <h2>Background</h2>
 
-          <p>The conversion of one metabolite into another comprises the fundamental biological process of <a href="https://en.wikipedia.org/wiki/Metabolism" target="_blank">metabolism</a>. 
-		  Often catalyzed by enzymes and chained together in a series, each conversion reaction involves a change in the chemical structure of a metabolite or small molecule. 
-		  Conversion reactions are thus drawn as <b>two metabolites and a mim-conversion interaction</b>, pointing from the subtrate to the product. <a href="https://discover.nci.nih.gov/mim/">MIM</a> 
-		  is a diagram convention that includes specific notations for interactions, which are included in WikiPathways. Since their meaning is specific, they should be used only in specific circumstances, 
-		  as in this case, for a conversion between two metabolites.</p>
-		<p>Note that for the example below, we are <b>only</b> modeling part of the full reaction; we are excluding the enzyme that catalyses the reaction. The next step will show
-		how to model catalysis.</p>
+          <p>As we've learned <a href="https://academy.wikipathways.org/stages/draw-conversion/" target="_blank">previously</a>, interactions between genes, proteins and metabolites should be depicted using the <b>interaction</b> object. However, sometimes it is necessary to depict interactions/lines that are not in fact actual interactions, and therefor not necessarily connected to other objects, for example in a legend. In this case, a <b>graphical line</b> should be used instead of an interaction.</p>
+		  <p>Here we will see how to use graphical lines in a legend, and how to convert an interaction to a graphical line, using the <a href="https://pathvisio.org/plugins/typeconverter.html" target="_blank">TypeConverter plugin</a>.</p>
 
           <h2>Your Mission</h2>
-          <p>Draw the <b>conversion reaction</b> depicted in this figure:</p>
-          <img src="draw-conversion-solution.png" width="250px">
+          <p>Draw the <b>pathway legend</b> depicted in this figure, using graphical lines:</p>
+          <img src="draw-graphical-line.png" width="50%">
           <br>
           
           <ul>
-		<li>Launch PathVisio and select <b>File > New</b> to start a new pathway. Close the <b>Pathway attributes</b> dialog.</li>
-		<li>In the upper left of the canvas, the <b>Pathway Information</b> area will be displayed, and will say "Title: New Pathway". Select this by clicking on it, and in the <b>Properties</b> tab select "Homo sapiens" in the <b>Species</b> menu.
-		<li>Select <b>Metabolite</b> from the <b>Data Node</b> palette in the <b>Objects</b> tab.</li>
-                <li>Click on the canvas to place the node.</li>
-                <li>Double-click on the node to open its properties.</li>
-		<li>Search for “glucose”; Choose any of the entries that just say “glucose”; Click <b>OK</b> to select the identifier, and then click <b>OK</b> again to close the node properties window.</li>
-                <li>Repeat these steps to make the “glucose 6-phosphate” metabolite node. Note that searching for exact matches of metabolite names can be tricky, as some databases
-		      might use the name "glucose 6-phosphate", while others use "glucose-6-phosphate". </li>
-		<li>Select the <b>mim-conversion</b> arrow from the <b>MIM interactions</b> palette in the <b>Objects</b> tab: <img src="../../images/mim-conversion-glyph.png"></li>
-                <li>Click anywhere on the canvas to create the interaction.</li>
-                <li>Drag each end of the interaction over a target area on each node (highlighted in green on hover); Note source vs target. The video below shows how to attach the ends of the interaction to the nodes.<br />
-		      <video controls="controls" name="Connect Interactions" width="250">
-  			<source src="ConnectInteractionsPV.mov">
-			</video></li>
-                <li>(Optional) Align nodes using toolbar actions. To align nodes, select them both, then click the <b>Align horizontal centers</b> button
-		      <img src="align-horizontal.png"> from the toolbar.</li>
-                <li>Done!</li>
-            <li>Save your work as a GPML file under <b>File > Save As</b>.</li>
-            <li>Drag-and-drop the GPML file below to submit.</li>
+		<li>Download the starter pathway here: <a href="https://academy.wikipathways.org/data/WP2868_test.gpml">WP868</a>.</li>
+              <li>Launch PathVisio and install the <a href="https://pathvisio.org/plugins/typeconverter.html" target="_blank">TypeConverter plugin</a> via <b>Plugins > Plugin Manager</b>. Find the plugin in the list on the left and click <b>Install</b> to install it.</li>
+              <li>Open the dowloaded file via <b>File > Open</b>.</li>
+              <li>The Legend already has one line, drawn using an <b>interaction</b>. We will change this to instead be of the type <b>graphical line</b>. Right-click on the red interaction line and select <b>Convert type > Interaction to GraphicalLine</b>.</li>
+              <li>Now, let's add the green and black interaction types to the legend. There are two ways to do this, and we will use both.</li> 
+              <li><b>Copying an existing interaction:</b> Select any of the green interactions in the pathway.</li>
+              <li>Click <b>Edit > Copy</b>, and then <b>Edit > Paste</b>. Move the newly copied green interaction away from the diagram by click-and-drag.</li>
+              <li>Right-click on the copied green interaction and select <b>Convert type > Interaction to GraphicalLine</b>. Copying an existing interaction is useful for maintaining the style and color of the line. </li>
+              <li><b>Adding a new graphical line: </b>In the right-side <b>Objects</b> panel, select <b>line</b> and place it on the canvas.</li>
+              <li>With the line selected, go to <b>Properties</b> and select <b>Arrow</b> as <b>End Line Type</b>. Note: The end line type should match that of the interaction you are describing.</li>
+              <li>Place the green arrow graphical line under the red in the legend, and add a label for "Serine phosphorylation pathway" to the right of it.</li>
+              <li>Place the black arrow graphical line under the red in the legend, and add a label for "Metabolic flux" to the right of it.</li>
+              <li>Save your work as a GPML file under <b>File > Save As</b>.</li>
+              <li>Drag-and-drop the GPML file below to submit.</li>
           </ul>
 	  <!--
           <form style="padding:0px; background:none;">
