@@ -41,13 +41,19 @@
 
           <p>Protein phosphorylation is a common post-translational modification of proteins, which involves the addition of a phosphate group to specific amino acids of a
             protein by enzymes called kinases. The phosphorylation of proteins affects their activity, either activating or inactivating them.
-            WikiPathways models allow for the addition of a number of <b>State</b> objects to any DataNode, which can be used to depict not only phosphorylation of specific
+            WikiPathways models allow for the addition of a number of <b>State</b> objects to any <b>DataNode</b>, which can be used to depict not only phosphorylation of specific
             amino acid residues, but also other post-translational modifications. In addition to indicating that a protein is phosphorylated, we have developed a method for 
             adding specific site information to states on nodes in a way that is amenable to data mapping in tools like <a href="https://cytoscape.org/" target="_blank">Cytoscape</a>. The information is added as a <b>structured comment</b>.</p>
+            <p>
+            The process of protein phosphorylation by a kinase can be depicted in different ways, with varying degrees of detail. In this example, a serine residue of the BAD protein is phosphorylated by AKT kinases, which inactivates the protein.
+            The below figure shows two styles of modeling this phosphorylation event, with the left side showing a commonly used "condensed" style, and the right side showing an expanded style. The condensed style uses a mim-inhibition interaction directly from the AKT group to the BAD protein to indicate the inactivation caused by the phosphorylation, and the phosphorylation is indicated by the State added to the BAD node. The expanded style shows the phosphorylation by the AKT kinases as a mim-catalysis interaction acting on a mim-conversion interaction between the unphosphorylated and phosphorylated BAD nodes.<br />
+            Which one of these two styles to use is up to the pathway author, and depends on other aspects of the pathway, for example the overall scope/focus, layout considerations and the overall size of the pathway. If the phosphorylation event is the main point of the pathway, the expanded style could be used. If the pathway includes a central phosphorylation cascade with many subsequent phosphorylations, the condensed style makes more sense. In the exercise below, we will be using the condensed style.
+            </p>
+            <img src="phosphorylation-process.png" width="140px">
 
           <h2>Your Mission</h2>
           <p>Model the phosphorylation pf BAD, depicted in the below figure, and add a structured comment to the state describing the phosphorylation event:</p>
-          <img src="draw-phosphorylation-solution.png" width="160px">
+          <img src="draw-phosphorylation-solution.png" width="140px">
 		
           <h2>Add State object and structured comment to the pathway node</h2>
           <ul>
