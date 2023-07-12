@@ -23,7 +23,7 @@
     <Xref Database="" ID="" />
   </State>
   <Interaction GraphId="bd9fe">
-    <Graphics ZOrder="32817" LineThickness="1.0">
+    <Graphics ZOrder="32817" LineStyle="Broken" LineThickness="1.0">
       <Point X="157.00406142962277" Y="222.82957431524392" GraphRef="e60cc" RelX="0.0" RelY="1.0" />
       <Point X="157.71738051794136" Y="255.62102243797062" GraphRef="f171e" RelX="0.0" RelY="-1.0" ArrowHead="Arrow" />
     </Graphics>
