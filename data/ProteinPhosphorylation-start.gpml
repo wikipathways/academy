@@ -23,10 +23,6 @@
     <Graphics CenterX="369.97101941473056" CenterY="299.13675213675253" Width="90.0" Height="25.0" ZOrder="32884" FontSize="12" Valign="Middle" />
     <Xref Database="Ensembl" ID="ENSG00000096968" />
   </DataNode>
-  <State GraphRef="f5f92" TextLabel="P" GraphId="dd414">
-    <Graphics RelX="1.0" RelY="-0.84" Width="15.0" Height="15.0" ShapeType="Oval" />
-    <Xref Database="" ID="" />
-  </State>
   <Interaction GraphId="id2e7a1c5">
     <Graphics ZOrder="12288" LineThickness="1.0">
       <Point X="369.97101941473056" Y="319.63675213675253" GraphRef="d1909" RelX="0.0" RelY="1.0" />
