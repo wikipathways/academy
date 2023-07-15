@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Pathway xmlns="http://pathvisio.org/GPML/2013a" Name="WikiPathways Academy: draw-transcriptiontranslation" Version="20161107" Organism="Homo sapiens">
-  <Comment Source="WikiPathways-description">Do not modify or delete. This pathway is part of the collection of content used by [https://wikipathways.github.io/academy/ WikiPathways Academy].</Comment>
   <Comment Source="WikiPathways-description">new academy PW</Comment>
-  <Graphics BoardWidth="592.8626692456484" BoardHeight="451.0" />
+  <Graphics BoardWidth="486.0912314635715" BoardHeight="352.17520954223073" />
   <DataNode TextLabel="ACTA2" GraphId="a4219" Type="GeneProduct">
     <Graphics CenterX="188.0" CenterY="232.0" Width="90.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" />
     <Xref Database="Ensembl" ID="ENSG00000107796" />
@@ -19,7 +18,7 @@
     <Graphics CenterX="365.0184162062626" CenterY="152.0" Width="90.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" />
     <Xref Database="Uniprot-TrEMBL" ID="P68133" />
   </DataNode>
-  <Interaction>
+  <Interaction GraphId="id733127ad">
     <BiopaxRef>b41</BiopaxRef>
     <Graphics ZOrder="12288" LineThickness="1.0">
       <Point X="233.0" Y="152.0" GraphRef="d6197" RelX="1.0" RelY="0.0" />
@@ -36,15 +35,6 @@
   </Label>
   <InfoBox CenterX="0.0" CenterY="0.0" />
   <Biopax>
-    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="e97">
-      <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20737541</bp:ID>
-      <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
-      <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The actin gene family: function follows isoform.</bp:TITLE>
-      <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cytoskeleton (Hoboken)</bp:SOURCE>
-      <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2010</bp:YEAR>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Perrin BJ</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ervasti JM</bp:AUTHORS>
-    </bp:PublicationXref>
     <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="b41">
       <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12138199</bp:ID>
       <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
@@ -60,5 +50,15 @@
       <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kumar A</bp:AUTHORS>
       <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lessard J</bp:AUTHORS>
     </bp:PublicationXref>
+    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="e97">
+      <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20737541</bp:ID>
+      <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
+      <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The actin gene family: function follows isoform.</bp:TITLE>
+      <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cytoskeleton (Hoboken)</bp:SOURCE>
+      <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2010</bp:YEAR>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Perrin BJ</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ervasti JM</bp:AUTHORS>
+    </bp:PublicationXref>
   </Biopax>
 </Pathway>
+

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Pathway xmlns="http://pathvisio.org/GPML/2013a" Name="WikiPathways Academy: met-1-indirect" Last-Modified="2/22/2013" Organism="Homo sapiens">
-  <Comment Source="WikiPathways-description">Do not modify or delete. This pathway is part of the collection of content used by [https://wikipathways.github.io/academy/ WikiPathways Academy].</Comment>
+<Pathway xmlns="http://pathvisio.org/GPML/2013a" Name="WikiPathways Academy: met-1-indirect" Organism="Homo sapiens">
   <BiopaxRef>ec9</BiopaxRef>
   <BiopaxRef>d9b</BiopaxRef>
   <BiopaxRef>e32</BiopaxRef>
@@ -298,3 +297,4 @@
   <InfoBox CenterX="8.333333333333334" CenterY="5.0" />
   <Biopax />
 </Pathway>
+
