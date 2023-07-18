@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Pathway xmlns="http://pathvisio.org/GPML/2013a" Name="draw-protein-phosphorylation" Organism="Homo sapiens">
-  <Graphics BoardWidth="1038.0" BoardHeight="611.0" />
+  <Graphics BoardWidth="564.0" BoardHeight="611.0" />
   <DataNode TextLabel="STAT3" GraphId="f5f92" Type="GeneProduct">
     <Graphics CenterX="369.1498318303834" CenterY="383.7692307692304" Width="70.18668466036868" Height="25.0" ZOrder="32802" FontSize="12" Valign="Middle" />
     <Xref Database="Ensembl" ID="ENSG00000168610" />
@@ -11,20 +11,54 @@
   </DataNode>
   <DataNode TextLabel="EGF" GraphId="c2190" Type="GeneProduct">
     <Attribute Key="org.pathvisio.model.BackpageHead" Value="EGF" />
-    <Graphics CenterX="369.54327435028677" CenterY="74.26852976913752" Width="80.0" Height="25.0" ZOrder="32824" FontSize="12" Valign="Middle" />
+    <Graphics CenterX="369.54327435028677" CenterY="78.26852976913752" Width="80.0" Height="25.0" ZOrder="32824" FontSize="12" Valign="Middle" />
     <Xref Database="Entrez Gene" ID="1950" />
   </DataNode>
-  <DataNode TextLabel="EGFR" GraphId="a98fc" Type="GeneProduct">
+  <DataNode TextLabel="EGFR" GraphId="a98fc" Type="GeneProduct" GroupRef="f0c9a">
     <Attribute Key="org.pathvisio.model.BackpageHead" Value="ErbB1" />
-    <Graphics CenterX="369.18146155585146" CenterY="161.89145402997107" Width="80.0" Height="25.0" ZOrder="32826" FontSize="12" Valign="Middle" />
+    <Graphics CenterX="329.18146155585146" CenterY="160.89145402997107" Width="80.0" Height="25.0" ZOrder="32826" FontSize="12" Valign="Middle" />
     <Xref Database="Entrez Gene" ID="1956" />
   </DataNode>
   <DataNode TextLabel="JAK2" GraphId="ac556" Type="GeneProduct" GroupRef="a3048">
     <Graphics CenterX="369.97101941473056" CenterY="299.13675213675253" Width="90.0" Height="25.0" ZOrder="32884" FontSize="12" Valign="Middle" />
     <Xref Database="Ensembl" ID="ENSG00000096968" />
   </DataNode>
-  <State GraphRef="f5f92" TextLabel="P" GraphId="dd414">
+  <DataNode TextLabel="EGFR" GraphId="c0401" Type="GeneProduct" GroupRef="f0c9a">
+    <Attribute Key="org.pathvisio.model.BackpageHead" Value="ErbB1" />
+    <Graphics CenterX="409.18146155585146" CenterY="160.89145402997107" Width="80.0" Height="25.0" ZOrder="33379" FontSize="12" Valign="Middle" />
+    <Xref Database="Entrez Gene" ID="1956" />
+  </DataNode>
+  <State GraphRef="f5f92" TextLabel="P" GraphId="ca15a">
+    <Comment>parentid=P40763; parentsymbol=STAT3; site=DPGsAAPyLktKFIC; position=tyr705; sitegrpid=448192; ptm=p; direction=u</Comment>
     <Graphics RelX="1.0" RelY="-0.84" Width="15.0" Height="15.0" ShapeType="Oval" />
+    <Xref Database="" ID="" />
+  </State>
+  <State GraphRef="d0cd0" TextLabel="P" GraphId="fdd12">
+    <Comment>parentid=P23458; parentsymbol=JAK1; site=IEtDkEyytVkDDRD; position=tyr1035; sitegrpid=448452; ptm=p; direction=u</Comment>
+    <Graphics RelX="-0.9555555555555556" RelY="-0.84" Width="15.0" Height="15.0" ShapeType="Oval" />
+    <Xref Database="" ID="" />
+  </State>
+  <State GraphRef="d0cd0" TextLabel="P" GraphId="ffbf5">
+    <Comment>parentid=P23458; parentsymbol=JAK1; site=AIEtDkEyytVkDDR; position=tyr1034; sitegrpid=448451; ptm=p; direction=u</Comment>
+    <Graphics RelX="1.0" RelY="-0.76" Width="15.0" Height="15.0" ShapeType="Oval" />
+    <Xref Database="" ID="" />
+  </State>
+  <State GraphRef="a98fc" TextLabel="P" GraphId="f085a">
+    <Graphics RelX="-0.975" RelY="0.68" Width="15.0" Height="15.0" ShapeType="Oval" />
+    <Xref Database="" ID="" />
+  </State>
+  <State GraphRef="ac556" TextLabel="P" GraphId="c973a">
+    <Comment>parentid=O60674; parentsymbol=JAK2; site=VLPQDKEyyKVkEPG; position=tyr1007; sitegrpid=448407; ptm=p; direction=u</Comment>
+    <Graphics RelX="-1.0" RelY="0.76" Width="15.0" Height="15.0" ShapeType="Oval" />
+    <Xref Database="" ID="" />
+  </State>
+  <State GraphRef="ac556" TextLabel="P" GraphId="e176e">
+    <Comment>parentid=O60674; parentsymbol=JAK2; site=LPQDKEyyKVkEPGE; position=tyr1008; sitegrpid=448408; ptm=p; direction=u</Comment>
+    <Graphics RelX="1.0" RelY="1.0" Width="15.0" Height="15.0" ShapeType="Oval" />
+    <Xref Database="" ID="" />
+  </State>
+  <State GraphRef="c0401" TextLabel="P" GraphId="f389a">
+    <Graphics RelX="1.0" RelY="1.0" Width="15.0" Height="15.0" ShapeType="Oval" />
     <Xref Database="" ID="" />
   </State>
   <Interaction GraphId="id2e7a1c5">
@@ -43,14 +77,14 @@
   </Interaction>
   <Interaction GraphId="a139b">
     <Graphics ZOrder="32809" LineThickness="1.0">
-      <Point X="369.54327435028677" Y="86.76852976913752" GraphRef="c2190" RelX="0.0" RelY="1.0" />
-      <Point X="369.18146155585146" Y="149.39145402997107" GraphRef="a98fc" RelX="0.0" RelY="-1.0" ArrowHead="mim-binding" />
+      <Point X="369.54327435028677" Y="90.76852976913752" GraphRef="c2190" RelX="0.0" RelY="1.0" />
+      <Point X="369.18146155585146" Y="136.39145402997107" GraphRef="c1f20" RelX="0.0" RelY="-1.0" ArrowHead="mim-binding" />
     </Graphics>
     <Xref Database="" ID="" />
   </Interaction>
   <Interaction GraphId="c3bff">
     <Graphics ZOrder="33378" LineThickness="1.0">
-      <Point X="369.18146155585146" Y="174.39145402997107" GraphRef="a98fc" RelX="0.0" RelY="1.0" />
+      <Point X="369.18146155585146" Y="185.39145402997107" GraphRef="c1f20" RelX="0.0" RelY="1.0" />
       <Point X="369.97101941473056" Y="253.63675213675253" GraphRef="d1909" RelX="0.0" RelY="-1.0" ArrowHead="Arrow" />
     </Graphics>
     <Xref Database="" ID="" />
@@ -63,17 +97,13 @@
     <Attribute Key="org.pathvisio.DoubleLineProperty" Value="Double" />
     <Graphics CenterX="372.0" CenterY="371.5" Width="324.0" Height="419.0" ZOrder="9" FontSize="12" Valign="Middle" ShapeType="RoundedRectangle" LineThickness="3.0" Color="c0c0c0" Rotation="0.0" />
   </Shape>
+  <Group GroupId="f0c9a" GraphId="c1f20" Style="Complex" />
   <Group GroupId="b0e33" GraphId="c36a5" Style="Group" />
   <Group GroupId="eed8f" GraphId="cf632" Style="Group" />
   <Group GroupId="a3048" GraphId="d1909" Style="Group" />
   <Group GroupId="e8cab" GraphId="d9d87" Style="Group" />
   <InfoBox CenterX="0.0" CenterY="0.0" />
   <Biopax>
-    <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
-      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">altered growth factor signaling pathway</bp:TERM>
-      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PW:0000298</bp:ID>
-      <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pathway Ontology</bp:Ontology>
-    </bp:openControlledVocabulary>
     <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="d09">
       <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></bp:ID>
       <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
@@ -81,11 +111,6 @@
       <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/T790M</bp:SOURCE>
       <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></bp:YEAR>
     </bp:PublicationXref>
-    <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
-      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tyrosine-specific protein kinase mediated signaling pathway</bp:TERM>
-      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PW:0001195</bp:ID>
-      <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pathway Ontology</bp:Ontology>
-    </bp:openControlledVocabulary>
     <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="f79">
       <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">22426421</bp:ID>
       <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
@@ -149,8 +174,18 @@
       <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ong ST</bp:AUTHORS>
     </bp:PublicationXref>
     <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
+      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tyrosine-specific protein kinase mediated signaling pathway</bp:TERM>
+      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PW:0001195</bp:ID>
+      <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pathway Ontology</bp:Ontology>
+    </bp:openControlledVocabulary>
+    <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
       <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">altered tyrosine-specific protein kinase mediated signaling pathway</bp:TERM>
       <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PW:0001537</bp:ID>
+      <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pathway Ontology</bp:Ontology>
+    </bp:openControlledVocabulary>
+    <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
+      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">altered growth factor signaling pathway</bp:TERM>
+      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PW:0000298</bp:ID>
       <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pathway Ontology</bp:Ontology>
     </bp:openControlledVocabulary>
   </Biopax>
