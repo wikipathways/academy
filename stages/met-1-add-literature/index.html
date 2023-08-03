@@ -33,7 +33,7 @@
           <h1>
             <a id="intro" class="anchor" href="#intro" aria-hidden="true">
               <span aria-hidden="true" class="octicon octicon-link">
-              WikiPathways - Add a Literature Reference
+              My First Metabolic Pathway - Add a Literature Reference
               </span>
             </a>
           </h1>
@@ -63,6 +63,10 @@
           <li>When you are done, save your work as a GPML file under <b>File > Save As</b>.</li>
           </ul>
           <br />
+        <div id="upload-target-container"></div> 
+        <div id="next-button">
+		<a href="../met-1-description/index.html" class="btn btn-info btn-lg pull-right">Next step</a>
+		</div>
 
                   <!--<form id="wp-add-literature">
                           Provide your username and the WPID
@@ -74,11 +78,9 @@
 
                   <button id="wp-add-literature-button">Verify</button>-->
 	</div>
-	<div id="next-button">
-		<a href="../wp-description/index.html" class="btn btn-info btn-lg pull-right">Next step</a>
-		</div>
+	
 
-	<div class="results" id="success" style="display:none;">
+<!--	<div class="results" id="success" style="display:none;">
 		<h2>Result</h2>
 		<p>You did it! In the final step, you will add a tag to your pathway.</p>
 	</div>
@@ -86,11 +88,11 @@
 		 <h2>Result</h2>
 		 <p>Hmm... something went wrong. Try again.</p>
 	 </div>
-		<br /> <br /> <br />
+		<br /> <br /> <br />-->
 	</section>
 	    </div>
 	  </div>
-
+      
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
@@ -98,9 +100,11 @@
     <!-- <script type="text/javascript" src="../../javascripts/sgl-init.js"></script> -->
     <!-- <script type="text/javascript" src="../../javascripts/sgl.js"></script> -->
     <script type="text/javascript" src="../../javascripts/download-jnlp.js"></script>
-    <script type="text/javascript" src="../../javascripts/webservice.js"></script>
+    <script type="text/javascript" src="../../javascripts/file-dragger.js"></script>
+    <script type="text/javascript" src="../../javascripts/validate-gpml.js"></script>
+      
   
-    <script type="text/javascript">
+<!--    <script type="text/javascript">
       function passValueForward() {
 	// set verfication form field for user convenience
 	var wpid= $('[name=wpidload]').val(); 
@@ -116,5 +120,25 @@
   ga('create', 'UA-1605246-2', 'auto');
   ga('send', 'pageview');
 
-</script> </body>
+</script> -->
+    <script type="text/javascript">
+      window.wpAcademy.validateGPML({
+	uploadTargetContainerSelector: '#upload-target-container',
+        validate: 'met-1-add-literature-solution.gpml', 
+         action: 'met-1-add-literature',
+         points: 5
+      });
+    </script>
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-1605246-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+      
+    </body>
 </html>
