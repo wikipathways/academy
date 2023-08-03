@@ -32,7 +32,7 @@
           <h1>
             <a id="intro" class="anchor" href="#intro" aria-hidden="true">
               <span aria-hidden="true" class="octicon octicon-link">
-                Draw a Conversion
+                Draw a Conversion Reaction
               </span>
             </a>
           </h1>
@@ -41,7 +41,7 @@
 
           <p>The conversion of one metabolite into another comprises the fundamental biological process of <a href="https://en.wikipedia.org/wiki/Metabolism" target="_blank">metabolism</a>. 
 		  Often catalyzed by enzymes and chained together in a series, each conversion reaction involves a change in the chemical structure of a metabolite or small molecule. 
-		  Conversion reactions are thus drawn as <b>two metabolites and a mim-conversion interaction</b>, pointing from the subtrate to the product. <a href="https://discover.nci.nih.gov/mim/">MIM</a> 
+		  Conversion reactions are thus drawn as <b>two metabolites and a mim-conversion interaction</b>, pointing from the substrate to the product. <a href="https://discover.nci.nih.gov/mim/">MIM</a> 
 		  is a diagram convention that includes specific notations for interactions, which are included in WikiPathways. Since their meaning is specific, they should be used only in specific circumstances, 
 		  as in this case, for a conversion between two metabolites.</p>
 		<p>Note that for the example below, we are <b>only</b> modeling part of the full reaction; we are excluding the enzyme that catalyses the reaction. The next step will show
@@ -56,22 +56,23 @@
 		<li>Launch PathVisio and select <b>File > New</b> to start a new pathway. Close the <b>Pathway attributes</b> dialog.</li>
 		<li>In the upper left of the canvas, the <b>Pathway Information</b> area will be displayed, and will say "Title: New Pathway". Select this by clicking on it, and in the <b>Properties</b> tab select "Homo sapiens" in the <b>Species</b> menu.
 		<li>Select <b>Metabolite</b> from the <b>Data Node</b> palette in the <b>Objects</b> tab.</li>
-                <li>Click on the canvas to place the node.</li>
-                <li>Double-click on the node to open its properties.</li>
+        <li>Click on the canvas to place the node.</li>
+        <li>Double-click on the node to open its properties.</li>
 		<li>Search for “glucose”; Choose any of the entries that just say “glucose”; Click <b>OK</b> to select the identifier, and then click <b>OK</b> again to close the node properties window.</li>
-                <li>Repeat these steps to make the “glucose 6-phosphate” metabolite node. Note that searching for exact matches of metabolite names can be tricky, as some databases
+        <li>Repeat these steps to add the “glucose 6-phosphate” metabolite node. Note that searching for exact matches of metabolite names can be tricky, as some databases
 		      might use the name "glucose 6-phosphate", while others use "glucose-6-phosphate". </li>
 		<li>Select the <b>mim-conversion</b> arrow from the <b>MIM interactions</b> palette in the <b>Objects</b> tab: <img src="../../images/mim-conversion-glyph.png"></li>
-                <li>Click anywhere on the canvas to create the interaction.</li>
-                <li>Drag each end of the interaction over a target area on each node (highlighted in green on hover); Note source vs target. The video below shows how to attach the ends of the interaction to the nodes.<br />
+        <li>Click anywhere on the canvas to create the interaction.</li>
+        <li>Drag each end of the interaction over a target area on each node (highlighted in green on hover) to connect the interaction to the node, noting source vs target. The video below shows how to attach the ends of the interaction to the nodes.<br /><br />
 		      <video controls="controls" name="Connect Interactions" width="250">
   			<source src="ConnectInteractionsPV.mov">
 			</video></li>
-                <li>(Optional) Align nodes using toolbar actions. To align nodes, select them both, then click the <b>Align horizontal centers</b> button
+              <br />
+        <li>(Optional) Align nodes using toolbar actions. To align nodes, select them both, then click the <b>Align horizontal centers</b> button
 		      <img src="align-horizontal.png"> from the toolbar.</li>
                 <li>Done!</li>
-            <li>Save your work as a GPML file under <b>File > Save As</b>.</li>
-            <li>Drag-and-drop the GPML file below to submit.</li>
+        <li>Save your work as a GPML file under <b>File > Save As</b>.</li>
+        <li>Drag-and-drop the GPML file below to check if it is correct.</li>
           </ul>
 
           <div id="upload-target-container"></div>  
