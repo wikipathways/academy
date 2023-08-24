@@ -33,7 +33,7 @@
           <h1>
             <a id="intro" class="anchor" href="#intro" aria-hidden="true">
               <span aria-hidden="true" class="octicon octicon-link">
-              WikiPathways QA - Update Approval Tags 
+              WikiPathways QA - Update Approved Tags 
               </span>
             </a>
           </h1>
@@ -45,11 +45,11 @@
        <div style="background-color:#FBFAE2; padding-left: 40px">
           <h3>Criteria for pathways to be tagged with <b>Approved</b> tag:</h3>
               <ol>
-                  <li>Interactions must be complete.</li>
+                  <li>No unconnected interactions.</li>
                   <li>Most (>90%) of datanodes must be annotated with database references.</li>
                   <li>The pathway must have a complete description, meaning a 2-3 sentence summary of the process that the pathway describes.</li>
                   <li>Minimum of one literature reference.</li>
-                  <li>Minimum of one ontology tag.</li>
+                  <li>Minimum of one <b>pathway</b> ontology tag.</li>
                   <li>Overall, the pathway model should be useful for data visualization and analysis.</li>
               </ol>
       </div>
@@ -80,6 +80,9 @@
                           <input type="hidden" name="sglactivity" value="task-curated">
                   </form>
 		 <br />
+		  <p><b>If the pathway feed is not loading correctly, go to <a href="https://classic.wikipathways.org/index.php?title=Special:CurationTags&showPathwaysFor=Curation:AnalysisCollection" target="_blank">WikiPathways Classic</a> to see the list of all "Approved" pathways.
+		  Click the column header for "Applies to latest revision" to sort the pathways based on if the tag is outdated.</b></p>
+		  
 <!--		  <button id="task-verify-tag-curated-button" class="btn btn-default">Verify</button>-->
 		  <button id="next-pathway-button" class="btn btn-primary">Next pathway</button>
 		  
