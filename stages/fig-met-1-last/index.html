@@ -54,23 +54,31 @@
                 <li>In the <b>Literature reference properties</b> window, type in the PMID for the original article: 26536169</li>
                 <li>Click <b>Query PubMed</b>. When the results are loaded, click OK.</li>
                 <li>Congratulations! You have converted your first pathway model from the scientific literature.</li>
-            <h4>Pick a pathway title</h4>
+            <h4>Pathway title and organism</h4>
               <li>Check your pathway title against our <a href="https://github.com/wikipathways/wikipathways-faq/discussions/24" target="_blank">pathway title guidelines</a>.</li>
+	      <li>Make sure to select the correct species for your pathway. Highlight the <b>Pathway Information</b> area in the top left and
+                review the <b>Organism</b> entry in the <b>Properties</b> tab. It should be "Homo sapiens".</li>
             <h4>Draft a Description</h4>
               <li>Before your pathway is considered complete and ready to be submitted to WikiPathways, it must have a description. Create your description in a separate text editor; you will need if you decide to upload your pathway to WikiPathways (optional step below).
                   For more information about creating a description, see <a href="../met-1-description/index.html" target="_blank">WikiPathways: Add a descption</a>.</li>
-		    <h4>Final checklist</h4>
-                <li>Did you indicate the correct species? Highlight the <b>Pathway Information</b> area in the top left and
-                review the <b>Species</b> entry in the <b>Properties</b> tab. It should be Homo sapiens.</li>
-                <li>Do all data nodes have the correct database references? For each datanode, select it and review the <b>Backpage</b>
-                tab. Follow any of the linkouts to public databases for any identities you are unsure of.</li>
-                <li>Did you use the correct interaction types? Are they properly attached to
-		datanodes or other interactions? To highlight any unconnected interactions, click Ctrl+L (or Command+L on Mac).</li>
-            <h4>Optional: Submit your pathway to WikiPathways</h4>
+	    <h4>Final checklist</h4>
+	    <p>Any pathway that you plan to submit to WikiPathways must meet a set of content requirements in order to be accepted:</p>
+        <div id="approved_criteria" style="background-color:#FBFAE2; padding-left: 40px">
+          <h3>Criteria for pathways to be <b>approved</b>:</h3>
+              <ol>
+                  <li>No unconnected interactions.</li>
+                  <li>Most (>90%) of datanodes must be annotated with database references.</li>
+                  <li>The pathway must have a complete description, meaning a 2-3 sentence summary of the process that the pathway describes.</li>
+                  <li>Minimum of one literature reference.</li>
+                  <li>Minimum of one <b>pathway</b> ontology tag.</li>
+                  <li>Overall, the pathway model should be useful for data visualization and analysis.</li>
+              </ol>              
+      		</div>
+            <h4>Submit your pathway to WikiPathways</h4>
                 <li>Your pathway is now ready to be submitted to WikiPathways. See <a href="../wp-publish/index.html" target="_blank">WikiPathways - Publish Pathway</a> for details.</li>
               <li>Save your work as a GPML file under <b>File > Save As</b>.</li>
             <li>Drag-and-drop the GPML file below to check if it is correct.</li>
-          </ul>
+	  </ul>
 
           <div id="upload-target-container"></div>  
 	  <div id="next-button">
