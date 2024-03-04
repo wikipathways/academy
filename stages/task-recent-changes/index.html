@@ -39,8 +39,9 @@
           </h1>
 
           <h2>Goal</h2>
-	  <p>The goal of this task is to assess all edits made to pathways in the last 10 days. This will include existing pathways that were added as well as newly added pathways. Edits are assessed and tagged based on their current status, with the goal of inclusion in the <b>Approved</b> set. The criteria for inclusion in this set is highlighted below.</p>
+	  <p>The goal of this task is to assess <b>all edits</b> made to pathways in the last 10 days, including edits to existing pathways and newly added pathways. Edits are assessed and tagged based on their current status, with the goal of inclusion in the <b>Approved</b> set. The criteria for inclusion in this set are highlighted below.</p>
 	  <p><b>To save yourself time and effort, open the <a href="https://github.com/wikipathways/wikipathways-help/discussions/new?category=curation-reports" target=_blank>Weekly Curation report</a> and take notes directly in the form</b>.</p>
+      <p><b>New!</b> To help us design how the pathway content review process will work in the future, we would like to know which types of edits you think should be "auto-merged" (without review). Open <a href="https://docs.google.com/spreadsheets/d/1TiIMqp001euqNpH0tVbN5PMD1x-uoXV0sj3Dq43aKkk/edit?usp=sharing" target=_blank>this doc</a> and follow the instructions.</p>
             
       <div style="background-color:#FBFAE2; padding-left: 40px">
           <h3>Criteria for pathways to be <b>approved</b>:</h3>
@@ -57,10 +58,10 @@
      <h2>Instructions</h2>
 	  
 	  <ul>
-	  <li>Click the pathway image or title below to view the pathway at WikiPathways (classic). You will need to be logged in at WikiPathways. There are a couple of ways you can assess the edits:</li> 
-		<ul>
-		<li>Using the <b>History</b> tab, open the previous version in a new window and visually compare the two revisions.</li> 
-		<li>Using GitHub's diff viewer is a convenient way to review the difference between two versions of the pathway. Let's use <b>WP5424</b> as an example:</li>
+	  <li>Click the pathway image or title below to view the pathway at WikiPathways (classic). You will need to be logged in at WikiPathways.</li> 
+      <li>Using the <b>History</b> tab, open the previous version in a new window to compare the two revisions. The edit comment entered by the author should indicate what aspects of the pathway were updated. </li> 
+      <li>Updates to the layout of the pathway can be assessed by reviewing the pathway diagram; updates to other aspects of the pathway (i.e. description, datanode annotations, bibliography) can be assessed by comparing the relevant sections.</li>
+<!--		<li>Using GitHub's diff viewer. Let's use <b>WP5424</b> as an example:</li>
 			<ul>
 			<li>Navigate to the pathway page on WikiPathways.org, for example <a href="https://www.wikipathways.org/pathways/WP5424.html" target="_blank">https://www.wikipathways.org/pathways/WP5424.html</a>.</li> 
 			<li>In the <b>Activity</b> section under the pathway, click the <b>last edited</b> date badge. This will take you to the GitHub page listing <a href="https://github.com/wikipathways/wikipathways.github.io/commits/main/_pathways/WP5424.md" target="_blank">all commits</a> 
@@ -69,15 +70,16 @@
 				You can then easily select a changed file (datanodes, markdown or image file) relevant to WP5424 from the list.</li>
 			<li>The diff viewer will highlight deletions in red and additions in green, with the parts that were deleted/added in darker shades.</li>
 			<li>For example, changes to References, Description and Annotations would be seen in the markdown (.md) file, and changes to the data node identifiers would be seen in the datanodes (.tsv) file.</li>
-			<img src="gh-diffview.png" width="900px">
-		</ul>	
-	  <li>If the change is not valid, revert the edit in the <b>History</b> table on the classic site. If unsure, start a discussion using the links in the <b>Talk</b> page.</li>
-      	  <li>If the pathway is a new pathway, consider adding the <b>Approved version</b> tag to the pathway if it fulfills the criteria listed above.</li>
+			<img src="gh-diffview.png" width="900px">-->
+			
+	  <li>If the change is not valid, revert the edit in the <b>History</b> table. If unsure, start a discussion using the links in the <b>Talk</b> page.</li>
+      <li>If the change is valid, and the pathway is already part of the <b>Approved</b> set, make sure to update the tag by clicking the <b>Click here to apply to current revision</b> link in the outdated tag.</li>
+      <li>If the pathway is a new pathway, consider adding the <b>Approved version</b> tag to the pathway if it fulfills the criteria listed above.</li>
 	  <li>Add other quality tags where appropriate; <b>Under Construction</b> for pathways that appear incomplete, but are not test pathways (i.e. the content is unique), <b>Test Pathway</b> for pathways 
 	  that are mostly empty, filled with random content, or has "Test" in the title.</li>
+      <li>Click the <b>Next pathway</b> to load the next pathway and repeat the process. The function simply counts down the pathways edited in the last 10 days. Refresh will restart the countdown.</li>
 	</ul>
-	<li>Click the <b>Next pathway</b> to load the next pathway and repeat the process. The function simply counts down the pathways edited in the last 10 days. Refresh will restart the countdown.</li>
-	  </ul> 
+	 
 	<p>If you have a question related to one of the pathways you reviewed, report it to our curation issues tracker by clicking the button below. Issues reported here will be discussed in the Community Curation meetings.</p>
 	<div id="curation-button">
 	<a href="https://github.com/wikipathways/wikipathways-help/issues" class="btn btn-info pull-left">Report curation issue</a></div>
