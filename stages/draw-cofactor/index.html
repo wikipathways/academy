@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="../../stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="../../stylesheets/print.css" media="print">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>WikiPathways Academy</title>
+</head>
+
+  <body>
+
+    <header id="banner">
+      <div class="inner">
+        <h1>WikiPathways Academy</h1>
+        <h2>Organized training challenges for new WikiPathways authors</h2>
+	<a href="../../path.html" class="button"><small>Return to</small>Overview</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1>
+            <a id="intro" class="anchor" href="#intro" aria-hidden="true">
+              <span aria-hidden="true" class="octicon octicon-link">
+                Representing cofactors
+              </span>
+            </a>
+          </h1>
+
+          <h2>Background</h2>
+
+          <p>A cofactor is a non-protein chemical compound or metallic ion that is required for an enzyme's activity as a catalyst, and is essential for the enzyme's proper functioning. Cofactors can be considered "helper molecules" that assist in biochemical transformations. They are often required for the stability and function of enzymes and significantly influence the enzyme's ability to catalyze its reaction. Source: <a href="https://en.wikipedia.org/wiki/Cofactor_(biochemistry)" target="_blank">Wikipedia</a>.</p>
+
+          <h2>Your Mission</h2>
+          <p>Draw the oxidation of isocitrate to 2-oxoglutarate, with the cofactor NAD. This is a step in the <a href="https://en.wikipedia.org/wiki/Citric_acid_cycle" target="_blank">TCA cycle</a>.</p>
+          <img src="draw-cofactor-reaction-solution.png" width="250px">
+          
+          <ul>
+            <li>Download the starter pathway here: <a href="https://academy.wikipathways.org/data/draw-cofactor-reaction-start.gpml">draw-cofactor-reaction-start.gpml</a>.</li>
+            <li>Launch PathVisio and open the dowloaded file via <b>File > Open</b>.</li>
+            <li>Add the gene products that catalyze the conversion; IDH3A, IDH3B and IDH3G.</li>
+            <li>Group the three enzyme nodes.</li>
+            <li>Right-click on the existing conversion interaction and select <b>Add anchor</b>, or select the conversion interaction and then use the keyboard shortcut <b>Ctrl+R</b> (<b>Command+R</b> on Mac), to add the anchor.</li>
+            <li>Select the <b>Catalysis</b> arrow from the <b>MIM interactions</b> palette in the <b>Objects</b> tab and place the interaction anywhere on the drawing board.</li>
+            <li>Drag the plain end (start) of the interaction over a target area on the groupp of enzyme nodes.</li>
+            <li>Drag the catalysis end (end) of the interaction over the anchor on the conversion line.</li>
+            <li>Add another anchor to the conversion reaction, positioned above the previous anchor.</li>
+            <li>Add the NAD node using a <b>Metabolite</b> node.</li>
+            <li>Select the <b>Conversion</b> arrow from the <b>MIM interactions</b> palette in the <b>Objects</b> tab and place the interaction anywhere on the drawing board.</li>
+            <li>Drag the plain end (start) of the interaction over a target area on the NAD node.</li>
+            <li>Drag the conversion end (end) of the interaction over the new anchor on the conversion line.</li>
+            <li>Repeat the last steps to add two more metabolite nodes for CO2 and NADH and their interactions.</li>
+            <li>Done!</li>
+            <li>Save your work as a GPML file under <b>File > Save As</b>.</li>
+            <li>Drag-and-drop the GPML file below to check if it is correct.</li>
+               </ul>
+          <div id="upload-target-container"></div>  
+	  <!--<div id="next-button">
+		 <a href="../draw-transcriptiontranslation/index.html" class="btn btn-info btn-lg pull-right">Next step</a></div>-->
+          <br>  
+          <br> 
+	  <!--<p><a href="draw-compartments-solution.gpml">Click to download solution file (For Testing Only)</a>
+	  </p>-->
+		<br /> <br /> <br />
+	      </section>
+          </div> 
+    </div>       
+
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- <script type="text/javascript" src="https://www.sciencegamelab.org/js/sciapi.js"></script> -->
+    <!-- <script type="text/javascript" src="../../javascripts/sgl-init.js"></script> -->
+    <!-- <script type="text/javascript" src="../../javascripts/sgl.js"></script> -->
+    <script type="text/javascript" src="../../javascripts/download-jnlp.js"></script>
+    <script type="text/javascript" src="../../javascripts/file-dragger.js"></script>
+    <script type="text/javascript" src="../../javascripts/validate-gpml.js"></script>
+
+
+    <script type="text/javascript">
+      window.wpAcademy.validateGPML({
+	uploadTargetContainerSelector: '#upload-target-container',
+        validate: 'draw-cofactor-reaction-solution.gpml', 
+         action: 'draw-cofactor-reaction',
+         points: 5
+      });
+    </script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-1605246-2', 'auto');
+  ga('send', 'pageview');
+
+</script>  </body>
+</html>
