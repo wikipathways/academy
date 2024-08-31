@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="../../stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="../../stylesheets/print.css" media="print">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../../stylesheets/webservice.css" media="screen" />
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>WikiPathways Academy</title>
+</head>
+
+  <body>
+
+    <header id="banner">
+      <div class="inner">
+        <h1>WikiPathways Academy</h1>
+        <h2>Organized training challenges for new WikiPathways authors</h2>
+	<a href="../../path.html" class="button"><small>Return to</small>Overview</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1>
+            <a id="intro" class="anchor" href="#intro" aria-hidden="true">
+              <span aria-hidden="true" class="octicon octicon-link">
+              Add a Literature Reference - Advanced
+              </span>
+            </a>
+          </h1>
+
+          <h2>Background</h2>
+	  <p>
+	  WikiPathways allows you to add citations to the overall pathway and to individual nodes and interactions, and PathVisio enables you to <a href="https://academy.wikipathways.org/stages/met-1-add-literature/" target="_blank">easily add references from PubMed</a>. References from other sources, 
+          such as ISBN and DOI, are also allowed but have to be added manually.</p>
+          <h2>Challenge</h2>
+	  <p>
+	  Add a DOI literature reference to your pathway.
+	  </p> 
+	<div>
+          <ul>
+       <li>Download the starter pathway here: <a href="https://academy.wikipathways.org/data/draw-compartment-start.gpml">advanced-literature-reference.gpml</a>.</li>
+        <li>Open the GPML file in any text editor.</li>
+	    <li>We are going to add a reference for a textbook: <a href="https://www.taylorfrancis.com/books/edit/10.1201/9780203503867/metabolism-molecular-physiology-saccharomyces-cerevisiae-michael-schweizer-richard-dickinson" target="_blank">Metabolism and Molecular Physiology of Saccharomyces Cerevisiae
+</a>. At a minimum, the reference should include the identifier (DOI 10.1201/9780203503867) and the database (in this case DOI), but we can also enter additional information. In this case, we also have the following information:
+            <ul>
+                <li>Title</li>
+                <li>Authors</li>
+                <li>Publication year</li>
+            </ul></li>
+          <li>The reference needs to be added in the <code>Biopax</code> section of the GPML, which is usually at the end. The format of the reference should be as follows:
+              
+          <img src="biopax-lit-ref.png" width="250px">
+          </li>
+          <li>When you are done, save your GPML file.</li>
+          <li>Drag-and-drop the GPML file below to check if it is correct.</li>
+          </ul>
+          <br />
+        <div id="upload-target-container"></div> 
+        <div id="next-button">
+		<a href="../met-1-description/index.html" class="btn btn-info btn-lg pull-right">Next step</a>
+		</div>
+
+                  <!--<form id="wp-add-literature">
+                          Provide your username and the WPID
+                          of the pathway you edited, e.g, WP3917:
+                          <br />
+                          <input type="text" name="username" value="" placeholder="Username"><br />
+                          <input type="text" name="wpid" value="" placeholder="WPID"><br />
+                  </form>
+
+                  <button id="wp-add-literature-button">Verify</button>-->
+	</div>
+	
+
+<!--	<div class="results" id="success" style="display:none;">
+		<h2>Result</h2>
+		<p>You did it! In the final step, you will add a tag to your pathway.</p>
+	</div>
+	 <div class="results" id="error" style="display:none;">
+		 <h2>Result</h2>
+		 <p>Hmm... something went wrong. Try again.</p>
+	 </div>
+		<br /> <br /> <br />-->
+	</section>
+	    </div>
+	  </div>
+      
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- <script type="text/javascript" src="https://www.sciencegamelab.org/js/sciapi.js"></script> -->
+    <!-- <script type="text/javascript" src="../../javascripts/sgl-init.js"></script> -->
+    <!-- <script type="text/javascript" src="../../javascripts/sgl.js"></script> -->
+    <script type="text/javascript" src="../../javascripts/download-jnlp.js"></script>
+    <script type="text/javascript" src="../../javascripts/file-dragger.js"></script>
+    <script type="text/javascript" src="../../javascripts/validate-gpml.js"></script>
+      
+  
+<!--    <script type="text/javascript">
+      function passValueForward() {
+	// set verfication form field for user convenience
+	var wpid= $('[name=wpidload]').val(); 
+	$('[name=wpid]').val(wpid);
+        }
+    </script>
+ <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-1605246-2', 'auto');
+  ga('send', 'pageview');
+
+</script> -->
+    <script type="text/javascript">
+      window.wpAcademy.validateGPML({
+	uploadTargetContainerSelector: '#upload-target-container',
+        validate: 'advanced-literature-reference-solution.gpml', 
+         action: 'advanced-add-literature',
+         points: 5
+      });
+    </script>
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-1605246-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+      
+    </body>
+</html>
