@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Pathway xmlns="http://pathvisio.org/GPML/2013a" Name="Pathways of carbon metabolism" Version="20240909" Organism="Saccharomyces cerevisiae">
+  <BiopaxRef>b5c</BiopaxRef>
+  <Graphics BoardWidth="538.75" BoardHeight="355.25" />
+  <DataNode TextLabel="HXK1" GraphId="f7e9c" Type="GeneProduct" GroupRef="ea9b7">
+    <Graphics CenterX="179.5" CenterY="121.0" Width="61.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" />
+    <Xref Database="Entrez Gene" ID="850614" />
+  </DataNode>
+  <DataNode TextLabel="glucose" GraphId="fd9b5" Type="Metabolite">
+    <Graphics CenterX="293.75" CenterY="98.75" Width="90.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" Color="0000ff" />
+    <Xref Database="ChEBI" ID="CHEBI:17234" />
+  </DataNode>
+  <DataNode TextLabel="Glucose 6-phosphate" GraphId="cbfe6" Type="Metabolite">
+    <Graphics CenterX="293.75" CenterY="210.75" Width="134.75" Height="25.0" ZOrder="32769" FontSize="12" Valign="Middle" Color="0000ff" />
+    <Xref Database="HMDB" ID="HMDB01401" />
+  </DataNode>
+  <DataNode TextLabel="HXK2" GraphId="d0e74" Type="GeneProduct" GroupRef="ea9b7">
+    <Graphics CenterX="179.5" CenterY="146.0" Width="61.0" Height="25.0" ZOrder="32770" FontSize="12" Valign="Middle" />
+    <Xref Database="Entrez Gene" ID="852639" />
+  </DataNode>
+  <DataNode TextLabel="GLK1" GraphId="cc310" Type="GeneProduct" GroupRef="ea9b7">
+    <Graphics CenterX="179.5" CenterY="171.0" Width="61.0" Height="25.0" ZOrder="32771" FontSize="12" Valign="Middle" />
+    <Xref Database="Entrez Gene" ID="850317" />
+  </DataNode>
+  <Interaction>
+    <Graphics ZOrder="12288" LineThickness="1.0">
+      <Point X="293.75" Y="111.25" GraphRef="fd9b5" RelX="0.0" RelY="1.0" />
+      <Point X="293.75" Y="198.25" GraphRef="cbfe6" RelX="0.0" RelY="-1.0" ArrowHead="Arrow" />
+      <Anchor Position="0.4" Shape="None" GraphId="b9834" />
+    </Graphics>
+    <Xref Database="" ID="" />
+  </Interaction>
+  <Interaction>
+    <Graphics ZOrder="12288" LineThickness="1.0">
+      <Point X="218.0" Y="146.0" GraphRef="bf650" RelX="1.0" RelY="0.0" />
+      <Point X="293.75" Y="146.05" GraphRef="b9834" RelX="0.0" RelY="0.0" ArrowHead="mim-catalysis" />
+    </Graphics>
+    <Xref Database="" ID="" />
+  </Interaction>
+  <Group GroupId="ea9b7" GraphId="bf650" Style="Group" />
+  <InfoBox CenterX="0.0" CenterY="0.0" />
+  <Biopax>
+    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="b5c">
+      <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10.1201/9780203503867</bp:ID>
+      <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI</bp:DB>
+      <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Metabolism and Molecular Physiology of Saccharomyces Cerevisiae</bp:TITLE>
+      <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></bp:SOURCE>
+      <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2004</bp:YEAR>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">J. Richard Dickinson</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Michael Schweizer</bp:AUTHORS>
+    </bp:PublicationXref>
+  </Biopax>
+</Pathway>
+
