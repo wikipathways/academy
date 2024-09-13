@@ -40,7 +40,7 @@
 
           <h2>Background</h2>
 	  <p>
-	  WikiPathways allows you to add references at the pathway level, as well as to individual nodes and interactions. PubMed references can <a href="https://academy.wikipathways.org/stages/met-1-add-literature/" target="_blank">easily be added via PathVisio</a>, but references from other sources 
+	  WikiPathways allows you to add references to your pathway, either to individual nodes and interactions or to the pathway as a whole. PubMed references can <a href="https://academy.wikipathways.org/stages/met-1-add-literature/" target="_blank">easily be added via PathVisio</a>, but references from other sources 
           such as ISBN and DOI, must be added in a semi-manual way, described here. References must be added in a structured format, and the minimum amount of information needed is an <b>identifier</b> and the corresponding <b>database</b>, or id type. The following types of references are currently supported: </p>
           
       <table style="width: 500px;">
@@ -69,7 +69,7 @@
             
       <h2>Challenge</h2>
 	  <p>
-	  Add a DOI literature reference for <a href="https://www.taylorfrancis.com/books/edit/10.1201/9780203503867/metabolism-molecular-physiology-saccharomyces-cerevisiae-michael-schweizer-richard-dickinson" target="_blank">Metabolism and Molecular Physiology of Saccharomyces Cerevisiae</a> to your pathway.
+	  Add a DOI literature reference for <a href="https://www.taylorfrancis.com/books/edit/10.1201/9780203503867/metabolism-molecular-physiology-saccharomyces-cerevisiae-michael-schweizer-richard-dickinson" target="_blank">Metabolism and Molecular Physiology of Saccharomyces Cerevisiae</a> to a pathway.
 	  </p> 
 	<div>
           <ul>
@@ -78,7 +78,7 @@
         <li>Select the <b>Literature</b> tab and click the <b>New reference</b> button.</li>
               <li>Enter the following information for the DOI reference:</li>
             <ul>
-                <li>Enter the DOI (10.1201/9780203503867) in the <b>PubMed</b> field.</li>
+                <li>Enter the DOI (10.1201/9780203503867) in the <b>PubMed</b> field. (Do <b>NOT</b> click <b>Query PubMed</b>).</li>
                 <li>Enter the title (Metabolism and Molecular Physiology of Saccharomyces Cerevisiae) in the <b>Title</b> field.</li>
                 <li>Enter the publication year (2004) in the <b>Year</b> field.</li>
                 <li>Enter the author names (J. Richard Dickinson, Michael Schweizer) in the <b>Authors</b> field, separated by semicolon.</li>
@@ -87,7 +87,9 @@
         <li>Click <b>Ok</b> to exit out of the <b>Literature reference properties</b> interface, and save the gpml.</li>
         <li>Next, open the gpml in a text editor. We are going to edit the reference we just added.</li>
           <li>The literature reference we added earlier will be in the <code>Biopax</code> section of the GPML, which is usually at the end. The format of the reference should be as follows:</li>
-          <img src="biopax-lit-ref.png" width="1000px">
+          <br />
+	  <img src="biopax-lit-ref.png" width="1000px">
+	  <br />
           <li>Update the contents of the <code>bp:DB</code> tag from <b>PubMed</b> to <b>DOI</b>.</li>
           <li>When you are done, save your GPML file.</li>
           <li>Drag-and-drop the GPML file below to check if it is correct.</li>
