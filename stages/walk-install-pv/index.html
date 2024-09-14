@@ -51,9 +51,11 @@
                 <li><b>MacOS / Linux</b>: start PathVisio by running pathvisio.sh or double-click the pathvisio.jar file.</li>
             </ul></li>
 	<li>In PathVisio, go to <b>Plugins > Plugin manager</b>. Find the <b>BridgeDbConfig</b> plugin from the list of plugins on the left side.</li> 
-        <li>Click the <b>Install</b> button to install.</li>
+    <li>Click the <b>Install</b> button to install.</li>
 	<li>Select <b>Data > Identifier mapping setup</b> and click <b>Add</b>. In the interface select <b>BridgeRest webservice</b> in the left sidebar.</li>
-	<li>In the <b>Species</b> drop-down, select "Homo sapiens", then click <b>OK</b>. Exit the <b>BridgeDb Configuration</b> interface by clicking <b>OK</b>.</li>
+    <li>For <b>Base URL</b>, update it to "https://webservice.bridgedb.org" (note the "s" after http). For <b>Port</b>, update to "443".</li>
+    <li>Because of a bug in the interface, you then have to click <b>Cancel</b>, and reopen the interface by clicking <b>Add</b> again.</li>
+	<li>In the <b>Species</b> drop-down, select "Homo sapiens", then click <b>OK</b>. Exit the <b>BridgeDb Configuration</b> interface by clicking <b>OK</b>. If you encounter problems here, see </li>
         <h2>Install the WikiPathways plugin</h2>
 	<li>In PathVisio, go to <b>Plugins > Plugin manager</b>. Find the <b>WikiPathways</b> plugin from the list of plugins on the left side.</li> 
         <li>Click the <b>Install</b> button to install.</li>
