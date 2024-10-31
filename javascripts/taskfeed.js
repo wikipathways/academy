@@ -34,26 +34,11 @@ $(document).ready(function(){
 	if(!wpid.includes("WP")){console.log('Invalid wpid: '+wpid); return;}
 	$('#next-pathway').html("Loading next pathway...");
 	$('[name=wpid]').val(wpid); 
-	$.ajax({
-		type: 'GET',
-		url: 'https://webservice.wikipathways.org/getPathwayAs?fileType=png&pwId='+wpid+'&revision=0',
-		dataType: 'text',
-		success: function (data) {
-			//console.log(data);
-			var png = $(data).find('ns1\\:data, data').text();
-			$('#next-pathway').html('<a href="'+nextlist[count].url+
-				'"target="_blank"><img width="600px" src="data:image/png;base64,'+png+'" />');
-			$('#pathway-info').html('Title: <a href="'+nextlist[count].url+
+	$('#pathway-info').html('Title: <a href="'+nextlist[count].url+
 						'"target="_blank"><b>'+nextlist[count].name+
 						'</b></a> ('+nextlist[count].id+')'+
 						'<br />Species: '+nextlist[count].species+
 						'<br /><br />');
-						
-		},
-                error: function (error) {
-                        console.log(error);
-                }
-        });
   }	
 
 	  
