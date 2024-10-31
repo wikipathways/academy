@@ -33,6 +33,7 @@ $(document).ready(function(){
 	var wpid = nextlist[count].id;
 	if(!wpid.includes("WP")){console.log('Invalid wpid: '+wpid); return;}
 	$('[name=wpid]').val(wpid); 
+	$('#next-pathway').html("");
 	$('#pathway-info').html('Title: <a href="'+nextlist[count].url+
 						'"target="_blank"><b>'+nextlist[count].name+
 						'</b></a> ('+nextlist[count].id+')'+
