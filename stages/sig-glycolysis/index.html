@@ -22,7 +22,7 @@
       <div class="inner">
         <h1>WikiPathways Academy</h1>
         <h2>Organized training challenges for new WikiPathways authors</h2>
-	<a href="../../path.html" class="button"><small>Return to</small>Overview</a>
+	 <a href="../../path.html" class="button"><small>Return to</small>Overview</a>
       </div>
     </header>
 
@@ -32,52 +32,46 @@
           <h1>
             <a id="intro" class="anchor" href="#intro" aria-hidden="true">
               <span aria-hidden="true" class="octicon octicon-link">
-                Signaling Pathway - Nucleus and Trannscription Factors
-                </span>
+                Signaling Pathway - Glycolysis
+              </span>
             </a>
           </h1>
 
           <h2>Background</h2>
-
-          <p>
-		  </p>
-
+          <p></p>
           <h2>Your Mission</h2>
           <p>Draw the part of the pathway outlined in red below:</p>
-          <img src="40001_2024_1708_Fig2_HTML-transcription.jpg" width="500px">
+          <img src="40001_2024_1708_Fig2_HTML-glycolysis.jpg" width="500px">
           <ul>
-            <!--<li>Download the starter pathway here: <a href="https://academy.wikipathways.org/data/draw-transcriptiontranslation-start.gpml">draw-transcriptiontranslation-start.gpml</a>.</li>
-            <li>Launch PathVisio and open the dowloaded file or your draft pathway file via <b>File > Open</b>.</li>
-    		  <li>Perform the challenge tasks:</li>-->
-                <ul>
-                <li>Move FOXO1, SREBF1 and MLXIPL(official name for ChREBP) nodes into the center of the pathway, to the right of the signaling cascade.</li>
-                <li>Select the SREBF1 and MLXIPL nodes and stack them horizontally, then group them.</li>
-                <li>Add inhibition from the AKT1/2/3 group to FOXO1. To make it an arrow like in the figure, right-click on the interaction and select <b>Line type > Elbow</b>.</li>
-                <li>Add a pathway node for "Gluconeogenesis", and annotate it manually using "WP534" as the identifier and "WikiPathways" as the database.</li>
-                <li>Add another pathway node for "De novo lipigenesis". Since there is no pathway model at WikiPathways describing this process, leave the identifier and database empty.</li>
-                <li>Add <b>arrow</b> interaction from FOXO1 to the Gluconeogenesis node.</li>
-                <li>Add arrow from the SREBP1/MLXIPL group to the De novo lipogenesis node.</li>
-                <li>Select the <b>Nucleus</b> object from the <b>Objects</b> panel or the toolbar.</li>
-                <li>Click on the canvas to place the object.</li>
-                <li>With the Nucleus object selected, use the yellow resize targets to change the size of the object to fit the FOXO1, SREBP1 and MLXIPL nodes.</li>
-                <li>With the cell object selected, click and drag anywhere on the object outline to position it over the entire catalysis reaction.</li>
-                <li>Select the Nucleus object and in the <p>Properties</p> panel, type in "Nucleus" for <b>Text Label</b>.</li>
-                <li>Under <b>Vertical Alignment</b>, select "Bottom".</li>
-              </ul>
-            <li>When you have completed the challenge, save your work as a GPML file under <b>File > Save As</b>.</li>
+            <!--<li>Download the starter pathway here: <a href="https://academy.wikipathways.org/data/fig-met-1-fourth-start.gpml">fig-met-1-fourth-start.gpml</a>.</li>
+              <li>Launch PathVisio and open the dowloaded file or your draft pathway file via <b>File > Open</b>.</li>-->
+            <li>Add a metabolite node for "Glucose-6-phosphate".</li>
+            <li>Connect the glucose node to Glucose-6-phosphate with a <b>mim-conversion</b> interaction.</li>
+            <li>Add an anchor to the interaction and connect the enzyme (GCK) and inhiibitor (GCKR) with <b>mim-catalysis</b> and <b>mim-inhibition</b> interactions, respectively.</li>
+            <li>Connect Glucose-6-phosphate with Pyruvate using a <b>mim-conversion</b> interaction.</li>
+            <li>Update the text label for the node with ChEBI ID 57288 (Actyl-CoA) node to "Acetyl-CoA". Repeat for the node with ChEBI ID 57384 (Malonyl-CoA), updating the label to "Malonyl-CoA".</li>
+            <li>Connect Pyruvate with Acetyl-CoA using a <b>mim-conversion</b> interaction.</li>
+            <li>Update the text label for the node with ChEBI ID 26607 (SFA) node to "SFA". Repeat for the node with ChEBI ID 25413 (MUFA), updating the label to "MUFA".</li>
+            <li>Group the ACACA and ACACB nodes.</li>
+            <li>Complete the remaining steps in the smae way, adding <b>mim-conversion</b> interactions and enzymes.</li>
+            <li>Save your work as a GPML file under <b>File > Save As</b>.</li>
             <li>Drag-and-drop the GPML file below to check if it is correct.</li>
           </ul>
-            
+		
+
           <div id="upload-target-container"></div>  
-	  <div id="next-button">
-		 <a href="../sig-glycolysis/" class="btn btn-info btn-lg pull-right">Next step</a></div>
+
           <br>  
-          <br> 
-	  <!--<p><a href="draw-transcriptiontranslation-solution.gpml">Click to download solution file (For Testing Only)</a>
-	  </p>-->
+          
+	<div id="next-button">
+	<a href="../sig-final/index.html" class="btn btn-info btn-lg pull-right">Next step</a>
+	</div>
+          
+	<!--<p><a href="fig-met-1-fourth-solution.gpml">Click to download solution file (For Testing Only)</a>
+	</p>-->
 		<br /> <br /> <br />
 	      </section>
-          </div> 
+      </div> 
     </div>       
 
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -94,12 +88,12 @@
     <script type="text/javascript">
       window.wpAcademy.validateGPML({
 	uploadTargetContainerSelector: '#upload-target-container',
-        validate: 'sig-transcription-solution.gpml', 
-         action: 'sig-transcription',
-         points: 5
+        validate: 'sig-glycolysis-solution.gpml', 
+        action: 'sig-glycolysis',
+        points: 5
       });
     </script>
-<script>
+ <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -108,5 +102,5 @@
   ga('create', 'UA-1605246-2', 'auto');
   ga('send', 'pageview');
 
-</script>  </body>
+</script> </body>
 </html>
