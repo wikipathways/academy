@@ -32,7 +32,7 @@
           <h1>
             <a id="intro" class="anchor" href="#intro" aria-hidden="true">
               <span aria-hidden="true" class="octicon octicon-link">
-                Signaling Pathway - Phosphorylation
+                Signaling Pathway - Phosphorylation of IRS1
               </span>
             </a>
           </h1>
@@ -40,7 +40,7 @@
           <h2>Background</h2>
 
           <p>Protein phosphorylation is a common post-translational modification of proteins, which involves the addition of a phosphate group to specific amino acids of a
-            protein by enzymes called kinases. The phosphorylation of proteins affects their activity, either activating or inactivating them, and is a common theme in signal transduction cascades. In the case of the Glucose-insulin signaling pathway, the binding of Insulin to the insulin receptor (INSR) causes conformational changes and autophosphorylion which activates the insulin receptor. The <b>Insulin receptor substrate</b> (IRS1) can then bind the insulin receptor and is subsequently phosphorylated by INSR, which activates the protein, thus transmitting the signal to downstream pathways. Although the pathway figure appears to show phosphorylation of INSR, the article text actually mentions IRS1: <i>"Insulin controls glucose metabolism and results in glucose uptake through the phosphorylation of insulin receptor substrate...."</i>, so we will model this phosphorylation.</p>
+            protein by enzymes called kinases. The phosphorylation of proteins affects their activity, either activating or inactivating them, and is a common theme in signal transduction cascades. In the case of the Glucose-insulin signaling pathway, the binding of Insulin to the insulin receptor (INSR) causes conformational changes and autophosphorylion which activates the insulin receptor. The <b>Insulin receptor substrate</b> (IRS1) can then bind the insulin receptor and is subsequently phosphorylated by INSR, which activates the protein, thus transmitting the signal to downstream pathways. Although the pathway figure appears to show phosphorylation of INSR, the article text actually mentions IRS1: <i>"Insulin controls glucose metabolism and results in glucose uptake through the phosphorylation of insulin receptor substrate...."</i>, so we will model this phosphorylation. It is not uncommon that information in pathway figures in publications differ from the information in the article text, so it is important to read the article in full and cross-check all information.</p>
               
             <p>WikiPathways models allow for the addition of a number of <b>State</b> objects to any <b>DataNode</b>, which can be used to depict not only phosphorylation of specific
             amino acid residues, but also other post-translational modifications. In addition to indicating that a protein is phosphorylated, we have developed a method for 
@@ -57,7 +57,7 @@
             <li>Select the State object and in the <b>Properties</b> panel, enter "P" under <b>Text Label</b>.</li>
 		    <li>Next, we will add a <b>structured comment</b> to the state, to describe the details of the phosphorylation site and to enable data mapping. The information added will be based on the <a href="https://www.phosphosite.org/siteAction.action?id=1447">PhosphoSitePlus information for Tyr896 of IRS1</a>, following these <a href="../../docs/Modeling Phosphorylation Site Information in WikiPathways.pdf" target="_blank">instructions</a>.</li>
             <li>Create the structured comment in a text editor or similar.</li>
-            <li>Double-click on the State object and in the interface that opens, select the <b>Comments</b> tab. Enter the structured comment here.</li>
+            <li>Double-click on the <b>State</b> object and in the interface that opens, select the <b>Comments</b> tab. Enter the structured comment here.</li>
             <li>Move the IRS1 and IRS2 nodes under the INSR node, and create a group of INSR1/INSR2.</li>
             <li>Add a <b>mim-stimulation</b> arrow from INSR to the IRS1/IRS2 group.</li>
             <li>Save your work as a GPML file under <b>File > Save As</b>.</li>
@@ -66,7 +66,7 @@
 
           <div id="upload-target-container"></div>  
 	  <div id="next-button">
-		 <a href="" class="btn btn-info btn-lg pull-right">Next step</a></div>
+		 <a href="../sig-cascade/index.html" class="btn btn-info btn-lg pull-right">Next step</a></div>
           <br>  
           <br> 
 		<br /> <br /> <br />
