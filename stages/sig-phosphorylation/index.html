@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="../../stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="../../stylesheets/print.css" media="print">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>WikiPathways Academy</title>
+</head>
+
+  <body>
+
+    <header id="banner">
+      <div class="inner">
+        <h1>WikiPathways Academy</h1>
+        <h2>Organized training challenges for new WikiPathways authors</h2>
+	<a href="../../path.html" class="button"><small>Return to</small>Overview</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1>
+            <a id="intro" class="anchor" href="#intro" aria-hidden="true">
+              <span aria-hidden="true" class="octicon octicon-link">
+                Signaling Pathway - Phosphorylation
+              </span>
+            </a>
+          </h1>
+
+          <h2>Background</h2>
+
+          <p>Protein phosphorylation is a common post-translational modification of proteins, which involves the addition of a phosphate group to specific amino acids of a
+            protein by enzymes called kinases. The phosphorylation of proteins affects their activity, either activating or inactivating them, and is a common theme in signal transduction cascades. In the case of the Glucose-insulin signaling pathway, the binding of Insulin to the insulin receptor (INSR) causes conformational changes and autophosphorylion which activates the insulin receptor. The <b>Insulin receptor substrate</b> (IRS1) can then bind the insulin receptor and is subsequently phosphorylated by INSR, which activates the protein, thus transmitting the signal to downstream pathways. Although the pathway figure appears to show phosphorylation of INSR, the article text actually mentions IRS1: <i>"Insulin controls glucose metabolism and results in glucose uptake through the phosphorylation of insulin receptor substrate...."</i>, so we will model this phosphorylation.</p>
+              
+            <p>WikiPathways models allow for the addition of a number of <b>State</b> objects to any <b>DataNode</b>, which can be used to depict not only phosphorylation of specific
+            amino acid residues, but also other post-translational modifications. In addition to indicating that a protein is phosphorylated, we have developed a method for 
+            adding specific site information to states on nodes in a way that is amenable to data mapping in tools like <a href="https://cytoscape.org/" target="_blank">Cytoscape</a>. The information is added as a <b>structured comment</b>. The process of protein phosphorylation by a kinase can be depicted in different ways, with varying degrees of detail. We will use a simplified style to indicate the phosphorylation of IRS1 by INSR usinf an arrow interaction directly from the INSR to IRS1 to indicate the activation caused by the phosphorylation, and a State node added to the IRS1 node.</p>
+<!--            <img src="phosphorylation-process.png" width="50%">-->
+
+          <h2>Your Mission</h2>
+          <p>Model the phosphorylation of IRS1 by INSR, by adding one <b>State</b> node for for Tyrosine 896 and add a structured comment to the state describing the phosphorylation event:</p>
+		  <ul>
+           <!-- <li>Download the starter pathway here: <a href="https://academy.wikipathways.org/data/draw-protein-phosphorylation-start.gpml">draw-protein-phosphorylation-start.gpml</a>.</li>
+            <li>Launch PathVisio and open the dowloaded file via <b>File > Open</b>.</li>-->
+            <li>Start with your draft pathway from the previous step.</li>
+		    <li>Right-click on the IRS1 node and select <b>Add State....</b> from the context menu.</li>
+            <li>Select the State object and in the <b>Properties</b> panel, enter "P" under <b>Text Label</b>.</li>
+		    <li>Next, we will add a <b>structured comment</b> to the state, to describe the details of the phosphorylation site and to enable data mapping. The information added will be based on the <a href="https://www.phosphosite.org/siteAction.action?id=1447">PhosphoSitePlus information for Tyr896 of IRS1</a>, following these <a href="../../docs/Modeling Phosphorylation Site Information in WikiPathways.pdf" target="_blank">instructions</a>.</li>
+            <li>Create the structured comment in a text editor or similar.</li>
+            <li>Double-click on the State object and in the interface that opens, select the <b>Comments</b> tab. Enter the structured comment here.</li>
+            <li>Move the IRS1 and IRS2 nodes under the INSR node, and create a group of INSR1/INSR2.</li>
+            <li>Add a <b>mim-stimulation</b> arrow from INSR to the IRS1/IRS2 group.</li>
+            <li>Save your work as a GPML file under <b>File > Save As</b>.</li>
+            <li>Drag-and-drop the GPML file below to check if it is correct.</li>
+          </ul>
+
+          <div id="upload-target-container"></div>  
+	  <div id="next-button">
+		 <a href="" class="btn btn-info btn-lg pull-right">Next step</a></div>
+          <br>  
+          <br> 
+		<br /> <br /> <br />
+	      </section>
+          </div> 
+    </div>       
+
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- <script type="text/javascript" src="https://www.sciencegamelab.org/js/sciapi.js"></script> -->
+    <!-- <script type="text/javascript" src="../../javascripts/sgl-init.js"></script> -->
+    <!-- <script type="text/javascript" src="../../javascripts/sgl.js"></script> -->
+    <script type="text/javascript" src="../../javascripts/download-jnlp.js"></script>
+    <script type="text/javascript" src="../../javascripts/file-dragger.js"></script>
+    <script type="text/javascript" src="../../javascripts/validate-gpml.js"></script>
+
+
+    <script type="text/javascript">
+      window.wpAcademy.validateGPML({
+	uploadTargetContainerSelector: '#upload-target-container',
+        validate: 'sig-phosphorylation-solution.gpml', 
+         action: 'sig-phosphorylation',
+         points: 5
+      });
+    </script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-1605246-2', 'auto');
+  ga('send', 'pageview');
+
+</script>  </body>
+</html>
