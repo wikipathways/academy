@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Pathway xmlns="http://pathvisio.org/GPML/2013a" Name="Glucose-insulin Signaling Pathway" Version="20241122" Organism="Homo sapiens">
+  <Graphics BoardWidth="1159.0" BoardHeight="966.0" />
+  <DataNode TextLabel="SLC2A2" GraphId="f52e8" Type="GeneProduct">
+    <Graphics CenterX="593.75" CenterY="126.25" Width="90.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" />
+    <Xref Database="Ensembl" ID="ENSG00000163581" />
+  </DataNode>
+  <DataNode TextLabel="INSR" GraphId="f6bb5" Type="GeneProduct">
+    <Graphics CenterX="382.75" CenterY="155.75" Width="90.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" />
+    <Xref Database="Ensembl" ID="ENSG00000171105" />
+  </DataNode>
+  <DataNode TextLabel="GCK" GraphId="a3b18" Type="GeneProduct">
+    <Comment>OCR lexicon match: GCK</Comment>
+    <Graphics CenterX="941.0" CenterY="217.0" Width="90.0" Height="25.0" ZOrder="33001" FontSize="12" Valign="Middle" />
+    <Xref Database="Entrez Gene" ID="2645" />
+  </DataNode>
+  <DataNode TextLabel="IRS1" GraphId="cbcec" Type="GeneProduct" GroupRef="c163f">
+    <Comment>OCR lexicon match: IRS1</Comment>
+    <Graphics CenterX="379.0" CenterY="238.0" Width="90.0" Height="25.0" ZOrder="33004" FontSize="12" Valign="Middle" />
+    <Xref Database="Entrez Gene" ID="3667" />
+  </DataNode>
+  <DataNode TextLabel="IRS2" GraphId="bf834" Type="GeneProduct" GroupRef="c163f">
+    <Comment>OCR lexicon match: IRS2</Comment>
+    <Graphics CenterX="379.0" CenterY="263.0" Width="90.0" Height="25.0" ZOrder="33005" FontSize="12" Valign="Middle" />
+    <Xref Database="Entrez Gene" ID="8660" />
+  </DataNode>
+  <DataNode TextLabel="ENPP1" GraphId="d6bbb" Type="GeneProduct">
+    <Comment>OCR lexicon match: ENPP1</Comment>
+    <Graphics CenterX="253.0" CenterY="313.0" Width="90.0" Height="25.0" ZOrder="33006" FontSize="12" Valign="Middle" />
+    <Xref Database="Entrez Gene" ID="5167" />
+  </DataNode>
+  <DataNode TextLabel="GCKR" GraphId="ceb25" Type="GeneProduct">
+    <Comment>OCR lexicon match: GCKR</Comment>
+    <Graphics CenterX="945.0" CenterY="135.0" Width="90.0" Height="25.0" ZOrder="33007" FontSize="12" Valign="Middle" />
+    <Xref Database="Entrez Gene" ID="2646" />
+  </DataNode>
+  <DataNode TextLabel="GSK3A" GraphId="acf27" Type="GeneProduct" GroupRef="ace68">
+    <Comment>OCR lexicon match: GSK3</Comment>
+    <Graphics CenterX="202.0" CenterY="540.0" Width="90.0" Height="25.0" ZOrder="33009" FontSize="12" Valign="Middle" />
+    <Xref Database="Entrez Gene" ID="2931" />
+  </DataNode>
+  <DataNode TextLabel="GSK3B" GraphId="ee43b" Type="GeneProduct" GroupRef="ace68">
+    <Comment>OCR lexicon match: GSK3</Comment>
+    <Graphics CenterX="202.0" CenterY="565.0" Width="90.0" Height="25.0" ZOrder="33010" FontSize="12" Valign="Middle" />
+    <Xref Database="Entrez Gene" ID="2932" />
+  </DataNode>
+  <DataNode TextLabel="AKT1" GraphId="fa6db" Type="GeneProduct" GroupRef="c22b0">
+    <Comment>OCR lexicon match: AKT</Comment>
+    <Graphics CenterX="382.0" CenterY="527.0" Width="90.0" Height="25.0" ZOrder="33011" FontSize="12" Valign="Middle" />
+    <Xref Database="Entrez Gene" ID="207" />
+  </DataNode>
+  <DataNode TextLabel="AKT2" GraphId="cc3ec" Type="GeneProduct" GroupRef="c22b0">
+    <Comment>OCR lexicon match: AKT</Comment>
+    <Graphics CenterX="382.0" CenterY="552.0" Width="90.0" Height="25.0" ZOrder="33012" FontSize="12" Valign="Middle" />
+    <Xref Database="Entrez Gene" ID="208" />
+  </DataNode>
+  <DataNode TextLabel="AKT3" GraphId="c2ae3" Type="GeneProduct" GroupRef="c22b0">
+    <Comment>OCR lexicon match: AKT</Comment>
+    <Graphics CenterX="382.0" CenterY="577.0" Width="90.0" Height="25.0" ZOrder="33013" FontSize="12" Valign="Middle" />
+    <Xref Database="Entrez Gene" ID="10000" />
+  </DataNode>
+  <DataNode TextLabel="FOXO1" GraphId="acda9" Type="GeneProduct">
+    <Comment>OCR lexicon match: FOXO1</Comment>
+    <Graphics CenterX="546.0" CenterY="678.0" Width="90.0" Height="25.0" ZOrder="33016" FontSize="12" Valign="Middle" />
+    <Xref Database="Entrez Gene" ID="2308" />
+  </DataNode>
+  <DataNode TextLabel="ACACA" GraphId="f0a87" Type="GeneProduct">
+    <Comment>OCR lexicon match: ACC</Comment>
+    <Graphics CenterX="968.0" CenterY="492.0" Width="90.0" Height="25.0" ZOrder="33017" FontSize="12" Valign="Middle" />
+    <Xref Database="Entrez Gene" ID="31" />
+  </DataNode>
+  <DataNode TextLabel="ACACB" GraphId="fc49c" Type="GeneProduct">
+    <Comment>OCR lexicon match: ACC</Comment>
+    <Graphics CenterX="968.0" CenterY="542.0" Width="90.0" Height="25.0" ZOrder="33019" FontSize="12" Valign="Middle" />
+    <Xref Database="Entrez Gene" ID="32" />
+  </DataNode>
+  <DataNode TextLabel="SREBF1" GraphId="c5148" Type="GeneProduct" GroupRef="aa091">
+    <Comment>OCR lexicon match: SREBP1</Comment>
+    <Graphics CenterX="648.0" CenterY="604.0" Width="90.0" Height="25.0" ZOrder="33020" FontSize="12" Valign="Middle" />
+    <Xref Database="Entrez Gene" ID="6720" />
+  </DataNode>
+  <DataNode TextLabel="MLXIPL" GraphId="b80e7" Type="GeneProduct" GroupRef="aa091">
+    <Comment>OCR lexicon match: CHREBP</Comment>
+    <Graphics CenterX="738.0" CenterY="604.0" Width="90.0" Height="25.0" ZOrder="33021" FontSize="12" Valign="Middle" />
+    <Xref Database="Entrez Gene" ID="51085" />
+  </DataNode>
+  <DataNode TextLabel="FASN" GraphId="bd371" Type="GeneProduct">
+    <Comment>OCR lexicon match: FASN</Comment>
+    <Graphics CenterX="1084.0" CenterY="177.0" Width="90.0" Height="25.0" ZOrder="33022" FontSize="12" Valign="Middle" />
+    <Xref Database="Entrez Gene" ID="2194" />
+  </DataNode>
+  <DataNode TextLabel="SCD" GraphId="b889b" Type="GeneProduct">
+    <Comment>OCR lexicon match: SCD1</Comment>
+    <Graphics CenterX="1082.0" CenterY="227.0" Width="90.0" Height="25.0" ZOrder="33023" FontSize="12" Valign="Middle" />
+    <Xref Database="Entrez Gene" ID="6319" />
+  </DataNode>
+  <DataNode TextLabel="Insulin" GraphId="c6b17" Type="Metabolite">
+    <Comment>OCR lexicon match: Insulin</Comment>
+    <Graphics CenterX="382.0" CenterY="72.0" Width="90.0" Height="25.0" ZOrder="33024" FontSize="12" Valign="Middle" Color="0000ff" />
+    <Xref Database="ChEBI" ID="5931" />
+  </DataNode>
+  <DataNode TextLabel="Glucose" GraphId="de44e" Type="Metabolite">
+    <Comment>OCR lexicon match: Glucose</Comment>
+    <Graphics CenterX="674.0" CenterY="76.0" Width="90.0" Height="25.0" ZOrder="33025" FontSize="12" Valign="Middle" Color="0000ff" />
+    <Xref Database="ChEBI" ID="42758" />
+  </DataNode>
+  <DataNode TextLabel="Glucose" GraphId="a7d0f" Type="Metabolite">
+    <Comment>OCR lexicon match: Glucose</Comment>
+    <Graphics CenterX="674.0" CenterY="195.0" Width="90.0" Height="25.0" ZOrder="33026" FontSize="12" Valign="Middle" Color="0000ff" />
+    <Xref Database="ChEBI" ID="42758" />
+  </DataNode>
+  <DataNode TextLabel="pyruvate" GraphId="e4c5d" Type="Metabolite">
+    <Comment>OCR lexicon match: Pyruvate</Comment>
+    <Graphics CenterX="1063.0" CenterY="276.0" Width="90.0" Height="25.0" ZOrder="33027" FontSize="12" Valign="Middle" Color="0000ff" />
+    <Xref Database="ChEBI" ID="15361" />
+  </DataNode>
+  <DataNode TextLabel="3'-phosphonatoadenosine 5'-(3-{(3R)-4-[(3-{[2-(acetylsulfanyl)ethyl]amino}-3-oxopropyl)amino]-3-hydroxy-2,2-dimethyl-4-oxobutyl} diphosphate)" GraphId="a8eca" Type="Metabolite">
+    <Comment>OCR lexicon match: Acetyl-CoA</Comment>
+    <Graphics CenterX="1063.0" CenterY="326.0" Width="90.0" Height="25.0" ZOrder="33029" FontSize="12" Valign="Middle" Color="0000ff" />
+    <Xref Database="ChEBI" ID="57288" />
+  </DataNode>
+  <DataNode TextLabel="3'-phosphonatoadenosine 5'-{3-[(3R)-4-{[3-({2-[(3-carboxylatoacetyl)sulfanyl]ethyl}amino)-3-oxopropyl]amino}-3-hydroxy-2,2-dimethyl-4-oxobutyl] diphosphate}" GraphId="ad519" Type="Metabolite">
+    <Comment>OCR lexicon match: Malonyl-CoA</Comment>
+    <Graphics CenterX="1063.0" CenterY="376.0" Width="90.0" Height="25.0" ZOrder="33031" FontSize="12" Valign="Middle" Color="0000ff" />
+    <Xref Database="ChEBI" ID="57384" />
+  </DataNode>
+  <DataNode TextLabel="" GraphId="bd3d6" Type="Metabolite">
+    <Comment>OCR lexicon match: SFA</Comment>
+    <Graphics CenterX="1063.0" CenterY="401.0" Width="90.0" Height="25.0" ZOrder="33032" FontSize="12" Valign="Middle" Color="0000ff" />
+    <Xref Database="ChEBI" ID="26607" />
+  </DataNode>
+  <DataNode TextLabel="" GraphId="fd9e5" Type="Metabolite">
+    <Comment>OCR lexicon match: MUFA</Comment>
+    <Graphics CenterX="1063.0" CenterY="426.0" Width="90.0" Height="25.0" ZOrder="33033" FontSize="12" Valign="Middle" Color="0000ff" />
+    <Xref Database="ChEBI" ID="25413" />
+  </DataNode>
+  <DataNode TextLabel="PIK3CA" GraphId="f9956" Type="GeneProduct" GroupRef="a47dc">
+    <Graphics CenterX="427.4964167585442" CenterY="385.6651047409041" Width="90.0" Height="25.0" ZOrder="33041" FontSize="12" Valign="Middle" />
+    <Xref Database="Ensembl" ID="ENSG00000121879" />
+  </DataNode>
+  <DataNode TextLabel="PIK3CB" GraphId="b4643" Type="GeneProduct" GroupRef="a47dc">
+    <Graphics CenterX="427.4964167585442" CenterY="410.66510474090404" Width="90.0" Height="25.0" ZOrder="33042" FontSize="12" Valign="Middle" />
+    <Xref Database="Ensembl" ID="ENSG00000051382" />
+  </DataNode>
+  <DataNode TextLabel="PIK3CD" GraphId="a10e7" Type="GeneProduct" GroupRef="a47dc">
+    <Graphics CenterX="427.4964167585442" CenterY="435.6651047409041" Width="90.0" Height="25.0" ZOrder="33043" FontSize="12" Valign="Middle" />
+    <Xref Database="Ensembl" ID="ENSG00000171608" />
+  </DataNode>
+  <DataNode TextLabel="PIK3R1" GraphId="d7879" Type="GeneProduct" GroupRef="a47dc">
+    <Graphics CenterX="337.3200110253578" CenterY="398.02453142227125" Width="90.0" Height="25.0" ZOrder="33044" FontSize="12" Valign="Middle" />
+    <Xref Database="Ensembl" ID="ENSG00000145675" />
+  </DataNode>
+  <DataNode TextLabel="PIK3R2" GraphId="b918a" Type="GeneProduct" GroupRef="a47dc">
+    <Graphics CenterX="337.3200110253578" CenterY="423.02453142227125" Width="90.0" Height="25.0" ZOrder="33045" FontSize="12" Valign="Middle" />
+    <Xref Database="Ensembl" ID="ENSG00000105647" />
+  </DataNode>
+  <DataNode TextLabel="GYS1" GraphId="b92f6" Type="GeneProduct" GroupRef="d6de2">
+    <Graphics CenterX="202.09867695700132" CenterY="666.1135611907387" Width="90.0" Height="25.0" ZOrder="33046" FontSize="12" Valign="Middle" />
+    <Xref Database="Ensembl" ID="ENSG00000104812" />
+  </DataNode>
+  <DataNode TextLabel="GYS2" GraphId="bad01" Type="GeneProduct" GroupRef="d6de2">
+    <Graphics CenterX="202.09867695700132" CenterY="691.1135611907386" Width="90.0" Height="25.0" ZOrder="33047" FontSize="12" Valign="Middle" />
+    <Xref Database="Ensembl" ID="ENSG00000111713" />
+  </DataNode>
+  <DataNode TextLabel="Glycogen synthesis" GraphId="ea7f9" Type="Pathway">
+    <Graphics CenterX="202.09867695700075" CenterY="789.0848952590959" Width="123.28004410143329" Height="25.0" ZOrder="33048" FontWeight="Bold" FontSize="12" Valign="Middle" ShapeType="None" Color="14961e" />
+    <Xref Database="WikiPathways" ID="WP500" />
+  </DataNode>
+  <DataNode TextLabel="Gluconeogenesis" GraphId="a580e" Type="Pathway">
+    <Graphics CenterX="546.2828004410144" CenterY="462.8610804851157" Width="117.76736493936052" Height="25.0" ZOrder="33049" FontWeight="Bold" FontSize="12" Valign="Middle" ShapeType="None" Color="14961e" />
+    <Xref Database="WikiPathways" ID="WP534" />
+  </DataNode>
+  <DataNode TextLabel="De novo lipogenesis" GraphId="f76f2" Type="Pathway">
+    <Graphics CenterX="815.8781697905189" CenterY="498.50165380374864" Width="132.10033076074978" Height="25.0" ZOrder="33050" FontWeight="Bold" FontSize="12" Valign="Middle" ShapeType="None" Color="14961e" />
+    <Xref Database="" ID="" />
+  </DataNode>
+  <State GraphRef="cbcec" TextLabel="P" GraphId="ebcff">
+    <Comment>parentid=P35568; parentsymbol=IRS1; site=EPKsPGEyVNIEFGS; position=tyr896;
+sitegrpid=447556; ptm=p; direction=u</Comment>
+    <Graphics RelX="1.0" RelY="-0.76" Width="15.0" Height="15.0" ShapeType="Oval" />
+    <Xref Database="" ID="" />
+  </State>
+  <Interaction>
+    <Graphics ZOrder="12288" LineThickness="1.0">
+      <Point X="382.0" Y="84.5" GraphRef="c6b17" RelX="0.0" RelY="1.0" />
+      <Point X="382.75" Y="143.25" GraphRef="f6bb5" RelX="0.0" RelY="-1.0" ArrowHead="mim-binding" />
+    </Graphics>
+    <Xref Database="" ID="" />
+  </Interaction>
+  <Interaction>
+    <Graphics ZOrder="12288" LineThickness="1.0">
+      <Point X="674.0" Y="88.5" GraphRef="de44e" RelX="0.0" RelY="1.0" />
+      <Point X="674.0" Y="182.5" GraphRef="a7d0f" RelX="0.0" RelY="-1.0" ArrowHead="Arrow" />
+      <Anchor Position="0.4" Shape="None" GraphId="c87da" />
+    </Graphics>
+    <Xref Database="" ID="" />
+  </Interaction>
+  <Interaction>
+    <Graphics ZOrder="12288" LineThickness="1.0">
+      <Point X="638.75" Y="126.25" GraphRef="f52e8" RelX="1.0" RelY="0.0" />
+      <Point X="674.0" Y="126.1" GraphRef="c87da" RelX="0.0" RelY="0.0" ArrowHead="mim-catalysis" />
+    </Graphics>
+    <Xref Database="" ID="" />
+  </Interaction>
+  <Interaction>
+    <Graphics ZOrder="12288" LineThickness="1.0">
+      <Point X="382.75" Y="168.25" GraphRef="f6bb5" RelX="0.0" RelY="1.0" />
+      <Point X="382.75" Y="213.0" GraphRef="ad138" RelX="0.0" RelY="-1.0" ArrowHead="mim-stimulation" />
+    </Graphics>
+    <Xref Database="" ID="" />
+  </Interaction>
+  <Interaction>
+    <Graphics ZOrder="12288" LineThickness="1.0">
+      <Point X="253.0" Y="300.5" GraphRef="d6bbb" RelX="0.0" RelY="-1.0" />
+      <Point X="326.0" Y="248.25" GraphRef="ad138" RelX="-1.0" RelY="0.0" ArrowHead="mim-inhibition" />
+    </Graphics>
+    <Xref Database="" ID="" />
+  </Interaction>
+  <Interaction>
+    <Graphics ZOrder="12288" LineThickness="1.0">
+      <Point X="382.75" Y="283.5" GraphRef="ad138" RelX="0.0" RelY="1.0" />
+      <Point X="382.40821389195105" Y="361.1651047409041" GraphRef="da488" RelX="0.0" RelY="-1.0" ArrowHead="Arrow" />
+    </Graphics>
+    <Xref Database="" ID="" />
+  </Interaction>
+  <Interaction>
+    <Graphics ZOrder="12288" LineThickness="1.0">
+      <Point X="382.40821389195105" Y="460.1651047409041" GraphRef="da488" RelX="0.0" RelY="1.0" />
+      <Point X="382.0" Y="506.5" GraphRef="bd02c" RelX="0.0" RelY="-1.0" ArrowHead="Arrow" />
+    </Graphics>
+    <Xref Database="" ID="" />
+  </Interaction>
+  <Interaction>
+    <Graphics ZOrder="12288" LineThickness="1.0">
+      <Point X="329.0" Y="552.0" GraphRef="bd02c" RelX="-1.0" RelY="0.0" />
+      <Point X="255.0" Y="552.5" GraphRef="e7d15" RelX="1.0" RelY="0.0" ArrowHead="mim-inhibition" />
+    </Graphics>
+    <Xref Database="" ID="" />
+  </Interaction>
+  <Interaction>
+    <Graphics ZOrder="12288" LineThickness="1.0">
+      <Point X="202.0" Y="585.5" GraphRef="e7d15" RelX="0.0" RelY="1.0" />
+      <Point X="202.09867695700132" Y="645.6135611907387" GraphRef="f3472" RelX="0.0" RelY="-1.0" ArrowHead="Arrow" />
+    </Graphics>
+    <Xref Database="" ID="" />
+  </Interaction>
+  <Interaction>
+    <Graphics ZOrder="12288" LineThickness="1.0">
+      <Point X="202.09867695700132" Y="711.6135611907387" GraphRef="f3472" RelX="0.0" RelY="1.0" />
+      <Point X="202.09867695700075" Y="776.5848952590959" GraphRef="ea7f9" RelX="0.0" RelY="-1.0" ArrowHead="Arrow" />
+    </Graphics>
+    <Xref Database="" ID="" />
+  </Interaction>
+  <Interaction>
+    <Graphics ConnectorType="Elbow" ZOrder="12288" LineThickness="1.0">
+      <Point X="382.0" Y="597.5" GraphRef="bd02c" RelX="0.0" RelY="1.0" />
+      <Point X="501.0" Y="678.0" GraphRef="acda9" RelX="-1.0" RelY="0.0" ArrowHead="mim-inhibition" />
+    </Graphics>
+    <Xref Database="" ID="" />
+  </Interaction>
+  <Interaction>
+    <Graphics ZOrder="12288" LineThickness="1.0">
+      <Point X="546.0" Y="665.5" GraphRef="acda9" RelX="0.0" RelY="-1.0" />
+      <Point X="546.2828004410144" Y="475.3610804851157" GraphRef="a580e" RelX="0.0" RelY="1.0" ArrowHead="Arrow" />
+    </Graphics>
+    <Xref Database="" ID="" />
+  </Interaction>
+  <Interaction>
+    <Graphics ConnectorType="Elbow" ZOrder="12288" LineThickness="1.0">
+      <Point X="791.0" Y="604.0" GraphRef="f03cd" RelX="1.0" RelY="0.0" />
+      <Point X="815.8781697905189" Y="511.00165380374864" GraphRef="f76f2" RelX="0.0" RelY="1.0" ArrowHead="Arrow" />
+    </Graphics>
+    <Xref Database="" ID="" />
+  </Interaction>
+  <Shape TextLabel="Nucleus" GraphId="e8591">
+    <Attribute Key="org.pathvisio.CellularComponentProperty" Value="Nucleus" />
+    <Attribute Key="org.pathvisio.DoubleLineProperty" Value="Double" />
+    <Graphics CenterX="660.375" CenterY="654.375" Width="387.25" Height="229.25" ZOrder="16384" FontSize="12" Valign="Bottom" ShapeType="Oval" LineThickness="3.0" Color="c0c0c0" Rotation="0.0" />
+  </Shape>
+  <Group GroupId="c163f" GraphId="ad138" Style="Group" />
+  <Group GroupId="c22b0" GraphId="bd02c" Style="Group" />
+  <Group GroupId="ace68" GraphId="e7d15" Style="Group" />
+  <Group GroupId="aa091" GraphId="f03cd" Style="Group" />
+  <Group GroupId="d6de2" GraphId="f3472" Style="Group" />
+  <Group GroupId="a47dc" GraphId="da488" Style="Complex" />
+  <InfoBox CenterX="0.0" CenterY="0.0" />
+  <Biopax />
+</Pathway>
+
