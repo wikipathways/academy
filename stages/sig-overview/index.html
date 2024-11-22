@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="../../stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="../../stylesheets/print.css" media="print">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../../stylesheets/choice.css" media="screen" />
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>WikiPathways Academy</title>
+</head>
+
+  <body>
+
+    <header id="banner">
+      <div class="inner">
+        <h1>WikiPathways Academy</h1>
+        <h2>Organized training challenges for new WikiPathways authors</h2>
+	<a href="../../path.html" class="button"><small>Return to</small>Overview</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1>
+            <a id="intro" class="anchor" href="#intro" aria-hidden="true">
+              <span aria-hidden="true" class="octicon octicon-link">
+               Published Pathway Figure: Signaling Pathway - Getting Started 
+              </span>
+            </a>
+          </h1>
+
+          <h2>Background</h2>
+		<p>
+	  	This path desribes the process of authoring a pathway model from a published pathway figure. In this case, we will use a pathway figure from the <a href="https://pfocr.wikipathways.org/" target="_blank">Pathway Figure OCR</a> (PFOCR) project. Pathway Figure OCR is an open science project dedicated to extracting pathway information from the published literature. These instructions assume that you have everything you need to work with WikiPathways. [add links to setup and account creation] 
+	 	</p>
+        <p>We will focus on a pathway figure below, describing Glucose-Insulin signaling, from a publication by <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10953212/">Mahmoudi et al</a>. To model this pathway, we will use the corresponding <a href="https://pfocr.wikipathways.org/figures/PMC10953212__40001_2024_1708_Fig2_HTML.html">Pathway Figure OCR page for the figure</a> as well as the publication itself, and other resources. The first step, described below, is to access the genes and chemicals extracted by PFOCR to jump-start the pathway drawing process.</p>
+        <img src="40001_2024_1708_Fig2_HTML.jpg" width="500">
+        <h2>Getting Started</h2>
+            <ul>
+                <li>Launch PathVisio and load the human database and metabolite database.</li>
+                <li>Start a new pathway by selecting <b>File > New</b>. Close the <b>Pathway attributes</b> interface, and then reopen it by double-clicking on the <b>Pathway Information</b> area at the top left.</li>
+                <li>Enter "Glucose-insulin Signaling Pathway" as the pathway title and select "Homo saliens" as Organism.</li>
+                <li>Go to the <a href="https://pfocr.wikipathways.org/figures/PMC10953212__40001_2024_1708_Fig2_HTML.html">Pathway Figure OCR webpage for the figure</a>.</li>
+                <li>Scroll down to <b>Gene mentions</b> and click the curved arrow symbol <img src="copyarrow.png" width="20"> and select <b>Copy DataNodes for PathVisio</b>.</li>
+                <li>In PathVisio, select <b>Edit > Paste</b> to paste the nodes. This will produce a set of stacked data nodes, that are already annotated with external references.</li>
+                <li>Repeat the process for the <b>Chemical mentions</b> on the PFOCR page. The metabolite nodes may end up in the same location as the gene product nodes; if so move the stack of nodes by click-and-drag while it is still selected.</li>
+                <li>The information from PFOCR is not always accurate, meaning words in the figure may be matched incorrecrly to gene and chemical annotations. Because of this, the data node annotation needs to be double-checked, and corrections made. In our case, some of the data nodes are false positives and should be deleted in PathVisio. Go ahead and delete the following nodes: MAP4K2, FAM20C, MAP4K5, GNAS, GNAL, BMS1, ACC (metabolite) and Glycogen.</li>
+            </ul>
+        <div id="upload-target-container"></div>  
+	  <br /> 
+        <div id="next-button">
+		<a href="../fig-met-1-start/index.html" class="btn btn-info btn-lg pull-right">Next step</a></div>
+	     
+	
+	</section>
+	    </div>
+	  </div> 
+
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- <script type="text/javascript" src="https://www.sciencegamelab.org/js/sciapi.js"></script> -->
+    <!-- <script type="text/javascript" src="../../javascripts/sgl-init.js"></script> -->
+    <!-- <script type="text/javascript" src="../../javascripts/sgl.js"></script> -->
+    <script type="text/javascript" src="../../javascripts/choice.js"></script>
+
+    <script type="text/javascript">
+      window.wpAcademy.validateGPML({
+	uploadTargetContainerSelector: '#upload-target-container',
+        validate: 'sig-overview-solution.gpml', 
+         action: 'draw-transport',
+         points: 5
+      });
+    </script>
+      
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-1605246-2', 'auto');
+  ga('send', 'pageview');
+
+</script></body>
+</html>
