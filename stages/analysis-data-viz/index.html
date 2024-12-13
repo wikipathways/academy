@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="../../stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="../../stylesheets/print.css" media="print">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+    <title>WikiPathways Academy</title>
+</head>
+
+  <body>
+
+    <header id="banner">
+      <div class="inner">
+        <h1>WikiPathways Academy</h1>
+        <h2>Organized training challenges for new WikiPathways authors</h2>
+	<a href="../../path.html" class="button"><small>Return to</small>Overview</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          
+          <h1>
+            <a id="intro" class="anchor" href="#intro" aria-hidden="true">
+              <span aria-hidden="true" class="octicon octicon-link">
+                Pathway Data Visualization
+              </span>
+            </a>
+          </h1>
+            <p>Visualizing experimental data on pathway models is a powerful way of interpreting and communicating findings in the context of biological processes, for integrating different modes of data in a single visualization and for downstream network analysis. Links to tutorials describing how to visualize data on WikiPathways models in Cytoscape and PathVisio are available below.
+            <img src="CellCycleDataFinal.png" width="550px">
+            </p>
+            
+            <h2>Cytoscape</h2>
+            <p>WikiPathways models are available in <a href="https://cytoscape.org/" target="_blank">Cytoscape</a> via the <a href="https://apps.cytoscape.org/apps/wikipathways" target="_blank">WikiPathways app</a>. For a tutorial describing three different use cases, see the <a href="https://cytoscape.org/cytoscape-tutorials/protocols/wikipathways-app/#/title" target="_blank">Cytoscape WikiPathways App Tutorial</a>.</p>
+            
+            <h2>PathVisio</h2>
+            <p>PathVisio supports data visualization of WikiPathways models as described in the <a href="https://pathvisio.org/tutorials/visualization.html" target="_blank">Data visualization in PathVisio Tutorial</a>.
+                </p>
+            <br />
+	  <div id="next-button">
+		  <a href="../analysis-enrichment/index.html" class="btn btn-info btn-lg pull-right">Next</a></div>
+          <br>  
+          <br> 
+	  <!--<p><a href="draw-complex-solution.gpml">Click to download solution file (For Testing Only)</a>
+	  </p>-->
+		<br /> <br />
+	      </section>
+          </div> 
+    </div>       
+
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- <script type="text/javascript" src="https://www.sciencegamelab.org/js/sciapi.js"></script> -->
+    <!-- <script type="text/javascript" src="../../javascripts/sgl-init.js"></script> -->
+    <!-- <script type="text/javascript" src="../../javascripts/sgl.js"></script> -->
+    <script type="text/javascript" src="../../javascripts/download-jnlp.js"></script>  
+    <script type="text/javascript" src="../../javascripts/file-dragger.js"></script>
+    <script type="text/javascript" src="../../javascripts/validate-gpml.js"></script>
+
+    <script type="text/javascript">
+      window.wpAcademy.validateGPML({
+	uploadTargetContainerSelector: '#upload-target-container',
+        validate: 'draw-protein-families-solution.gpml', 
+         action: 'draw-protein-families',
+         points: 5
+      });
+      </script>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-48SCDLJ1HF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-48SCDLJ1HF');
+</script>
+  </body>
+</html>
