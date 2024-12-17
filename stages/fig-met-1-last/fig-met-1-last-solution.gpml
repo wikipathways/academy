@@ -115,6 +115,14 @@
     <Graphics CenterX="271.2531065267219" CenterY="492.87483411750503" Width="81.0" Height="25.0" ZOrder="32777" FontSize="12" Valign="Middle" Color="0000ff" />
     <Xref Database="ChEBI" ID="CHEBI:30744" />
   </DataNode>
+  <DataNode TextLabel="lipids" GraphId="c8e5a" Type="Metabolite" GroupRef="b4f7d">
+    <Graphics CenterX="648.0" CenterY="289.0" Width="90.0" Height="25.0" ZOrder="32785" FontSize="12" Valign="Middle" Color="0000ff" />
+    <Xref Database="ChEBI" ID="CHEBI:18059" />
+  </DataNode>
+  <DataNode TextLabel="fatty acids" GraphId="ffaa8" Type="Metabolite" GroupRef="b4f7d">
+    <Graphics CenterX="648.0" CenterY="316.0" Width="90.0" Height="25.0" ZOrder="32786" FontSize="12" Valign="Middle" Color="0000ff" />
+    <Xref Database="ChEBI" ID="CHEBI:35366" />
+  </DataNode>
   <Interaction GraphId="id1154a162">
     <Graphics ZOrder="12288" LineThickness="1.0">
       <Point X="193.38273615635174" Y="290.46742671009787" GraphRef="ee539" RelX="0.0" RelY="-1.0" />
@@ -212,7 +220,7 @@
   <Interaction GraphId="idaa11f5a0">
     <Graphics ZOrder="12288" LineStyle="Broken" LineThickness="1.0">
       <Point X="397.75310652672187" Y="424.624834117505" GraphRef="f730b" RelX="1.0" RelY="-0.5" />
-      <Point X="594.7531065267223" Y="303.874834117505" GraphRef="b4a3f" RelX="-1.0" RelY="0.0" ArrowHead="mim-conversion" />
+      <Point X="595.0" Y="302.5" GraphRef="d6cfa" RelX="-1.0" RelY="0.0" ArrowHead="mim-conversion" />
       <Anchor Position="0.6992593997983589" Shape="None" GraphId="db3f6" />
     </Graphics>
     <Xref Database="" ID="" />
@@ -220,7 +228,7 @@
   <Interaction GraphId="idb8a52776">
     <Graphics ZOrder="12288" LineThickness="1.0">
       <Point X="554.9364096120228" Y="365.467393101171" GraphRef="cc507" RelX="0.0" RelY="-1.0" />
-      <Point X="535.5072082869989" Y="340.18926159185315" GraphRef="db3f6" RelX="0.0" RelY="0.0" ArrowHead="mim-inhibition" />
+      <Point X="535.6798508689371" Y="339.2278959120243" GraphRef="db3f6" RelX="0.0" RelY="0.0" ArrowHead="mim-inhibition" />
     </Graphics>
     <Xref Database="" ID="" />
   </Interaction>
@@ -272,7 +280,7 @@
   <Interaction GraphId="idde3eaab1">
     <Graphics ZOrder="12288" LineThickness="1.0">
       <Point X="508.75310652672306" Y="309.374834117505" GraphRef="d1d7f" RelX="0.0" RelY="1.0" />
-      <Point X="535.5072082869989" Y="340.18926159185315" GraphRef="db3f6" RelX="0.0" RelY="0.0" ArrowHead="mim-catalysis" />
+      <Point X="535.6798508689371" Y="339.2278959120243" GraphRef="db3f6" RelX="0.0" RelY="0.0" ArrowHead="mim-catalysis" />
     </Graphics>
     <Xref Database="" ID="" />
   </Interaction>
@@ -322,9 +330,6 @@
     </Graphics>
     <Xref Database="" ID="" />
   </Interaction>
-  <Label TextLabel="Fatty acids and lipids" GraphId="b4a3f">
-    <Graphics CenterX="661.7531065267223" CenterY="303.874834117505" Width="134.0" Height="25.0" ZOrder="28672" FillColor="ffffff" FontWeight="Bold" FontSize="12" Valign="Middle" />
-  </Label>
   <Label TextLabel="Glycolysis" GraphId="c8832">
     <Graphics CenterX="261.34301270417416" CenterY="32.667876588021784" Width="90.0" Height="25.0" ZOrder="28672" FillColor="ffffff" FontWeight="Bold" FontSize="12" Valign="Middle" />
   </Label>
@@ -332,6 +337,7 @@
     <Graphics CenterX="372.97640653357547" CenterY="594.3920145190561" Width="90.0" Height="25.0" ZOrder="32780" FillColor="ffffff" FontWeight="Bold" FontSize="12" Valign="Middle" />
   </Label>
   <Group GroupId="e473f" GraphId="cc507" Style="Complex" TextLabel="AMPK" />
+  <Group GroupId="b4f7d" GraphId="d6cfa" Style="Group" />
   <InfoBox CenterX="0.0" CenterY="0.0" />
   <Biopax>
     <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="b84">
@@ -570,3 +576,4 @@
     </bp:PublicationXref>
   </Biopax>
 </Pathway>
+

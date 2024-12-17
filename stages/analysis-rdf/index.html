@@ -12,7 +12,7 @@
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-
+    
     <title>WikiPathways Academy</title>
 </head>
 
@@ -22,57 +22,35 @@
       <div class="inner">
         <h1>WikiPathways Academy</h1>
         <h2>Organized training challenges for new WikiPathways authors</h2>
-	 <a href="../../path.html" class="button"><small>Return to</small>Overview</a>
+	<a href="../../path.html" class="button"><small>Return to</small>Overview</a>
       </div>
     </header>
 
     <div id="content-wrapper">
       <div class="inner clearfix">
         <section id="main-content">
+          
           <h1>
             <a id="intro" class="anchor" href="#intro" aria-hidden="true">
               <span aria-hidden="true" class="octicon octicon-link">
-                Setting Pathway Information Free - Entry to Krebs Cycle
+                Functional Enrichment Analysis
               </span>
             </a>
           </h1>
-
-          <h2>Background</h2>
-          <p>In this task, you will add the entry to the Krebs cycle (citrate) and it's indirect conversion to fatty acids and lipids
-          (fatty acid synthase). 
-          </p>
-          <h2>Your Mission</h2>
-          <p>Draw the conversion reactions highlighted in the below figure. For this task, you can start with your own draft from the previous step, or a starter pathway.</p>
-          <ul>
-            <li>Download the starter pathway here: <a href="https://academy.wikipathways.org/data/fig-met-1-third-start.gpml">fig-met-1-third-start.gpml</a>.</li>
-            <li>Launch PathVisio and open the dowloaded file or your draft pathway file via <b>File > Open</b>.</li>
-                <li>Add a metabolite node for citrate.</li>
-                <li>Add two metabolite nodes, one for lipids and one for fatty acids. Group the two nodes.</li>
-                <li>Draw a mim-conversion interaction between the citrate node and the two grouped nodes, and add an anchor to the indirect arrow.</li>
-                <li>Add the gene product, FASN, and the mim-catalysis interaction.</li>
-                <li>Add two gene products, PRKAB1 and PRKAA2, and create a complex composed of the two nodes.</li>
-                <li>Add the mim-inhibition interaction (<img src="../../images/mim-inhibition-glyph.png">) from the complex to the indirect interaction.</li>
-                <li>Done!</li>
-              <li>Save your work as a GPML file under <b>File > Save As</b>.</li>
-            <li>Drag-and-drop the GPML file below to check if it is correct.</li>
-          </ul>
-	  <div><img src="fig-met-1-third-original.png" width="500px"></div>
-	
-          <div id="upload-target-container"></div>  
-
+            <p> 
+            <a href="https://sparql.wikipathways.org/" target="_blank">WikiPathways SPARL endpoint</a>.</p>
+<!--            <img src="shiny_results_res_gsea.png" width="450px">-->
+              
+            <br />
+	  <div id="next-button">
+		  <a href="../analysis-rdf/index.html" class="btn btn-info btn-lg pull-right">Next</a></div>
           <br>  
-          
-	
-          
-	<div id="next-button">
-	<a href="../fig-met-1-fourth/index.html" class="btn btn-info btn-lg pull-right">Next step</a>
-	</div>
-
-	  <!--<p><a href="fig-met-1-third-solution.gpml">Click to download solution file (For Testing Only)</a>
-	</p>-->
-		<br /> <br /> <br />
+          <br> 
+	  <!--<p><a href="draw-complex-solution.gpml">Click to download solution file (For Testing Only)</a>
+	  </p>-->
+		<br /> <br />
 	      </section>
-      </div> 
+          </div> 
     </div>       
 
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -81,19 +59,18 @@
     <!-- <script type="text/javascript" src="https://www.sciencegamelab.org/js/sciapi.js"></script> -->
     <!-- <script type="text/javascript" src="../../javascripts/sgl-init.js"></script> -->
     <!-- <script type="text/javascript" src="../../javascripts/sgl.js"></script> -->
-    <script type="text/javascript" src="../../javascripts/download-jnlp.js"></script>
+    <script type="text/javascript" src="../../javascripts/download-jnlp.js"></script>  
     <script type="text/javascript" src="../../javascripts/file-dragger.js"></script>
     <script type="text/javascript" src="../../javascripts/validate-gpml.js"></script>
-
 
     <script type="text/javascript">
       window.wpAcademy.validateGPML({
 	uploadTargetContainerSelector: '#upload-target-container',
-        validate: 'fig-met-1-third-solution.gpml', 
-        action: 'fig-met-1-third',
-        points: 5
+        validate: 'draw-protein-families-solution.gpml', 
+         action: 'draw-protein-families',
+         points: 5
       });
-    </script>
+      </script>
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-48SCDLJ1HF"></script>
 <script>
@@ -102,5 +79,6 @@
   gtag('js', new Date());
 
   gtag('config', 'G-48SCDLJ1HF');
-</script></body>
+</script>
+  </body>
 </html>

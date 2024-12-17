@@ -47,7 +47,7 @@
     <Xref Database="ChEBI" ID="CHEBI:15361" />
   </DataNode>
   <DataNode TextLabel="FASN" GraphId="d1d7f" Type="GeneProduct">
-    <Graphics CenterX="492.753106526723" CenterY="299.874834117505" Width="50.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" />
+    <Graphics CenterX="499.753106526723" CenterY="297.874834117505" Width="50.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" />
     <Xref Database="Ensembl" ID="ENSG00000169710" />
   </DataNode>
   <DataNode TextLabel="Pentose Phosphate Pathway" GraphId="e42e6" Type="Pathway">
@@ -63,7 +63,7 @@
     <Xref Database="ChEBI" ID="CHEBI:14321" />
   </DataNode>
   <DataNode TextLabel="PRKAB1" GraphId="f2cb2" Type="GeneProduct" GroupRef="e473f">
-    <Graphics CenterX="538.9364096120228" CenterY="391.967393101171" Width="66.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" />
+    <Graphics CenterX="542.9364096120228" CenterY="385.967393101171" Width="66.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" />
     <Xref Database="Ensembl" ID="ENSG00000111725" />
   </DataNode>
   <DataNode TextLabel="alpha-ketoglutarate" GraphId="f702b" Type="Metabolite">
@@ -95,7 +95,7 @@
     <Xref Database="Ensembl" ID="ENSG00000146701" />
   </DataNode>
   <DataNode TextLabel="PRKAA2" GraphId="fba38" Type="GeneProduct" GroupRef="e473f">
-    <Graphics CenterX="538.9364096120228" CenterY="416.967393101171" Width="66.0" Height="25.0" ZOrder="32773" FontSize="12" Valign="Middle" />
+    <Graphics CenterX="542.9364096120228" CenterY="410.967393101171" Width="66.0" Height="25.0" ZOrder="32773" FontSize="12" Valign="Middle" />
     <Xref Database="Ensembl" ID="ENSG00000162409" />
   </DataNode>
   <DataNode TextLabel="succinate" GraphId="c546a" Type="Metabolite">
@@ -113,6 +113,14 @@
   <DataNode TextLabel="Oxaloacetate" GraphId="d235e" Type="Metabolite">
     <Graphics CenterX="271.2531065267219" CenterY="492.87483411750503" Width="81.0" Height="25.0" ZOrder="32777" FontSize="12" Valign="Middle" Color="0000ff" />
     <Xref Database="ChEBI" ID="CHEBI:30744" />
+  </DataNode>
+  <DataNode TextLabel="lipids" GraphId="bf643" Type="Metabolite" GroupRef="f8176">
+    <Graphics CenterX="630.0" CenterY="286.0" Width="90.0" Height="25.0" ZOrder="32781" FontSize="12" Valign="Middle" Color="0000ff" />
+    <Xref Database="ChEBI" ID="CHEBI:18059" />
+  </DataNode>
+  <DataNode TextLabel="fatty acids" GraphId="e4ca0" Type="Metabolite" GroupRef="f8176">
+    <Graphics CenterX="630.0" CenterY="313.0" Width="90.0" Height="25.0" ZOrder="32782" FontSize="12" Valign="Middle" Color="0000ff" />
+    <Xref Database="ChEBI" ID="CHEBI:35366" />
   </DataNode>
   <Interaction GraphId="id1154a162">
     <Graphics ZOrder="12288" LineThickness="1.0">
@@ -204,15 +212,15 @@
   <Interaction GraphId="idaa11f5a0">
     <Graphics ZOrder="12288" LineStyle="Broken" LineThickness="1.0">
       <Point X="397.75310652672187" Y="424.624834117505" GraphRef="f730b" RelX="1.0" RelY="-0.5" />
-      <Point X="571.7531065267223" Y="307.874834117505" GraphRef="b4a3f" RelX="-1.0" RelY="0.0" ArrowHead="mim-conversion" />
+      <Point X="577.0" Y="299.5" GraphRef="b6f17" RelX="-1.0" RelY="0.0" ArrowHead="mim-conversion" />
       <Anchor Position="0.6992593997983589" Shape="None" GraphId="db3f6" />
     </Graphics>
     <Xref Database="" ID="" />
   </Interaction>
   <Interaction GraphId="idb8a52776">
     <Graphics ZOrder="12288" LineThickness="1.0">
-      <Point X="538.9364096120228" Y="367.467393101171" GraphRef="cc507" RelX="0.0" RelY="-1.0" />
-      <Point X="519.4242420916366" Y="342.98629919104656" GraphRef="db3f6" RelX="0.0" RelY="0.0" ArrowHead="mim-inhibition" />
+      <Point X="542.9364096120228" Y="361.467393101171" GraphRef="cc507" RelX="0.0" RelY="-1.0" />
+      <Point X="523.0931816725667" Y="337.1301177126292" GraphRef="db3f6" RelX="0.0" RelY="0.0" ArrowHead="mim-inhibition" />
     </Graphics>
     <Xref Database="" ID="" />
   </Interaction>
@@ -270,8 +278,8 @@
   </Interaction>
   <Interaction GraphId="idde3eaab1">
     <Graphics ZOrder="12288" LineThickness="1.0">
-      <Point X="492.75310652672306" Y="312.374834117505" GraphRef="d1d7f" RelX="0.0" RelY="1.0" />
-      <Point X="519.4242420916366" Y="342.98629919104656" GraphRef="db3f6" RelX="0.0" RelY="0.0" ArrowHead="mim-catalysis" />
+      <Point X="499.75310652672306" Y="310.374834117505" GraphRef="d1d7f" RelX="0.0" RelY="1.0" />
+      <Point X="523.0931816725667" Y="337.1301177126292" GraphRef="db3f6" RelX="0.0" RelY="0.0" ArrowHead="mim-catalysis" />
     </Graphics>
     <Xref Database="" ID="" />
   </Interaction>
@@ -321,15 +329,13 @@
     </Graphics>
     <Xref Database="" ID="" />
   </Interaction>
-  <Label TextLabel="Fatty acids and lipids" GraphId="b4a3f">
-    <Graphics CenterX="638.7531065267223" CenterY="307.874834117505" Width="134.0" Height="25.0" ZOrder="28672" FillColor="ffffff" FontWeight="Bold" FontSize="12" Valign="Middle" />
-  </Label>
   <Label TextLabel="Glycolysis" GraphId="c8832">
     <Graphics CenterX="261.34301270417416" CenterY="32.667876588021784" Width="90.0" Height="25.0" ZOrder="28672" FillColor="ffffff" FontWeight="Bold" FontSize="12" Valign="Middle" />
   </Label>
   <Label TextLabel="Krebs cycle" GraphId="d59e3">
     <Graphics CenterX="372.97640653357547" CenterY="594.3920145190561" Width="90.0" Height="25.0" ZOrder="32780" FillColor="ffffff" FontWeight="Bold" FontSize="12" Valign="Middle" />
   </Label>
+  <Group GroupId="f8176" GraphId="b6f17" Style="Group" />
   <Group GroupId="e473f" GraphId="cc507" Style="Complex" TextLabel="AMPK" />
   <InfoBox CenterX="0.0" CenterY="0.0" />
   <Biopax />
