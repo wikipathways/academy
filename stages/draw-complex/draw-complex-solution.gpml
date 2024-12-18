@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Pathway xmlns="http://pathvisio.org/GPML/2013a" Name="New Pathway" Version="20241218" Organism="Homo sapiens">
-  <Graphics BoardWidth="538.75" BoardHeight="246.75" />
+  <Graphics BoardWidth="305.0" BoardHeight="228.5" />
   <DataNode TextLabel="mTORC1" GraphId="dbdd7" Type="Complex" GroupRef="a0334">
-    <Graphics CenterX="218.0" CenterY="97.0" Width="90.0" Height="20.0" ZOrder="32772" FontSize="12" Valign="Middle" />
+    <Graphics CenterX="218.0" CenterY="97.0" Width="90.0" Height="25.0" ZOrder="32772" FontSize="12" Valign="Middle" ShapeType="RoundedRectangle" />
     <Xref Database="Complex Portal" ID="CPX-503" />
   </DataNode>
   <DataNode TextLabel="MTOR" GraphId="a03c6" Type="Protein" GroupRef="a0334">
