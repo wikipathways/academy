@@ -44,20 +44,24 @@
           catalytic domains are found in a single polypeptide chain. (Source: <a href="https://en.wikipedia.org/wiki/Multiprotein_complex" target="_blank">Wikipedia</a>)</p>
 		
           <h2>Your Mission</h2>
-          <p>A protein complex consists of two or more protein subunits. In this challenge you will draw the Succinyl-CoA ligase complex,
-          which consists of two protein subunits. The complex is depicted in this figure:</p>
+          <p>In this challenge you will draw the mTORC1 complex,
+          which functions as a nutrient/energy/redox sensor and controls protein synthesis (Source: <a href="https://en.wikipedia.org/wiki/MTORC1" target="_blank">Wikipedia</a>. This complex consists of 3 proteins; MTOR, MLST8 and RPTOR. In addtition to annotating the individual proteins, we will annotate the complex itself with an identifier from <a href="https://www.ebi.ac.uk/complexportal/home" target="_blank">Complex Portal</a>.</p>
           <img src="draw-complex-solution.png" width="200px">
             <br>
           
           <ul>
-        <li>Download the starter pathway here: <a href="https://academy.wikipathways.org/data/draw-complex-start.gpml">draw-complex-start.gpml</a>.</li>
-            <li>Launch PathVisio and open the dowloaded file via <b>File > Open</b>.</li>		  
-                <li>Select the two data nodes by click-and-drag.</li>
-		<li>Click the <b>Stack vertical centers</b> button <img src="../../images/stack-vertical.png"> from the toolbar.</li>
+        <!--<li>Download the starter pathway here: <a href="https://academy.wikipathways.org/data/draw-complex-start.gpml">draw-complex-start.gpml</a>.</li>-->
+        <li>Launch PathVisio and start a new blank pathway, select <b>Homo sapiens</b> as the organism.</li>		  
+        <li>Add three data nodes of type <b>Protein</b>, and annotate them with Uniprot-TrEMBL identifiers for MTOR, MLST8 and RPTOR, respecitvely. You can use the built-in identifier search tool for this.</li>
+        <li>Add a 4th node, and with the node selected, switch the node type to <b>Complex</b> in the <b>Properties</b> panel on the right.</li>
+        <li>Next we will need to identify the correct identifier for the mTORC1 complex by searching the <a href="https://www.ebi.ac.uk/complexportal/home" target="_blank">Complex Portal website</a>. On this website, perform a simple search for "mTORC1", and select the entry for Homo sapiens. Find the <b>ComplexAc</b> identifier; it should be CPX-4473.</li>
+        <li>In PathVisio, double-click on the new complex node. For <b>Text label</b>, enter <b>mTORC1</b>. In the <b>Identifier</b> field, enter the ComplexAc identifier (CPX-4473). Finally, select <b>Complex Portal</b> from the drop-down under <b>Database</b>.</li>
+        <li>To visually distinguish the complex node from the three protein nodes, change the height of the complex node to 20. This is done by selecting the node and updating the height in the <b>Properties</b> panel on the right.</li>
+        <li>Select all 4 nodes and click the <b>Stack vertical centers</b> button <img src="../../images/stack-vertical.png"> from the toolbar.</li>
 		<li>With the two data nodes selected, right-click and select <b>Create complex</b>. Alternatively, you can use the keyboard shortcut <b>Ctrl+P</b> (<b>Command+P</b> on Mac) to create the complex.</li>
-                <li>Done!</li>
-            <li>Save your work as a GPML file under <b>File > Save As</b>.</li>
-            <li>Drag-and-drop the GPML file below to check if it is correct.</li>
+        <li>Done!</li>
+        <li>Save your work as a GPML file under <b>File > Save As</b>.</li>
+        <li>Drag-and-drop the GPML file below to check if it is correct.</li>
           </ul>
 
           <div id="upload-target-container"></div>  
