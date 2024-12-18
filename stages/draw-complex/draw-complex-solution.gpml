@@ -1,15 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Pathway xmlns="http://pathvisio.org/GPML/2013a" Name="draw-complex" Version="20161110">
-  <Graphics BoardWidth="264.0623282488351" BoardHeight="152.59538412521417" />
-  <DataNode TextLabel="SUCLG2" GraphId="a9a73" Type="GeneProduct" GroupRef="e970e">
-    <Graphics CenterX="187.70823210800904" CenterY="102.59707674539004" Width="90.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" />
-    <Xref Database="Ensembl" ID="ENSG00000172340" />
+<Pathway xmlns="http://pathvisio.org/GPML/2013a" Name="New Pathway" Version="20241218" Organism="Homo sapiens">
+  <Graphics BoardWidth="538.75" BoardHeight="246.75" />
+  <DataNode TextLabel="mTORC1" GraphId="dbdd7" Type="Complex" GroupRef="a0334">
+    <Graphics CenterX="218.0" CenterY="97.0" Width="90.0" Height="20.0" ZOrder="32772" FontSize="12" Valign="Middle" />
+    <Xref Database="Complex Portal" ID="CPX-503" />
   </DataNode>
-  <DataNode TextLabel="SUCLG1" GraphId="b9559" Type="GeneProduct" GroupRef="e970e">
-    <Graphics CenterX="187.70823210800904" CenterY="77.59707674539004" Width="90.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" />
-    <Xref Database="Ensembl" ID="ENSG00000163541" />
+  <DataNode TextLabel="MTOR" GraphId="a03c6" Type="Protein" GroupRef="a0334">
+    <Graphics CenterX="218.0" CenterY="124.0" Width="90.0" Height="25.0" ZOrder="32773" FontSize="12" Valign="Middle" />
+    <Xref Database="Uniprot-TrEMBL" ID="P42345" />
   </DataNode>
-  <Group GroupId="e970e" Style="Complex" />
+  <DataNode TextLabel="MLST8" GraphId="b9b69" Type="Protein" GroupRef="a0334">
+    <Graphics CenterX="218.0" CenterY="149.0" Width="90.0" Height="25.0" ZOrder="32774" FontSize="12" Valign="Middle" />
+    <Xref Database="Uniprot-TrEMBL" ID="Q9BVC4" />
+  </DataNode>
+  <DataNode TextLabel="RPTOR" GraphId="b1ad2" Type="Protein" GroupRef="a0334">
+    <Graphics CenterX="218.0" CenterY="174.0" Width="90.0" Height="25.0" ZOrder="32775" FontSize="12" Valign="Middle" />
+    <Xref Database="Uniprot-TrEMBL" ID="Q8N122" />
+  </DataNode>
+  <Group GroupId="a0334" Style="Complex" />
+  <Group GroupId="bd725" Style="Group" />
   <InfoBox CenterX="0.0" CenterY="0.0" />
   <Biopax />
 </Pathway>
