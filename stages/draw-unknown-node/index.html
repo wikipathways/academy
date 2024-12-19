@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="../../stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="../../stylesheets/print.css" media="print">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>WikiPathways Academy</title>
+</head>
+
+  <body>
+
+    <header id="banner">
+      <div class="inner">
+        <h1>WikiPathways Academy</h1>
+        <h2>Organized training challenges for new WikiPathways authors</h2>
+	<a href="../../path.html" class="button"><small>Return to</small>Overview</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1>
+            <a id="intro" class="anchor" href="#intro" aria-hidden="true">
+              <span aria-hidden="true" class="octicon octicon-link">
+                Draw an Unknown Node
+              </span>
+            </a>
+          </h1>
+
+          <h2>Background</h2>
+
+          <p>When curating biological pathways from literature and existing pathway figures, there are sometimes entities in the original figure that do not fit into the typical data node types of Gene Product, Protein, Metabolite, Pathway and RNA. In these instances, rather than adding a graphical label, it can be useful to add a data node of type <b>Unknown</b> which can be annotated with an external identifier. The example in this exercise uses a <a href="https://www.wikidata.org/wiki/Wikidata:Main_Page" target="_blank">Wikidata</a> identifier for a cell type. Wikidata is a free and open knowledge base that acts as central storage for the structured data of its Wikimedia sister projects including Wikipedia, Wikivoyage, Wiktionary, Wikisource, and others.</p>
+		
+          <h2>Your Mission</h2>
+          <p>In this challenge, you will utilize <a href="https://www.wikidata.org/wiki/Wikidata:Main_Page" target="_blank">Wikidata</a> to annotate a node of type <b>Unknown</b>. The starter pathway used is a modified subset of the <a href="https://www.wikipathways.org/pathways/WP4814.html" target="_blank">Somatic sex determination</a>pathway.</p>
+          <img src="draw-unknown-node-solution.png" width="200px">
+            <br>
+          
+          <ul>
+        <li>We will be replacing the graphical label for <b>Leydig cell</b> with a data node, so first we need to find the Wikidata identifier for "Leydig cell". Navigate to <a href="https://www.wikidata.org/wiki/Wikidata:Main_Page" target="_blank">Wikidata</a> and search for "Leydug cell". Record the Wikidata identifier (Q636846).</li>
+        <li>Download the starter pathway here: <a href="https://academy.wikipathways.org/data/draw-unknown-node-start.gpml">draw-unknown-node.gpml</a>.</li>
+        <li>Open the pathway in PathVisio, and delete the graphical label <b>Leydig cell</b>.</li>
+        <li>Add a new data node of type <b>Unknown</b>.</li>
+        <li>Double-click on the new node, and enter the Wikidata identifier in the <b>Identifier</b> field, select <b>Wikidata</b> in the <b>Database</b> drop-down, and enter <b>Leydig cell</b> as the <b>Text label</b>. Click <b>Ok</b> to exit.</li>
+        <li>Connect the two interactions from DHH and to NR5A1 to the new node.</li>
+        <li>Done!</li>
+        <li>Save your work as a GPML file under <b>File > Save As</b>.</li>
+        <li>Drag-and-drop the GPML file below to check if it is correct.</li>
+          </ul>
+
+          <div id="upload-target-container"></div>  
+	  <!--<div id="next-button">
+		  <a href="../draw-unknown-node/index.html" class="btn btn-info btn-lg pull-right">Next step</a></div>-->
+          <br>  
+          <br> 
+	  <!--<p><a href="draw-complex-solution.gpml">Click to download solution file (For Testing Only)</a>
+	  </p>-->
+		<br /> <br /> <br />
+	      </section>
+          </div> 
+    </div>       
+
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- <script type="text/javascript" src="https://www.sciencegamelab.org/js/sciapi.js"></script> -->
+    <!-- <script type="text/javascript" src="../../javascripts/sgl-init.js"></script> -->
+    <!-- <script type="text/javascript" src="../../javascripts/sgl.js"></script> -->
+    <script type="text/javascript" src="../../javascripts/download-jnlp.js"></script>  
+    <script type="text/javascript" src="../../javascripts/file-dragger.js"></script>
+    <script type="text/javascript" src="../../javascripts/validate-gpml.js"></script>
+
+    <script type="text/javascript">
+      window.wpAcademy.validateGPML({
+	uploadTargetContainerSelector: '#upload-target-container',
+        validate: 'draw-unknown-node-solution.gpml', 
+         action: 'draw-unknown',
+         points: 5
+      });
+      </script>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-48SCDLJ1HF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-48SCDLJ1HF');
+</script>
+  </body>
+</html>
