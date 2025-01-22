@@ -1,99 +1,150 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Pathway xmlns="http://pathvisio.org/GPML/2013a" Name="draw-cofactor-reaction-start" Organism="Homo sapiens">
-  <Graphics BoardWidth="975.0" BoardHeight="813.0" />
-  <DataNode TextLabel="CO2" GraphId="ea9a4" Type="Metabolite">
-    <Graphics CenterX="269.1782683126778" CenterY="260.0428098576167" Width="29.297" Height="16.0" ZOrder="-12" FontSize="10" Valign="Middle" Color="4646dc" />
-    <Xref Database="HMDB" ID="HMDB0001967" />
+<Pathway xmlns="http://pathvisio.org/GPML/2013a" Name="draw-cofactor-reaction-solution" Version="20180309" Organism="Homo sapiens">
+  <Comment Source="WikiPathways-description">This pathway visualises the conversion of methionine to inorganic sulphates (involving the formation of homocysteine, a  toxic intermediate also related to MTHFR deficiency [https://www.wikipathways.org/index.php/Pathway:WP4288]). Methionine, an essential amino acid, is taken in from diet and can be created from breaking down proteins.
+
+This pathway was inspired by Chapter 3 of the book of Blau (ISBN 3642403360 (978-3642403361)).</Comment>
+  <Graphics BoardWidth="762.625" BoardHeight="329.4904031250181" />
+  <DataNode TextLabel="MS" GraphId="f5938" Type="GeneProduct" GroupRef="d5464">
+    <Graphics CenterX="332.0" CenterY="180.0" Width="90.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" />
+    <Xref Database="Uniprot-TrEMBL" ID="Q99707" />
   </DataNode>
-  <DataNode TextLabel="IDH3B" GraphId="a61f3" Type="GeneProduct" GroupRef="a8d9a">
-    <Attribute Key="org.pathvisio.model.BackpageHead" Value="IDH3B | isocitrate dehydrogenase 3 (NAD+) beta" />
-    <Graphics CenterX="250.53111869649925" CenterY="191.33120895957646" Width="60.0" Height="20.0" ZOrder="32768" FontSize="10" Valign="Middle" />
-    <Xref Database="Entrez Gene" ID="3420" />
+  <DataNode TextLabel="Methylcobalamin" GraphId="fd8f0" Type="Metabolite" GroupRef="d5464">
+    <Graphics CenterX="332.0" CenterY="205.0" Width="107.25" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" Color="0000ff" />
+    <Xref Database="HMDB" ID="HMDB02274" />
   </DataNode>
-  <DataNode TextLabel="D-threo-Isocitrate" GraphId="b96da" Type="Metabolite">
-    <Comment>The ChEBI ID with the correct charge is: 15562</Comment>
-    <Attribute Key="org.pathvisio.model.BackpageHead" Value="Isocitrate" />
-    <Graphics CenterX="182.66528053227594" CenterY="105.1870748299321" Width="88.0" Height="20.0" ZOrder="32768" FontSize="10" Valign="Middle" Color="4646dc" />
-    <Xref Database="HMDB" ID="HMDB0000193" />
+  <DataNode TextLabel="Methionine" GraphId="af11a" Type="Metabolite">
+    <Graphics CenterX="224.70096145079327" CenterY="93.83299571761097" Width="109.01416331170299" Height="25.0" ZOrder="32980" FontSize="12" Valign="Middle" Color="0000ff" />
+    <Xref Database="ChEBI" ID="CHEBI:16643" />
   </DataNode>
-  <DataNode TextLabel="IDH3G" GraphId="cea45" Type="GeneProduct" GroupRef="a8d9a">
-    <Attribute Key="org.pathvisio.model.BackpageHead" Value="IDH3G | isocitrate dehydrogenase 3 (NAD+) gamma..." />
-    <Graphics CenterX="250.53111869649925" CenterY="211.33120895957651" Width="60.0" Height="20.0" ZOrder="32768" FontSize="10" Valign="Middle" />
-    <Xref Database="Entrez Gene" ID="3421" />
+  <DataNode TextLabel="Homocysteine" GraphId="cbe02" Type="Metabolite">
+    <Graphics CenterX="224.70096145079327" CenterY="286.9904031250181" Width="113.40192290158654" Height="25.0" ZOrder="33017" FontSize="12" Valign="Middle" Color="0000ff" />
+    <Xref Database="ChEBI" ID="CHEBI:17230" />
   </DataNode>
-  <DataNode TextLabel="2-oxoglutarate" GraphId="da75d" Type="Metabolite">
-    <Graphics CenterX="182.66528053227594" CenterY="287.4925970388157" Width="84.9238578680197" Height="20.0" ZOrder="32768" FontSize="10" Valign="Middle" Color="4646dc" />
-    <Xref Database="HMDB" ID="HMDB0000208" />
-  </DataNode>
-  <DataNode TextLabel="NAD" GraphId="eb68a" Type="Metabolite">
-    <Graphics CenterX="258.78881182102543" CenterY="128.8248632786444" Width="39.0" Height="16.0" ZOrder="32768" FontSize="10" Valign="Middle" Color="4646dc" />
-    <Xref Database="HMDB" ID="HMDB0000902" />
-  </DataNode>
-  <DataNode TextLabel="IDH3A" GraphId="ee392" Type="GeneProduct" GroupRef="a8d9a">
-    <Attribute Key="org.pathvisio.model.BackpageHead" Value="IDH3A | isocitrate dehydrogenase 3 (NAD+) alpha..." />
-    <Graphics CenterX="250.53111869649925" CenterY="171.33120895957654" Width="60.0" Height="20.0" ZOrder="32768" FontSize="10" Valign="Middle" />
-    <Xref Database="Entrez Gene" ID="3419" />
-  </DataNode>
-  <DataNode TextLabel="NADH" GraphId="f30d1" Type="Metabolite">
-    <Comment>The ChEBI ID with the correct charge is: 57945</Comment>
-    <Graphics CenterX="270.69752955639717" CenterY="281.70927644425245" Width="36.5" Height="16.0" ZOrder="32768" FontSize="10" Valign="Middle" Color="4646dc" />
-    <Xref Database="HMDB" ID="HMDB0001487" />
-  </DataNode>
-  <Interaction GraphId="f7fd4">
-    <Graphics ZOrder="12288" LineThickness="1.0">
-      <Point X="212.53111869649922" Y="191.33120895957654" GraphRef="f971b" RelX="-1.0" RelY="0.0" />
-      <Point X="182.66528053227594" Y="193.2749849842819" GraphRef="a79f1" RelX="0.0" RelY="0.0" ArrowHead="mim-catalysis" />
+  <Interaction GraphId="a2b5e">
+    <Graphics ZOrder="32977" LineThickness="1.0">
+      <Point X="266.375" Y="192.5" GraphRef="f481b" RelX="-1.0" RelY="0.0" />
+      <Point X="224.70096145079327" Y="193.0601331104623" GraphRef="da04c" RelX="0.0" RelY="0.0" ArrowHead="mim-catalysis" />
     </Graphics>
     <Xref Database="" ID="" />
   </Interaction>
-  <Interaction GraphId="id1135975e">
-    <Graphics ZOrder="12288" LineThickness="1.0">
-      <Point X="239.28881182102543" Y="128.8248632786444" GraphRef="eb68a" RelX="-1.0" RelY="0.0" />
-      <Point X="182.66528053227594" Y="171.05133174897207" GraphRef="c0e75" RelX="0.0" RelY="0.0" ArrowHead="mim-conversion" />
+  <Interaction GraphId="e26dd">
+    <Graphics ZOrder="33025" LineThickness="1.0">
+      <Point X="224.70096145079327" Y="274.4904031250181" GraphRef="cbe02" RelX="0.0" RelY="-1.0" />
+      <Point X="224.70096145079327" Y="106.33299571761097" GraphRef="af11a" RelX="0.0" RelY="1.0" ArrowHead="mim-conversion" />
+      <Anchor Position="0.4871140999869167" Shape="None" GraphId="d79e2" />
+      <Anchor Position="0.4842502704461231" Shape="None" GraphId="da04c" />
     </Graphics>
-    <Xref Database="" ID="" />
+    <Xref Database="Rhea" ID="11173" />
   </Interaction>
-  <Interaction GraphId="id17b35470">
-    <Graphics ConnectorType="Segmented" ZOrder="12288" LineThickness="1.0">
-      <Point X="182.66528053227594" Y="115.1870748299321" GraphRef="b96da" RelX="0.0" RelY="1.0" />
-      <Point X="182.66528053227594" Y="277.4925970388157" GraphRef="da75d" RelX="0.0" RelY="-1.0" ArrowHead="mim-conversion" />
-      <Anchor Position="0.3441919668459827" Shape="None" GraphId="c0e75" />
-      <Anchor Position="0.48111677958715665" Shape="None" GraphId="a79f1" />
-      <Anchor Position="0.631700314674105" Shape="None" GraphId="b2686" />
-    </Graphics>
-    <Xref Database="" ID="" />
-  </Interaction>
-  <Interaction GraphId="id1e6d1dd6">
-    <Graphics ZOrder="12288" LineThickness="1.0">
-      <Point X="182.66528053227594" Y="217.7155242826288" GraphRef="b2686" RelX="0.0" RelY="0.0" />
-      <Point X="254.5297683126778" Y="260.0428098576167" GraphRef="ea9a4" RelX="-1.0" RelY="0.0" ArrowHead="mim-conversion" />
-    </Graphics>
-    <Xref Database="" ID="" />
-  </Interaction>
-  <Interaction GraphId="id9f8f19fa">
-    <Graphics ZOrder="12288" LineThickness="1.0">
-      <Point X="182.66528053227594" Y="217.7155242826288" GraphRef="b2686" RelX="0.0" RelY="0.0" />
-      <Point X="252.44752955639717" Y="281.70927644425245" GraphRef="f30d1" RelX="-1.0" RelY="0.0" ArrowHead="mim-conversion" />
-    </Graphics>
-    <Xref Database="" ID="" />
-  </Interaction>
-  <Group GroupId="a8d9a" GraphId="f971b" />
-  <InfoBox CenterX="4.5" CenterY="5.333333333333333" />
+  <Group GroupId="d5464" GraphId="f481b" Style="Complex" />
+  <InfoBox CenterX="0.0" CenterY="0.0" />
   <Biopax>
     <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
-      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">classic metabolic pathway</bp:TERM>
-      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PW:0000002</bp:ID>
+      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hypermethioninemia pathway</bp:TERM>
+      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PW:0002471</bp:ID>
       <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pathway Ontology</bp:Ontology>
     </bp:openControlledVocabulary>
     <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
-      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TCA cycle</bp:TERM>
-      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PW:0000026</bp:ID>
+      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hypermethioninemia pathway</bp:TERM>
+      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PW:0001868</bp:ID>
       <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pathway Ontology</bp:Ontology>
     </bp:openControlledVocabulary>
     <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
-      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">citrate cycle pathway</bp:TERM>
-      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PW:0000026</bp:ID>
+      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">homocystinuria</bp:TERM>
+      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOID:9263</bp:ID>
+      <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disease</bp:Ontology>
+    </bp:openControlledVocabulary>
+    <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
+      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hypermethioninemia</bp:TERM>
+      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOID:0050544</bp:ID>
+      <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disease</bp:Ontology>
+    </bp:openControlledVocabulary>
+    <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
+      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hypermethioninemia due to adenosine kinase deficiency</bp:TERM>
+      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOID:0111038</bp:ID>
+      <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disease</bp:Ontology>
+    </bp:openControlledVocabulary>
+    <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
+      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cystathioninuria pathway</bp:TERM>
+      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PW:0002561</bp:ID>
       <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pathway Ontology</bp:Ontology>
+    </bp:openControlledVocabulary>
+    <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
+      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hypermethioninemia with deficiency of S-adenosylhomocysteine hydrolase</bp:TERM>
+      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOID:0111039</bp:ID>
+      <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disease</bp:Ontology>
+    </bp:openControlledVocabulary>
+    <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
+      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">altered metal homeostasis pathway</bp:TERM>
+      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PW:0001832</bp:ID>
+      <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pathway Ontology</bp:Ontology>
+    </bp:openControlledVocabulary>
+    <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
+      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">glycine N-methyltransferase deficiency</bp:TERM>
+      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOID:0111037</bp:ID>
+      <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disease</bp:Ontology>
+    </bp:openControlledVocabulary>
+    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="eac">
+      <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">16435220</bp:ID>
+      <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
+      <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Methionine adenosyltransferase (MAT) I/III deficiency with concurrent hyperhomocysteinaemia: two novel cases.</bp:TITLE>
+      <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">J Inherit Metab Dis</bp:SOURCE>
+      <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2005</bp:YEAR>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Linnebank M</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lagler F</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Muntau AC</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Röschinger W</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Olgemöller B</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fowler B</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Koch HG</bp:AUTHORS>
+    </bp:PublicationXref>
+    <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
+      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">methionine degradation pathway</bp:TERM>
+      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PW:0001302</bp:ID>
+      <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pathway Ontology</bp:Ontology>
+    </bp:openControlledVocabulary>
+    <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
+      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sulfite oxidase deficiency pathway</bp:TERM>
+      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PW:0001647</bp:ID>
+      <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pathway Ontology</bp:Ontology>
+    </bp:openControlledVocabulary>
+    <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
+      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">glycine N-methyltransferase deficiency pathway</bp:TERM>
+      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PW:0002299</bp:ID>
+      <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pathway Ontology</bp:Ontology>
+    </bp:openControlledVocabulary>
+    <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
+      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disease pathway</bp:TERM>
+      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PW:0000013</bp:ID>
+      <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pathway Ontology</bp:Ontology>
+    </bp:openControlledVocabulary>
+    <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
+      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cystathioninuria</bp:TERM>
+      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOID:0090142</bp:ID>
+      <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disease</bp:Ontology>
+    </bp:openControlledVocabulary>
+    <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
+      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">homocystinuria pathway</bp:TERM>
+      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PW:0001841</bp:ID>
+      <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pathway Ontology</bp:Ontology>
+    </bp:openControlledVocabulary>
+    <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
+      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cysteine and methionine metabolic pathway</bp:TERM>
+      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PW:0001078</bp:ID>
+      <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pathway Ontology</bp:Ontology>
+    </bp:openControlledVocabulary>
+    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="f2b">
+      <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6822523</bp:ID>
+      <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
+      <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cysteinesulfinate metabolism. altered partitioning between transamination and decarboxylation following administration of beta-methyleneaspartate.</bp:TITLE>
+      <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">J Biol Chem</bp:SOURCE>
+      <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1983</bp:YEAR>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Griffith OW</bp:AUTHORS>
+    </bp:PublicationXref>
+    <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
+      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">isolated sulfite oxidase deficiency</bp:TERM>
+      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOID:0111270</bp:ID>
+      <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disease</bp:Ontology>
     </bp:openControlledVocabulary>
   </Biopax>
 </Pathway>

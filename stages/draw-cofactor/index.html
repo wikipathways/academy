@@ -42,24 +42,19 @@
           <p>A cofactor is a non-protein chemical compound or metallic ion that is required for an enzyme's activity as a catalyst, and is essential for the enzyme's proper functioning. Cofactors can be considered "helper molecules" that assist in biochemical transformations. They are often required for the stability and function of enzymes and significantly influence the enzyme's ability to catalyze its reaction. Source: <a href="https://en.wikipedia.org/wiki/Cofactor_(biochemistry)" target="_blank">Wikipedia</a>.</p>
 
           <h2>Your Mission</h2>
-          <p>Draw the oxidation of isocitrate to 2-oxoglutarate, with the cofactor NAD. This is a step in the <a href="https://en.wikipedia.org/wiki/Citric_acid_cycle" target="_blank">TCA cycle</a>.</p>
+          <p>Draw the final step in the regeneration of Methionine from Homocysteine by <a href="https://en.wikipedia.org/wiki/Methionine_synthase" target="_blank">Methionine Synthase</a>, with the cofactor Methylcobalamin.</p>
           <img src="draw-cofactor-reaction-solution.png" width="250px">
           
           <ul>
             <li>Download the starter pathway here: <a href="https://academy.wikipathways.org/data/draw-cofactor-reaction-start.gpml">draw-cofactor-reaction-start.gpml</a>.</li>
             <li>Launch PathVisio and open the dowloaded file via <b>File > Open</b>.</li>
-            <li>Add the gene products that catalyze the conversion; IDH3A, IDH3B and IDH3G.</li>
-            <li>Group the three enzyme nodes.</li>
+            <li>Add the <b>MS</b>protein that catalyze the conversion (for example using Uniprot ID Q99717).</li>
+            <li>Add a metabolite node for methylcobalamin.</li>
+            <li>Group the two nodes, and set the group style to <b>Complex</b> in the <b>Properties</b> panel.</li>
             <li>Right-click on the existing conversion interaction and select <b>Add anchor</b>, or select the conversion interaction and then use the keyboard shortcut <b>Ctrl+R</b> (<b>Command+R</b> on Mac), to add the anchor.</li>
             <li>Select the <b>Catalysis</b> arrow from the <b>MIM interactions</b> palette in the <b>Objects</b> tab and place the interaction anywhere on the drawing board.</li>
-            <li>Drag the plain end (start) of the interaction over a target area on the groupp of enzyme nodes.</li>
+            <li>Drag the plain end (start) of the interaction over a target area on the complex.</li>
             <li>Drag the catalysis end (end) of the interaction over the anchor on the conversion line.</li>
-            <li>Add another anchor to the conversion reaction, positioned above the previous anchor.</li>
-            <li>Add the NAD node using a <b>Metabolite</b> node.</li>
-            <li>Select the <b>Conversion</b> arrow from the <b>MIM interactions</b> palette in the <b>Objects</b> tab and place the interaction anywhere on the drawing board.</li>
-            <li>Drag the plain end (start) of the interaction over a target area on the NAD node.</li>
-            <li>Drag the conversion end (end) of the interaction over the new anchor on the conversion line.</li>
-            <li>Repeat the last steps to add two more metabolite nodes for CO2 and NADH and their interactions.</li>
             <li>Done!</li>
             <li>Save your work as a GPML file under <b>File > Save As</b>.</li>
             <li>Drag-and-drop the GPML file below to check if it is correct.</li>
