@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Pathway xmlns="http://pathvisio.org/GPML/2013a" Name="Glucose-insulin Signaling Pathway" Version="20241122" Organism="Homo sapiens">
-  <Graphics BoardWidth="1106.0" BoardHeight="840.5848952590959" />
+  <Graphics BoardWidth="999.0" BoardHeight="831.5848952590959" />
   <DataNode TextLabel="SLC2A2" GraphId="f52e8" Type="GeneProduct">
     <Graphics CenterX="593.75" CenterY="126.25" Width="90.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" />
     <Xref Database="Ensembl" ID="ENSG00000163581" />
@@ -163,7 +163,7 @@
     <Xref Database="Ensembl" ID="ENSG00000111713" />
   </DataNode>
   <DataNode TextLabel="Glycogen synthesis" GraphId="ea7f9" Type="Pathway">
-    <Graphics CenterX="202.09867695700075" CenterY="789.0848952590959" Width="123.28004410143329" Height="25.0" ZOrder="33048" FontWeight="Bold" FontSize="12" Valign="Middle" ShapeType="None" Color="14961e" />
+    <Graphics CenterX="202.09867695700075" CenterY="789.0848952590959" Width="123.28004410143329" Height="25.0" ZOrder="33048" FontWeight="Bold" FontSize="12" Valign="Middle" ShapeType="RoundedRectangle" Color="14961e" />
     <Xref Database="WikiPathways" ID="WP500" />
   </DataNode>
   <State GraphRef="cbcec" TextLabel="P" GraphId="ebcff">
@@ -172,14 +172,7 @@ sitegrpid=447556; ptm=p; direction=u</Comment>
     <Graphics RelX="1.0" RelY="-0.76" Width="15.0" Height="15.0" ShapeType="Oval" />
     <Xref Database="" ID="" />
   </State>
-  <Interaction>
-    <Graphics ZOrder="12288" LineThickness="1.0">
-      <Point X="382.0" Y="84.5" GraphRef="c6b17" RelX="0.0" RelY="1.0" />
-      <Point X="382.75" Y="143.25" GraphRef="f6bb5" RelX="0.0" RelY="-1.0" ArrowHead="mim-binding" />
-    </Graphics>
-    <Xref Database="" ID="" />
-  </Interaction>
-  <Interaction>
+  <Interaction GraphId="id26dc32ce">
     <Graphics ZOrder="12288" LineThickness="1.0">
       <Point X="674.0" Y="88.5" GraphRef="de44e" RelX="0.0" RelY="1.0" />
       <Point X="674.0" Y="182.5" GraphRef="a7d0f" RelX="0.0" RelY="-1.0" ArrowHead="Arrow" />
@@ -187,67 +180,74 @@ sitegrpid=447556; ptm=p; direction=u</Comment>
     </Graphics>
     <Xref Database="" ID="" />
   </Interaction>
-  <Interaction>
+  <Interaction GraphId="id4a734125">
     <Graphics ZOrder="12288" LineThickness="1.0">
-      <Point X="638.75" Y="126.25" GraphRef="f52e8" RelX="1.0" RelY="0.0" />
-      <Point X="674.0" Y="126.1" GraphRef="c87da" RelX="0.0" RelY="0.0" ArrowHead="mim-catalysis" />
-    </Graphics>
-    <Xref Database="" ID="" />
-  </Interaction>
-  <Interaction>
-    <Graphics ZOrder="12288" LineThickness="1.0">
-      <Point X="382.75" Y="168.25" GraphRef="f6bb5" RelX="0.0" RelY="1.0" />
-      <Point X="382.75" Y="213.0" GraphRef="ad138" RelX="0.0" RelY="-1.0" ArrowHead="mim-stimulation" />
-    </Graphics>
-    <Xref Database="" ID="" />
-  </Interaction>
-  <Interaction>
-    <Graphics ZOrder="12288" LineThickness="1.0">
-      <Point X="253.0" Y="300.5" GraphRef="d6bbb" RelX="0.0" RelY="-1.0" />
-      <Point X="326.0" Y="248.25" GraphRef="ad138" RelX="-1.0" RelY="0.0" ArrowHead="mim-inhibition" />
-    </Graphics>
-    <Xref Database="" ID="" />
-  </Interaction>
-  <Interaction>
-    <Graphics ZOrder="12288" LineThickness="1.0">
-      <Point X="382.75" Y="283.5" GraphRef="ad138" RelX="0.0" RelY="1.0" />
+      <Point X="379.0" Y="283.5" GraphRef="ad138" RelX="0.0" RelY="1.0" />
       <Point X="382.40821389195105" Y="361.1651047409041" GraphRef="da488" RelX="0.0" RelY="-1.0" ArrowHead="Arrow" />
     </Graphics>
     <Xref Database="" ID="" />
   </Interaction>
-  <Interaction>
-    <Graphics ZOrder="12288" LineThickness="1.0">
-      <Point X="382.40821389195105" Y="460.1651047409041" GraphRef="da488" RelX="0.0" RelY="1.0" />
-      <Point X="382.0" Y="506.5" GraphRef="bd02c" RelX="0.0" RelY="-1.0" ArrowHead="Arrow" />
-    </Graphics>
-    <Xref Database="" ID="" />
-  </Interaction>
-  <Interaction>
+  <Interaction GraphId="id60d09260">
     <Graphics ZOrder="12288" LineThickness="1.0">
       <Point X="329.0" Y="552.0" GraphRef="bd02c" RelX="-1.0" RelY="0.0" />
       <Point X="255.0" Y="552.5" GraphRef="e7d15" RelX="1.0" RelY="0.0" ArrowHead="mim-inhibition" />
     </Graphics>
     <Xref Database="" ID="" />
   </Interaction>
-  <Interaction>
+  <Interaction GraphId="id6e7af756">
+    <Graphics ZOrder="12288" LineThickness="1.0">
+      <Point X="382.75" Y="168.25" GraphRef="f6bb5" RelX="0.0" RelY="1.0" />
+      <Point X="379.0" Y="217.5" GraphRef="ad138" RelX="0.0" RelY="-1.0" ArrowHead="mim-stimulation" />
+    </Graphics>
+    <Xref Database="" ID="" />
+  </Interaction>
+  <Interaction GraphId="id851cb2b7">
+    <Graphics ZOrder="12288" LineThickness="1.0">
+      <Point X="638.75" Y="126.25" GraphRef="f52e8" RelX="1.0" RelY="0.0" />
+      <Point X="674.0" Y="126.1" GraphRef="c87da" RelX="0.0" RelY="0.0" ArrowHead="mim-catalysis" />
+    </Graphics>
+    <Xref Database="" ID="" />
+  </Interaction>
+  <Interaction GraphId="idbbefe76b">
     <Graphics ZOrder="12288" LineThickness="1.0">
       <Point X="202.0" Y="585.5" GraphRef="e7d15" RelX="0.0" RelY="1.0" />
       <Point X="202.09867695700132" Y="645.6135611907387" GraphRef="f3472" RelX="0.0" RelY="-1.0" ArrowHead="Arrow" />
     </Graphics>
     <Xref Database="" ID="" />
   </Interaction>
-  <Interaction>
+  <Interaction GraphId="idd7f6e51">
     <Graphics ZOrder="12288" LineThickness="1.0">
       <Point X="202.09867695700132" Y="711.6135611907387" GraphRef="f3472" RelX="0.0" RelY="1.0" />
       <Point X="202.09867695700075" Y="776.5848952590959" GraphRef="ea7f9" RelX="0.0" RelY="-1.0" ArrowHead="Arrow" />
     </Graphics>
     <Xref Database="" ID="" />
   </Interaction>
+  <Interaction GraphId="idd9839fd5">
+    <Graphics ZOrder="12288" LineThickness="1.0">
+      <Point X="382.40821389195105" Y="460.1651047409041" GraphRef="da488" RelX="0.0" RelY="1.0" />
+      <Point X="382.0" Y="506.5" GraphRef="bd02c" RelX="0.0" RelY="-1.0" ArrowHead="Arrow" />
+    </Graphics>
+    <Xref Database="" ID="" />
+  </Interaction>
+  <Interaction GraphId="iddeebe4a6">
+    <Graphics ZOrder="12288" LineThickness="1.0">
+      <Point X="253.0" Y="300.5" GraphRef="d6bbb" RelX="0.0" RelY="-1.0" />
+      <Point X="326.0" Y="250.5" GraphRef="ad138" RelX="-1.0" RelY="0.0" ArrowHead="mim-inhibition" />
+    </Graphics>
+    <Xref Database="" ID="" />
+  </Interaction>
+  <Interaction GraphId="idf8fc3db5">
+    <Graphics ZOrder="12288" LineThickness="1.0">
+      <Point X="382.0" Y="84.5" GraphRef="c6b17" RelX="0.0" RelY="1.0" />
+      <Point X="382.75" Y="143.25" GraphRef="f6bb5" RelX="0.0" RelY="-1.0" ArrowHead="mim-binding" />
+    </Graphics>
+    <Xref Database="" ID="" />
+  </Interaction>
   <Group GroupId="c163f" GraphId="ad138" Style="Group" />
   <Group GroupId="c22b0" GraphId="bd02c" Style="Group" />
+  <Group GroupId="a47dc" GraphId="da488" Style="Complex" />
   <Group GroupId="ace68" GraphId="e7d15" Style="Group" />
   <Group GroupId="d6de2" GraphId="f3472" Style="Group" />
-  <Group GroupId="a47dc" GraphId="da488" Style="Complex" />
   <InfoBox CenterX="0.0" CenterY="0.0" />
   <Biopax />
 </Pathway>

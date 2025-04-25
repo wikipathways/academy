@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Pathway xmlns="http://pathvisio.org/GPML/2013a" Name="draw-unknown-node-start" Version="20241219" Organism="Homo sapiens">
-  <Graphics BoardWidth="893.0" BoardHeight="530.5" />
+  <Graphics BoardWidth="511.0" BoardHeight="403.5" />
   <DataNode TextLabel="ZFPM2" GraphId="d5fba" Type="GeneProduct" GroupRef="da39b">
     <Graphics CenterX="404.60504201680703" CenterY="100.25210084033614" Width="90.0" Height="25.0" ZOrder="32841" FontSize="12" Valign="Middle" />
     <Xref Database="Entrez Gene" ID="23414" />
@@ -66,7 +66,7 @@
     <Xref Database="Ensembl" ID="ENSG00000005513" />
   </DataNode>
   <DataNode TextLabel="Steroidigenesis" GraphId="edc15" Type="Pathway">
-    <Graphics CenterX="426.0" CenterY="361.0" Width="110.0" Height="25.0" ZOrder="32870" FontWeight="Bold" FontSize="12" Valign="Middle" ShapeType="None" Color="14961e" />
+    <Graphics CenterX="426.0" CenterY="361.0" Width="110.0" Height="25.0" ZOrder="32870" FontWeight="Bold" FontSize="12" Valign="Middle" ShapeType="RoundedRectangle" Color="14961e" />
     <Xref Database="" ID="" />
   </DataNode>
   <Interaction GraphId="ee947">
@@ -165,10 +165,11 @@
   <Label TextLabel="Leydig cell" GraphId="e7570">
     <Graphics CenterX="426.0" CenterY="234.0" Width="90.0" Height="25.0" ZOrder="28672" FillColor="ffffff" FontWeight="Bold" FontSize="12" Valign="Middle" Color="404040" />
   </Label>
-  <Group GroupId="da39b" GraphId="d01c7" Style="Group" />
-  <Group GroupId="f5201" GraphId="a9e98" Style="Group" />
   <Group GroupId="c7c44" GraphId="a6e0d" Style="Group" />
+  <Group GroupId="f5201" GraphId="a9e98" Style="Group" />
   <Group GroupId="e6b72" GraphId="c9c00" Style="Group" />
+  <Group GroupId="da39b" GraphId="d01c7" Style="Group" />
   <InfoBox CenterX="0.0" CenterY="0.0" />
   <Biopax />
 </Pathway>
+

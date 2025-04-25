@@ -2,7 +2,7 @@
 <Pathway xmlns="http://pathvisio.org/GPML/2013a" Name="Glucose-insulin Signaling Pathway" Version="20241121" Organism="Homo sapiens">
   <Graphics BoardWidth="1044.3329658213888" BoardHeight="769.8015435501653" />
   <DataNode TextLabel="Glycogen synthesis" GraphId="ac1c4" Type="Pathway">
-    <Graphics CenterX="174.09867695700075" CenterY="689.0848952590959" Width="123.28004410143329" Height="25.0" ZOrder="32768" FontWeight="Bold" FontSize="12" Valign="Middle" ShapeType="None" Color="14961e" />
+    <Graphics CenterX="174.09867695700075" CenterY="689.0848952590959" Width="123.28004410143329" Height="25.0" ZOrder="32768" FontWeight="Bold" FontSize="12" Valign="Middle" ShapeType="RoundedRectangle" Color="14961e" />
     <Xref Database="WikiPathways" ID="WP500" />
   </DataNode>
   <DataNode TextLabel="Gluconeogenesis" GraphId="bb7d7" Type="Pathway">

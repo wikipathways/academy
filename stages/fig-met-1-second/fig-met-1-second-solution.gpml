@@ -27,7 +27,7 @@
     <Xref Database="ChEBI" ID="CHEBI:15361" />
   </DataNode>
   <DataNode TextLabel="Pentose Phosphate Pathway" GraphId="e42e6" Type="Pathway">
-    <Graphics CenterX="532.362420709755" CenterY="211.44111092062397" Width="183.27515858048992" Height="25.0" ZOrder="32768" FontWeight="Bold" FontSize="12" Valign="Middle" ShapeType="None" Color="14961e" />
+    <Graphics CenterX="532.362420709755" CenterY="211.44111092062397" Width="183.27515858048992" Height="25.0" ZOrder="32768" FontWeight="Bold" FontSize="12" Valign="Middle" ShapeType="RoundedRectangle" Color="14961e" />
     <Xref Database="WikiPathways" ID="WP134" />
   </DataNode>
   <DataNode TextLabel="LDHA" GraphId="ee539" Type="GeneProduct">
@@ -103,3 +103,4 @@
   <InfoBox CenterX="0.0" CenterY="0.0" />
   <Biopax />
 </Pathway>
+
