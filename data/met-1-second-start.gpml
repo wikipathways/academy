@@ -10,7 +10,7 @@
   <Graphics BoardWidth="445.0" BoardHeight="217.25644257703044" />
   <DataNode TextLabel="HMGCS1" GraphId="b21" Type="GeneProduct">
     <Attribute Key="org.pathvisio.model.BackpageHead" Value="HMGCS1 | 3-hydroxy-3-methylglutaryl-Coenzyme A ..." />
-    <Graphics CenterX="284.393625796039" CenterY="135.82560623193865" Width="90.00000000000001" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" />
+    <Graphics CenterX="284.393625796039" CenterY="136.82560623193865" Width="90.00000000000001" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" />
     <Xref Database="Entrez Gene" ID="3157" />
   </DataNode>
   <DataNode TextLabel="HMG-CoA" GraphId="e89f4" Type="Metabolite">
@@ -31,7 +31,7 @@
   </Interaction>
   <Interaction GraphId="idaba74c6a">
     <Graphics ZOrder="12288" LineThickness="1.0">
-      <Point X="329.393625796039" Y="135.82560623193865" GraphRef="b21" RelX="1.0" RelY="0.0" />
+      <Point X="329.393625796039" Y="136.82560623193865" GraphRef="b21" RelX="1.0" RelY="0.0" />
       <Point X="370.0" Y="136.64231900569877" GraphRef="cb45c" RelX="0.0" RelY="0.0" ArrowHead="mim-catalysis" />
     </Graphics>
     <Xref Database="" ID="" />

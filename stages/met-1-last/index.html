@@ -52,30 +52,38 @@
             <li>Download the starter pathway here: <a href="https://academy.wikipathways.org/data/met-1-last-start.gpml">met-1-last-start.gpml</a>.</li>	
             <li>Launch PathVisio and open the dowloaded file via <b>File > Open</b>.</li>
             <ul>            
-                <h4>Add the metabolite node</h4>
+            <h4>Add the metabolite node</h4>
 		        <li>Select <b>Metabolite</b> from the <b>Data Node</b> palette in the <b>Objects</b> tab. Click on the canvas to place the metabolite node.</li>
                 <li>Double-click on node to open its properties.</li>
                 <li>Search for “cholesterol”; Choose any of the entries that just say “cholesterol” (in order of priority ChEBI, LIPIDMAPS, PubChem, CAS); 
 			Click <b>OK</b> to select the identifier, and then click <b>OK</b> again to close the node properties window.</li>
-                <h4>Draw the conversion between the metabolite nodes</h4>
+            <h4>Draw the conversion between the metabolite nodes</h4>
 		        <li>Select the <b>Conversion</b> arrow from the <b>MIM interactions</b> palette in the <b>Objects</b> tab. Drag and drop anywhere on the canvas to create the interaction.</li>
                 <li>Drag the plain end (start) of the interaction over a target area on the starting metabolite node (7-Dehydrocholesterol).</li>
                 <li>Drag the arrow end (end) of the interaction over a target area on the ending metabolite node (cholesterol).</li>
 		        <li>Right-click on the conversion interaction and select <b>Add anchor</b>, or select the conversion interaction and then use the keyboard shortcut <b>Ctrl+R</b> (<b>Command+R</b> on Mac), to add the anchor.</li>
-                <h4>Add the gene product that catalyzes the conversion.</h4>
+            <h4>Add the gene product that catalyzes the conversion.</h4>
 		        <li>Select <b>GeneProduct</b> from the <b>Data Node</b> palette in the <b>Objects</b> tab. Click on canvas to place the gene node.</li>
                 <li>Double-click on node to open its properties.</li>
                 <li>Search for “DHCR7”; Choose any of the entries that just say “DHCR7”; Click <b>OK</b> to select the identifier, and then click 
 			<b>OK</b> again to close the node properties window.</li>
-                <h4>Draw the catalysis interaction</h4>
+            <h4>Draw the catalysis interaction</h4>
 		        <li>Select the <b>Catalysis</b> arrow from the <b>MIM interactions</b> palette in the <b>Objects</b> tab. Drag and drop anywhere on the canvas to create the interaction.</li>
                 <li>Drag the plain end (start) of the interaction over a target area on the enzyme node.</li>
                 <li>Drag the catalysis end (end) of the interaction over the anchor on the conversion line.</li>
                 <li>(Optional) Align nodes using toolbar actions.</li>
-                <h4>Add a pathway name</h4>
+            <h4>Add a pathway name</h4>
                 <li>Finally, the pathway needs a title that conforms with our <a href="https://github.com/wikipathways/wikipathways-faq/discussions/24" target="_blank">pathway title guidelines</a>.</li>
                 <li>Double-click on the <b>Pathway Information</b> area in the upper-left corner of the pathway to edit the title.</li>
                 <li>Update the pathway title in the <b>Title</b> field. Briefly, the pathway name should be in English, and should be sentence case.</li>
+            <h4>Optimize layout</h4>
+                <p>The overall layout of a pathway in terms of node spacing, placement on the board etc is important to the readability of the pathway at default zoom levels. As a final step in the creation of your pathway model, consider the following aspects of your pathway and adjust the layout accordingly:</p>
+                    <ul>
+                        <li>Minimize white space by using a space efficient and compact layout.</li>
+                        <li>Place the pathway diagram in the upper left of the pathway drawing board</li>
+                        <li>Use consistent font size (12 or larger)</li>
+                    </ul>
+                <p>To see a showcase gallery of representative pathway models with efficient and clear layout, visit the <a href="https://www.wikipathways.org/gallery.html" target="_blank">WikiPathways Help page</a>.</p>
               </ul>
             <li>Save your work as a GPML file under <b>File > Save As</b>.</li>
             <li>Drag-and-drop the GPML file below to check if it is correct.</li>
