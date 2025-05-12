@@ -63,7 +63,7 @@
   </DataNode>
   <DataNode TextLabel="GCKR" GraphId="d0a60" Type="GeneProduct">
     <Comment>OCR lexicon match: GCKR</Comment>
-    <Graphics CenterX="693.3329658213893" CenterY="239.59536934950367" Width="90.0" Height="25.0" ZOrder="33007" FontSize="12" Valign="Middle" />
+    <Graphics CenterX="694.3329658213893" CenterY="239.59536934950367" Width="90.0" Height="25.0" ZOrder="33007" FontSize="12" Valign="Middle" />
     <Xref Database="Entrez Gene" ID="2646" />
   </DataNode>
   <DataNode TextLabel="GSK3A" GraphId="c6bba" Type="GeneProduct" GroupRef="f6007">
@@ -118,42 +118,42 @@
   </DataNode>
   <DataNode TextLabel="FASN" GraphId="b5163" Type="GeneProduct">
     <Comment>OCR lexicon match: FASN</Comment>
-    <Graphics CenterX="852.2039691289968" CenterY="395.6471885336273" Width="90.0" Height="25.0" ZOrder="33022" FontSize="12" Valign="Middle" />
+    <Graphics CenterX="849.9316427783908" CenterY="395.6471885336273" Width="90.0" Height="25.0" ZOrder="33022" FontSize="12" Valign="Middle" />
     <Xref Database="Entrez Gene" ID="2194" />
   </DataNode>
   <DataNode TextLabel="SCD" GraphId="bc8dc" Type="GeneProduct">
     <Comment>OCR lexicon match: SCD1</Comment>
-    <Graphics CenterX="861.0242557883132" CenterY="476.8765159867697" Width="90.0" Height="25.0" ZOrder="33023" FontSize="12" Valign="Middle" />
+    <Graphics CenterX="849.9316427783908" CenterY="476.8765159867697" Width="90.0" Height="25.0" ZOrder="33023" FontSize="12" Valign="Middle" />
     <Xref Database="Entrez Gene" ID="6319" />
   </DataNode>
   <DataNode TextLabel="Insulin" GraphId="cc80f" Type="Metabolite">
     <Comment>OCR lexicon match: Insulin</Comment>
-    <Graphics CenterX="343.5" CenterY="44.0" Width="87.0" Height="25.0" ZOrder="33024" FontSize="12" Valign="Middle" Color="0000ff" />
+    <Graphics CenterX="343.5" CenterY="44.0" Width="90.0" Height="25.0" ZOrder="33024" FontSize="12" Valign="Middle" Color="0000ff" />
     <Xref Database="ChEBI" ID="CHEBI:5931" />
   </DataNode>
   <DataNode TextLabel="glucose" GraphId="b102b" Type="Metabolite">
     <Comment>OCR lexicon match: Glucose</Comment>
-    <Graphics CenterX="624.7442116868797" CenterY="188.3384785005511" Width="88.0" Height="25.0" ZOrder="33025" FontSize="12" Valign="Middle" Color="0000ff" />
+    <Graphics CenterX="624.7442116868797" CenterY="188.3384785005511" Width="90.0" Height="25.0" ZOrder="33025" FontSize="12" Valign="Middle" Color="0000ff" />
     <Xref Database="ChEBI" ID="CHEBI:17234" />
   </DataNode>
   <DataNode TextLabel="pyruvate" GraphId="bd054" Type="Metabolite">
     <Comment>OCR lexicon match: Pyruvate</Comment>
-    <Graphics CenterX="954.1659316427784" CenterY="188.74862183020932" Width="87.0" Height="25.0" ZOrder="33027" FontSize="12" Valign="Middle" Color="0000ff" />
+    <Graphics CenterX="954.1659316427784" CenterY="188.74862183020932" Width="90.0" Height="25.0" ZOrder="33027" FontSize="12" Valign="Middle" Color="0000ff" />
     <Xref Database="ChEBI" ID="15361" />
   </DataNode>
   <DataNode TextLabel="SFA" GraphId="bf913" Type="Metabolite">
     <Comment>OCR lexicon match: SFA</Comment>
-    <Graphics CenterX="954.1659316427783" CenterY="440.44211686879845" Width="60.0" Height="25.0" ZOrder="33032" FontSize="12" Valign="Middle" Color="0000ff" />
+    <Graphics CenterX="954.1659316427783" CenterY="440.44211686879845" Width="90.0" Height="25.0" ZOrder="33032" FontSize="12" Valign="Middle" Color="0000ff" />
     <Xref Database="ChEBI" ID="26607" />
   </DataNode>
   <DataNode TextLabel="MUFA" GraphId="e6190" Type="Metabolite">
     <Comment>OCR lexicon match: MUFA</Comment>
-    <Graphics CenterX="954.1659316427783" CenterY="512.8511576626241" Width="60.0" Height="25.0" ZOrder="33033" FontSize="12" Valign="Middle" Color="0000ff" />
+    <Graphics CenterX="954.1659316427783" CenterY="512.8511576626241" Width="90.0" Height="25.0" ZOrder="33033" FontSize="12" Valign="Middle" Color="0000ff" />
     <Xref Database="ChEBI" ID="25413" />
   </DataNode>
   <DataNode TextLabel="glucose" GraphId="e17d3" Type="Metabolite">
     <Comment>OCR lexicon match: Glucose</Comment>
-    <Graphics CenterX="624.7442116868797" CenterY="47.82028665931642" Width="88.0" Height="25.0" ZOrder="33034" FontSize="12" Valign="Middle" Color="0000ff" />
+    <Graphics CenterX="624.7442116868797" CenterY="47.82028665931642" Width="90.0" Height="25.0" ZOrder="33034" FontSize="12" Valign="Middle" Color="0000ff" />
     <Xref Database="ChEBI" ID="CHEBI:17234" />
   </DataNode>
   <DataNode TextLabel="GYS2" GraphId="f0624" Type="GeneProduct" GroupRef="bc8fc">
@@ -190,7 +190,7 @@
   </Interaction>
   <Interaction GraphId="id2ac56bb3">
     <Graphics ZOrder="12288" LineThickness="1.0">
-      <Point X="668.7442116868797" Y="188.3384785005511" GraphRef="b102b" RelX="1.0" RelY="0.0" />
+      <Point X="669.7442116868797" Y="188.3384785005511" GraphRef="b102b" RelX="1.0" RelY="0.0" />
       <Point X="731.0840683572214" Y="188.29355016538034" GraphRef="bf637" RelX="-1.0" RelY="0.0" ArrowHead="mim-conversion" />
       <Anchor Position="0.4" Shape="None" GraphId="b1e21" />
     </Graphics>
@@ -199,7 +199,7 @@
   <Interaction GraphId="id32d44ecd">
     <Graphics ZOrder="12288" LineThickness="1.0">
       <Point X="694.5380374862181" Y="162.65986769570023" GraphRef="dca45" RelX="0.0" RelY="1.0" />
-      <Point X="693.6801543550164" Y="188.3205071664828" GraphRef="b1e21" RelX="0.0" RelY="0.0" ArrowHead="mim-catalysis" />
+      <Point X="694.2801543550164" Y="188.3205071664828" GraphRef="b1e21" RelX="0.0" RelY="0.0" ArrowHead="mim-catalysis" />
     </Graphics>
     <Xref Database="" ID="" />
   </Interaction>
@@ -213,7 +213,7 @@
   </Interaction>
   <Interaction GraphId="id46d3be8e">
     <Graphics ZOrder="12288" LineThickness="1.0">
-      <Point X="906.0242557883132" Y="476.8765159867697" GraphRef="bc8dc" RelX="1.0" RelY="0.0" />
+      <Point X="894.9316427783908" Y="476.8765159867697" GraphRef="bc8dc" RelX="1.0" RelY="0.0" />
       <Point X="954.1659316427783" Y="477.39801543550163" GraphRef="a1769" RelX="0.0" RelY="0.0" ArrowHead="mim-catalysis" />
     </Graphics>
     <Xref Database="" ID="" />
@@ -242,7 +242,7 @@
   <Interaction GraphId="id65a62ea6">
     <Graphics ZOrder="12288" LineThickness="1.0">
       <Point X="864.3880926130098" Y="188.29355016538034" GraphRef="bf637" RelX="1.0" RelY="0.0" />
-      <Point X="910.6659316427784" Y="188.74862183020932" GraphRef="bd054" RelX="-1.0" RelY="0.0" ArrowHead="mim-conversion" />
+      <Point X="909.1659316427784" Y="188.74862183020932" GraphRef="bd054" RelX="-1.0" RelY="0.0" ArrowHead="mim-conversion" />
     </Graphics>
     <Xref Database="" ID="" />
   </Interaction>
@@ -269,8 +269,8 @@
   </Interaction>
   <Interaction GraphId="id8eb9e8d8">
     <Graphics ZOrder="12288" LineThickness="1.0">
-      <Point X="693.3329658213893" Y="227.09536934950367" GraphRef="d0a60" RelX="0.0" RelY="-1.0" />
-      <Point X="693.6801543550164" Y="188.3205071664828" GraphRef="b1e21" RelX="0.0" RelY="0.0" ArrowHead="mim-inhibition" />
+      <Point X="694.3329658213893" Y="227.09536934950367" GraphRef="d0a60" RelX="0.0" RelY="-1.0" />
+      <Point X="694.2801543550164" Y="188.3205071664828" GraphRef="b1e21" RelX="0.0" RelY="0.0" ArrowHead="mim-inhibition" />
     </Graphics>
     <Xref Database="" ID="" />
   </Interaction>
@@ -320,7 +320,7 @@
   </Interaction>
   <Interaction GraphId="iddf98ba9c">
     <Graphics ZOrder="12288" LineThickness="1.0">
-      <Point X="897.2039691289968" Y="395.6471885336273" GraphRef="b5163" RelX="1.0" RelY="0.0" />
+      <Point X="894.9316427783908" Y="395.6471885336273" GraphRef="b5163" RelX="1.0" RelY="0.0" />
       <Point X="954.1659316427784" Y="395.87668136714444" GraphRef="b4823" RelX="0.0" RelY="0.0" ArrowHead="mim-catalysis" />
     </Graphics>
     <Xref Database="" ID="" />

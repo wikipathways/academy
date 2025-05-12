@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Pathway xmlns="http://pathvisio.org/GPML/2013a" Name="fig-met-1-third-solution" Version="20161128" Organism="Homo sapiens">
   <Comment Source="WikiPathways-description">Do not modify or delete. This pathway is part of the collection of content used by [https://wikipathways.github.io/academy/ WikiPathways Academy].</Comment>
-  <Graphics BoardWidth="711.0" BoardHeight="515.8303695077044" />
+  <Graphics BoardWidth="711.0" BoardHeight="527.8303695077044" />
   <DataNode TextLabel="Glucose" GraphId="ab04e" Type="Metabolite">
     <Graphics CenterX="297.72484141950963" CenterY="107.44111092062404" Width="90.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" Color="0000ff" />
     <Xref Database="HMDB" ID="HMDB00122" />
   </DataNode>
   <DataNode TextLabel="lactate" GraphId="c2954" Type="Metabolite">
-    <Graphics CenterX="152.72484141950972" CenterY="298.44111092062406" Width="68.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" Color="0000ff" />
+    <Graphics CenterX="152.72484141950972" CenterY="298.44111092062406" Width="90.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" Color="0000ff" />
     <Xref Database="ChEBI" ID="CHEBI:24996" />
   </DataNode>
   <DataNode TextLabel="PDK1" GraphId="c7f36" Type="GeneProduct">
-    <Graphics CenterX="354.7248414195098" CenterY="344.348551936958" Width="50.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" />
+    <Graphics CenterX="372.7248414195098" CenterY="344.348551936958" Width="90.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" />
     <Xref Database="Ensembl" ID="ENSG00000152256" />
   </DataNode>
   <DataNode TextLabel="Acetyl-CoA" GraphId="cba05" Type="Metabolite">
@@ -19,15 +19,15 @@
     <Xref Database="HMDB" ID="HMDB01206" />
   </DataNode>
   <DataNode TextLabel="HK1" GraphId="cf18e" Type="GeneProduct">
-    <Graphics CenterX="231.72484141950966" CenterY="157.44111092062397" Width="52.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" />
+    <Graphics CenterX="231.72484141950966" CenterY="157.44111092062397" Width="90.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" />
     <Xref Database="Ensembl" ID="ENSG00000156515" />
   </DataNode>
   <DataNode TextLabel="pyruvate" GraphId="d1ca0" Type="Metabolite">
-    <Graphics CenterX="297.22484141950963" CenterY="298.44111092062406" Width="77.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" Color="0000ff" />
+    <Graphics CenterX="297.22484141950963" CenterY="298.44111092062406" Width="90.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" Color="0000ff" />
     <Xref Database="ChEBI" ID="CHEBI:15361" />
   </DataNode>
   <DataNode TextLabel="FASN" GraphId="d1d7f" Type="GeneProduct">
-    <Graphics CenterX="515.595211789881" CenterY="358.34851832803116" Width="50.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" />
+    <Graphics CenterX="515.595211789881" CenterY="358.34851832803116" Width="90.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" />
     <Xref Database="Ensembl" ID="ENSG00000169710" />
   </DataNode>
   <DataNode TextLabel="Pentose Phosphate Pathway" GraphId="e42e6" Type="Pathway">
@@ -35,15 +35,15 @@
     <Xref Database="WikiPathways" ID="WP134" />
   </DataNode>
   <DataNode TextLabel="LDHA" GraphId="ee539" Type="GeneProduct">
-    <Graphics CenterX="230.22484141950966" CenterY="332.44111092062406" Width="55.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" />
+    <Graphics CenterX="230.22484141950966" CenterY="332.44111092062406" Width="90.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" />
     <Xref Database="Ensembl" ID="ENSG00000134333" />
   </DataNode>
   <DataNode TextLabel="PRKAB1" GraphId="f2cb2" Type="GeneProduct" GroupRef="f3bec">
-    <Graphics CenterX="555.5026528062151" CenterY="448.3303695077044" Width="66.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" />
+    <Graphics CenterX="563.5026528062151" CenterY="446.3303695077044" Width="90.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" />
     <Xref Database="Ensembl" ID="ENSG00000111725" />
   </DataNode>
   <DataNode TextLabel="citrate" GraphId="f730b" Type="Metabolite">
-    <Graphics CenterX="403.0952117898798" CenterY="460.34851832803116" Width="63.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" Color="0000ff" />
+    <Graphics CenterX="403.0952117898798" CenterY="460.34851832803116" Width="90.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" Color="0000ff" />
     <Xref Database="ChEBI" ID="CHEBI:16947" />
   </DataNode>
   <DataNode TextLabel="Glucose-6-phosphate" GraphId="fd5d5" Type="Metabolite">
@@ -51,7 +51,7 @@
     <Xref Database="ChEBI" ID="CHEBI:4170" />
   </DataNode>
   <DataNode TextLabel="PRKAA2" GraphId="fba38" Type="GeneProduct" GroupRef="f3bec">
-    <Graphics CenterX="555.5026528062151" CenterY="473.3303695077044" Width="66.0" Height="25.0" ZOrder="32773" FontSize="12" Valign="Middle" />
+    <Graphics CenterX="563.5026528062151" CenterY="471.3303695077044" Width="90.0" Height="25.0" ZOrder="32773" FontSize="12" Valign="Middle" />
     <Xref Database="Ensembl" ID="ENSG00000162409" />
   </DataNode>
   <DataNode TextLabel="lipids" GraphId="d113f" Type="Metabolite" GroupRef="f3ed0">
@@ -65,7 +65,7 @@
   <Interaction GraphId="id1154a162">
     <Graphics ZOrder="12288" LineThickness="1.0">
       <Point X="230.22484141950963" Y="319.94111092062406" GraphRef="ee539" RelX="0.0" RelY="-1.0" />
-      <Point X="229.92484141950968" Y="298.44111092062406" GraphRef="d98b3" RelX="0.0" RelY="0.0" ArrowHead="mim-catalysis" />
+      <Point X="230.42484141950968" Y="298.44111092062406" GraphRef="d98b3" RelX="0.0" RelY="0.0" ArrowHead="mim-catalysis" />
     </Graphics>
     <Xref Database="" ID="" />
   </Interaction>
@@ -79,7 +79,7 @@
   </Interaction>
   <Interaction GraphId="id3028e494">
     <Graphics ZOrder="12288" LineThickness="1.0">
-      <Point X="257.72484141950963" Y="157.44111092062397" GraphRef="cf18e" RelX="1.0" RelY="0.0" />
+      <Point X="276.72484141950963" Y="157.44111092062397" GraphRef="cf18e" RelX="1.0" RelY="0.0" />
       <Point X="297.72484141950963" Y="157.441110920624" GraphRef="c39b1" RelX="0.0" RelY="0.0" ArrowHead="mim-catalysis" />
     </Graphics>
     <Xref Database="" ID="" />
@@ -94,7 +94,7 @@
   <Interaction GraphId="id71fb9845">
     <Graphics ZOrder="12288" LineThickness="1.0">
       <Point X="296.72484141950963" Y="418.94111092062406" GraphRef="cba05" RelX="0.0" RelY="1.0" />
-      <Point X="371.5952117898798" Y="454.09851832803116" GraphRef="f730b" RelX="-1.0" RelY="-0.5" ArrowHead="mim-conversion" />
+      <Point X="358.0952117898798" Y="454.09851832803116" GraphRef="f730b" RelX="-1.0" RelY="-0.5" ArrowHead="mim-conversion" />
     </Graphics>
     <Xref Database="" ID="" />
   </Interaction>
@@ -107,7 +107,7 @@
   </Interaction>
   <Interaction GraphId="idaa11f5a0">
     <Graphics ZOrder="12288" LineStyle="Broken" LineThickness="1.0">
-      <Point X="434.5952117898798" Y="454.09851832803116" GraphRef="f730b" RelX="1.0" RelY="-0.5" />
+      <Point X="448.0952117898798" Y="454.09851832803116" GraphRef="f730b" RelX="1.0" RelY="-0.5" />
       <Point X="583.0" Y="368.5" GraphRef="cc2a0" RelX="-1.0" RelY="0.0" ArrowHead="mim-conversion" />
       <Anchor Position="0.6999747031227608" Shape="None" GraphId="db3f6" />
     </Graphics>
@@ -115,8 +115,8 @@
   </Interaction>
   <Interaction GraphId="idb8a52776">
     <Graphics ZOrder="12288" LineThickness="1.0">
-      <Point X="555.5026528062151" Y="423.8303695077044" GraphRef="de5cd" RelX="0.0" RelY="-1.0" />
-      <Point X="538.4748093592549" Y="394.1817208736194" GraphRef="db3f6" RelX="0.0" RelY="0.0" ArrowHead="mim-inhibition" />
+      <Point X="563.5026528062151" Y="421.8303695077044" GraphRef="de5cd" RelX="0.0" RelY="-1.0" />
+      <Point X="542.5251508670976" Y="394.1817208736194" GraphRef="db3f6" RelX="0.0" RelY="0.0" ArrowHead="mim-inhibition" />
     </Graphics>
     <Xref Database="" ID="" />
   </Interaction>
@@ -130,7 +130,7 @@
   </Interaction>
   <Interaction GraphId="idd5b608dc">
     <Graphics ZOrder="12288" LineThickness="1.0">
-      <Point X="329.7248414195098" Y="344.348551936958" GraphRef="c7f36" RelX="-1.0" RelY="0.0" />
+      <Point X="327.7248414195098" Y="344.348551936958" GraphRef="c7f36" RelX="-1.0" RelY="0.0" />
       <Point X="297.02484141950964" Y="344.14111092062404" GraphRef="d0ce0" RelX="0.0" RelY="0.0" ArrowHead="mim-inhibition" />
     </Graphics>
     <Xref Database="" ID="" />
@@ -138,14 +138,14 @@
   <Interaction GraphId="idde3eaab1">
     <Graphics ZOrder="12288" LineThickness="1.0">
       <Point X="515.595211789881" Y="370.84851832803116" GraphRef="d1d7f" RelX="0.0" RelY="1.0" />
-      <Point X="538.4748093592549" Y="394.1817208736194" GraphRef="db3f6" RelX="0.0" RelY="0.0" ArrowHead="mim-catalysis" />
+      <Point X="542.5251508670976" Y="394.1817208736194" GraphRef="db3f6" RelX="0.0" RelY="0.0" ArrowHead="mim-catalysis" />
     </Graphics>
     <Xref Database="" ID="" />
   </Interaction>
   <Interaction GraphId="idded3f4e8">
     <Graphics ZOrder="12288" LineThickness="1.0">
-      <Point X="258.72484141950963" Y="298.44111092062406" GraphRef="d1ca0" RelX="-1.0" RelY="0.0" />
-      <Point X="186.72484141950972" Y="298.44111092062406" GraphRef="c2954" RelX="1.0" RelY="0.0" ArrowHead="mim-conversion" />
+      <Point X="252.22484141950963" Y="298.44111092062406" GraphRef="d1ca0" RelX="-1.0" RelY="0.0" />
+      <Point X="197.72484141950972" Y="298.44111092062406" GraphRef="c2954" RelX="1.0" RelY="0.0" ArrowHead="mim-conversion" />
       <Anchor Position="0.4" Shape="None" GraphId="d98b3" />
     </Graphics>
     <Xref Database="" ID="" />

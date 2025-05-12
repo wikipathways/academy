@@ -2,7 +2,7 @@
 <Pathway xmlns="http://pathvisio.org/GPML/2013a" Name="draw-protein-phosphorylation" Organism="Homo sapiens">
   <Graphics BoardWidth="564.0" BoardHeight="611.0" />
   <DataNode TextLabel="STAT3" GraphId="f5f92" Type="GeneProduct">
-    <Graphics CenterX="369.1498318303834" CenterY="383.7692307692304" Width="70.18668466036868" Height="25.0" ZOrder="32802" FontSize="12" Valign="Middle" />
+    <Graphics CenterX="369.1498318303834" CenterY="383.7692307692304" Width="90.0" Height="25.0" ZOrder="32802" FontSize="12" Valign="Middle" />
     <Xref Database="Ensembl" ID="ENSG00000168610" />
   </DataNode>
   <DataNode TextLabel="JAK1" GraphId="d0cd0" Type="GeneProduct" GroupRef="a3048">
@@ -11,12 +11,12 @@
   </DataNode>
   <DataNode TextLabel="EGF" GraphId="c2190" Type="GeneProduct">
     <Attribute Key="org.pathvisio.model.BackpageHead" Value="EGF" />
-    <Graphics CenterX="369.54327435028677" CenterY="78.26852976913752" Width="80.0" Height="25.0" ZOrder="32824" FontSize="12" Valign="Middle" />
+    <Graphics CenterX="369.54327435028677" CenterY="78.26852976913752" Width="90.0" Height="25.0" ZOrder="32824" FontSize="12" Valign="Middle" />
     <Xref Database="Entrez Gene" ID="1950" />
   </DataNode>
   <DataNode TextLabel="EGFR" GraphId="a98fc" Type="GeneProduct" GroupRef="f0c9a">
     <Attribute Key="org.pathvisio.model.BackpageHead" Value="ErbB1" />
-    <Graphics CenterX="329.18146155585146" CenterY="160.89145402997107" Width="80.0" Height="25.0" ZOrder="32826" FontSize="12" Valign="Middle" />
+    <Graphics CenterX="324.18146155585146" CenterY="160.89145402997107" Width="90.0" Height="25.0" ZOrder="32826" FontSize="12" Valign="Middle" />
     <Xref Database="Entrez Gene" ID="1956" />
   </DataNode>
   <DataNode TextLabel="JAK2" GraphId="ac556" Type="GeneProduct" GroupRef="a3048">
@@ -25,7 +25,7 @@
   </DataNode>
   <DataNode TextLabel="EGFR" GraphId="c0401" Type="GeneProduct" GroupRef="f0c9a">
     <Attribute Key="org.pathvisio.model.BackpageHead" Value="ErbB1" />
-    <Graphics CenterX="409.18146155585146" CenterY="160.89145402997107" Width="80.0" Height="25.0" ZOrder="33379" FontSize="12" Valign="Middle" />
+    <Graphics CenterX="414.18146155585146" CenterY="160.89145402997107" Width="90.0" Height="25.0" ZOrder="33379" FontSize="12" Valign="Middle" />
     <Xref Database="Entrez Gene" ID="1956" />
   </DataNode>
   <State GraphRef="f5f92" TextLabel="P" GraphId="ca15a">
@@ -104,13 +104,6 @@
   <Group GroupId="e8cab" GraphId="d9d87" Style="Group" />
   <InfoBox CenterX="0.0" CenterY="0.0" />
   <Biopax>
-    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="d09">
-      <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></bp:ID>
-      <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
-      <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></bp:TITLE>
-      <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/T790M</bp:SOURCE>
-      <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></bp:YEAR>
-    </bp:PublicationXref>
     <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="f79">
       <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">22426421</bp:ID>
       <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
@@ -172,6 +165,13 @@
       <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lim WT</bp:AUTHORS>
       <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ruan Y</bp:AUTHORS>
       <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ong ST</bp:AUTHORS>
+    </bp:PublicationXref>
+    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="d09">
+      <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></bp:ID>
+      <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
+      <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></bp:TITLE>
+      <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/T790M</bp:SOURCE>
+      <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></bp:YEAR>
     </bp:PublicationXref>
     <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
       <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tyrosine-specific protein kinase mediated signaling pathway</bp:TERM>

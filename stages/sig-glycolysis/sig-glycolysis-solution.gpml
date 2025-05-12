@@ -86,12 +86,12 @@
   </DataNode>
   <DataNode TextLabel="FASN" GraphId="bd371" Type="GeneProduct">
     <Comment>OCR lexicon match: FASN</Comment>
-    <Graphics CenterX="984.0" CenterY="418.0" Width="90.0" Height="25.0" ZOrder="33022" FontSize="12" Valign="Middle" />
+    <Graphics CenterX="978.0" CenterY="418.0" Width="90.0" Height="25.0" ZOrder="33022" FontSize="12" Valign="Middle" />
     <Xref Database="Entrez Gene" ID="2194" />
   </DataNode>
   <DataNode TextLabel="SCD" GraphId="b889b" Type="GeneProduct">
     <Comment>OCR lexicon match: SCD1</Comment>
-    <Graphics CenterX="997.0" CenterY="497.0" Width="90.0" Height="25.0" ZOrder="33023" FontSize="12" Valign="Middle" />
+    <Graphics CenterX="978.0" CenterY="497.0" Width="90.0" Height="25.0" ZOrder="33023" FontSize="12" Valign="Middle" />
     <Xref Database="Entrez Gene" ID="6319" />
   </DataNode>
   <DataNode TextLabel="Insulin" GraphId="c6b17" Type="Metabolite">
@@ -251,7 +251,7 @@ sitegrpid=447556; ptm=p; direction=u</Comment>
   </Interaction>
   <Interaction GraphId="ida745589e">
     <Graphics ZOrder="12288" LineThickness="1.0">
-      <Point X="1029.0" Y="418.0" GraphRef="bd371" RelX="1.0" RelY="0.0" />
+      <Point X="1023.0" Y="418.0" GraphRef="bd371" RelX="1.0" RelY="0.0" />
       <Point X="1089.0" Y="418.3" GraphRef="a3644" RelX="0.0" RelY="0.0" ArrowHead="mim-catalysis" />
     </Graphics>
     <Xref Database="" ID="" />
@@ -345,7 +345,7 @@ sitegrpid=447556; ptm=p; direction=u</Comment>
   </Interaction>
   <Interaction GraphId="idf6eec669">
     <Graphics ZOrder="12288" LineThickness="1.0">
-      <Point X="1042.0" Y="497.0" GraphRef="b889b" RelX="1.0" RelY="0.0" />
+      <Point X="1023.0" Y="497.0" GraphRef="b889b" RelX="1.0" RelY="0.0" />
       <Point X="1089.0" Y="497.1" GraphRef="b6429" RelX="0.0" RelY="0.0" ArrowHead="mim-catalysis" />
     </Graphics>
     <Xref Database="" ID="" />

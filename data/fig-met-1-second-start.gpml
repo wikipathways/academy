@@ -6,7 +6,7 @@
     <Xref Database="HMDB" ID="HMDB0000122" />
   </DataNode>
   <DataNode TextLabel="HK1" GraphId="cf18e" Type="GeneProduct">
-    <Graphics CenterX="231.72484141950966" CenterY="157.44111092062397" Width="52.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" />
+    <Graphics CenterX="231.72484141950966" CenterY="157.44111092062397" Width="90.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" />
     <Xref Database="Ensembl" ID="ENSG00000156515" />
   </DataNode>
   <DataNode TextLabel="Pentose Phosphate Pathway" GraphId="e42e6" Type="Pathway">
@@ -27,7 +27,7 @@
   </Interaction>
   <Interaction GraphId="id3028e494">
     <Graphics ZOrder="12288" LineThickness="1.0">
-      <Point X="257.72484141950963" Y="157.44111092062397" GraphRef="cf18e" RelX="1.0" RelY="0.0" />
+      <Point X="276.72484141950963" Y="157.44111092062397" GraphRef="cf18e" RelX="1.0" RelY="0.0" />
       <Point X="297.72484141950963" Y="157.441110920624" GraphRef="c39b1" RelX="0.0" RelY="0.0" ArrowHead="mim-catalysis" />
     </Graphics>
     <Xref Database="" ID="" />
