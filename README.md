@@ -25,7 +25,7 @@ Individual tasks/stages are organized in folders. To edit the instructions for a
 The order of tasks in the path is determined by the “Next step” and “Previous step” hyperlinked buttons in each task. These hyperlinks will need to be updated accordingly if new tasks are added and/or if the order of tasks is changed.
 If a new stage/task is added, update the gpml validator java script accordingly.
 
-If you don't have edit permissions, send suggested changes to alex.pico@gladstone.ucsf.edu. 
+If you don't have edit permissions, send suggested changes to kristina.hanspers@gladstone.ucsf.edu. 
 
 The first time you clone the repo (and subsequent dev sessions):
 * `npm install`
