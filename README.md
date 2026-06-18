@@ -1,20 +1,19 @@
 WikiPathways Academy
 =========
 
-This repository holds the content for WikiPathways Academy located at [https://wikipathways.github.io/academy](https://wikipathways.github.io/academy). The content includes an organized set of training tasks for new WikiPathways authors to learn how to create machine-readable pathway models, with additional tasks aimed at improving and expanding the collection of biological processes modeled at WikiPathways.
+This repo holds the content for WikiPathways Academy located at https://wikipathways.github.io/academy/.  The content includes an organized set of training tasks for new WikiPathways authors that lead to actual pathway editing tasks aimed at improving and expanding the collection of biological processess modeled at WikiPathways.
 
-How to Use for Training
+How to Use
 ====
 Go to https://wikipathways.github.io/academy/ and follow the step-by-step instructions.
 
 
 How to Develop
 ====
-Make pull requests to this repo to update new or improve existing content. 
+Make pull requests to this repo in order to fix or provide new content. 
 
 ## Editing the clickable path image
-The clickable path image itself can be edited via the draw.io app for Google Docs: [WP Academy Tasks](https://drive.google.com/file/d/1mI4N8-ihSwlIZ3zEGuCEjvQJrMTr6luj/view?usp=sharing). You can request access by sending us a message via our [Help page](https://github.com/wikipathways/wikipathways-help/discussions).
-
+The clickable path image itself can be editted via the draw.io app for Google Docs: [WP Academy Tasks](https://drive.google.com/a/gladstone.ucsf.edu/file/d/0BxIWXP93jPy9QzhNakhobk81X1U/view?usp=sharing). 
 * Open the diagram in draw.io and make any necessary changes.
 * Export the diagram as html under File>Embed>HTML... , making sure to uncheck "Lightbox". Leave other settings as-is. The export will be displayed in a popup box, copy the contents to the clipboard. 
 * Paste the html export into a text editor.
@@ -25,6 +24,8 @@ The clickable path image itself can be edited via the draw.io app for Google Doc
 Individual tasks/stages are organized in folders. To edit the instructions for a stage, edit the index.html file. To add a stage, add a new folder and index file. 
 The order of tasks in the path is determined by the “Next step” and “Previous step” hyperlinked buttons in each task. These hyperlinks will need to be updated accordingly if new tasks are added and/or if the order of tasks is changed.
 If a new stage/task is added, update the gpml validator java script accordingly.
+
+If you don't have edit permissions, send suggested changes to kristina.hanspers@gladstone.ucsf.edu. 
 
 The first time you clone the repo (and subsequent dev sessions):
 * `npm install`
